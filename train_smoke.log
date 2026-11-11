@@ -1,0 +1,20 @@
+Create folder /home/moco/code/iamu/2024LiERLDDE/BACAP_checkpoints/0
+Starting a new training session.
+Num params in network 55906
+[==========------------------------------] 25.0%[====================--------------------] 50.0%[==============================----------] 75.0%[========================================] 100.0%
+The 0th iteration is finished: 1.169304370880127 s
+Iteration num: 0
+Episode num: 4
+Average reward: -11140.104990478658
+Variance in rewards: 0.0
+Max reward on test case: -11140.104990478658
+Min reward on test case: -11140.104990478658
+Total population number: 4
+Sigma: [0.05]
+s: [0]
+Learning rate: 1
+Total num frames seen: 517
+Test reward: [-11140.104990478658]
+Unperturbed reward: [-11140.104990478658]
+Unperturbed rank: [3] out of theta
+

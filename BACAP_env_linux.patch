@@ -1,0 +1,55 @@
+--- BACAP_env.cpp (uploaded)
++++ BACAP_env.cpp (Linux)
+@@ -6,6 +6,10 @@
+ #include <sstream>
+ #include <iterator>
+ #include <tuple>
++#include <cmath>    // std::abs, std::round
++#include <limits>   // std::numeric_limits
++#include <cstddef>  // offsetof
++#include <type_traits> // std::is_standard_layout
+ 
+ 
+ 
+@@ -611,16 +615,29 @@
+     bool done;
+ };
+ 
++// ABI checks for the x86_64 / GCC target used by the Python ctypes wrapper.
++static_assert(std::is_standard_layout<Array2D>::value, "Array2D must be standard layout");
++static_assert(std::is_standard_layout<StepResult>::value, "StepResult must be standard layout");
++static_assert(sizeof(Array2D) == 30 * 8 * sizeof(double), "Unexpected Array2D size");
++static_assert(offsetof(StepResult, state) == 0, "Unexpected state offset");
++static_assert(offsetof(StepResult, reward) == sizeof(Array2D), "Unexpected reward offset");
++static_assert(offsetof(StepResult, done) == sizeof(Array2D) + sizeof(double), "Unexpected done offset");
++
+ extern "C" {
+-    __declspec(dllexport) void* create_env(const char* file) {
++    void* create_env(const char* file) {
+         return new BerthOptimizationEnvironment(file);
+     }
+ 
+-    __declspec(dllexport) void delete_env(BerthOptimizationEnvironment* env) {
++    void delete_env(BerthOptimizationEnvironment* env) {
+         delete env;
+     }
+ 
+-    __declspec(dllexport) void step(BerthOptimizationEnvironment* env, std::array<double, 5> action, StepResult* result) {
++    // Linux-compatible C ABI: ctypes passes a contiguous double[5] buffer.
++    // Convert to the original std::array in this wrapper only.
++    void step(BerthOptimizationEnvironment* env, const double* action_raw, StepResult* result) {
++        if (env == nullptr || action_raw == nullptr || result == nullptr) return;
++        std::array<double, 5> action{};
++        std::copy_n(action_raw, action.size(), action.begin());
+         auto [state, reward, done] = env->step(action);
+         for (int i = 0; i < BerthOptimizationEnvironment::state_number; ++i) {
+             for (int j = 0; j < 8; ++j) {
+@@ -631,7 +648,7 @@
+         result->done = done;
+     }
+ 
+-    __declspec(dllexport) void reset(BerthOptimizationEnvironment* env, Array2D* arr) {
++    void reset(BerthOptimizationEnvironment* env, Array2D* arr) {
+         auto state = env->reset();
+         for (int i = 0; i < BerthOptimizationEnvironment::state_number; ++i) {
+             for (int j = 0; j < 8; ++j) {
