@@ -1,0 +1,10 @@
+{
+  "selected_on": "validation/update/episode_macro_CRPS",
+  "selected_model": "truncated_sigma7.12463",
+  "validation_crps": 4.151769272979605,
+  "best_v04_deployable_censored_model": "censored_sigma7.12463",
+  "training_fitted_sigma": 7.12463033710398,
+  "test_not_used_for_model_selection": true,
+  "test_label_usage": "offline scoring only",
+  "note": "truncated is a diagnostic comparator, not deployed by V0.4"
+}
