@@ -3,4 +3,7 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .venv/
-venv/
+venv/*.pt
+*.pth
+*.ckpt
+__pycache__/
