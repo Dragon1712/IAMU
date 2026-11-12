@@ -167,8 +167,11 @@ class SlotPlanner:
         self.vessels={v.id:v for v in vessels};self.port=port
     def _q(self,v:Vessel)->int:
         return min(v.max_cranes,self.port.cranes,self.port.max_cranes_per_ship)
-    def assign(self,id:int,release:float,fixed:list[Assignment],preferred_pos:Optional[float]=None)->Assignment:
-        v=self.vessels[id];q=self._q(v)
+    def assign(self,id:int,release:float,fixed:list[Assignment],preferred_pos:Optional[float]=None,
+               cranes:Optional[int]=None)->Assignment:
+        v=self.vessels[id];q=self._q(v) if cranes is None else cranes
+        if not isinstance(q,int) or not 1 <= q <= self._q(v):
+            raise ValueError(f'Invalid assigned crane count for ship {id}: {q}')
         if v.length > self.port.quay_length:raise ValueError('Vessel longer than quay')
         dur=v.workload/q
         # Candidate spots include free quay origins, berth boundaries and any
@@ -280,16 +283,26 @@ class RealizedRuntime:
 def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
              threshold:float=3.0,period:float=12.0,max_edits_per_event=2,
              min_gain:float=0.1,candidate_limit:int=12,
-             hint_provider=None)->dict:
-    """Simulate ETA updates, published plan revisions and realized operations.
+             hint_provider=None,repair_method:str='single',
+             revision_penalty:float=0.0,max_repair_pairs:int=4,
+             periodic_horizon:Optional[float]=None)->dict:
+    """Event-sourced, budget-constrained, non-anticipative recovery simulation.
 
-    Budget is a global sum of *per-vessel published changes*, even if the same
-    ship is edited repeatedly. Initial publication is free. Started ships are
-    immutable. The realized dispatcher never anticipates hidden actual ETAs.
+    `periodic` now uses an independent clock instead of a gate on ETA notices.
+    `alns2` tries deterministic, bounded, two-ship destroy/repair neighborhoods.
+    These adapt ideas from published transport recovery work; no aircraft or
+    railway code is directly imported.  The original ES checkpoint is frozen.
     """
-    if policy not in {'no_replan','always','periodic','threshold','budget_aware'}:raise ValueError(policy)
+    if policy not in {'no_replan','always','periodic','threshold','budget_aware'}:
+        raise ValueError(policy)
+    if repair_method not in {'single','alns2'}:
+        raise ValueError('repair_method must be single or alns2')
     if budget is not None and budget<0:raise ValueError('Budget >=0 or None')
-    if max_edits_per_event<1:raise ValueError('max_edits_per_event must be positive')
+    if max_edits_per_event<1 or candidate_limit<1 or max_repair_pairs<0:
+        raise ValueError('Invalid candidate or neighborhood limit')
+    if period<=0 or not math.isfinite(period):raise ValueError('period must be positive')
+    if not math.isfinite(revision_penalty) or revision_penalty<0:
+        raise ValueError('revision_penalty must be nonnegative and finite')
     planner=SlotPlanner(scenario.vessels,scenario.port)
     ids=planner.vessels
     eta={v.id:v.eta0 for v in scenario.vessels}
@@ -297,76 +310,152 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
     pub=planner.initial(eta,initial_hint)
     initial_pub={i:a.as_dict() for i,a in pub.items()}
     rt=RealizedRuntime(scenario.vessels,scenario.port)
-    used=0;last_replan=-float('inf');revision_counts={i:0 for i in ids}
-    logs=[];revision_log=[]
-    for event in scenario.updates:
-        rt.advance(event.time,pub,scenario.true_etas)
-        old_eta=eta[event.vessel_id];eta[event.vessel_id]=event.new_eta
-        trigger=False
-        if policy in ('always','budget_aware'):trigger=True
-        if policy=='threshold':trigger=abs(event.new_eta-old_eta)>=threshold
-        if policy=='periodic':trigger=event.time-last_replan>=period
-        # No Replan explicitly ignores all triggers; B=0 consumes no budget.
-        edits=[];forecast_gain=0.0;tried=0
+    used=0; revision_counts={i:0 for i in ids}
+    logs=[];revision_log=[]; candidate_evaluations=0
+
+    # Scheduled clock is based ONLY on the initially public instance, not the
+    # hidden actual arrivals or future ETA updates. This avoids oracle timing.
+    # A bounded operational horizon includes one worst-case serial processing
+    # upper bound using initial workloads; late arrivals can still occur later,
+    # but will not secretly prolong the preannounced periodic schedule.
+    decision_events=[(e.time,0,e.update_id,'eta',e) for e in scenario.updates]
+    if policy=='periodic':
+        # Published initial makespan is public and independent of hidden ETA.
+        horizon=(max(a.end for a in pub.values()) + period
+                 if periodic_horizon is None else periodic_horizon)
+        if not math.isfinite(horizon) or horizon < 0:
+            raise ValueError('periodic_horizon must be finite and nonnegative')
+        n_ticks=int(horizon // period)
+        if n_ticks>10000:
+            raise ValueError('Periodic horizon too long; increase period')
+        for k in range(1,n_ticks+1):
+            t=k*period
+            decision_events.append((t,1,k,'clock',None))
+    decision_events.sort(key=lambda e:(e[0],e[1],e[2]))
+
+    for event_time,_,event_id,event_type,event in decision_events:
+        rt.advance(event_time,pub,scenario.true_etas)
+        if event_type=='eta':
+            vessel_id=event.vessel_id
+            old_eta=eta[vessel_id]
+            eta[vessel_id]=event.new_eta
+            trigger=(policy in ('always','budget_aware') or
+                     (policy=='threshold' and abs(event.new_eta-old_eta)>=threshold))
+            new_eta=event.new_eta
+        else:
+            vessel_id=None
+            old_eta=None
+            new_eta=None
+            trigger=(policy=='periodic')
+        edits=[];forecast_gain=0.0;tried=0;repair_pairs=0
         if trigger and policy!='no_replan' and (budget is None or used<budget):
-            last_replan=event.time
             hint=hint_provider(scenario.vessels,scenario.port,eta) if hint_provider else None
             remaining=max_edits_per_event if budget is None else min(max_edits_per_event,budget-used)
             eligible=[i for i in ids if i not in rt.started]
-            # Put updated ship and ships whose promises are already earlier
-            # than ETA first. Other possible ships are ranked by near-future
-            # schedule and frozen ES action-order, when enabled.
             rank=hint.rank if hint else {}
-            eligible.sort(key=lambda i:(i!=event.vessel_id,
+            eligible.sort(key=lambda i:(i!=vessel_id,
                                         not (eta[i]>pub[i].start+EPS),
                                         rank.get(i,10**8),pub[i].start,i))
             eligible=eligible[:candidate_limit]
-            for _ in range(remaining):
+            from .recovery import pressure_graph, candidate_pairs, repair_subset
+            # Multiple sequential moves are allowed, but a vessel can be
+            # revised at most once per decision event.  Each changed ship is
+            # charged, including when a two-ship repair is selected.
+            while remaining>0 and eligible:
                 score0=rt.score(pub,eta)
-                best_gain=min_gain if policy=='budget_aware' else 1e-9
                 best=None
+                best_key=None
+                proposals=[]
                 for i in eligible:
-                    candidate=planner.single_move(pub,i,event.time,eta,hint)
-                    if candidate is None:continue
+                    candidate=planner.single_move(pub,i,event_time,eta,hint)
+                    if candidate is not None:
+                        proposals.append((candidate,(i,),'single'))
+                if repair_method=='alns2' and remaining>=2 and len(eligible)>1:
+                    graph=pressure_graph(pub,ids,scenario.port,eta,event_time,eligible)
+                    for pair in candidate_pairs(graph,pub,vessel_id,max_repair_pairs):
+                        repair_pairs+=1
+                        for candidate,changed in repair_subset(
+                                planner,pub,pair,event_time,eta,hint,
+                                budget_remaining=remaining):
+                            if all(i in eligible for i in changed):
+                                proposals.append((candidate,changed,'alns2'))
+                # Waiting time is a counterfactual based on *current forecasts*;
+                # never read hidden future arrivals to score proposed edits.
+                for candidate,changed,kind in proposals:
+                    cost=len(changed)
+                    if cost>remaining:continue
                     tried+=1
                     gain=score0-rt.score(candidate,eta)
-                    if gain>best_gain:
-                        best_gain=gain;best=(i,candidate)
+                    net_gain=gain-revision_penalty*cost
+                    min_required=(min_gain if policy=='budget_aware' else 1e-9)
+                    if net_gain<=min_required:continue
+                    # Budget-aware ratio prefers improvement per unit of a
+                    # finite, globally scarce modification resource.
+                    key=(net_gain/cost if policy=='budget_aware' else net_gain,
+                         net_gain, -cost, tuple(-i for i in changed))
+                    if best_key is None or key>best_key:
+                        best_key=key;best=(candidate,changed,gain,kind)
                 if best is None:break
-                i,candidate=best
-                prior=pub[i]
+                candidate,changed,gain,kind=best
+                before=pub
                 pub=candidate
-                used+=1;revision_counts[i]+=1
-                edits.append(i);eligible.remove(i);forecast_gain+=best_gain
-                revision_log.append(dict(time=round(event.time,5),vessel_id=i,
-                                         old=prior.as_dict(),new=pub[i].as_dict(),
-                                         estimated_gain=round(best_gain,5),
-                                         cumulative_budget=used))
                 validate_plan(pub,ids,scenario.port)
-        logs.append(dict(event_id=event.update_id,time=round(event.time,5),
-                         vessel_id=event.vessel_id,eta_before=round(old_eta,5),
-                         eta_after=round(event.new_eta,5),triggered=trigger,
-                         evaluated=tried,edited=edits,changes=len(edits),
-                         budget_used=used,budget_remaining=(None if budget is None else budget-used),
+                for i in changed:
+                    revision_counts[i]+=1
+                    used+=1
+                    revision_log.append(dict(
+                        time=round(event_time,5),vessel_id=i,
+                        old=before[i].as_dict(),new=pub[i].as_dict(),
+                        estimated_gain=round(gain,5),
+                        repair_kind=kind,event_type=event_type,
+                        revision_penalty=revision_penalty,
+                        cumulative_budget=used))
+                    eligible.remove(i)
+                    edits.append(i)
+                remaining-=len(changed)
+                forecast_gain+=gain
+                assert budget is None or used<=budget
+        candidate_evaluations+=tried
+        logs.append(dict(event_id=event_id,event_type=event_type,
+                         time=round(event_time,5),
+                         vessel_id=vessel_id,
+                         eta_before=(None if old_eta is None else round(old_eta,5)),
+                         eta_after=(None if new_eta is None else round(new_eta,5)),
+                         triggered=trigger,evaluated=tried,
+                         repair_pairs=repair_pairs,edited=edits,changes=len(edits),
+                         budget_used=used,
+                         budget_remaining=(None if budget is None else budget-used),
                          estimated_gain=round(forecast_gain,6),
                          started_count=len(rt.started)))
     rt.finish(pub,scenario.true_etas)
     realized={i:a.as_dict() for i,a in rt.started.items()}
     weights=sum(v.weight for v in scenario.vessels)
     wait=sum(ids[i].weight*max(0,rt.started[i].start-scenario.true_etas[i]) for i in ids)
+    late_slip=sum(max(0,scenario.true_etas[i]-pub[i].start) for i in ids)
+    resource_slip=sum(max(0,rt.started[i].start-max(pub[i].start,scenario.true_etas[i])) for i in ids)
     slip=sum(max(0,rt.started[i].start-pub[i].start) for i in ids)
-    metrics=dict(policy=policy,budget=budget,spent=used,number_of_updates=len(logs),
+    assert abs(late_slip+resource_slip-slip)<1e-5*max(1,len(ids))
+    metrics=dict(policy=policy,budget=budget,spent=used,number_of_updates=sum(
+                     e['event_type']=='eta' for e in logs),
+                 number_of_decision_events=len(logs),
+                 number_of_periodic_ticks=sum(e['event_type']=='clock' for e in logs),
                  number_of_triggered_updates=sum(x['triggered'] for x in logs),
                  number_of_vessels_revised=sum(v>0 for v in revision_counts.values()),
+                 candidate_evaluations=candidate_evaluations,
+                 repair_method=repair_method,
                  weighted_wait=round(wait,6),mean_weighted_wait=round(wait/weights,6),
                  total_operational_slip=round(slip,6),
+                 arrival_lateness_slip=round(late_slip,6),
+                 resource_conflict_slip=round(resource_slip,6),
                  mean_turnaround=round(sum(a.end-scenario.true_etas[i] for i,a in rt.started.items())/len(ids),6),
                  makespan=round(max(a.end for a in rt.started.values()),6))
     assert used<=budget if budget is not None else True
     assert used==sum(revision_counts.values())==len(revision_log)
     return dict(metrics=metrics, initial_published=initial_pub,
                 final_published={i:a.as_dict() for i,a in pub.items()},
-                realized=realized,eta_updates=logs,revisions=revision_log,
+                realized=realized,
+                eta_updates=[r for r in logs if r['event_type']=='eta'],
+                decision_events=logs,revisions=revision_log,
                 revision_counts=revision_counts)
 
 def scenario_as_dict(sc:Scenario):
@@ -380,7 +469,9 @@ def save_result(output:Path,scenario:Scenario,result:dict):
     (output/'metrics.json').write_text(json.dumps(result['metrics'],indent=2),encoding='utf-8')
     (output/'scenario.json').write_text(json.dumps(scenario_as_dict(scenario),indent=2),encoding='utf-8')
     (output/'result.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
-    for name,rows in [('eta_updates.csv',result['eta_updates']),('revisions.csv',result['revisions'])]:
+    for name,rows in [('eta_updates.csv',result['eta_updates']),
+                      ('decision_events.csv',result['decision_events']),
+                      ('revisions.csv',result['revisions'])]:
         if rows:
             with (output/name).open('w',encoding='utf-8',newline='') as f:
                 w=csv.DictWriter(f,fieldnames=rows[0].keys());w.writeheader();w.writerows(rows)

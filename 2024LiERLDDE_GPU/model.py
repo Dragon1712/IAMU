@@ -81,6 +81,9 @@ class ES(torch.nn.Module):
     def forward(self, state):
         state = state.squeeze()
         seq1, seq2, seq3, id = self.cope_state(state)
+        # ERLDDE_EMPTY_SEQ3_WAIT: no schedulable vessel; advance port event time.
+        if seq3.shape[0] == 0:
+            return np.array([-1, -1, -1, -1, -1])
         s1, s2 = self.emb_1(seq1), self.emb_2(seq2)
         if s1.dim()<3:
             s1,s2 = s1.unsqueeze(0),s2.unsqueeze(0)
@@ -96,11 +99,9 @@ class ES(torch.nn.Module):
         query, key, value = query.unsqueeze(0), key.unsqueeze(0), value.unsqueeze(0)
 
         result, attention_weights = self.attention_1(query, key, value)
-        try:
-            max_index = torch.argmax(attention_weights)
-        except:
-            print(seq3)
-            print(state)
+        if attention_weights.numel() == 0:
+            raise RuntimeError("Empty attention weights with nonempty seq3")
+        max_index = torch.argmax(attention_weights)
         length = seq3[max_index, 0]
         max_crane = seq3[max_index, 2]
 

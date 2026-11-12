@@ -1,4 +1,4 @@
-# IAMU Dynamic Commitment Prototype v0.1
+# IAMU Dynamic Commitment Prototype v0.2
 
 **Event-driven berth–quay-crane scheduling with ETA updates and a limited budget of published-plan changes. No ERL-DDE retraining is required.**
 
@@ -11,21 +11,61 @@ This prototype is deliberately a **new** planning/realization and commitment lay
 - An **initially published plan** (initial publication is free), persistent announced assignments, a global modification budget `B`, and per-ship cumulative revision counts. A plan edit is charged **once for each ship whose published start time, berth coordinate or assigned crane count actually changes**; repeated changes to the same ship are charged again.
 - **Immutability after real service starts**: ships already in service cannot be revised.
 - A separate physical **realization engine**, with actual arrival releases, 3,000-m continuous quay, safety gaps, and total crane capacity. If actual arrival is late or physical capacity is busy, the ship's operational start slips **without silently counting this as an announced revision**.
-- Event-driven heuristic controller choices: `no_replan`, `always`, `threshold`, `periodic` (event-triggered periodic **gate**), `budget_aware` (forecast improvement threshold). These are **untrained**, interpretable baselines, **not** learned revision policies.
-- Each event can revise at most `--max-edits-per-event` vessels and never exceeds the global budget. Initial/publication, forecasts, revisions and realized operations are saved separately; all methods receive exactly the same scenario and hidden actual arrivals.
+- Event-driven heuristic controller choices: `no_replan`, `always`, `threshold`, `periodic` (independent scheduled clock), `budget_aware` (forecast improvement threshold). These are **untrained**, interpretable baselines, **not** learned revision policies.
+- Each decision event can revise at most `--max-edits-per-event` vessels and never exceeds the global budget. Initial/publication, forecasts, revisions and realized operations are saved separately; all methods receive exactly the same scenario and hidden actual arrivals.
 - Optional original, **pretrained** ERL-DDE network replay through the **original C++ source compiled in a separate probe library**. This uses the published `ES` policy's action selection order and suggested berth position **as hints to the new commitment planner**; it is not a faithful reuse of the original C++ dynamics as the execution layer.
 
 ### Deliberate simplified assumptions (important for research validity)
 
 - The berth and crane **planning/realization engine in this package is simplified**. Continuous berth positions and non-overlap use the original quay-length/safety-ratio constants, and operation duration is `workload / assigned_cranes` at unit crane efficiency. It does not model the original fine-grained crane movement, reassignment, or original reward.
-- The candidate scheduler is a **greedy earliest-feasible insertion heuristic**, not the original ERL-DDE static optimizer, not optimal MILP/CP-SAT, and not a trained dynamic model. In ERL-DDE backend, frozen policy **hints** influence order and berth location; all constraints remain enforced by the new planner.
+- The candidate scheduler is a **greedy earliest-feasible insertion heuristic**, not the original ERL-DDE static optimizer, not optimal MILP/CP-SAT, and not a trained dynamic model. Optional `--repair-method alns2` evaluates small **ALNS-inspired** (not adaptive ALNS) two-vessel destroy/repair neighborhoods and alternative crane counts around immutable commitments. In ERL-DDE backend, frozen policy **hints** influence order and berth location; all constraints remain enforced by the new planner.
 - Future ETA predictions are treated as point forecasts when scoring revisions. Realized arrivals may differ, and the simulated future arrival trajectory remains hidden from the controller.
-- `periodic` currently means **period-gated replanning on ETA notification events**, *not* an independent periodic timer. The full periodic-clock policy can be added next.
+- `periodic` now creates **independent clock ticks**, including when no ETA notification occurs. The clock horizon defaults to the originally published makespan plus one period, is derived solely from public information, and can be overridden with `--periodic-horizon`.
 - `always` means **consider a new plan at every ETA update**, not forcibly change a published assignment when its estimated objective is worse.
 - No shore-power compatibility, electricity capacity, grid emissions, connection/disconnection time, or monetary/CO2 metric is modeled. Those require additional data and explicitly validated resource constraints.
 - Do not compare numerical rewards from this simulator with ERL-DDE's negative `reward`. The objectives and physics differ.
 
-## 2. Quick start: zero installs beyond Python standard library
+## 2. V0.2 enhancements grounded in transportation recovery implementations
+
+The implementation is **new IAMU Python code** (no wholesale copying or runtime dependency on third-party research systems):
+
+| Reference | Verified source location | Reused principle | Concrete IAMU implementation |
+|---|---|---|---|
+| RecovAir airline recovery | `broad-well/recovair-abm/src/dispatcher.rs`, `src/metrics.rs` | Separate event-driven physical operations from announced assignment-change events | `core.py` emits independent decision events, revision records, ETA updates, and late-arrival/resource slip components |
+| Yin et al., *INFORMS Journal on Computing*, [DOI](https://doi.org/10.1287/ijoc.2023.0391) | `INFORMSJoC/2023.0391/src/WindowsFormsApplication7/Algorithm/Heuristics.cs` | Hold unchanged scheduled services while locally adjusting affected services | `recovery.py::repair_subset` removes 1–2 unstarted commitments and repairs them around fixed reservations |
+| Learning-based MPC railway work | `fabcaio/railwaynet_learning/tests_learning_cl_heuristic.py` | Closed-loop feasibility recovery after candidate plans | `core.py::validate_plan` plus `recovery.py::repair_subset` evaluate full physical feasibility before publication |
+| Robust Railway open-source project | `transp-or/Robust_Railway/Robust_Railway/operators/` | Destroy/repair neighborhoods | Deterministic, **non-adaptive** `alns2` paired recovery; it is not a reimplementation of their ALNS |
+
+The original time/berth/crane physics, objectives, reward, and constraints differ. **No railway or aircraft pretrained weight is transferred.**
+
+New in v0.2:
+
+- `--repair-method alns2`: deterministic two-ship local destroy/repair neighbors selected via a resource-pressure graph. Only eligible unstarted ships can be changed; all other published commitments are fixed.
+- The `max-edits-per-event` and global budgets count **actually changed vessels**, not proposal calls or the number of destroyed ships.
+- `--revision-penalty`: optional value of preserving a scarce public promise; used to rank candidate improvements after feasibility checks.
+- A real `periodic` clock fires at fixed announced times even with zero ETA updates; distinct `decision_events.csv` and `eta_updates.csv` outputs.
+- `arrival_lateness_slip` versus `resource_conflict_slip` give a measurable decomposition of involuntary operational slip, **neither counts as an announced edit**.
+- `run_benchmark.py` supports paired multi-seed/multi-instance evaluation with shared disturbances and an explicit `no_replan` comparison.
+- The old `simulate(..., repair_method='single')` default remains a single-ship local search; the periodic-policy semantics and decision log format **have changed**.
+
+### Run new methods
+
+```bash
+python run_experiment.py --demo --scenario shock --seed 42 \
+  --policies no_replan,budget_aware,periodic \
+  --budgets 0,2,5 --repair-method alns2 \
+  --max-repair-pairs 4 --revision-penalty 0.0 \
+  --period 12 --out results/v02_demo
+
+python run_benchmark.py --demo --scenarios shock,repeated \
+  --seeds 11,22,33 --budgets 0,2,5 \
+  --policies no_replan,budget_aware \
+  --repair-methods single,alns2 --out results/v02_benchmark
+```
+
+`run_benchmark.py` writes `runs.csv`, `paired_runs.csv`, `summary.csv` and `manifest.json`. The demo's results are **toy/synthetic**; they must not be reported as real-port or shore-power gains. On the 2-ship regression fixture, single repair yields 30 units weighted waiting, while pair repair yields 1 unit after two charged revisions. This is a constructed counterexample, not an empirical generalization.
+
+## 3. Quick start: zero installs beyond Python standard library
 
 Start in a **new directory**, never in the directory of a running ERL-DDE training process:
 
@@ -58,7 +98,8 @@ budget_aware_B5/
     scenario.json              # includes hidden actual arrivals: for evaluation only
     metrics.json
     result.json
-    eta_updates.csv            # decisions and available forecasts
+    decision_events.csv        # all ETA notifications + independent clock ticks
+    eta_updates.csv            # only ETA notifications and available forecasts
     revisions.csv              # each charged, ship-level announced revision
     initial_published.csv
     final_published.csv
@@ -120,7 +161,7 @@ The unit tests cover instance parser, seed reproducibility, announcement causali
 ## 5. Scientific interpretation and next research steps
 
 - Treat this as a **V0.1 protocol prototype / benchmark harness**, not a validated industrial simulator or a reproduction of published ERL-DDE dynamic scheduling results.
-- V0.2 should add an actual policy-gated **immutable future commitment ledger** with a calibrated revision-notice interval, multi-ship feasibility-repair moves and a proper independent periodic trigger.
+- The independent periodic trigger and bounded two-ship feasibility repair are available. Future work should still add a calibrated minimum advance-notice commitment horizon, multi-ship (larger than two) repair and optional MILP/CP-SAT validator.
 - V0.3 should add ship-level shore-power eligibility, plug count, kW capacity, connection/disconnection time, grid time-of-use prices, auxiliary-engine emissions and emissions factors. Each extension requires documented assumptions and constrained validation.
 - A subsequent **learning** stage can replace the `budget_aware` gate with a trained accept/defer/ship-subset policy while **keeping ERL-DDE frozen**. Compare on matched instances and seeds and use held-out cases.
 

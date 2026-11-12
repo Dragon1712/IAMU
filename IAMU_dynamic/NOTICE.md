@@ -6,3 +6,5 @@ the user's local original `model.py` under frozen inference.
 
 Check the original repositories' licenses and cite the corresponding papers
 before redistributing derivative artifacts. The example TSV here is synthetic.
+
+V0.2 adds new Python implementations inspired by published railway recovery and RecovAir event accounting. No upstream research code is copied into this archive.

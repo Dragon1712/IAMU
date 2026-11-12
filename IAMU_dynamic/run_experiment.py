@@ -21,6 +21,13 @@ def main():
     p.add_argument('--threshold',type=float,default=3.0)
     p.add_argument('--period',type=float,default=12.0)
     p.add_argument('--max-edits-per-event',type=int,default=2)
+    p.add_argument('--repair-method',choices=['single','alns2'],default='single',
+                   help='single-ship repair or bounded two-ship destroy/repair neighborhoods')
+    p.add_argument('--revision-penalty',type=float,default=0.0,
+                   help='Forecast wait-time penalty per charged published change')
+    p.add_argument('--max-repair-pairs',type=int,default=4)
+    p.add_argument('--periodic-horizon',type=float,
+                   help='End of independent periodic decision clock; default initial published makespan + period')
     p.add_argument('--out',default='results/dynamic_demo')
     p.add_argument('--backend',choices=['heuristic','erldde'],default='heuristic')
     p.add_argument('--erldde-root',help='Path to original ERL-DDE source tree')
@@ -47,7 +54,11 @@ def main():
         for budget in budgets:
             # Consistent settings: even 'no_replan' gets a budget label.
             result=simulate(scenario,policy,budget,args.threshold,args.period,
-                            args.max_edits_per_event,hint_provider=hint_provider)
+                            args.max_edits_per_event,hint_provider=hint_provider,
+                            repair_method=args.repair_method,
+                            revision_penalty=args.revision_penalty,
+                            max_repair_pairs=args.max_repair_pairs,
+                            periodic_horizon=args.periodic_horizon)
             label='unlimited' if budget is None else str(budget)
             target=out/f'{policy}_B{label}'
             save_result(target,scenario,result)
