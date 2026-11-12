@@ -1,0 +1,268 @@
+{
+  "label": "repeated",
+  "seed": 44,
+  "port": {
+    "cranes": 12,
+    "quay_length": 3000.0,
+    "safety_ratio": 0.1,
+    "max_cranes_per_ship": 5
+  },
+  "vessels": [
+    {
+      "id": 0,
+      "eta0": 4.0,
+      "workload": 60.0,
+      "length": 380.0,
+      "max_cranes": 6,
+      "weight": 1.0
+    },
+    {
+      "id": 1,
+      "eta0": 6.0,
+      "workload": 80.0,
+      "length": 400.0,
+      "max_cranes": 5,
+      "weight": 1.0
+    },
+    {
+      "id": 2,
+      "eta0": 8.0,
+      "workload": 75.0,
+      "length": 360.0,
+      "max_cranes": 6,
+      "weight": 1.0
+    },
+    {
+      "id": 3,
+      "eta0": 10.0,
+      "workload": 90.0,
+      "length": 420.0,
+      "max_cranes": 5,
+      "weight": 1.0
+    },
+    {
+      "id": 4,
+      "eta0": 11.0,
+      "workload": 100.0,
+      "length": 380.0,
+      "max_cranes": 6,
+      "weight": 1.0
+    },
+    {
+      "id": 5,
+      "eta0": 15.0,
+      "workload": 65.0,
+      "length": 350.0,
+      "max_cranes": 4,
+      "weight": 1.0
+    },
+    {
+      "id": 6,
+      "eta0": 19.0,
+      "workload": 120.0,
+      "length": 390.0,
+      "max_cranes": 6,
+      "weight": 1.0
+    },
+    {
+      "id": 7,
+      "eta0": 22.0,
+      "workload": 70.0,
+      "length": 390.0,
+      "max_cranes": 6,
+      "weight": 1.0
+    },
+    {
+      "id": 8,
+      "eta0": 25.0,
+      "workload": 85.0,
+      "length": 360.0,
+      "max_cranes": 6,
+      "weight": 1.0
+    },
+    {
+      "id": 9,
+      "eta0": 28.0,
+      "workload": 110.0,
+      "length": 410.0,
+      "max_cranes": 5,
+      "weight": 1.0
+    },
+    {
+      "id": 10,
+      "eta0": 31.0,
+      "workload": 90.0,
+      "length": 400.0,
+      "max_cranes": 5,
+      "weight": 1.0
+    },
+    {
+      "id": 11,
+      "eta0": 34.0,
+      "workload": 80.0,
+      "length": 370.0,
+      "max_cranes": 6,
+      "weight": 1.0
+    }
+  ],
+  "true_etas": {
+    "0": 0.05,
+    "1": 2.197515371695861,
+    "2": 8.79078382620646,
+    "3": 18.00214513056725,
+    "4": 5.112375496050896,
+    "5": 8.369951355907917,
+    "6": 16.111232329486903,
+    "7": 23.52015750836807,
+    "8": 10.079767464679211,
+    "9": 29.72346624892322,
+    "10": 33.32764186162593,
+    "11": 36.541137367236445
+  },
+  "updates": [
+    {
+      "time": 0.016666666666666666,
+      "vessel_id": 0,
+      "new_eta": 5.128738614981069,
+      "update_id": 0
+    },
+    {
+      "time": 0.03333333333333333,
+      "vessel_id": 0,
+      "new_eta": 2.819504846033857,
+      "update_id": 1
+    },
+    {
+      "time": 0.7325051238986203,
+      "vessel_id": 1,
+      "new_eta": 4.868498212246575,
+      "update_id": 2
+    },
+    {
+      "time": 1.4650102477972407,
+      "vessel_id": 1,
+      "new_eta": 4.329242204163368,
+      "update_id": 3
+    },
+    {
+      "time": 1.7041251653502985,
+      "vessel_id": 4,
+      "new_eta": 11.57519371185344,
+      "update_id": 8
+    },
+    {
+      "time": 2.789983785302639,
+      "vessel_id": 5,
+      "new_eta": 18.975116821941757,
+      "update_id": 10
+    },
+    {
+      "time": 2.9302612754021538,
+      "vessel_id": 2,
+      "new_eta": 8.583940527847819,
+      "update_id": 4
+    },
+    {
+      "time": 3.359922488226404,
+      "vessel_id": 8,
+      "new_eta": 13.285687849022288,
+      "update_id": 16
+    },
+    {
+      "time": 3.408250330700597,
+      "vessel_id": 4,
+      "new_eta": 5.921964336923033,
+      "update_id": 9
+    },
+    {
+      "time": 5.370410776495635,
+      "vessel_id": 6,
+      "new_eta": 16.85839261551846,
+      "update_id": 12
+    },
+    {
+      "time": 5.579967570605278,
+      "vessel_id": 5,
+      "new_eta": 13.66096282613088,
+      "update_id": 11
+    },
+    {
+      "time": 5.8605225508043075,
+      "vessel_id": 2,
+      "new_eta": 10.91889302638112,
+      "update_id": 5
+    },
+    {
+      "time": 6.000715043522416,
+      "vessel_id": 3,
+      "new_eta": 18.191767686972227,
+      "update_id": 6
+    },
+    {
+      "time": 6.719844976452808,
+      "vessel_id": 8,
+      "new_eta": 18.522492549550723,
+      "update_id": 17
+    },
+    {
+      "time": 7.840052502789356,
+      "vessel_id": 7,
+      "new_eta": 24.16855482853019,
+      "update_id": 14
+    },
+    {
+      "time": 9.907822082974407,
+      "vessel_id": 9,
+      "new_eta": 20.626331597808367,
+      "update_id": 18
+    },
+    {
+      "time": 10.74082155299127,
+      "vessel_id": 6,
+      "new_eta": 18.52629982209771,
+      "update_id": 13
+    },
+    {
+      "time": 11.10921395387531,
+      "vessel_id": 10,
+      "new_eta": 34.3545772276958,
+      "update_id": 20
+    },
+    {
+      "time": 12.001430087044833,
+      "vessel_id": 3,
+      "new_eta": 14.969523784568365,
+      "update_id": 7
+    },
+    {
+      "time": 12.180379122412148,
+      "vessel_id": 11,
+      "new_eta": 31.78884464775357,
+      "update_id": 22
+    },
+    {
+      "time": 15.680105005578712,
+      "vessel_id": 7,
+      "new_eta": 22.57474617594879,
+      "update_id": 15
+    },
+    {
+      "time": 19.815644165948815,
+      "vessel_id": 9,
+      "new_eta": 30.29132980420434,
+      "update_id": 19
+    },
+    {
+      "time": 22.21842790775062,
+      "vessel_id": 10,
+      "new_eta": 32.56638588040385,
+      "update_id": 21
+    },
+    {
+      "time": 24.360758244824297,
+      "vessel_id": 11,
+      "new_eta": 29.809802847378222,
+      "update_id": 23
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "policy": "threshold",
+  "budget": 2,
+  "spent": 2,
+  "number_of_updates": 36,
+  "number_of_triggered_updates": 17,
+  "number_of_vessels_revised": 2,
+  "weighted_wait": 226.428865,
+  "mean_weighted_wait": 18.869072,
+  "total_operational_slip": 117.259532,
+  "mean_turnaround": 40.223239,
+  "makespan": 116.654589
+}
