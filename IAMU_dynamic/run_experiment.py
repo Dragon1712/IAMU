@@ -23,6 +23,16 @@ def main():
     p.add_argument('--max-edits-per-event',type=int,default=2)
     p.add_argument('--repair-method',choices=['single','alns2'],default='single',
                    help='single-ship repair or bounded two-ship destroy/repair neighborhoods')
+    p.add_argument('--selection-method',choices=['deterministic','expected','risk_lookahead'],default='deterministic',
+                   help='Causal scenario-based selector; deterministic preserves V0.3')
+    p.add_argument('--forecast-std',type=float,default=8.0)
+    p.add_argument('--risk-samples',type=int,default=8)
+    p.add_argument('--cvar-alpha',type=float,default=0.75)
+    p.add_argument('--risk-aversion',type=float,default=0.5)
+    p.add_argument('--lookahead-horizon',type=float,default=12.0)
+    p.add_argument('--lookahead-candidates',type=int,default=3)
+    p.add_argument('--next-move-candidates',type=int,default=3)
+    p.add_argument('--future-signal-strength',type=float,default=0.5)
     p.add_argument('--revision-penalty',type=float,default=0.0,
                    help='Forecast wait-time penalty per charged published change')
     p.add_argument('--max-repair-pairs',type=int,default=4)
@@ -58,7 +68,14 @@ def main():
                             repair_method=args.repair_method,
                             revision_penalty=args.revision_penalty,
                             max_repair_pairs=args.max_repair_pairs,
-                            periodic_horizon=args.periodic_horizon)
+                            periodic_horizon=args.periodic_horizon,
+                            selection_method=args.selection_method,
+                            forecast_std=args.forecast_std,risk_samples=args.risk_samples,
+                            cvar_alpha=args.cvar_alpha,risk_aversion=args.risk_aversion,
+                            lookahead_horizon=args.lookahead_horizon,
+                            lookahead_candidates=args.lookahead_candidates,
+                            next_move_candidates=args.next_move_candidates,
+                            future_signal_strength=args.future_signal_strength)
             label='unlimited' if budget is None else str(budget)
             target=out/f'{policy}_B{label}'
             save_result(target,scenario,result)

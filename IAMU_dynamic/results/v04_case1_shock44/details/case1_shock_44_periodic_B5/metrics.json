@@ -1,0 +1,23 @@
+{
+  "policy": "periodic",
+  "budget": 5,
+  "spent": 5,
+  "number_of_updates": 98,
+  "number_of_decision_events": 142,
+  "number_of_periodic_ticks": 44,
+  "number_of_triggered_updates": 44,
+  "number_of_vessels_revised": 5,
+  "candidate_evaluations": 73,
+  "sampled_evaluations": 0,
+  "two_stage_candidates": 0,
+  "kept_due_to_risk": 0,
+  "selection_method": "deterministic",
+  "repair_method": "single",
+  "weighted_wait": 2720.796884,
+  "mean_weighted_wait": 54.415938,
+  "total_operational_slip": 988.668506,
+  "arrival_lateness_slip": 218.447591,
+  "resource_conflict_slip": 770.220915,
+  "mean_turnaround": 106.631938,
+  "makespan": 569.524049
+}

@@ -300,7 +300,16 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
              hint_provider=None,repair_method:str='single',
              revision_penalty:float=0.0,max_repair_pairs:int=4,
              periodic_horizon:Optional[float]=None,
-             diagnostic_hindsight:bool=False)->dict:
+             diagnostic_hindsight:bool=False,
+             selection_method:str='deterministic',
+             forecast_std:float=8.0,
+             risk_samples:int=8,
+             cvar_alpha:float=0.75,
+             risk_aversion:float=0.5,
+             lookahead_horizon:float=12.0,
+             lookahead_candidates:int=3,
+             next_move_candidates:int=3,
+             future_signal_strength:float=0.5)->dict:
     """Event-sourced, budget-constrained, non-anticipative recovery simulation.
 
     `periodic` now uses an independent clock instead of a gate on ETA notices.
@@ -310,6 +319,8 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
     """
     if policy not in {'no_replan','always','periodic','threshold','budget_aware'}:
         raise ValueError(policy)
+    if selection_method not in {'deterministic','expected','risk_lookahead'}:
+        raise ValueError('Invalid selection_method')
     if repair_method not in {'single','alns2'}:
         raise ValueError('repair_method must be single or alns2')
     if budget is not None and budget<0:raise ValueError('Budget >=0 or None')
@@ -318,6 +329,14 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
     if period<=0 or not math.isfinite(period):raise ValueError('period must be positive')
     if not math.isfinite(revision_penalty) or revision_penalty<0:
         raise ValueError('revision_penalty must be nonnegative and finite')
+    from .risk_selection import RiskConfig
+    risk_config=RiskConfig(forecast_std=forecast_std,n_samples=risk_samples,
+        cvar_alpha=cvar_alpha,risk_aversion=risk_aversion,
+        lookahead_horizon=lookahead_horizon,
+        lookahead_candidates=lookahead_candidates,
+        next_move_candidates=next_move_candidates,
+        future_signal_strength=future_signal_strength)
+    if selection_method != 'deterministic':risk_config.validate()
     planner=SlotPlanner(scenario.vessels,scenario.port)
     ids=planner.vessels
     eta={v.id:v.eta0 for v in scenario.vessels}
@@ -327,6 +346,7 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
     rt=RealizedRuntime(scenario.vessels,scenario.port)
     used=0; revision_counts={i:0 for i in ids}
     logs=[];revision_log=[]; candidate_evaluations=0
+    sampled_evaluations=0;kept_due_to_risk=0;two_stage_candidates=0
     hindsight_audit=[]
     def _hindsight_snapshot(plan):
         # DIAGNOSTIC ONLY: never called by the candidate scoring or selection
@@ -370,6 +390,7 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
             new_eta=None
             trigger=(policy=='periodic')
         edits=[];forecast_gain=0.0;tried=0;repair_pairs=0
+        selector_audit=[]
         if trigger and policy!='no_replan' and (budget is None or used<budget):
             hint=hint_provider(scenario.vessels,scenario.port,eta) if hint_provider else None
             remaining=max_edits_per_event if budget is None else min(max_edits_per_event,budget-used)
@@ -401,22 +422,38 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
                                 budget_remaining=remaining):
                             if all(i in eligible for i in changed):
                                 proposals.append((candidate,changed,'alns2'))
-                # Waiting time is a counterfactual based on *current forecasts*;
-                # never read hidden future arrivals to score proposed edits.
-                for candidate,changed,kind in proposals:
-                    cost=len(changed)
-                    if cost>remaining:continue
-                    tried+=1
-                    gain=score0-rt.score(candidate,eta)
-                    net_gain=gain-revision_penalty*cost
-                    min_required=(min_gain if policy=='budget_aware' else 1e-9)
-                    if net_gain<=min_required:continue
-                    # Budget-aware ratio prefers improvement per unit of a
-                    # finite, globally scarce modification resource.
-                    key=(net_gain/cost if policy=='budget_aware' else net_gain,
-                         net_gain, -cost, tuple(-i for i in changed))
-                    if best_key is None or key>best_key:
-                        best_key=key;best=(candidate,changed,gain,kind)
+                # The deterministic legacy path stays BIT-FOR-BIT equivalent
+                # to V0.3 for all existing policies and default CLI calls.
+                if policy == 'budget_aware' and selection_method != 'deterministic':
+                    from .risk_selection import select_from_proposals
+                    best, selector_log=select_from_proposals(
+                        rt,planner,pub,eta,proposals,now=event_time,
+                        remaining_global=(None if budget is None else budget-used),
+                        within_event_remaining=remaining,
+                        revision_penalty=revision_penalty,min_gain=min_gain,
+                        method=selection_method,config=risk_config,
+                        run_seed=scenario.seed,event_id=event_id,
+                        event_type=event_type)
+                    tried+=selector_log['evaluations']
+                    sampled_evaluations+=selector_log['scenarios_evaluated']
+                    two_stage_candidates+=selector_log.get('two_stage_candidates',0)
+                    kept_due_to_risk+=int(selector_log.get('kept_by_risk',False))
+                    selector_audit.append(selector_log)
+                else:
+                    # Waiting time is a counterfactual based on *current
+                    # forecasts*; never read future actual arrival values.
+                    for candidate,changed,kind in proposals:
+                        cost=len(changed)
+                        if cost>remaining:continue
+                        tried+=1
+                        gain=score0-rt.score(candidate,eta)
+                        net_gain=gain-revision_penalty*cost
+                        min_required=(min_gain if policy=='budget_aware' else 1e-9)
+                        if net_gain<=min_required:continue
+                        key=(net_gain/cost if policy=='budget_aware' else net_gain,
+                             net_gain, -cost, tuple(-i for i in changed))
+                        if best_key is None or key>best_key:
+                            best_key=key;best=(candidate,changed,gain,kind)
                 if best is None:break
                 candidate,changed,gain,kind=best
                 if diagnostic_hindsight:
@@ -464,7 +501,9 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
                          budget_used=used,
                          budget_remaining=(None if budget is None else budget-used),
                          estimated_gain=round(forecast_gain,6),
-                         started_count=len(rt.started)))
+                         started_count=len(rt.started),
+                         selection_method=(selection_method if policy=='budget_aware' else 'deterministic'),
+                         selector_audit=selector_audit))
     rt.finish(pub,scenario.true_etas)
     realized={i:a.as_dict() for i,a in rt.started.items()}
     weights=sum(v.weight for v in scenario.vessels)
@@ -480,6 +519,10 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
                  number_of_triggered_updates=sum(x['triggered'] for x in logs),
                  number_of_vessels_revised=sum(v>0 for v in revision_counts.values()),
                  candidate_evaluations=candidate_evaluations,
+                 sampled_evaluations=sampled_evaluations,
+                 two_stage_candidates=two_stage_candidates,
+                 kept_due_to_risk=kept_due_to_risk,
+                 selection_method=(selection_method if policy=='budget_aware' else 'deterministic'),
                  repair_method=repair_method,
                  weighted_wait=round(wait,6),mean_weighted_wait=round(wait/weights,6),
                  total_operational_slip=round(slip,6),

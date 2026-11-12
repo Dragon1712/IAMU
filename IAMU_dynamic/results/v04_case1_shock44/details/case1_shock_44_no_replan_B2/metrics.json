@@ -1,0 +1,23 @@
+{
+  "policy": "no_replan",
+  "budget": 2,
+  "spent": 0,
+  "number_of_updates": 98,
+  "number_of_decision_events": 98,
+  "number_of_periodic_ticks": 0,
+  "number_of_triggered_updates": 0,
+  "number_of_vessels_revised": 0,
+  "candidate_evaluations": 0,
+  "sampled_evaluations": 0,
+  "two_stage_candidates": 0,
+  "kept_due_to_risk": 0,
+  "selection_method": "deterministic",
+  "repair_method": "single",
+  "weighted_wait": 2438.537335,
+  "mean_weighted_wait": 48.770747,
+  "total_operational_slip": 1111.886694,
+  "arrival_lateness_slip": 248.481982,
+  "resource_conflict_slip": 863.404712,
+  "mean_turnaround": 100.986747,
+  "makespan": 542.26
+}

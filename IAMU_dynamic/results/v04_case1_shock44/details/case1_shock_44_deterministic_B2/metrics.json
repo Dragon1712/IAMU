@@ -1,0 +1,23 @@
+{
+  "policy": "budget_aware",
+  "budget": 2,
+  "spent": 2,
+  "number_of_updates": 98,
+  "number_of_decision_events": 98,
+  "number_of_periodic_ticks": 0,
+  "number_of_triggered_updates": 98,
+  "number_of_vessels_revised": 2,
+  "candidate_evaluations": 19,
+  "sampled_evaluations": 0,
+  "two_stage_candidates": 0,
+  "kept_due_to_risk": 0,
+  "selection_method": "deterministic",
+  "repair_method": "single",
+  "weighted_wait": 2766.145793,
+  "mean_weighted_wait": 55.322916,
+  "total_operational_slip": 995.310454,
+  "arrival_lateness_slip": 214.831995,
+  "resource_conflict_slip": 780.478459,
+  "mean_turnaround": 107.538916,
+  "makespan": 569.524049
+}

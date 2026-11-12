@@ -5,3 +5,5 @@
 [START] r2_0985 pid=2255159 r1=0.9975 r2=0.9850 log=/home/moco/code/iamu/2024LiERLDDE_GPU/kde_ablation_logs/20261112_133913/r2_0985.log
 [START] r2_0990 pid=2255162 r1=0.9975 r2=0.9900 log=/home/moco/code/iamu/2024LiERLDDE_GPU/kde_ablation_logs/20261112_133913/r2_0990.log
 [START] r2_0995 pid=2255163 r1=0.9975 r2=0.9950 log=/home/moco/code/iamu/2024LiERLDDE_GPU/kde_ablation_logs/20261112_133913/r2_0995.log
+[FAIL] r1_0990 exit=1; inspect /home/moco/code/iamu/2024LiERLDDE_GPU/kde_ablation_logs/20261112_133913/r1_0990.log
+[FAIL] r1_0995 exit=1; inspect /home/moco/code/iamu/2024LiERLDDE_GPU/kde_ablation_logs/20261112_133913/r1_0995.log
