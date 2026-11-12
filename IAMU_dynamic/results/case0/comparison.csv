@@ -1,0 +1,13 @@
+policy,budget,spent,number_of_updates,number_of_triggered_updates,number_of_vessels_revised,weighted_wait,mean_weighted_wait,total_operational_slip,mean_turnaround,makespan,backend,case,scenario,seed
+no_replan,0,0,100,0,0,3347.021836,66.940437,175.085012,122.640437,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+no_replan,2,0,100,0,0,3347.021836,66.940437,175.085012,122.640437,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+no_replan,5,0,100,0,0,3347.021836,66.940437,175.085012,122.640437,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+no_replan,,0,100,0,0,3347.021836,66.940437,175.085012,122.640437,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+threshold,0,0,100,50,0,3347.021836,66.940437,175.085012,122.640437,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+threshold,2,2,100,50,2,3345.202901,66.904058,176.731572,122.604058,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+threshold,5,5,100,50,5,3360.95326,67.219065,201.823928,122.919065,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+threshold,,15,100,50,9,3363.846428,67.276929,218.997732,122.976929,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+budget_aware,0,0,100,100,0,3347.021836,66.940437,175.085012,122.640437,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+budget_aware,2,2,100,100,2,3344.842901,66.896858,175.118346,122.596858,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+budget_aware,5,5,100,100,5,3339.842582,66.796852,178.411464,122.496852,570.13587,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42
+budget_aware,,20,100,100,14,3363.486428,67.269729,235.998439,122.969729,567.896006,heuristic,../2024LiERLDDE/case_code/0.txt,repeated,42

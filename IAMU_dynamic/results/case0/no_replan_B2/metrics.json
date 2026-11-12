@@ -1,0 +1,13 @@
+{
+  "policy": "no_replan",
+  "budget": 2,
+  "spent": 0,
+  "number_of_updates": 100,
+  "number_of_triggered_updates": 0,
+  "number_of_vessels_revised": 0,
+  "weighted_wait": 3347.021836,
+  "mean_weighted_wait": 66.940437,
+  "total_operational_slip": 175.085012,
+  "mean_turnaround": 122.640437,
+  "makespan": 570.13587
+}

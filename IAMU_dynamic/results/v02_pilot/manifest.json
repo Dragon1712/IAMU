@@ -1,0 +1,18 @@
+{
+  "cases": [
+    "../2024LiERLDDE/case_code/0.txt"
+  ],
+  "demo": false,
+  "seeds": "11,22,33",
+  "scenarios": "shock,repeated",
+  "policies": "no_replan,budget_aware",
+  "repair_methods": "single,alns2",
+  "budgets": "0,2,5",
+  "updates": 2,
+  "uncertainty": 8,
+  "threshold": 3,
+  "period": 12,
+  "max_edits_per_event": 2,
+  "revision_penalty": 0,
+  "out": "results/v02_pilot"
+}
