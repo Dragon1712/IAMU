@@ -1,0 +1,29 @@
+{
+  "cases": [
+    "../2024LiERLDDE/case_code/1.txt"
+  ],
+  "demo": false,
+  "scenarios": "shock,repeated",
+  "seeds": "11,22,33,44,55",
+  "budgets": "2,5",
+  "methods": "deterministic,expected,risk_lookahead",
+  "risk_aversions": "0.5",
+  "risk_samples": 32,
+  "forecast_std": 8.0,
+  "cvar_alpha": 0.75,
+  "lookahead_horizon": 12.0,
+  "lookahead_candidates": 1,
+  "next_move_candidates": 1,
+  "future_signal_strength": 0.5,
+  "candidate_limit": 4,
+  "max_edits_per_event": 2,
+  "repair_method": "single",
+  "updates": 2,
+  "uncertainty": 8,
+  "threshold": 3,
+  "period": 12,
+  "revision_penalty": 0,
+  "periodic_reference": true,
+  "save_details": false,
+  "out": "results/v04_samples_32"
+}
