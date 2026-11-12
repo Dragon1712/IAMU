@@ -1,6 +1,9 @@
-# IAMU Dynamic Commitment Prototype v0.2
+# IAMU Dynamic Commitment Prototype v0.3 (causal ETA clock fix)
 
 **Event-driven berth–quay-crane scheduling with ETA updates and a limited budget of published-plan changes. No ERL-DDE retraining is required.**
+
+> **v0.3 protocol change (non-backward-comparable)**: notification times now use only the initially published ETA, `t=eta0*(u+1)/(updates_per_vessel+1)`, never the hidden actual arrival. Updates after real arrival are suppressed. Hidden arrivals and forecast noise use separate RNG streams. **Rerun all previous benchmarks**; the old 72/450 evaluations are not directly comparable to newly generated scenarios. Read [ETA_CAUSALITY_AND_REGRESSION.md](ETA_CAUSALITY_AND_REGRESSION.md). Reproduce the legacy seed-22 failure and the same-truth reclocked control with `python diagnose_eta_regression.py --mode all` (hindsight is *offline diagnostic only*, never used for deciding actions). All 25 tests pass in the development environment.
+
 
 This prototype is deliberately a **new** planning/realization and commitment layer. It reads the **original ERL-DDE instance format** and can optionally use a **frozen original ERL-DDE `ES` checkpoint** to derive proposal order and berth-position hints. It **does not claim** to be the original authors' dynamic simulator, and it currently **does not optimize or simulate shore power**.
 

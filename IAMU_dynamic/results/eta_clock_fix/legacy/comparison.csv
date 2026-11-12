@@ -1,0 +1,5 @@
+scenario_format,policy,budget,spent,weighted_wait,change_vs_no_replan,makespan,arrival_lateness_slip,resource_conflict_slip
+historical_oracle_clock,no_replan,0,0,2656.55213,0.0,562.910372,228.83963,1167.046177
+historical_oracle_clock,budget_aware,2,2,2641.463224,-15.088906,562.910372,228.83963,1167.046177
+historical_oracle_clock,budget_aware,5,5,2954.967851,298.415721,561.992811,231.742677,1484.653046
+historical_oracle_clock,periodic,5,5,2591.423844,-65.128286,561.992811,236.102356,1127.707544

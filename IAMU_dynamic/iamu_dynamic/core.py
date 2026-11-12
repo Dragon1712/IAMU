@@ -98,31 +98,45 @@ def demo_case() -> tuple[list[Vessel],Port]:
 
 def generate_scenario(vessels:list[Vessel],port:Port, label='repeated',seed=42,
                       updates_per_vessel=3, uncertainty=8.0) -> Scenario:
-    """Generate hidden actual arrivals and ordered, causal ETA announcements.
+    """Generate hidden actual arrivals and non-oracle ETA notifications.
 
-    The policy never sees true_etas; the simulator alone uses them for arrivals.
-    Event timestamps are <= actual arrival. Forecast values are >= event time.
+    Notification *times* are scheduled using only the initially published ETA
+    and the public ``updates_per_vessel`` parameter.  They never use the hidden
+    actual arrival to decide *when* an update would occur.  A scheduled
+    notification is suppressed when a ship has already physically arrived:
+    the lack of a future ETA update after arrival is an observable fact.
+
+    Forecast values are noisy, increasingly informative signals correlated
+    with hidden arrivals, not exact observations of future true arrivals.
+    The true-arrival RNG and forecast-noise RNG are independent so varying
+    the number of updates cannot change the latent arrival scenario.
     """
-    if label not in ('small','shock','repeated'): raise ValueError(label)
-    if updates_per_vessel<1: raise ValueError('updates_per_vessel must be >= 1')
-    rng=random.Random(seed)
+    if label not in ('small','shock','repeated'):raise ValueError(label)
+    if updates_per_vessel<1:raise ValueError('updates_per_vessel must be >= 1')
+    if not math.isfinite(uncertainty) or uncertainty<0:
+        raise ValueError('uncertainty must be finite and nonnegative')
+    truth_rng=random.Random(seed)
+    forecast_rng=random.Random(seed ^ 0x9E3779B97F4A7C15)
     actual={}; updates=[]; k=0
     for v in vessels:
         s=uncertainty*(.25 if label=='small' else (1.8 if label=='shock' else 1.0))
-        deviation = rng.gauss(0,s)
-        if label=='shock' and rng.random()<.25: deviation+=rng.uniform(s,3*s)
-        truth=max(0.05, v.eta0+deviation)
+        deviation=truth_rng.gauss(0,s)
+        if label=='shock' and truth_rng.random()<.25:
+            deviation+=truth_rng.uniform(s,3*s)
+        truth=max(0.05,v.eta0+deviation)
         actual[v.id]=truth
-        # Announcements occur at fractions of *elapsed physical time*; this
-        # event generator is the oracle, but event times contain no final ETA.
         prev=v.eta0
         for u in range(updates_per_vessel):
-            t=truth*(u+1)/(updates_per_vessel+1)
+            # Public, deterministic clock: changing the hidden true ETA cannot
+            # change this timestamp.  No post-arrival forecast notifications.
+            t=v.eta0*(u+1)/(updates_per_vessel+1)
+            if t>=truth-EPS:continue
             alpha=(u+1)/(updates_per_vessel+1)
-            noise=rng.gauss(0, s*(.45 if label=='repeated' else .18))
-            new=max(t, v.eta0+alpha*(truth-v.eta0)+noise)
-            if abs(new-prev)<1e-4: new+=0.01
-            updates.append(Update(t,v.id,new,k));k+=1
+            noise=forecast_rng.gauss(0,s*(.45 if label=='repeated' else .18))
+            new=max(t,v.eta0+alpha*(truth-v.eta0)+noise)
+            if abs(new-prev)<1e-4:new+=0.01
+            updates.append(Update(t,v.id,new,k))
+            k+=1
             prev=new
     updates.sort(key=lambda e:(e.time,e.update_id))
     return Scenario(vessels,port,actual,updates,label,seed)
@@ -285,7 +299,8 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
              min_gain:float=0.1,candidate_limit:int=12,
              hint_provider=None,repair_method:str='single',
              revision_penalty:float=0.0,max_repair_pairs:int=4,
-             periodic_horizon:Optional[float]=None)->dict:
+             periodic_horizon:Optional[float]=None,
+             diagnostic_hindsight:bool=False)->dict:
     """Event-sourced, budget-constrained, non-anticipative recovery simulation.
 
     `periodic` now uses an independent clock instead of a gate on ETA notices.
@@ -312,6 +327,13 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
     rt=RealizedRuntime(scenario.vessels,scenario.port)
     used=0; revision_counts={i:0 for i in ids}
     logs=[];revision_log=[]; candidate_evaluations=0
+    hindsight_audit=[]
+    def _hindsight_snapshot(plan):
+        # DIAGNOSTIC ONLY: never called by the candidate scoring or selection
+        # algorithm; the actual arrivals are intentionally forbidden there.
+        shadow=copy.deepcopy(rt)
+        shadow.finish(plan,scenario.true_etas)
+        return {i:shadow.started[i].start for i in ids}
 
     # Scheduled clock is based ONLY on the initially public instance, not the
     # hidden actual arrivals or future ETA updates. This avoids oracle timing.
@@ -397,6 +419,22 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
                         best_key=key;best=(candidate,changed,gain,kind)
                 if best is None:break
                 candidate,changed,gain,kind=best
+                if diagnostic_hindsight:
+                    before_starts=_hindsight_snapshot(pub)
+                    after_starts=_hindsight_snapshot(candidate)
+                    deltas={i:after_starts[i]-before_starts[i] for i in ids}
+                    worst=max(deltas,key=lambda i:deltas[i]*ids[i].weight)
+                    best_ship=min(deltas,key=lambda i:deltas[i]*ids[i].weight)
+                    oracle_gain=-sum(ids[i].weight*deltas[i] for i in ids)
+                    hindsight_audit.append(dict(
+                        time=round(event_time,6), changed=list(changed),kind=kind,
+                        estimated_gain=round(gain,6),
+                        hindsight_gain=round(oracle_gain,6),
+                        hindsight_total_before=round(sum(ids[i].weight*max(0,before_starts[i]-scenario.true_etas[i]) for i in ids),6),
+                        hindsight_total_after=round(sum(ids[i].weight*max(0,after_starts[i]-scenario.true_etas[i]) for i in ids),6),
+                        worst_ship=worst, worst_start_delta=round(deltas[worst],6),
+                        best_ship=best_ship, best_start_delta=round(deltas[best_ship],6),
+                        per_ship_start_deltas={str(i):round(d,6) for i,d in deltas.items() if abs(d)>1e-7}))
                 before=pub
                 pub=candidate
                 validate_plan(pub,ids,scenario.port)
@@ -451,6 +489,8 @@ def simulate(scenario:Scenario,policy='budget_aware',budget:Optional[int]=5,
                  makespan=round(max(a.end for a in rt.started.values()),6))
     assert used<=budget if budget is not None else True
     assert used==sum(revision_counts.values())==len(revision_log)
+    if diagnostic_hindsight:
+        metrics['hindsight_audit']=hindsight_audit
     return dict(metrics=metrics, initial_published=initial_pub,
                 final_published={i:a.as_dict() for i,a in pub.items()},
                 realized=realized,

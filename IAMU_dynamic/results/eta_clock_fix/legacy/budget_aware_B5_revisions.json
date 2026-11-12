@@ -1,0 +1,127 @@
+[
+  {
+    "time": 1.61197,
+    "vessel_id": 3,
+    "old": {
+      "vessel_id": 3,
+      "start": 24.66,
+      "end": 32.46,
+      "berth_start_m": 733.9,
+      "cranes": 5,
+      "duration": 7.8
+    },
+    "new": {
+      "vessel_id": 3,
+      "start": 21.662872,
+      "end": 29.462872,
+      "berth_start_m": 733.9,
+      "cranes": 5,
+      "duration": 7.8
+    },
+    "estimated_gain": 2.99713,
+    "repair_kind": "single",
+    "event_type": "eta",
+    "revision_penalty": 0.0,
+    "cumulative_budget": 1
+  },
+  {
+    "time": 3.22395,
+    "vessel_id": 3,
+    "old": {
+      "vessel_id": 3,
+      "start": 21.662872,
+      "end": 29.462872,
+      "berth_start_m": 733.9,
+      "cranes": 5,
+      "duration": 7.8
+    },
+    "new": {
+      "vessel_id": 3,
+      "start": 9.571094,
+      "end": 17.371094,
+      "berth_start_m": 267.3,
+      "cranes": 5,
+      "duration": 7.8
+    },
+    "estimated_gain": 12.09178,
+    "repair_kind": "single",
+    "event_type": "eta",
+    "revision_penalty": 0.0,
+    "cumulative_budget": 2
+  },
+  {
+    "time": 8.41873,
+    "vessel_id": 1,
+    "old": {
+      "vessel_id": 1,
+      "start": 18.57,
+      "end": 37.77,
+      "berth_start_m": 267.3,
+      "cranes": 5,
+      "duration": 19.2
+    },
+    "new": {
+      "vessel_id": 1,
+      "start": 17.722242,
+      "end": 36.922242,
+      "berth_start_m": 267.3,
+      "cranes": 5,
+      "duration": 19.2
+    },
+    "estimated_gain": 0.84776,
+    "repair_kind": "single",
+    "event_type": "eta",
+    "revision_penalty": 0.0,
+    "cumulative_budget": 3
+  },
+  {
+    "time": 12.03652,
+    "vessel_id": 7,
+    "old": {
+      "vessel_id": 7,
+      "start": 54.9,
+      "end": 136.5,
+      "berth_start_m": 1117.4,
+      "cranes": 5,
+      "duration": 81.6
+    },
+    "new": {
+      "vessel_id": 7,
+      "start": 50.797758,
+      "end": 132.397758,
+      "berth_start_m": 1117.4,
+      "cranes": 5,
+      "duration": 81.6
+    },
+    "estimated_gain": 4.10224,
+    "repair_kind": "single",
+    "event_type": "eta",
+    "revision_penalty": 0.0,
+    "cumulative_budget": 4
+  },
+  {
+    "time": 16.6227,
+    "vessel_id": 2,
+    "old": {
+      "vessel_id": 2,
+      "start": 20.76,
+      "end": 109.76,
+      "berth_start_m": 533.5,
+      "cranes": 5,
+      "duration": 89.0
+    },
+    "new": {
+      "vessel_id": 2,
+      "start": 18.704711,
+      "end": 107.704711,
+      "berth_start_m": 533.5,
+      "cranes": 5,
+      "duration": 89.0
+    },
+    "estimated_gain": 2.05529,
+    "repair_kind": "single",
+    "event_type": "eta",
+    "revision_penalty": 0.0,
+    "cumulative_budget": 5
+  }
+]
