@@ -1,0 +1,19 @@
+{
+  "case": "../2024LiERLDDE/case_code/0.txt",
+  "demo": false,
+  "scenario": "repeated",
+  "seed": 42,
+  "uncertainty": 8.0,
+  "updates": 2,
+  "budgets": "0,2,5,unlimited",
+  "policies": "no_replan,threshold,budget_aware",
+  "threshold": 3.0,
+  "period": 12.0,
+  "max_edits_per_event": 2,
+  "out": "results/case0",
+  "backend": "heuristic",
+  "erldde_root": null,
+  "checkpoint": null,
+  "probe_so": null,
+  "build_probe": false
+}
