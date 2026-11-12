@@ -1,0 +1,78 @@
+{
+  "train_cases": [
+    "../2024LiERLDDE/case_code/3.txt",
+    "../2024LiERLDDE/case_code/4.txt",
+    "../2024LiERLDDE/case_code/5.txt",
+    "../2024LiERLDDE/case_code/6.txt",
+    "../2024LiERLDDE/case_code/7.txt"
+  ],
+  "val_cases": [
+    "../2024LiERLDDE/case_code/8.txt",
+    "../2024LiERLDDE/case_code/9.txt"
+  ],
+  "candidate_limit": 4,
+  "decision_clock": "union",
+  "period": 12.0,
+  "reward_scale": 100.0,
+  "scenarios": [
+    "shock",
+    "repeated",
+    "small"
+  ],
+  "budgets": [
+    2,
+    5,
+    10
+  ],
+  "uncertainties": [
+    4.0,
+    8.0,
+    12.0
+  ],
+  "updates": 2,
+  "train_seed_start": 200000,
+  "val_seeds": [
+    400001,
+    400002,
+    400003
+  ],
+  "training_args": {
+    "train_cases": [
+      "../2024LiERLDDE/case_code/3.txt",
+      "../2024LiERLDDE/case_code/4.txt",
+      "../2024LiERLDDE/case_code/5.txt",
+      "../2024LiERLDDE/case_code/6.txt",
+      "../2024LiERLDDE/case_code/7.txt"
+    ],
+    "val_cases": [
+      "../2024LiERLDDE/case_code/8.txt",
+      "../2024LiERLDDE/case_code/9.txt"
+    ],
+    "episodes": 100,
+    "scenarios": "shock,repeated,small",
+    "budgets": "2,5,10",
+    "train_seed_start": 200000,
+    "val_seeds": "400001:400003",
+    "uncertainties": "4,8,12",
+    "updates": 2,
+    "clock": "union",
+    "period": 12.0,
+    "candidate_limit": 4,
+    "reward_scale": 100.0,
+    "hidden_dim": 96,
+    "lr": 0.0003,
+    "gamma": 1.0,
+    "replay_capacity": 50000,
+    "batch_size": 64,
+    "warmup": 512,
+    "updates_per_step": 1,
+    "target_update": 250,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_episodes": 1000,
+    "eval_every": 25,
+    "seed": 42,
+    "device": "cpu",
+    "out": "results/v06_ddqn_100"
+  }
+}
