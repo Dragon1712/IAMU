@@ -169,3 +169,11 @@ The unit tests cover instance parser, seed reproducibility, announcement causali
 - A subsequent **learning** stage can replace the `budget_aware` gate with a trained accept/defer/ship-subset policy while **keeping ERL-DDE frozen**. Compare on matched instances and seeds and use held-out cases.
 
 For research code reuse and paper comparison, see `REUSE_LITERATURE.md`.
+
+## V0.7 预算 RL 状态与动作筛选
+
+可选的绝对预算特征、基于公开 ETA 的候选全局改善及外部性特征、正收益动作筛选、Keep 偏置与 Greedy 引导探索，详见 [BUDGETED_RL_V07.md](BUDGETED_RL_V07.md)。
+
+**重要：** V0.7 将网络输入从 `(19,17)` 扩为 `(24,24)`，旧 V0.6 模型检查点不兼容。通过 `python -m unittest discover -s tests -v` 测试后，可运行 `EPISODES=300 EVAL_EVERY=50 bash run_v07_ablation.sh` 做机制消融（不要覆盖旧结果）。
+
+诊断最佳 V0.7 检查点在**验证集**的行为时，使用 `python diagnose_v07_validation.py --checkpoint results/v07_ablation_D/best.pt --save-actions`；`evaluate_budgeted_ddqn.py` 仅用于与训练、验证不重合的最终测试案例。

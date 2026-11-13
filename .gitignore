@@ -7,3 +7,4 @@ venv/*.pt
 *.pth
 *.ckpt
 __pycache__/
+.pt

@@ -23,6 +23,8 @@ def main():
     p.add_argument('--risk-samples',type=int,default=16)
     p.add_argument('--forecast-std',type=float,default=8.)
     p.add_argument('--device',default='cpu')
+    p.add_argument('--save-actions',action='store_true',
+                   help='Save event-level decisions for diagnosis (large CSV)')
     p.add_argument('--out',default='results/v06_rl_test')
     args=p.parse_args()
     torch.set_num_threads(1)
@@ -43,7 +45,11 @@ def main():
         decision_clock=config['decision_clock'],period=config['period'],
         reward_scale=config['reward_scale'],uncertainty=args.uncertainty,
         updates=args.updates,risk_samples=args.risk_samples,
-        forecast_std=args.forecast_std,out=args.out)
+        forecast_std=args.forecast_std,out=args.out,
+        candidate_screen=config.get('candidate_screen','none'),
+        min_gain=config.get('min_gain',.1),save_actions=args.save_actions,
+        budget_features=config.get('budget_features','absolute'),
+        value_features=config.get('value_features','global'))
     out=Path(args.out)
     (out/'manifest.json').write_text(json.dumps({
         'checkpoint':str(args.checkpoint),'checkpoint_meta':config,

@@ -13,6 +13,7 @@ One revision maximum per event by design, for apples-to-apples comparisons.
 from __future__ import annotations
 
 from dataclasses import dataclass
+import copy
 from typing import Optional
 import math
 import numpy as np
@@ -20,8 +21,13 @@ import numpy as np
 from .core import (Scenario, SlotPlanner, RealizedRuntime, EPS,
                    validate_plan)
 
-GLOBAL_DIM = 19
-ACTION_DIM = 17
+# Indices are appended, preserving the first 19/17 V0.6 features. The
+# learned V0.6 checkpoint is deliberately incompatible with these dimensions.
+GLOBAL_DIM = 24
+ACTION_DIM = 24
+POINT_GAIN_INDEX = 17
+BUDGET_FEATURE_SCALE = 10.0  # Fixed across episodes, never divided only by B.
+
 
 
 @dataclass
@@ -57,7 +63,10 @@ class IAMUEventEnv:
     def __init__(self, scenario: Scenario, budget: int = 5,
                  candidate_limit: int = 4, decision_clock: str = 'eta',
                  period: float = 12., reward_scale: float = 100.,
-                 min_gain: float = 0.1):
+                 min_gain: float = 0.1,
+                 candidate_screen: str = 'none',
+                 budget_features: str = 'absolute',
+                 value_features: str = 'global'):
         if not isinstance(budget,int) or budget < 0:
             raise ValueError('Budget must be a nonnegative integer')
         if candidate_limit < 1 or candidate_limit > 128:
@@ -68,6 +77,10 @@ class IAMUEventEnv:
             raise ValueError('period must be positive and finite')
         if not math.isfinite(reward_scale) or reward_scale <= 0:
             raise ValueError('reward_scale must be positive and finite')
+        if candidate_screen not in {'none','positive'}:
+            raise ValueError('candidate_screen must be none or positive')
+        if not math.isfinite(min_gain) or min_gain < 0:
+            raise ValueError('min_gain must be finite and nonnegative')
         self.scenario = scenario
         self.budget = budget
         self.candidate_limit = candidate_limit
@@ -75,6 +88,13 @@ class IAMUEventEnv:
         self.period = float(period)
         self.reward_scale = reward_scale
         self.min_gain = min_gain
+        self.candidate_screen = candidate_screen
+        if budget_features not in {'absolute','legacy'}:
+            raise ValueError('budget_features must be absolute or legacy')
+        if value_features not in {'global','legacy'}:
+            raise ValueError('value_features must be global or legacy')
+        self.budget_features = budget_features
+        self.value_features = value_features
         self.planner = SlotPlanner(scenario.vessels, scenario.port)
         self.vessels = self.planner.vessels
         self.ids = tuple(sorted(self.vessels))
@@ -94,6 +114,9 @@ class IAMUEventEnv:
         self.runtime = RealizedRuntime(self.scenario.vessels, self.scenario.port)
         self.runtime.advance(0., self.plan, self.scenario.true_etas)
         self.used = 0
+        self.last_revision_time = None
+        self.screened_proposals = 0
+        self.action_audit = []
         self.event_index = 0
         self.event_type = 'initial'
         self.event_vessel_id = None
@@ -131,20 +154,58 @@ class IAMUEventEnv:
                        self.plan[i].start,i))
         return ranked[:self.candidate_limit]
 
+    def _forecast_projection(self, plan):
+        """Only currently public ETA values and the already-realized runtime.
+
+        This is a *point-forecast counterfactual*, not a ground-truth oracle.
+        Started ships are deliberately excluded from the remaining-wait score,
+        exactly as RealizedRuntime.score() does in V0.6.
+        """
+        future=copy.deepcopy(self.runtime)
+        future.finish(plan,self.published_eta)
+        pending=[i for i in self.ids if i not in self.runtime.started]
+        starts={i:future.started[i].start for i in pending}
+        costs={i:self.vessels[i].weight*max(0.,starts[i]-self.published_eta[i])
+               for i in pending}
+        return starts,costs,sum(costs.values())
+
     def _refresh_candidates(self):
         self._candidates=[]
         self._candidate_ids=()
+        self._candidate_data=[]
         if (self.event_type=='initial' or self.done or self.remaining_budget==0 or
             (self.decision_clock=='clock' and self.event_type!='clock') or
             (self.decision_clock=='eta' and self.event_type!='eta')):
             return
         ids=[]
+        base_starts=base_costs=None
+        base_score=0.
         for i in self._eligible():
             candidate=self.planner.single_move(self.plan,i,self.event_time,
                                                self.published_eta)
-            if candidate is not None:
-                ids.append(i)
-                self._candidates.append(candidate)
+            if candidate is None:
+                continue
+            if base_starts is None:
+                base_starts,base_costs,base_score=self._forecast_projection(self.plan)
+            starts,costs,new_score=self._forecast_projection(candidate)
+            gain=base_score-new_score
+            if self.candidate_screen=='positive' and gain <= self.min_gain+1e-12:
+                # An *heuristic* guard: excludes point-forecast non-improving
+                # moves; does not certify true waiting or CVaR improvement.
+                self.screened_proposals+=1
+                continue
+            affected=[j for j in starts if j!=i]
+            worsened=[j for j in affected if starts[j]>base_starts[j]+EPS]
+            delay=max((starts[j]-base_starts[j] for j in worsened),default=0.)
+            worse_cost=sum(max(0.,costs[j]-base_costs[j]) for j in affected)
+            relief_cost=sum(max(0.,base_costs[j]-costs[j]) for j in affected)
+            self._candidate_data.append(dict(
+                gain=gain,base_score=base_score,new_score=new_score,
+                external_worse_count=len(worsened),
+                external_max_delay=delay,external_worse_cost=worse_cost,
+                external_relief_cost=relief_cost))
+            ids.append(i)
+            self._candidates.append(candidate)
         self._candidate_ids=tuple(ids)
 
     def _accrue_started(self):
@@ -190,11 +251,19 @@ class IAMUEventEnv:
             float(self.event_type=='initial'),
             0. if self.event_vessel_id is None else
                  self.event_vessel_id/max(1,max(self.ids)),
+            self.budget/BUDGET_FEATURE_SCALE,
+            self.remaining_budget/BUDGET_FEATURE_SCALE,
+            len(self._candidate_ids)/self.candidate_limit,
+            (min(3.,(t-self.last_revision_time)/denom)
+             if self.last_revision_time is not None else min(3.,t/denom)),
+            (max((d['gain'] for d in self._candidate_data),default=0.)
+             /self.reward_scale),
         ],dtype=np.float32)
         if not self.done:
             for idx,(i,alt) in enumerate(zip(self._candidate_ids,self._candidates),start=1):
                 v=self.vessels[i];p=self.plan[i];q=alt[i]
                 mask[idx]=True
+                d=self._candidate_data[idx-1]
                 features[idx]=np.array([
                     0., i/max(1,max(self.ids)),
                     self.published_eta[i]/denom,
@@ -212,18 +281,28 @@ class IAMUEventEnv:
                     v.weight/5.,
                     p.cranes/max(1,port.cranes),
                     float(i in arrived),
+                    d['gain']/self.reward_scale,
+                    d['base_score']/(n*self.reward_scale),
+                    d['new_score']/(n*self.reward_scale),
+                    d['external_max_delay']/self.reward_scale,
+                    d['external_worse_count']/n,
+                    d['external_worse_cost']/(n*self.reward_scale),
+                    d['external_relief_cost']/(n*self.reward_scale),
                 ],dtype=np.float32)
+        # Fixed-size features allow controlled, architecture-matched ablations.
+        if self.budget_features=='legacy':g[19:21]=0.
+        if self.value_features=='legacy':
+            g[21:24]=0.
+            features[:,17:24]=0.
         return RLObservation(g,features,mask,t,self.event_type,
                              self.remaining_budget,self._candidate_ids)
 
     def point_greedy_action(self) -> int:
-        """Exactly the one-move deterministic V0.4 budget-aware rule."""
-        if not self._candidates:return 0
-        old_score=self.runtime.score(self.plan,self.published_eta)
+        """V0.6 deterministic, one-move greedy, now reusing cached forecasts."""
         best_gain=self.min_gain
         best_idx=0
-        for idx,candidate in enumerate(self._candidates,1):
-            gain=old_score-self.runtime.score(candidate,self.published_eta)
+        for idx,d in enumerate(self._candidate_data,1):
+            gain=d['gain']
             if gain>best_gain+1e-12:
                 best_gain=gain;best_idx=idx
         return best_idx
@@ -237,6 +316,7 @@ class IAMUEventEnv:
         if not observation.mask[action]:
             raise ValueError('Action is infeasible or exceeds remaining revision budget')
         changed=None
+        estimated_gain=(self._candidate_data[action-1]['gain'] if action else 0.)
         if action:
             changed=self._candidate_ids[action-1]
             # Started ships cannot be revised. Plan validated by single_move.
@@ -245,10 +325,15 @@ class IAMUEventEnv:
             self.plan=self._candidates[action-1]
             validate_plan(self.plan,self.vessels,self.scenario.port)
             self.used+=1
+            self.last_revision_time=self.event_time
             self.revision_counts[changed]+=1
         cost=self._accrue_started()
         current_event=(self.event_type,self.event_time,self.event_vessel_id,changed)
         self.history.append(current_event)
+        self.action_audit.append(dict(time=self.event_time,
+               event_type=self.event_type,action=action,vessel_id=changed,
+               estimated_gain=estimated_gain,spent=self.used,
+               remaining_budget=self.remaining_budget))
         if self.event_index < len(self.events):
             now,_,event_id,typ,event=self.events[self.event_index]
             self.event_index+=1
@@ -274,7 +359,9 @@ class IAMUEventEnv:
         self.total_raw_reward-=cost
         info={'time':self.event_time,'changed_vessel':changed,
               'spent':self.used,'remaining_budget':self.remaining_budget,
-              'new_wait_cost':cost,'done':self.done}
+              'new_wait_cost':cost,'done':self.done,
+              'selected_forecast_gain':estimated_gain,
+              'screened_proposals':self.screened_proposals}
         if self.done:
             total=sum(self.vessels[i].weight*max(0.,a.start-self.scenario.true_etas[i])
                       for i,a in self.runtime.started.items())

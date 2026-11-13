@@ -93,10 +93,14 @@ def choose_action(policy,env,agent=None,risk_samples=16,forecast_std=8.):
 
 def run_episode(scenario,budget,policy,agent=None,*,candidate_limit=4,
                 decision_clock='union',period=12.,reward_scale=100.,
-                risk_samples=16,forecast_std=8.):
+                risk_samples=16,forecast_std=8.,candidate_screen='none',
+                min_gain=.1,return_audit=False,
+                budget_features='absolute',value_features='global'):
     env=IAMUEventEnv(scenario,budget=budget,candidate_limit=candidate_limit,
                      decision_clock=decision_clock,period=period,
-                     reward_scale=reward_scale)
+                     reward_scale=reward_scale,candidate_screen=candidate_screen,
+                     min_gain=min_gain,budget_features=budget_features,
+                     value_features=value_features)
     ob=env.reset()
     start=perf_counter()
     total_reward=0.
@@ -108,22 +112,31 @@ def run_episode(scenario,budget,policy,agent=None,*,candidate_limit=4,
         if done:break
     assert env.used <= budget
     assert abs(-total_reward*reward_scale-info['weighted_wait']) < 1e-5*max(1.,info['weighted_wait'])
-    return dict(wait=info['weighted_wait'],spent=info['spent'],
+    result=dict(wait=info['weighted_wait'],spent=info['spent'],
                 runtime_seconds=perf_counter()-start,
                 steps=len(env.history),return_unscaled=-info['weighted_wait'],
                 edits_by_clock=sum(x[3] is not None and x[0]=='clock' for x in env.history),
                 edits_by_eta=sum(x[3] is not None and x[0]=='eta' for x in env.history),
-                last_revision_time=max((x[1] for x in env.history if x[3] is not None),default=0.))
+                last_revision_time=max((x[1] for x in env.history if x[3] is not None),default=0.),
+                screened_proposals=env.screened_proposals,
+                mean_estimated_edit_gain=(mean(x['estimated_gain'] for x in env.action_audit
+                    if x['action']!=0) if env.used else 0.))
+    if return_audit:
+        return result,env.action_audit
+    return result
 
 
 def evaluate_paired(*,cases,seeds,scenarios,budgets,policies,agent=None,
                     candidate_limit=4,decision_clock='union',period=12.,
                     reward_scale=100.,uncertainty=8.,updates=2,
-                    risk_samples=16,forecast_std=8.,out=None):
+                    risk_samples=16,forecast_std=8.,out=None,
+                    candidate_screen='none',min_gain=.1,save_actions=False,
+                    budget_features='absolute',value_features='global'):
     if 'keep' not in policies:raise ValueError('keep baseline is required')
     if 'periodic' in policies and decision_clock!='union':
         raise ValueError('Periodic comparator requires union clock')
     rows=[]
+    audit_rows=[]
     for case in cases:
         vessels,port=read_case(case)
         for sc in scenarios:
@@ -135,7 +148,14 @@ def evaluate_paired(*,cases,seeds,scenarios,budgets,policies,agent=None,
                         m=run_episode(instance,budget,method,agent=agent,
                             candidate_limit=candidate_limit,decision_clock=decision_clock,
                             period=period,reward_scale=reward_scale,
-                            risk_samples=risk_samples,forecast_std=forecast_std)
+                            risk_samples=risk_samples,forecast_std=forecast_std,
+                            candidate_screen=candidate_screen,min_gain=min_gain,
+                            return_audit=save_actions,budget_features=budget_features,
+                            value_features=value_features)
+                        if save_actions:
+                            m,audit=m
+                            audit_rows.extend(dict(case=str(case),scenario=sc,seed=seed,
+                              budget=budget,method=method,**x) for x in audit)
                         rows.append(dict(case=str(case),scenario=sc,seed=seed,
                                          budget=budget,method=method,**m))
     base={(r['case'],r['scenario'],r['seed'],r['budget']):r['wait']
@@ -161,6 +181,8 @@ def evaluate_paired(*,cases,seeds,scenarios,budgets,policies,agent=None,
             worst_gain=min(gains),cvar90_regret=upper_cvar(risks,.90),
             mean_spent=mean(r['spent'] for r in a),
             mean_runtime_seconds=mean(r['runtime_seconds'] for r in a),
+            mean_screened_proposals=mean(r['screened_proposals'] for r in a),
+            mean_estimated_edit_gain=mean(r['mean_estimated_edit_gain'] for r in a),
             mean_last_revision_time=mean(r['last_revision_time'] for r in a),
             mean_gain_vs_periodic=(mean(r['gain_vs_periodic'] for r in a)
                                    if 'periodic' in policies else '' )))
@@ -168,4 +190,5 @@ def evaluate_paired(*,cases,seeds,scenarios,budgets,policies,agent=None,
         p=Path(out);p.mkdir(parents=True,exist_ok=True)
         write_csv(p/'runs.csv',rows)
         write_csv(p/'summary.csv',summary)
+        if save_actions:write_csv(p/'action_traces.csv',audit_rows)
     return rows,summary

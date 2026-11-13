@@ -71,9 +71,11 @@ class ReplayBuffer:
 class DoubleDQNAgent:
     def __init__(self, hidden_dim:int=96, learning_rate:float=3e-4,
                  gamma:float=1.0, target_update_steps:int=250,
-                 seed:int=0,device:str='cpu'):
+                 seed:int=0,device:str='cpu',keep_margin:float=0.):
         if not 0<gamma<=1:raise ValueError('gamma must be in (0,1]')
         if target_update_steps<1:raise ValueError('target_update_steps >=1')
+        if not np.isfinite(keep_margin) or keep_margin<0:
+            raise ValueError('keep_margin must be finite and nonnegative')
         torch.manual_seed(seed)
         self.device=torch.device(device)
         self.online=CandidateQNet(hidden_dim).to(self.device)
@@ -84,12 +86,25 @@ class DoubleDQNAgent:
         self.target_update_steps=target_update_steps
         self.gradient_steps=0
         self.hidden_dim=hidden_dim
+        self.keep_margin=float(keep_margin)
         self.rng=random.Random(seed+193)
 
-    def act(self,obs:RLObservation,epsilon:float=0.):
+    def act(self,obs:RLObservation,epsilon:float=0.,
+            teacher_action:int|None=None,teacher_prob:float=0.):
+        """Exploration optionally follows a public-ETA Greedy demonstrator.
+
+        teacher_prob only affects exploration, never epsilon=0 evaluation.
+        A positive Keep margin biases *Q selection*, not the environment mask.
+        """
+        if not 0<=epsilon<=1 or not 0<=teacher_prob<=1:
+            raise ValueError('epsilon and teacher_prob must be in [0,1]')
         legal=np.flatnonzero(obs.mask)
         if not len(legal):raise AssertionError('Keep must always be legal')
         if self.rng.random()<epsilon:
+            if (teacher_action is not None and
+                    self.rng.random()<teacher_prob and
+                    0<=teacher_action<len(obs.mask) and obs.mask[teacher_action]):
+                return int(teacher_action)
             return int(self.rng.choice(legal.tolist()))
         self.online.eval()
         with torch.no_grad():
@@ -97,7 +112,9 @@ class DoubleDQNAgent:
             a=torch.from_numpy(obs.action_features).to(self.device).unsqueeze(0)
             values=self.online(g,a).squeeze(0)
             mask=torch.from_numpy(obs.mask).to(self.device)
-            return int(values.masked_fill(~mask,-torch.inf).argmax().item())
+            masked=values.masked_fill(~mask,-torch.inf).clone()
+            masked[0]+=self.keep_margin
+            return int(masked.argmax().item())
 
     def update(self,transitions:list[Transition]):
         if not transitions:raise ValueError('Empty batch')
@@ -119,7 +136,9 @@ class DoubleDQNAgent:
         predicted=self.online(obs_g,obs_a).gather(1,act[:,None]).squeeze(1)
         with torch.no_grad():
             # Double DQN: online picks action, frozen target EVALUATES it.
-            next_action=self.online(nxt_g,nxt_a).masked_fill(~nxt_mask,-torch.inf).argmax(dim=1)
+            next_scores=self.online(nxt_g,nxt_a).masked_fill(~nxt_mask,-torch.inf).clone()
+            next_scores[:,0]+=self.keep_margin
+            next_action=next_scores.argmax(dim=1)
             next_target=self.target(nxt_g,nxt_a).gather(1,next_action[:,None]).squeeze(1)
             bellman=rewards+self.gamma*(1-dones)*next_target
         loss=F.smooth_l1_loss(predicted,bellman)
@@ -135,7 +154,7 @@ class DoubleDQNAgent:
     def checkpoint(self,meta:dict):
         return dict(online=self.online.state_dict(),meta=meta,
                     hidden_dim=self.hidden_dim,global_dim=GLOBAL_DIM,
-                    action_dim=ACTION_DIM)
+                    action_dim=ACTION_DIM,keep_margin=self.keep_margin)
 
     @classmethod
     def from_checkpoint(cls,path:str,device:str='cpu'):
@@ -143,7 +162,8 @@ class DoubleDQNAgent:
         item=torch.load(path,map_location='cpu',weights_only=True)
         if item.get('global_dim')!=GLOBAL_DIM or item.get('action_dim')!=ACTION_DIM:
             raise ValueError('Checkpoint features do not match environment')
-        agent=cls(hidden_dim=item['hidden_dim'],device=device)
+        agent=cls(hidden_dim=item['hidden_dim'],device=device,
+                  keep_margin=item.get('keep_margin',0.))
         agent.online.load_state_dict(item['online'])
         agent.target.load_state_dict(item['online'])
         return agent,item['meta']
