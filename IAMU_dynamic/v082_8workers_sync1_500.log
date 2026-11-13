@@ -1,0 +1,527 @@
+[learner] device=cuda:0 actors=8, validation_workers=8, episodes=500 completed=0, validation_runs_per_check=216 mode=synchronous-phases
+[phase-training] completed=0 next_validation=25
+[actor-online] worker=7 pid=4058906
+[actor-start] worker=7 pid=4058906 episode=8 policy_version=0
+[actor-online] worker=0 pid=4058899
+[actor-start] worker=0 pid=4058899 episode=1 policy_version=0
+[actor-online] worker=3 pid=4058902
+[actor-start] worker=3 pid=4058902 episode=4 policy_version=0
+[actor-online] worker=2 pid=4058901
+[actor-online] worker=1 pid=4058900
+[actor-start] worker=2 pid=4058901 episode=3 policy_version=0
+[actor-start] worker=1 pid=4058900 episode=2 policy_version=0
+[actor-online] worker=6 pid=4058905
+[actor-online] worker=5 pid=4058904
+[actor-start] worker=6 pid=4058905 episode=7 policy_version=0
+[actor-start] worker=5 pid=4058904 episode=6 policy_version=0
+[actor-online] worker=4 pid=4058903
+[actor-start] worker=4 pid=4058903 episode=5 policy_version=0
+[train] completed=1/500 ep=4 actor=3 grads=0 wait=1413.085 replay=141 validation_pending=0
+[actor-start] worker=3 pid=4058902 episode=9 policy_version=0
+[train] completed=2/500 ep=1 actor=0 grads=0 wait=2206.868 replay=283 validation_pending=0
+[actor-start] worker=0 pid=4058899 episode=10 policy_version=0
+[train] completed=3/500 ep=8 actor=7 grads=0 wait=2693.971 replay=420 validation_pending=0
+[actor-start] worker=7 pid=4058906 episode=11 policy_version=0
+[train] completed=4/500 ep=9 actor=3 grads=12 wait=2686.803 replay=562 validation_pending=0
+[actor-start] worker=3 pid=4058902 episode=12 policy_version=0
+[train] completed=5/500 ep=11 actor=7 grads=46 wait=1299.418 replay=698 validation_pending=0
+[train] completed=6/500 ep=5 actor=4 grads=82 wait=1527.838 replay=841 validation_pending=0
+[actor-start] worker=7 pid=4058906 episode=13 policy_version=12
+[actor-start] worker=4 pid=4058903 episode=14 policy_version=46
+[train] completed=7/500 ep=10 actor=0 grads=119 wait=3184.491 replay=987 validation_pending=0
+[actor-start] worker=0 pid=4058899 episode=15 policy_version=82
+[train] completed=8/500 ep=3 actor=2 grads=154 wait=1422.315 replay=1130 validation_pending=0
+[actor-start] worker=2 pid=4058901 episode=16 policy_version=119
+[train] completed=9/500 ep=12 actor=3 grads=190 wait=3371.952 replay=1274 validation_pending=0
+[actor-start] worker=3 pid=4058902 episode=17 policy_version=154
+[train] completed=10/500 ep=14 actor=4 grads=227 wait=2772.690 replay=1421 validation_pending=0
+[actor-start] worker=4 pid=4058903 episode=18 policy_version=190
+[train] completed=11/500 ep=16 actor=2 grads=261 wait=3022.308 replay=1558 validation_pending=0
+[train] completed=12/500 ep=15 actor=0 grads=297 wait=1368.842 replay=1701 validation_pending=0
+[actor-start] worker=2 pid=4058901 episode=19 policy_version=227
+[train] completed=13/500 ep=17 actor=3 grads=332 wait=2284.883 replay=1842 validation_pending=0
+[actor-start] worker=0 pid=4058899 episode=20 policy_version=261
+[actor-start] worker=3 pid=4058902 episode=21 policy_version=297
+[train] completed=14/500 ep=18 actor=4 grads=367 wait=1216.526 replay=1980 validation_pending=0
+[actor-start] worker=4 pid=4058903 episode=22 policy_version=332
+[train] completed=15/500 ep=7 actor=6 grads=401 wait=1205.157 replay=2115 validation_pending=0
+[actor-start] worker=6 pid=4058905 episode=23 policy_version=367
+[train] completed=16/500 ep=22 actor=4 grads=436 wait=1414.585 replay=2256 validation_pending=0
+[actor-start] worker=4 pid=4058903 episode=24 policy_version=401
+[train] completed=17/500 ep=23 actor=6 grads=471 wait=2668.374 replay=2396 validation_pending=0
+[actor-start] worker=6 pid=4058905 episode=25 policy_version=436
+[train] completed=18/500 ep=6 actor=5 grads=506 wait=2661.729 replay=2538 validation_pending=0
+[train] completed=19/500 ep=20 actor=0 grads=540 wait=1664.912 replay=2672 validation_pending=0
+[train] completed=20/500 ep=13 actor=7 grads=575 wait=2706.437 replay=2813 validation_pending=0
+[train] completed=21/500 ep=25 actor=6 grads=609 wait=3391.610 replay=2950 validation_pending=0
+[train] completed=22/500 ep=19 actor=2 grads=646 wait=3002.087 replay=3097 validation_pending=0
+[train] completed=23/500 ep=24 actor=4 grads=682 wait=2794.947 replay=3242 validation_pending=0
+[monitor] completed=23/500 outstanding=2 gradients=682 validation_pending=0 actor_status={7: {'pid': 4058906, 'state': 'completed', 'episode': 13}, 0: {'pid': 4058899, 'state': 'completed', 'episode': 20}, 3: {'pid': 4058902, 'state': 'running', 'episode': 21, 'policy_version': 297}, 2: {'pid': 4058901, 'state': 'completed', 'episode': 19}, 1: {'pid': 4058900, 'state': 'running', 'episode': 2, 'policy_version': 0}, 6: {'pid': 4058905, 'state': 'completed', 'episode': 25}, 5: {'pid': 4058904, 'state': 'completed', 'episode': 6}, 4: {'pid': 4058903, 'state': 'completed', 'episode': 24}}
+[train] completed=24/500 ep=21 actor=3 grads=716 wait=1181.374 replay=3378 validation_pending=0
+[actor-heartbeat] worker=1 ep=2 steps=101 elapsed=15.11s
+[train] completed=25/500 ep=2 actor=1 grads=750 wait=1185.722 replay=3513 validation_pending=0
+[validation-queued] val_000025 frozen_grad=750 runs=216 groups=54; training paused
+[validation-start] val_000025 54 groups / 216 simulations coordinator=4058898
+[validation-worker-start] pid=4059352 snapshot=val_000025_grad_000000750.pt
+[validation-worker-online] val_000025 pid=4059352
+[validation-task-start] val_000025 worker=4059352 group=1 case=8.txt scenario=shock seed=400001 B=2
+[validation-worker-start] pid=4059353 snapshot=val_000025_grad_000000750.pt
+[validation-worker-online] val_000025 pid=4059353
+[validation-task-start] val_000025 worker=4059353 group=2 case=8.txt scenario=shock seed=400001 B=5
+[validation-worker-start] pid=4059356 snapshot=val_000025_grad_000000750.pt
+[validation-worker-start] pid=4059358 snapshot=val_000025_grad_000000750.pt
+[validation-worker-start] pid=4059357 snapshot=val_000025_grad_000000750.pt
+[validation-worker-start] pid=4059355 snapshot=val_000025_grad_000000750.pt
+[validation-worker-start] pid=4059354 snapshot=val_000025_grad_000000750.pt
+[validation-worker-start] pid=4059359 snapshot=val_000025_grad_000000750.pt
+[validation-worker-online] val_000025 pid=4059356
+[validation-task-start] val_000025 worker=4059356 group=3 case=8.txt scenario=shock seed=400001 B=10
+[validation-worker-online] val_000025 pid=4059358
+[validation-task-start] val_000025 worker=4059358 group=4 case=8.txt scenario=shock seed=400002 B=2
+[validation-worker-online] val_000025 pid=4059357
+[validation-task-start] val_000025 worker=4059357 group=5 case=8.txt scenario=shock seed=400002 B=5
+[validation-worker-online] val_000025 pid=4059355
+[validation-task-start] val_000025 worker=4059355 group=6 case=8.txt scenario=shock seed=400002 B=10
+[validation-worker-online] val_000025 pid=4059354
+[validation-task-start] val_000025 worker=4059354 group=7 case=8.txt scenario=shock seed=400003 B=2
+[validation-worker-online] val_000025 pid=4059359
+[validation-task-start] val_000025 worker=4059359 group=8 case=8.txt scenario=shock seed=400003 B=5
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=15.0s
+[validation-progress] val_000025 0/216 elapsed=15.0s pids=[]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=30.1s
+[validation-progress] val_000025 0/216 elapsed=30.0s pids=[]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=45.1s
+[validation-progress] val_000025 0/216 elapsed=45.0s pids=[]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=60.1s
+[validation-progress] val_000025 0/216 elapsed=60.0s pids=[]
+[validation-task-start] val_000025 worker=4059352 group=9 case=8.txt scenario=shock seed=400003 B=10
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=75.1s
+[validation-progress] val_000025 4/216 elapsed=75.0s pids=[4059352]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=90.2s
+[validation-progress] val_000025 4/216 elapsed=90.0s pids=[4059352]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=105.2s
+[validation-progress] val_000025 4/216 elapsed=105.0s pids=[4059352]
+[validation-task-start] val_000025 worker=4059353 group=10 case=8.txt scenario=repeated seed=400001 B=2
+[validation-progress] val_000025 8/216 elapsed=120.0s pids=[4059352, 4059353]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=120.2s
+[validation-task-start] val_000025 worker=4059358 group=11 case=8.txt scenario=repeated seed=400001 B=5
+[validation-task-start] val_000025 worker=4059354 group=12 case=8.txt scenario=repeated seed=400001 B=10
+[validation-progress] val_000025 16/216 elapsed=135.0s pids=[4059352, 4059353, 4059354, 4059358]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=135.2s
+[validation-task-start] val_000025 worker=4059357 group=13 case=8.txt scenario=repeated seed=400002 B=2
+[validation-progress] val_000025 20/216 elapsed=150.0s pids=[4059352, 4059353, 4059354, 4059357, 4059358]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=150.3s
+[validation-task-start] val_000025 worker=4059359 group=14 case=8.txt scenario=repeated seed=400002 B=5
+[validation-progress] val_000025 24/216 elapsed=150.5s pids=[4059352, 4059353, 4059354, 4059357, 4059358, 4059359]
+[validation-task-start] val_000025 worker=4059356 group=15 case=8.txt scenario=repeated seed=400002 B=10
+[validation-task-start] val_000025 worker=4059355 group=16 case=8.txt scenario=repeated seed=400003 B=2
+[validation-progress] val_000025 32/216 elapsed=165.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=165.3s
+[validation-progress] val_000025 32/216 elapsed=180.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=180.3s
+[validation-task-start] val_000025 worker=4059358 group=17 case=8.txt scenario=repeated seed=400003 B=5
+[validation-task-start] val_000025 worker=4059357 group=18 case=8.txt scenario=repeated seed=400003 B=10
+[validation-task-start] val_000025 worker=4059359 group=19 case=8.txt scenario=small seed=400001 B=2
+[validation-task-start] val_000025 worker=4059353 group=20 case=8.txt scenario=small seed=400001 B=5
+[validation-progress] val_000025 48/216 elapsed=194.6s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[validation-progress] val_000025 48/216 elapsed=195.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=195.3s
+[validation-task-start] val_000025 worker=4059355 group=21 case=8.txt scenario=small seed=400001 B=10
+[validation-task-start] val_000025 worker=4059356 group=22 case=8.txt scenario=small seed=400002 B=2
+[validation-task-start] val_000025 worker=4059354 group=23 case=8.txt scenario=small seed=400002 B=5
+[validation-progress] val_000025 60/216 elapsed=210.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=210.4s
+[validation-task-start] val_000025 worker=4059352 group=24 case=8.txt scenario=small seed=400002 B=10
+[validation-task-start] val_000025 worker=4059358 group=25 case=8.txt scenario=small seed=400003 B=2
+[validation-task-start] val_000025 worker=4059357 group=26 case=8.txt scenario=small seed=400003 B=5
+[validation-progress] val_000025 72/216 elapsed=221.2s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[validation-task-start] val_000025 worker=4059359 group=27 case=8.txt scenario=small seed=400003 B=10
+[validation-task-start] val_000025 worker=4059356 group=28 case=9.txt scenario=shock seed=400001 B=2
+[validation-progress] val_000025 80/216 elapsed=225.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=225.4s
+[validation-task-start] val_000025 worker=4059354 group=29 case=9.txt scenario=shock seed=400001 B=5
+[validation-task-start] val_000025 worker=4059353 group=30 case=9.txt scenario=shock seed=400001 B=10
+[validation-task-start] val_000025 worker=4059358 group=31 case=9.txt scenario=shock seed=400002 B=2
+[validation-task-start] val_000025 worker=4059352 group=32 case=9.txt scenario=shock seed=400002 B=5
+[validation-progress] val_000025 96/216 elapsed=234.8s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[validation-progress] val_000025 96/216 elapsed=240.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=240.4s
+[validation-task-start] val_000025 worker=4059355 group=33 case=9.txt scenario=shock seed=400002 B=10
+[validation-task-start] val_000025 worker=4059357 group=34 case=9.txt scenario=shock seed=400003 B=2
+[validation-task-start] val_000025 worker=4059356 group=35 case=9.txt scenario=shock seed=400003 B=5
+[validation-task-start] val_000025 worker=4059359 group=36 case=9.txt scenario=shock seed=400003 B=10
+[validation-progress] val_000025 112/216 elapsed=255.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=255.4s
+[validation-task-start] val_000025 worker=4059357 group=37 case=9.txt scenario=repeated seed=400001 B=2
+[validation-progress] val_000025 116/216 elapsed=270.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=270.5s
+[validation-progress] val_000025 116/216 elapsed=285.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=285.5s
+[validation-task-start] val_000025 worker=4059358 group=38 case=9.txt scenario=repeated seed=400001 B=5
+[validation-progress] val_000025 120/216 elapsed=286.9s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[validation-task-start] val_000025 worker=4059354 group=39 case=9.txt scenario=repeated seed=400001 B=10
+[validation-progress] val_000025 124/216 elapsed=300.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=300.5s
+[validation-task-start] val_000025 worker=4059357 group=40 case=9.txt scenario=repeated seed=400002 B=2
+[validation-task-start] val_000025 worker=4059353 group=41 case=9.txt scenario=repeated seed=400002 B=5
+[validation-task-start] val_000025 worker=4059356 group=42 case=9.txt scenario=repeated seed=400002 B=10
+[validation-task-start] val_000025 worker=4059352 group=43 case=9.txt scenario=repeated seed=400003 B=2
+[validation-progress] val_000025 140/216 elapsed=315.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=315.5s
+[validation-task-start] val_000025 worker=4059359 group=44 case=9.txt scenario=repeated seed=400003 B=5
+[validation-progress] val_000025 144/216 elapsed=324.2s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[validation-task-start] val_000025 worker=4059354 group=45 case=9.txt scenario=repeated seed=400003 B=10
+[validation-progress] val_000025 148/216 elapsed=330.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=330.6s
+[validation-task-start] val_000025 worker=4059357 group=46 case=9.txt scenario=small seed=400001 B=2
+[validation-task-start] val_000025 worker=4059355 group=47 case=9.txt scenario=small seed=400001 B=5
+[validation-task-start] val_000025 worker=4059353 group=48 case=9.txt scenario=small seed=400001 B=10
+[validation-progress] val_000025 160/216 elapsed=345.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=345.6s
+[validation-task-start] val_000025 worker=4059358 group=49 case=9.txt scenario=small seed=400002 B=2
+[validation-progress] val_000025 168/216 elapsed=355.1s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[validation-task-start] val_000025 worker=4059357 group=50 case=9.txt scenario=small seed=400002 B=5
+[validation-task-start] val_000025 worker=4059356 group=51 case=9.txt scenario=small seed=400002 B=10
+[validation-progress] val_000025 172/216 elapsed=360.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=360.6s
+[validation-task-start] val_000025 worker=4059358 group=52 case=9.txt scenario=small seed=400003 B=2
+[validation-task-start] val_000025 worker=4059353 group=53 case=9.txt scenario=small seed=400003 B=5
+[validation-task-start] val_000025 worker=4059357 group=54 case=9.txt scenario=small seed=400003 B=10
+[validation-progress] val_000025 188/216 elapsed=375.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=375.6s
+[validation-progress] val_000025 192/216 elapsed=389.2s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[validation-progress] val_000025 196/216 elapsed=390.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=390.7s
+[validation-progress] val_000025 200/216 elapsed=405.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=405.7s
+[validation-progress] val_000025 212/216 elapsed=420.0s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=420.7s
+[validation-progress] val_000025 216/216 elapsed=427.6s pids=[4059352, 4059353, 4059354, 4059355, 4059356, 4059357, 4059358, 4059359]
+[validation-finished] val_000025 wait=1959.687 best=1959.687 validated_grad=750 current_grad=750 216 runs in 427.7s
+[phase-training] completed=25 next_validation=50
+[actor-start] worker=1 pid=4058900 episode=27 policy_version=750
+[actor-start] worker=4 pid=4058903 episode=30 policy_version=750
+[actor-start] worker=7 pid=4058906 episode=33 policy_version=750
+[actor-start] worker=0 pid=4058899 episode=26 policy_version=750
+[actor-start] worker=2 pid=4058901 episode=28 policy_version=750
+[actor-start] worker=3 pid=4058902 episode=29 policy_version=750
+[actor-start] worker=5 pid=4058904 episode=31 policy_version=750
+[actor-start] worker=6 pid=4058905 episode=32 policy_version=750
+[train] completed=26/500 ep=30 actor=4 grads=784 wait=1214.724 replay=3648 validation_pending=0
+[actor-start] worker=4 pid=4058903 episode=34 policy_version=750
+[train] completed=27/500 ep=28 actor=2 grads=819 wait=2655.762 replay=3788 validation_pending=0
+[actor-start] worker=2 pid=4058901 episode=35 policy_version=784
+[train] completed=28/500 ep=27 actor=1 grads=856 wait=2886.870 replay=3935 validation_pending=0
+[actor-start] worker=1 pid=4058900 episode=36 policy_version=819
+[train] completed=29/500 ep=26 actor=0 grads=891 wait=1613.452 replay=4078 validation_pending=0
+[actor-start] worker=0 pid=4058899 episode=37 policy_version=856
+[train] completed=30/500 ep=34 actor=4 grads=928 wait=2781.097 replay=4225 validation_pending=0
+[actor-start] worker=4 pid=4058903 episode=38 policy_version=891
+[train] completed=31/500 ep=31 actor=5 grads=963 wait=2696.886 replay=4365 validation_pending=0
+[actor-start] worker=5 pid=4058904 episode=39 policy_version=928
+[train] completed=32/500 ep=35 actor=2 grads=997 wait=1172.891 replay=4501 validation_pending=0
+[actor-start] worker=2 pid=4058901 episode=40 policy_version=963
+[train] completed=33/500 ep=29 actor=3 grads=1033 wait=3055.747 replay=4646 validation_pending=0
+[actor-start] worker=3 pid=4058902 episode=41 policy_version=997
+[train] completed=34/500 ep=36 actor=1 grads=1070 wait=2776.522 replay=4793 validation_pending=0
+[actor-start] worker=1 pid=4058900 episode=42 policy_version=1033
+[train] completed=35/500 ep=37 actor=0 grads=1107 wait=2772.675 replay=4940 validation_pending=0
+[actor-start] worker=0 pid=4058899 episode=43 policy_version=1070
+[train] completed=36/500 ep=32 actor=6 grads=1141 wait=2914.982 replay=5078 validation_pending=0
+[train] completed=37/500 ep=39 actor=5 grads=1177 wait=1418.280 replay=5219 validation_pending=0
+[actor-start] worker=6 pid=4058905 episode=44 policy_version=1107
+[actor-start] worker=5 pid=4058904 episode=45 policy_version=1141
+[train] completed=38/500 ep=38 actor=4 grads=1212 wait=860.188 replay=5359 validation_pending=0
+[actor-start] worker=4 pid=4058903 episode=46 policy_version=1177
+[train] completed=39/500 ep=43 actor=0 grads=1247 wait=1400.622 replay=5500 validation_pending=0
+[actor-start] worker=0 pid=4058899 episode=47 policy_version=1212
+[train] completed=40/500 ep=44 actor=6 grads=1282 wait=2677.844 replay=5642 validation_pending=0
+[actor-start] worker=6 pid=4058905 episode=48 policy_version=1247
+[train] completed=41/500 ep=46 actor=4 grads=1318 wait=1400.407 replay=5785 validation_pending=0
+[train] completed=42/500 ep=42 actor=1 grads=1353 wait=874.582 replay=5925 validation_pending=0
+[actor-start] worker=4 pid=4058903 episode=49 policy_version=1282
+[actor-start] worker=1 pid=4058900 episode=50 policy_version=1318
+[train] completed=43/500 ep=47 actor=0 grads=1388 wait=1574.793 replay=6065 validation_pending=0
+[train] completed=44/500 ep=33 actor=7 grads=1423 wait=1207.899 replay=6205 validation_pending=0
+[train] completed=45/500 ep=40 actor=2 grads=1457 wait=1533.006 replay=6342 validation_pending=0
+[train] completed=46/500 ep=50 actor=1 grads=1493 wait=1375.713 replay=6485 validation_pending=0
+[train] completed=47/500 ep=49 actor=4 grads=1528 wait=2576.450 replay=6626 validation_pending=0
+[train] completed=48/500 ep=41 actor=3 grads=1562 wait=1231.309 replay=6761 validation_pending=0
+[monitor] completed=48/500 outstanding=2 gradients=1562 validation_pending=0 actor_status={7: {'pid': 4058906, 'state': 'completed', 'episode': 33}, 0: {'pid': 4058899, 'state': 'completed', 'episode': 47}, 3: {'pid': 4058902, 'state': 'completed', 'episode': 41}, 2: {'pid': 4058901, 'state': 'completed', 'episode': 40}, 1: {'pid': 4058900, 'state': 'completed', 'episode': 50}, 6: {'pid': 4058905, 'state': 'running', 'episode': 48, 'policy_version': 1247}, 5: {'pid': 4058904, 'state': 'running', 'episode': 45, 'policy_version': 1141}, 4: {'pid': 4058903, 'state': 'completed', 'episode': 49}}
+[train] completed=49/500 ep=45 actor=5 grads=1597 wait=1767.702 replay=6899 validation_pending=0
+[train] completed=50/500 ep=48 actor=6 grads=1631 wait=1439.412 replay=7035 validation_pending=0
+[validation-queued] val_000050 frozen_grad=1631 runs=216 groups=54; training paused
+[validation-start] val_000050 54 groups / 216 simulations coordinator=4058898
+[validation-worker-start] pid=4067928 snapshot=val_000050_grad_000001631.pt
+[validation-worker-online] val_000050 pid=4067928
+[validation-task-start] val_000050 worker=4067928 group=1 case=8.txt scenario=shock seed=400001 B=2
+[validation-worker-start] pid=4067933 snapshot=val_000050_grad_000001631.pt
+[validation-worker-start] pid=4067931 snapshot=val_000050_grad_000001631.pt
+[validation-worker-start] pid=4067934 snapshot=val_000050_grad_000001631.pt
+[validation-worker-start] pid=4067930 snapshot=val_000050_grad_000001631.pt
+[validation-worker-start] pid=4067929 snapshot=val_000050_grad_000001631.pt
+[validation-worker-online] val_000050 pid=4067933
+[validation-task-start] val_000050 worker=4067933 group=2 case=8.txt scenario=shock seed=400001 B=5
+[validation-worker-online] val_000050 pid=4067931
+[validation-task-start] val_000050 worker=4067931 group=3 case=8.txt scenario=shock seed=400001 B=10
+[validation-worker-online] val_000050 pid=4067934
+[validation-task-start] val_000050 worker=4067934 group=4 case=8.txt scenario=shock seed=400002 B=2
+[validation-worker-online] val_000050 pid=4067930
+[validation-task-start] val_000050 worker=4067930 group=5 case=8.txt scenario=shock seed=400002 B=5
+[validation-worker-online] val_000050 pid=4067929
+[validation-task-start] val_000050 worker=4067929 group=6 case=8.txt scenario=shock seed=400002 B=10
+[validation-worker-start] pid=4067932 snapshot=val_000050_grad_000001631.pt
+[validation-worker-start] pid=4067927 snapshot=val_000050_grad_000001631.pt
+[validation-worker-online] val_000050 pid=4067932
+[validation-worker-online] val_000050 pid=4067927
+[validation-task-start] val_000050 worker=4067932 group=7 case=8.txt scenario=shock seed=400003 B=2
+[validation-task-start] val_000050 worker=4067927 group=8 case=8.txt scenario=shock seed=400003 B=5
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=15.0s
+[validation-progress] val_000050 0/216 elapsed=15.0s pids=[]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=30.1s
+[validation-progress] val_000050 0/216 elapsed=30.0s pids=[]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=45.1s
+[validation-progress] val_000050 0/216 elapsed=45.0s pids=[]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=60.1s
+[validation-progress] val_000050 0/216 elapsed=60.0s pids=[]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=75.1s
+[validation-progress] val_000050 0/216 elapsed=75.0s pids=[]
+[validation-task-start] val_000050 worker=4067930 group=9 case=8.txt scenario=shock seed=400003 B=10
+[validation-task-start] val_000050 worker=4067928 group=10 case=8.txt scenario=repeated seed=400001 B=2
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=90.2s
+[validation-progress] val_000050 8/216 elapsed=90.0s pids=[4067928, 4067930]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=105.2s
+[validation-progress] val_000050 8/216 elapsed=105.0s pids=[4067928, 4067930]
+[validation-task-start] val_000050 worker=4067934 group=11 case=8.txt scenario=repeated seed=400001 B=5
+[validation-progress] val_000050 12/216 elapsed=120.0s pids=[4067928, 4067930, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=120.2s
+[validation-task-start] val_000050 worker=4067932 group=12 case=8.txt scenario=repeated seed=400001 B=10
+[validation-progress] val_000050 16/216 elapsed=135.0s pids=[4067928, 4067930, 4067932, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=135.2s
+[validation-task-start] val_000050 worker=4067933 group=13 case=8.txt scenario=repeated seed=400002 B=2
+[validation-task-start] val_000050 worker=4067927 group=14 case=8.txt scenario=repeated seed=400002 B=5
+[validation-progress] val_000050 24/216 elapsed=145.9s pids=[4067927, 4067928, 4067930, 4067932, 4067933, 4067934]
+[validation-progress] val_000050 24/216 elapsed=150.0s pids=[4067927, 4067928, 4067930, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=150.3s
+[validation-task-start] val_000050 worker=4067931 group=15 case=8.txt scenario=repeated seed=400002 B=10
+[validation-task-start] val_000050 worker=4067929 group=16 case=8.txt scenario=repeated seed=400003 B=2
+[validation-task-start] val_000050 worker=4067934 group=17 case=8.txt scenario=repeated seed=400003 B=5
+[validation-progress] val_000050 36/216 elapsed=165.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=165.3s
+[validation-task-start] val_000050 worker=4067928 group=18 case=8.txt scenario=repeated seed=400003 B=10
+[validation-task-start] val_000050 worker=4067930 group=19 case=8.txt scenario=small seed=400001 B=2
+[validation-progress] val_000050 44/216 elapsed=180.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=180.3s
+[validation-task-start] val_000050 worker=4067929 group=20 case=8.txt scenario=small seed=400001 B=5
+[validation-progress] val_000050 48/216 elapsed=183.6s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[validation-task-start] val_000050 worker=4067933 group=21 case=8.txt scenario=small seed=400001 B=10
+[validation-task-start] val_000050 worker=4067932 group=22 case=8.txt scenario=small seed=400002 B=2
+[validation-task-start] val_000050 worker=4067934 group=23 case=8.txt scenario=small seed=400002 B=5
+[validation-task-start] val_000050 worker=4067927 group=24 case=8.txt scenario=small seed=400002 B=10
+[validation-progress] val_000050 64/216 elapsed=195.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=195.3s
+[validation-task-start] val_000050 worker=4067932 group=25 case=8.txt scenario=small seed=400003 B=2
+[validation-task-start] val_000050 worker=4067931 group=26 case=8.txt scenario=small seed=400003 B=5
+[validation-progress] val_000050 72/216 elapsed=202.4s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[validation-task-start] val_000050 worker=4067928 group=27 case=8.txt scenario=small seed=400003 B=10
+[validation-task-start] val_000050 worker=4067930 group=28 case=9.txt scenario=shock seed=400001 B=2
+[validation-progress] val_000050 80/216 elapsed=210.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=210.4s
+[validation-task-start] val_000050 worker=4067934 group=29 case=9.txt scenario=shock seed=400001 B=5
+[validation-task-start] val_000050 worker=4067927 group=30 case=9.txt scenario=shock seed=400001 B=10
+[validation-task-start] val_000050 worker=4067932 group=31 case=9.txt scenario=shock seed=400002 B=2
+[validation-task-start] val_000050 worker=4067929 group=32 case=9.txt scenario=shock seed=400002 B=5
+[validation-progress] val_000050 96/216 elapsed=216.2s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[validation-task-start] val_000050 worker=4067931 group=33 case=9.txt scenario=shock seed=400002 B=10
+[validation-progress] val_000050 100/216 elapsed=225.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=225.4s
+[validation-task-start] val_000050 worker=4067933 group=34 case=9.txt scenario=shock seed=400003 B=2
+[validation-task-start] val_000050 worker=4067930 group=35 case=9.txt scenario=shock seed=400003 B=5
+[validation-task-start] val_000050 worker=4067928 group=36 case=9.txt scenario=shock seed=400003 B=10
+[validation-progress] val_000050 112/216 elapsed=240.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=240.4s
+[validation-task-start] val_000050 worker=4067932 group=37 case=9.txt scenario=repeated seed=400001 B=2
+[validation-task-start] val_000050 worker=4067933 group=38 case=9.txt scenario=repeated seed=400001 B=5
+[validation-progress] val_000050 120/216 elapsed=246.3s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[validation-task-start] val_000050 worker=4067934 group=39 case=9.txt scenario=repeated seed=400001 B=10
+[validation-progress] val_000050 124/216 elapsed=255.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=255.4s
+[validation-task-start] val_000050 worker=4067932 group=40 case=9.txt scenario=repeated seed=400002 B=2
+[validation-progress] val_000050 128/216 elapsed=270.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=270.5s
+[validation-task-start] val_000050 worker=4067932 group=41 case=9.txt scenario=repeated seed=400002 B=5
+[validation-task-start] val_000050 worker=4067927 group=42 case=9.txt scenario=repeated seed=400002 B=10
+[validation-task-start] val_000050 worker=4067933 group=43 case=9.txt scenario=repeated seed=400003 B=2
+[validation-progress] val_000050 140/216 elapsed=285.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=285.5s
+[validation-progress] val_000050 144/216 elapsed=286.3s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[validation-task-start] val_000050 worker=4067932 group=44 case=9.txt scenario=repeated seed=400003 B=5
+[validation-task-start] val_000050 worker=4067934 group=45 case=9.txt scenario=repeated seed=400003 B=10
+[validation-task-start] val_000050 worker=4067930 group=46 case=9.txt scenario=small seed=400001 B=2
+[validation-task-start] val_000050 worker=4067927 group=47 case=9.txt scenario=small seed=400001 B=5
+[validation-progress] val_000050 156/216 elapsed=300.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=300.5s
+[validation-task-start] val_000050 worker=4067929 group=48 case=9.txt scenario=small seed=400001 B=10
+[validation-progress] val_000050 160/216 elapsed=315.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=315.5s
+[validation-task-start] val_000050 worker=4067928 group=49 case=9.txt scenario=small seed=400002 B=2
+[validation-task-start] val_000050 worker=4067933 group=50 case=9.txt scenario=small seed=400002 B=5
+[validation-progress] val_000050 168/216 elapsed=321.5s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[validation-task-start] val_000050 worker=4067932 group=51 case=9.txt scenario=small seed=400002 B=10
+[validation-task-start] val_000050 worker=4067930 group=52 case=9.txt scenario=small seed=400003 B=2
+[validation-task-start] val_000050 worker=4067927 group=53 case=9.txt scenario=small seed=400003 B=5
+[validation-progress] val_000050 180/216 elapsed=330.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=330.6s
+[validation-progress] val_000050 180/216 elapsed=345.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=345.6s
+[validation-task-start] val_000050 worker=4067933 group=54 case=9.txt scenario=small seed=400003 B=10
+[validation-progress] val_000050 192/216 elapsed=349.7s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[validation-progress] val_000050 200/216 elapsed=360.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=360.6s
+[validation-progress] val_000050 208/216 elapsed=375.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=375.6s
+[validation-progress] val_000050 208/216 elapsed=390.0s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[phase-validation] val_000050 completed=50 gradients=1631 elapsed=390.7s
+[validation-progress] val_000050 216/216 elapsed=404.3s pids=[4067927, 4067928, 4067929, 4067930, 4067931, 4067932, 4067933, 4067934]
+[validation-finished] val_000050 wait=1912.432 best=1912.432 validated_grad=1631 current_grad=1631 216 runs in 404.4s
+[phase-training] completed=50 next_validation=75
+[actor-start] worker=1 pid=4058900 episode=52 policy_version=1631
+[actor-start] worker=3 pid=4058902 episode=54 policy_version=1631
+[actor-start] worker=6 pid=4058905 episode=57 policy_version=1631
+[actor-start] worker=0 pid=4058899 episode=51 policy_version=1631
+[actor-start] worker=2 pid=4058901 episode=53 policy_version=1631
+[actor-start] worker=4 pid=4058903 episode=55 policy_version=1631
+[actor-start] worker=5 pid=4058904 episode=56 policy_version=1631
+[actor-start] worker=7 pid=4058906 episode=58 policy_version=1631
+[train] completed=51/500 ep=56 actor=5 grads=1666 wait=1591.682 replay=7175 validation_pending=0
+[actor-start] worker=5 pid=4058904 episode=59 policy_version=1631
+[train] completed=52/500 ep=58 actor=7 grads=1700 wait=1163.421 replay=7311 validation_pending=0
+[actor-start] worker=7 pid=4058906 episode=60 policy_version=1666
+[train] completed=53/500 ep=59 actor=5 grads=1735 wait=1413.063 replay=7452 validation_pending=0
+[actor-start] worker=5 pid=4058904 episode=61 policy_version=1700
+[train] completed=54/500 ep=52 actor=1 grads=1770 wait=2688.526 replay=7594 validation_pending=0
+[train] completed=55/500 ep=55 actor=4 grads=1805 wait=1218.664 replay=7732 validation_pending=0
+[actor-start] worker=1 pid=4058900 episode=62 policy_version=1735
+[train] completed=56/500 ep=53 actor=2 grads=1839 wait=2714.020 replay=7870 validation_pending=0
+[actor-start] worker=4 pid=4058903 episode=63 policy_version=1770
+[train] completed=57/500 ep=54 actor=3 grads=1872 wait=1036.872 replay=8002 validation_pending=0
+[train] completed=58/500 ep=51 actor=0 grads=1909 wait=2770.895 replay=8149 validation_pending=0
+[train] completed=59/500 ep=61 actor=5 grads=1944 wait=1385.148 replay=8290 validation_pending=0
+[actor-start] worker=2 pid=4058901 episode=64 policy_version=1805
+[train] completed=60/500 ep=62 actor=1 grads=1980 wait=3913.692 replay=8434 validation_pending=0
+[actor-start] worker=3 pid=4058902 episode=65 policy_version=1839
+[train] completed=61/500 ep=63 actor=4 grads=2015 wait=2659.951 replay=8573 validation_pending=0
+[actor-start] worker=0 pid=4058899 episode=66 policy_version=1872
+[actor-start] worker=5 pid=4058904 episode=67 policy_version=1909
+[actor-start] worker=1 pid=4058900 episode=68 policy_version=1944
+[train] completed=62/500 ep=64 actor=2 grads=2052 wait=2819.955 replay=8720 validation_pending=0
+[actor-start] worker=4 pid=4058903 episode=69 policy_version=1980
+[actor-start] worker=2 pid=4058901 episode=70 policy_version=2015
+[train] completed=63/500 ep=65 actor=3 grads=2088 wait=1397.856 replay=8863 validation_pending=0
+[actor-start] worker=3 pid=4058902 episode=71 policy_version=2052
+[train] completed=64/500 ep=57 actor=6 grads=2122 wait=1514.645 replay=8999 validation_pending=0
+[actor-start] worker=6 pid=4058905 episode=72 policy_version=2088
+[train] completed=65/500 ep=69 actor=4 grads=2157 wait=1203.485 replay=9139 validation_pending=0
+[actor-start] worker=4 pid=4058903 episode=73 policy_version=2122
+[train] completed=66/500 ep=68 actor=1 grads=2191 wait=1512.888 replay=9276 validation_pending=0
+[actor-start] worker=1 pid=4058900 episode=74 policy_version=2157
+[train] completed=67/500 ep=66 actor=0 grads=2227 wait=2763.868 replay=9421 validation_pending=0
+[actor-start] worker=0 pid=4058899 episode=75 policy_version=2191
+[train] completed=68/500 ep=74 actor=1 grads=2262 wait=1594.365 replay=9562 validation_pending=0
+[train] completed=69/500 ep=75 actor=0 grads=2299 wait=2910.745 replay=9709 validation_pending=0
+[train] completed=70/500 ep=70 actor=2 grads=2333 wait=1160.007 replay=9845 validation_pending=0
+[train] completed=71/500 ep=71 actor=3 grads=2369 wait=3101.372 replay=9990 validation_pending=0
+[train] completed=72/500 ep=72 actor=6 grads=2403 wait=1613.333 replay=10123 validation_pending=0
+[train] completed=73/500 ep=73 actor=4 grads=2437 wait=2159.155 replay=10261 validation_pending=0
+[monitor] completed=73/500 outstanding=2 gradients=2437 validation_pending=0 actor_status={7: {'pid': 4058906, 'state': 'running', 'episode': 60, 'policy_version': 1666}, 0: {'pid': 4058899, 'state': 'completed', 'episode': 75}, 3: {'pid': 4058902, 'state': 'completed', 'episode': 71}, 2: {'pid': 4058901, 'state': 'completed', 'episode': 70}, 1: {'pid': 4058900, 'state': 'completed', 'episode': 74}, 6: {'pid': 4058905, 'state': 'completed', 'episode': 72}, 5: {'pid': 4058904, 'state': 'running', 'episode': 67, 'policy_version': 1909}, 4: {'pid': 4058903, 'state': 'completed', 'episode': 73}}
+[train] completed=74/500 ep=67 actor=5 grads=2472 wait=1396.135 replay=10402 validation_pending=0
+[actor-heartbeat] worker=7 ep=60 steps=104 elapsed=15.05s
+[train] completed=75/500 ep=60 actor=7 grads=2506 wait=1634.811 replay=10538 validation_pending=0
+[validation-queued] val_000075 frozen_grad=2506 runs=216 groups=54; training paused
+[validation-start] val_000075 54 groups / 216 simulations coordinator=4058898
+[validation-worker-start] pid=4076571 snapshot=val_000075_grad_000002506.pt
+[validation-worker-online] val_000075 pid=4076571
+[validation-task-start] val_000075 worker=4076571 group=1 case=8.txt scenario=shock seed=400001 B=2
+[validation-worker-start] pid=4076572 snapshot=val_000075_grad_000002506.pt
+[validation-worker-start] pid=4076574 snapshot=val_000075_grad_000002506.pt
+[validation-worker-online] val_000075 pid=4076572
+[validation-task-start] val_000075 worker=4076572 group=2 case=8.txt scenario=shock seed=400001 B=5
+[validation-worker-online] val_000075 pid=4076574
+[validation-task-start] val_000075 worker=4076574 group=3 case=8.txt scenario=shock seed=400001 B=10
+[validation-worker-start] pid=4076575 snapshot=val_000075_grad_000002506.pt
+[validation-worker-start] pid=4076578 snapshot=val_000075_grad_000002506.pt
+[validation-worker-start] pid=4076577 snapshot=val_000075_grad_000002506.pt
+[validation-worker-start] pid=4076576 snapshot=val_000075_grad_000002506.pt
+[validation-worker-online] val_000075 pid=4076575
+[validation-task-start] val_000075 worker=4076575 group=4 case=8.txt scenario=shock seed=400002 B=2
+[validation-worker-online] val_000075 pid=4076578
+[validation-task-start] val_000075 worker=4076578 group=5 case=8.txt scenario=shock seed=400002 B=5
+[validation-worker-online] val_000075 pid=4076577
+[validation-task-start] val_000075 worker=4076577 group=6 case=8.txt scenario=shock seed=400002 B=10
+[validation-worker-online] val_000075 pid=4076576
+[validation-task-start] val_000075 worker=4076576 group=7 case=8.txt scenario=shock seed=400003 B=2
+[validation-worker-start] pid=4076573 snapshot=val_000075_grad_000002506.pt
+[validation-worker-online] val_000075 pid=4076573
+[validation-task-start] val_000075 worker=4076573 group=8 case=8.txt scenario=shock seed=400003 B=5
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=15.0s
+[validation-progress] val_000075 0/216 elapsed=15.0s pids=[]
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=30.1s
+[validation-progress] val_000075 0/216 elapsed=30.0s pids=[]
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=45.1s
+[validation-progress] val_000075 0/216 elapsed=45.0s pids=[]
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=60.1s
+[validation-progress] val_000075 0/216 elapsed=60.0s pids=[]
+[validation-task-start] val_000075 worker=4076571 group=9 case=8.txt scenario=shock seed=400003 B=10
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=75.1s
+[validation-progress] val_000075 4/216 elapsed=75.0s pids=[4076571]
+[validation-task-start] val_000075 worker=4076574 group=10 case=8.txt scenario=repeated seed=400001 B=2
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=90.2s
+[validation-progress] val_000075 8/216 elapsed=90.0s pids=[4076571, 4076574]
+[validation-task-start] val_000075 worker=4076577 group=11 case=8.txt scenario=repeated seed=400001 B=5
+[validation-task-start] val_000075 worker=4076575 group=12 case=8.txt scenario=repeated seed=400001 B=10
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=105.2s
+[validation-progress] val_000075 16/216 elapsed=105.0s pids=[4076571, 4076574, 4076575, 4076577]
+[validation-task-start] val_000075 worker=4076572 group=13 case=8.txt scenario=repeated seed=400002 B=2
+[validation-progress] val_000075 20/216 elapsed=120.0s pids=[4076571, 4076572, 4076574, 4076575, 4076577]
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=120.2s
+[validation-task-start] val_000075 worker=4076576 group=14 case=8.txt scenario=repeated seed=400002 B=5
+[validation-progress] val_000075 24/216 elapsed=132.1s pids=[4076571, 4076572, 4076574, 4076575, 4076576, 4076577]
+[validation-task-start] val_000075 worker=4076578 group=15 case=8.txt scenario=repeated seed=400002 B=10
+[validation-progress] val_000075 28/216 elapsed=135.0s pids=[4076571, 4076572, 4076574, 4076575, 4076576, 4076577, 4076578]
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=135.2s
+[validation-task-start] val_000075 worker=4076573 group=16 case=8.txt scenario=repeated seed=400003 B=2
+[validation-task-start] val_000075 worker=4076574 group=17 case=8.txt scenario=repeated seed=400003 B=5
+[validation-task-start] val_000075 worker=4076572 group=18 case=8.txt scenario=repeated seed=400003 B=10
+[validation-progress] val_000075 40/216 elapsed=150.0s pids=[4076571, 4076572, 4076573, 4076574, 4076575, 4076576, 4076577, 4076578]
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=150.3s
+[validation-progress] val_000075 40/216 elapsed=165.0s pids=[4076571, 4076572, 4076573, 4076574, 4076575, 4076576, 4076577, 4076578]
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=165.3s
+[validation-task-start] val_000075 worker=4076571 group=19 case=8.txt scenario=small seed=400001 B=2
+[validation-task-start] val_000075 worker=4076573 group=20 case=8.txt scenario=small seed=400001 B=5
+[validation-progress] val_000075 48/216 elapsed=179.5s pids=[4076571, 4076572, 4076573, 4076574, 4076575, 4076576, 4076577, 4076578]
+[validation-task-start] val_000075 worker=4076577 group=21 case=8.txt scenario=small seed=400001 B=10
+[validation-progress] val_000075 52/216 elapsed=180.0s pids=[4076571, 4076572, 4076573, 4076574, 4076575, 4076576, 4076577, 4076578]
+[validation-task-start] val_000075 worker=4076572 group=22 case=8.txt scenario=small seed=400002 B=2
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=180.3s
+[validation-task-start] val_000075 worker=4076578 group=23 case=8.txt scenario=small seed=400002 B=5
+[validation-task-start] val_000075 worker=4076574 group=24 case=8.txt scenario=small seed=400002 B=10
+[validation-task-start] val_000075 worker=4076575 group=25 case=8.txt scenario=small seed=400003 B=2
+[validation-task-start] val_000075 worker=4076572 group=26 case=8.txt scenario=small seed=400003 B=5
+[validation-progress] val_000075 72/216 elapsed=194.7s pids=[4076571, 4076572, 4076573, 4076574, 4076575, 4076576, 4076577, 4076578]
+[validation-progress] val_000075 72/216 elapsed=195.0s pids=[4076571, 4076572, 4076573, 4076574, 4076575, 4076576, 4076577, 4076578]
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=195.3s
+[validation-task-start] val_000075 worker=4076576 group=27 case=8.txt scenario=small seed=400003 B=10
+[validation-task-start] val_000075 worker=4076575 group=28 case=9.txt scenario=shock seed=400001 B=2
+[validation-task-start] val_000075 worker=4076578 group=29 case=9.txt scenario=shock seed=400001 B=5
+[validation-task-start] val_000075 worker=4076571 group=30 case=9.txt scenario=shock seed=400001 B=10
+[validation-task-start] val_000075 worker=4076574 group=31 case=9.txt scenario=shock seed=400002 B=2
+[validation-progress] val_000075 92/216 elapsed=210.0s pids=[4076571, 4076572, 4076573, 4076574, 4076575, 4076576, 4076577, 4076578]
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=210.4s
+[validation-task-start] val_000075 worker=4076573 group=32 case=9.txt scenario=shock seed=400002 B=5
+[validation-progress] val_000075 96/216 elapsed=212.4s pids=[4076571, 4076572, 4076573, 4076574, 4076575, 4076576, 4076577, 4076578]
+[validation-task-start] val_000075 worker=4076577 group=33 case=9.txt scenario=shock seed=400002 B=10
+[validation-task-start] val_000075 worker=4076572 group=34 case=9.txt scenario=shock seed=400003 B=2
+[validation-task-start] val_000075 worker=4076576 group=35 case=9.txt scenario=shock seed=400003 B=5
+[validation-task-start] val_000075 worker=4076575 group=36 case=9.txt scenario=shock seed=400003 B=10
+[validation-progress] val_000075 112/216 elapsed=225.0s pids=[4076571, 4076572, 4076573, 4076574, 4076575, 4076576, 4076577, 4076578]
+[phase-validation] val_000075 completed=75 gradients=2506 elapsed=225.4s
