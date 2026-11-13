@@ -1,0 +1,90 @@
+{
+  "train_cases": [
+    "../2024LiERLDDE/case_code/3.txt",
+    "../2024LiERLDDE/case_code/4.txt",
+    "../2024LiERLDDE/case_code/5.txt",
+    "../2024LiERLDDE/case_code/6.txt",
+    "../2024LiERLDDE/case_code/7.txt"
+  ],
+  "val_cases": [
+    "../2024LiERLDDE/case_code/8.txt",
+    "../2024LiERLDDE/case_code/9.txt"
+  ],
+  "candidate_limit": 4,
+  "decision_clock": "union",
+  "period": 12.0,
+  "reward_scale": 100.0,
+  "candidate_screen": "none",
+  "min_gain": 0.1,
+  "budget_features": "legacy",
+  "value_features": "legacy",
+  "scenarios": [
+    "shock",
+    "repeated",
+    "small"
+  ],
+  "budgets": [
+    2,
+    5,
+    10
+  ],
+  "uncertainties": [
+    4.0,
+    8.0,
+    12.0
+  ],
+  "updates": 2,
+  "train_seed_start": 200000,
+  "val_seeds": [
+    400001,
+    400002,
+    400003,
+    400004,
+    400005
+  ],
+  "training_args": {
+    "train_cases": [
+      "../2024LiERLDDE/case_code/3.txt",
+      "../2024LiERLDDE/case_code/4.txt",
+      "../2024LiERLDDE/case_code/5.txt",
+      "../2024LiERLDDE/case_code/6.txt",
+      "../2024LiERLDDE/case_code/7.txt"
+    ],
+    "val_cases": [
+      "../2024LiERLDDE/case_code/8.txt",
+      "../2024LiERLDDE/case_code/9.txt"
+    ],
+    "episodes": 300,
+    "scenarios": "shock,repeated,small",
+    "budgets": "2,5,10",
+    "train_seed_start": 200000,
+    "val_seeds": "400001:400005",
+    "uncertainties": "4,8,12",
+    "updates": 2,
+    "clock": "union",
+    "period": 12.0,
+    "candidate_limit": 4,
+    "budget_features": "legacy",
+    "value_features": "legacy",
+    "candidate_screen": "none",
+    "min_gain": 0.1,
+    "keep_margin": 0.0,
+    "greedy_exploration_prob": 0.0,
+    "reward_scale": 100.0,
+    "hidden_dim": 96,
+    "lr": 0.0003,
+    "gamma": 1.0,
+    "replay_capacity": 50000,
+    "batch_size": 64,
+    "warmup": 512,
+    "updates_per_step": 1,
+    "target_update": 250,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_episodes": 300,
+    "eval_every": 50,
+    "seed": 42,
+    "device": "cpu",
+    "out": "results/v07_ablation_A"
+  }
+}

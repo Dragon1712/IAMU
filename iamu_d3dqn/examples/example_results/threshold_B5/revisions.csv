@@ -1,0 +1,5 @@
+time,vessel_id,old,new,estimated_gain,cumulative_budget
+23.42288,4,"{'vessel_id': 4, 'start': 26.0, 'end': 51.0, 'berth_start_m': 0.0, 'cranes': 4, 'duration': 25.0}","{'vessel_id': 4, 'start': 88.0, 'end': 113.0, 'berth_start_m': 840.0, 'cranes': 4, 'duration': 25.0}",1.25,1
+23.42288,7,"{'vessel_id': 7, 'start': 43.0, 'end': 60.5, 'berth_start_m': 1236.0, 'cranes': 4, 'duration': 17.5}","{'vessel_id': 7, 'start': 29.888482, 'end': 47.388482, 'berth_start_m': 1724.0, 'cranes': 4, 'duration': 17.5}",2.09577,2
+28.33414,5,"{'vessel_id': 5, 'start': 26.75, 'end': 43.0, 'berth_start_m': 418.0, 'cranes': 4, 'duration': 16.25}","{'vessel_id': 5, 'start': 28.334141, 'end': 44.584141, 'berth_start_m': 0.0, 'cranes': 4, 'duration': 16.25}",1.60053,3
+28.33414,6,"{'vessel_id': 6, 'start': 41.5, 'end': 71.5, 'berth_start_m': 807.0, 'cranes': 4, 'duration': 30.0}","{'vessel_id': 6, 'start': 41.5, 'end': 71.5, 'berth_start_m': 399.0, 'cranes': 4, 'duration': 30.0}",6.19082,4

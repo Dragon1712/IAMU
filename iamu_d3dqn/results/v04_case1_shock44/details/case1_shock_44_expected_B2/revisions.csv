@@ -1,0 +1,3 @@
+time,vessel_id,old,new,estimated_gain,repair_kind,event_type,revision_penalty,cumulative_budget
+9.02,4,"{'vessel_id': 4, 'start': 27.06, 'end': 43.06, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}","{'vessel_id': 4, 'start': 34.744698, 'end': 50.744698, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",12.40409,single,eta,0,1
+18.3,7,"{'vessel_id': 7, 'start': 54.9, 'end': 136.5, 'berth_start_m': 1117.4, 'cranes': 5, 'duration': 81.6}","{'vessel_id': 7, 'start': 44.954643, 'end': 126.554643, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 81.6}",14.5433,single,eta,0,2

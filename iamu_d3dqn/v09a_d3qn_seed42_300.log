@@ -1,0 +1,90 @@
+[learner] device=cuda:2 actors=8, validation_workers=8, episodes=300 completed=0, validation_runs_per_check=216 mode=synchronous-phases
+[phase-training] completed=0 next_validation=25
+[actor-online] worker=7 pid=4173915
+[actor-start] worker=7 pid=4173915 episode=8 policy_version=0
+[actor-online] worker=0 pid=4173908
+[actor-start] worker=0 pid=4173908 episode=1 policy_version=0
+[actor-online] worker=1 pid=4173909
+[actor-start] worker=1 pid=4173909 episode=2 policy_version=0
+[actor-online] worker=6 pid=4173914
+[actor-online] worker=3 pid=4173911
+[actor-start] worker=6 pid=4173914 episode=7 policy_version=0
+[actor-online] worker=2 pid=4173910
+[actor-start] worker=3 pid=4173911 episode=4 policy_version=0
+[actor-online] worker=5 pid=4173913
+[actor-start] worker=2 pid=4173910 episode=3 policy_version=0
+[actor-start] worker=5 pid=4173913 episode=6 policy_version=0
+[actor-online] worker=4 pid=4173912
+[actor-start] worker=4 pid=4173912 episode=5 policy_version=0
+[train] completed=1/300 ep=8 actor=7 grads=0 wait=2693.971 replay=137 validation_pending=0
+[actor-start] worker=7 pid=4173915 episode=9 policy_version=0
+[train] completed=2/300 ep=4 actor=3 grads=0 wait=1413.085 replay=278 validation_pending=0
+[actor-start] worker=3 pid=4173911 episode=10 policy_version=0
+[train] completed=3/300 ep=1 actor=0 grads=0 wait=2206.868 replay=420 validation_pending=0
+[actor-start] worker=0 pid=4173908 episode=11 policy_version=0
+[train] completed=4/300 ep=5 actor=4 grads=13 wait=1527.838 replay=563 validation_pending=0
+[actor-start] worker=4 pid=4173912 episode=12 policy_version=0
+[train] completed=5/300 ep=9 actor=7 grads=48 wait=2686.803 replay=705 validation_pending=0
+[train] completed=6/300 ep=11 actor=0 grads=82 wait=1299.418 replay=841 validation_pending=0
+[train] completed=7/300 ep=3 actor=2 grads=118 wait=1422.315 replay=984 validation_pending=0
+[actor-start] worker=7 pid=4173915 episode=13 policy_version=13
+[actor-start] worker=0 pid=4173908 episode=14 policy_version=48
+[actor-start] worker=2 pid=4173910 episode=15 policy_version=82
+[train] completed=8/300 ep=10 actor=3 grads=154 wait=3217.069 replay=1130 validation_pending=0
+[actor-start] worker=3 pid=4173911 episode=16 policy_version=118
+[train] completed=9/300 ep=14 actor=0 grads=191 wait=2772.451 replay=1277 validation_pending=0
+[actor-start] worker=0 pid=4173908 episode=17 policy_version=154
+[train] completed=10/300 ep=12 actor=4 grads=227 wait=3371.952 replay=1421 validation_pending=0
+[actor-start] worker=4 pid=4173912 episode=18 policy_version=191
+[train] completed=11/300 ep=15 actor=2 grads=263 wait=1368.842 replay=1564 validation_pending=0
+[train] completed=12/300 ep=16 actor=3 grads=297 wait=3027.523 replay=1701 validation_pending=0
+[train] completed=13/300 ep=6 actor=5 grads=333 wait=2661.729 replay=1843 validation_pending=0
+[actor-start] worker=2 pid=4173910 episode=19 policy_version=227
+[train] completed=14/300 ep=17 actor=0 grads=368 wait=2284.883 replay=1984 validation_pending=0
+[actor-start] worker=3 pid=4173911 episode=20 policy_version=263
+[actor-start] worker=5 pid=4173913 episode=21 policy_version=297
+[actor-start] worker=0 pid=4173908 episode=22 policy_version=333
+[train] completed=15/300 ep=18 actor=4 grads=402 wait=1176.661 replay=2122 validation_pending=0
+[actor-start] worker=4 pid=4173912 episode=23 policy_version=368
+[train] completed=16/300 ep=22 actor=0 grads=438 wait=1414.585 replay=2263 validation_pending=0
+[actor-start] worker=0 pid=4173908 episode=24 policy_version=402
+[train] completed=17/300 ep=7 actor=6 grads=471 wait=1205.157 replay=2398 validation_pending=0
+[actor-start] worker=6 pid=4173914 episode=25 policy_version=438
+[train] completed=18/300 ep=23 actor=4 grads=506 wait=2668.374 replay=2538 validation_pending=0
+[train] completed=19/300 ep=19 actor=2 grads=543 wait=3028.558 replay=2685 validation_pending=0
+[train] completed=20/300 ep=24 actor=0 grads=579 wait=2779.817 replay=2830 validation_pending=0
+[train] completed=21/300 ep=25 actor=6 grads=614 wait=3391.610 replay=2967 validation_pending=0
+[train] completed=22/300 ep=20 actor=3 grads=647 wait=1434.981 replay=3101 validation_pending=0
+[train] completed=23/300 ep=13 actor=7 grads=682 wait=2710.132 replay=3242 validation_pending=0
+[train] completed=24/300 ep=21 actor=5 grads=716 wait=1181.374 replay=3378 validation_pending=0
+[actor-heartbeat] worker=1 ep=2 steps=86 elapsed=15.02s
+[monitor] completed=24/300 outstanding=1 gradients=716 validation_pending=0 actor_status={7: {'pid': 4173915, 'state': 'completed', 'episode': 13}, 0: {'pid': 4173908, 'state': 'completed', 'episode': 24}, 1: {'pid': 4173909, 'state': 'running', 'episode': 2, 'observed_steps': 86, 'seconds': 15.02}, 6: {'pid': 4173914, 'state': 'completed', 'episode': 25}, 3: {'pid': 4173911, 'state': 'completed', 'episode': 20}, 2: {'pid': 4173910, 'state': 'completed', 'episode': 19}, 5: {'pid': 4173913, 'state': 'completed', 'episode': 21}, 4: {'pid': 4173912, 'state': 'completed', 'episode': 23}}
+[train] completed=25/300 ep=2 actor=1 grads=750 wait=1185.722 replay=3513 validation_pending=0
+[validation-queued] val_000025 frozen_grad=750 runs=216 groups=54; training paused
+[validation-start] val_000025 54 groups / 216 simulations coordinator=4173907
+[validation-worker-start] pid=4174386 snapshot=val_000025_grad_000000750.pt
+[validation-worker-online] val_000025 pid=4174386
+[validation-task-start] val_000025 worker=4174386 group=1 case=8.txt scenario=shock seed=400001 B=2
+[validation-worker-start] pid=4174381 snapshot=val_000025_grad_000000750.pt
+[validation-worker-online] val_000025 pid=4174381
+[validation-task-start] val_000025 worker=4174381 group=2 case=8.txt scenario=shock seed=400001 B=5
+[validation-worker-start] pid=4174384 snapshot=val_000025_grad_000000750.pt
+[validation-worker-start] pid=4174385 snapshot=val_000025_grad_000000750.pt
+[validation-worker-start] pid=4174387 snapshot=val_000025_grad_000000750.pt
+[validation-worker-start] pid=4174383 snapshot=val_000025_grad_000000750.pt
+[validation-worker-start] pid=4174382 snapshot=val_000025_grad_000000750.pt
+[validation-worker-start] pid=4174380 snapshot=val_000025_grad_000000750.pt
+[validation-worker-online] val_000025 pid=4174384
+[validation-task-start] val_000025 worker=4174384 group=3 case=8.txt scenario=shock seed=400001 B=10
+[validation-worker-online] val_000025 pid=4174385
+[validation-worker-online] val_000025 pid=4174387
+[validation-task-start] val_000025 worker=4174385 group=4 case=8.txt scenario=shock seed=400002 B=2
+[validation-task-start] val_000025 worker=4174387 group=5 case=8.txt scenario=shock seed=400002 B=5
+[validation-worker-online] val_000025 pid=4174383
+[validation-task-start] val_000025 worker=4174383 group=6 case=8.txt scenario=shock seed=400002 B=10
+[validation-worker-online] val_000025 pid=4174382
+[validation-task-start] val_000025 worker=4174382 group=7 case=8.txt scenario=shock seed=400003 B=2
+[validation-worker-online] val_000025 pid=4174380
+[validation-task-start] val_000025 worker=4174380 group=8 case=8.txt scenario=shock seed=400003 B=5
+[phase-validation] val_000025 completed=25 gradients=750 elapsed=15.0s
+[validation-progress] val_000025 0/216 elapsed=15.0s pids=[]

@@ -1,0 +1,17 @@
+{
+  "completed_episodes": 100,
+  "workers_requested": 4,
+  "workers_used": 4,
+  "actor_pids": [
+    3510131,
+    3510132,
+    3510133,
+    3510134
+  ],
+  "gradient_steps": 3387,
+  "total_wall_seconds": 7974.365694934037,
+  "avg_episodes_per_hour": 45.144656482463375,
+  "avg_actor_seconds": 2.623097492335364,
+  "avg_learner_seconds": 0.16039169581606985,
+  "note": "End-to-end CUDA utilization depends on environment cost and network size."
+}

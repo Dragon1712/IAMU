@@ -1,0 +1,11 @@
+../2024LiERLDDE/case_code/1.txt shock seed=11: 10 runs
+../2024LiERLDDE/case_code/1.txt shock seed=22: 20 runs
+../2024LiERLDDE/case_code/1.txt shock seed=33: 30 runs
+../2024LiERLDDE/case_code/1.txt shock seed=44: 40 runs
+../2024LiERLDDE/case_code/1.txt shock seed=55: 50 runs
+../2024LiERLDDE/case_code/1.txt repeated seed=11: 60 runs
+../2024LiERLDDE/case_code/1.txt repeated seed=22: 70 runs
+../2024LiERLDDE/case_code/1.txt repeated seed=33: 80 runs
+../2024LiERLDDE/case_code/1.txt repeated seed=44: 90 runs
+../2024LiERLDDE/case_code/1.txt repeated seed=55: 100 runs
+Completed 100 runs; saved results/v04_samples_4/runs.csv and summary.csv

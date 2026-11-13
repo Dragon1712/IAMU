@@ -1,0 +1,5 @@
+scenario_format,policy,budget,spent,weighted_wait,change_vs_no_replan,makespan,arrival_lateness_slip,resource_conflict_slip
+reclocked_same_hidden_arrivals,no_replan,0,0,2656.55213,0.0,562.910372,228.83963,1167.046177
+reclocked_same_hidden_arrivals,budget_aware,2,2,2609.518032,-47.034098,561.992811,218.627918,1120.012079
+reclocked_same_hidden_arrivals,budget_aware,5,5,2326.006979,-330.545151,561.046107,169.87407,470.830163
+reclocked_same_hidden_arrivals,periodic,5,5,2305.144625,-351.407505,561.046107,171.66926,453.326045

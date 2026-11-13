@@ -1,0 +1,7 @@
+policy,budget,spent,number_of_updates,number_of_triggered_updates,number_of_vessels_revised,weighted_wait,mean_weighted_wait,total_operational_slip,mean_turnaround,makespan,backend,case,scenario,seed
+no_replan,0,0,24,0,0,363.923826,30.326986,0,47.681152,113.0,heuristic,examples/demo_case.tsv,repeated,44
+no_replan,2,0,24,0,0,363.923826,30.326986,0,47.681152,113.0,heuristic,examples/demo_case.tsv,repeated,44
+no_replan,5,0,24,0,0,363.923826,30.326986,0,47.681152,113.0,heuristic,examples/demo_case.tsv,repeated,44
+budget_aware,0,0,24,24,0,363.923826,30.326986,0,47.681152,113.0,heuristic,examples/demo_case.tsv,repeated,44
+budget_aware,2,2,24,24,2,361.562836,30.130236,0,47.484403,113.0,heuristic,examples/demo_case.tsv,repeated,44
+budget_aware,5,5,24,24,5,357.531088,29.794257,0,47.148424,113.0,heuristic,examples/demo_case.tsv,repeated,44

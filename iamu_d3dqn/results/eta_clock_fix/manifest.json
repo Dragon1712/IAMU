@@ -1,0 +1,10 @@
+{
+  "case": "../2024LiERLDDE/case_code/1.txt",
+  "legacy_scenario": "fixtures/legacy_case1_shock22.json",
+  "mode": "all",
+  "out": "results/eta_clock_fix",
+  "seed": 22,
+  "scenario": "shock",
+  "updates": 2,
+  "uncertainty": 8
+}

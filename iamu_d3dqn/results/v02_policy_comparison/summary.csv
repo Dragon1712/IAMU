@@ -1,0 +1,16 @@
+policy,budget,repair_method,n,mean_wait,mean_wait_reduction,mean_spent,mean_runtime_seconds
+always,0,single,30,2871.90261,0.0,0,0.32222
+always,2,single,30,2863.15712,8.74549,2,0.4415
+always,5,single,30,2852.32017,19.58244,4.967,2.22911
+budget_aware,0,single,30,2871.90261,0.0,0,0.31933
+budget_aware,2,single,30,2863.11941,8.78321,2,0.44623
+budget_aware,5,single,30,2851.62122,20.28139,4.967,2.23924
+no_replan,0,single,30,2871.90261,0.0,0,0.32251
+no_replan,2,single,30,2871.90261,0.0,0,0.3235
+no_replan,5,single,30,2871.90261,0.0,0,0.32243
+periodic,0,single,30,2871.90261,0.0,0,0.32167
+periodic,2,single,30,2857.44887,14.45375,2,0.54193
+periodic,5,single,30,2792.5397,79.36291,5,1.32425
+threshold,0,single,30,2871.90261,0.0,0,0.31808
+threshold,2,single,30,2865.68985,6.21276,2,0.46598
+threshold,5,single,30,2838.73026,33.17235,4.933,1.92993

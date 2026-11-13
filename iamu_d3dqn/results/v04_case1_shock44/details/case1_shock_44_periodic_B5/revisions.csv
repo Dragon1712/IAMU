@@ -1,0 +1,6 @@
+time,vessel_id,old,new,estimated_gain,repair_kind,event_type,revision_penalty,cumulative_budget
+12,4,"{'vessel_id': 4, 'start': 27.06, 'end': 43.06, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}","{'vessel_id': 4, 'start': 34.744698, 'end': 50.744698, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",12.40409,single,clock,0,1
+24,2,"{'vessel_id': 2, 'start': 20.76, 'end': 109.76, 'berth_start_m': 533.5, 'cranes': 5, 'duration': 89.0}","{'vessel_id': 2, 'start': 457.26, 'end': 546.26, 'berth_start_m': 901.2, 'cranes': 5, 'duration': 89.0}",46.6074,single,clock,0,2
+24,7,"{'vessel_id': 7, 'start': 54.9, 'end': 136.5, 'berth_start_m': 1117.4, 'cranes': 5, 'duration': 81.6}","{'vessel_id': 7, 'start': 44.954643, 'end': 126.554643, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 81.6}",14.5433,single,clock,0,3
+36,10,"{'vessel_id': 10, 'start': 107.41, 'end': 138.01, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}","{'vessel_id': 10, 'start': 80.998395, 'end': 111.598395, 'berth_start_m': 1112.1, 'cranes': 5, 'duration': 30.6}",26.4116,single,clock,0,4
+96,11,"{'vessel_id': 11, 'start': 109.76, 'end': 143.56, 'berth_start_m': 200.1, 'cranes': 5, 'duration': 33.8}","{'vessel_id': 11, 'start': 107.41, 'end': 141.21, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 33.8}",2.35,single,clock,0,5

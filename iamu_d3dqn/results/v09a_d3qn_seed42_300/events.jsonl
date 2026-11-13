@@ -1,0 +1,88 @@
+{"timestamp": "2026-11-13T11:32:29+00:00", "event": "startup", "episodes": 300, "workers": 8, "validation_workers": 8, "validation_runs_per_check": 216}
+{"timestamp": "2026-11-13T11:32:29+00:00", "event": "processes_started", "validator_pid": 4173907, "actor_pids": [4173908, 4173909, 4173910, 4173911, 4173912, 4173913, 4173914, 4173915], "validation_workers": 8}
+{"timestamp": "2026-11-13T11:32:29+00:00", "event": "phase_training_start", "stage_limit": 25, "completed": 0, "gradient_steps": 0}
+{"timestamp": "2026-11-13T11:32:32+00:00", "event": "actor_online", "worker_id": 7, "pid": 4173915}
+{"timestamp": "2026-11-13T11:32:32+00:00", "event": "actor_start", "worker_id": 7, "pid": 4173915, "episode": 8, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_online", "worker_id": 0, "pid": 4173908}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_start", "worker_id": 0, "pid": 4173908, "episode": 1, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_online", "worker_id": 1, "pid": 4173909}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_start", "worker_id": 1, "pid": 4173909, "episode": 2, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_online", "worker_id": 6, "pid": 4173914}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_online", "worker_id": 3, "pid": 4173911}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_start", "worker_id": 6, "pid": 4173914, "episode": 7, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_online", "worker_id": 2, "pid": 4173910}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_start", "worker_id": 3, "pid": 4173911, "episode": 4, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_online", "worker_id": 5, "pid": 4173913}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_start", "worker_id": 2, "pid": 4173910, "episode": 3, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_start", "worker_id": 5, "pid": 4173913, "episode": 6, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_online", "worker_id": 4, "pid": 4173912}
+{"timestamp": "2026-11-13T11:32:33+00:00", "event": "actor_start", "worker_id": 4, "pid": 4173912, "episode": 5, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:34+00:00", "event": "train_completed", "completed": 1, "episode": 8, "gradient_steps": 0, "worker_id": 7, "worker_pid": 4173915}
+{"timestamp": "2026-11-13T11:32:34+00:00", "event": "actor_start", "worker_id": 7, "pid": 4173915, "episode": 9, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:34+00:00", "event": "train_completed", "completed": 2, "episode": 4, "gradient_steps": 0, "worker_id": 3, "worker_pid": 4173911}
+{"timestamp": "2026-11-13T11:32:34+00:00", "event": "actor_start", "worker_id": 3, "pid": 4173911, "episode": 10, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:34+00:00", "event": "train_completed", "completed": 3, "episode": 1, "gradient_steps": 0, "worker_id": 0, "worker_pid": 4173908}
+{"timestamp": "2026-11-13T11:32:34+00:00", "event": "actor_start", "worker_id": 0, "pid": 4173908, "episode": 11, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:35+00:00", "event": "train_completed", "completed": 4, "episode": 5, "gradient_steps": 13, "worker_id": 4, "worker_pid": 4173912}
+{"timestamp": "2026-11-13T11:32:35+00:00", "event": "actor_start", "worker_id": 4, "pid": 4173912, "episode": 12, "policy_version": 0}
+{"timestamp": "2026-11-13T11:32:36+00:00", "event": "train_completed", "completed": 5, "episode": 9, "gradient_steps": 48, "worker_id": 7, "worker_pid": 4173915}
+{"timestamp": "2026-11-13T11:32:36+00:00", "event": "training_state_saved", "reason": "periodic", "completed": 5, "gradient_steps": 48, "replay_size": 705}
+{"timestamp": "2026-11-13T11:32:36+00:00", "event": "train_completed", "completed": 6, "episode": 11, "gradient_steps": 82, "worker_id": 0, "worker_pid": 4173908}
+{"timestamp": "2026-11-13T11:32:36+00:00", "event": "train_completed", "completed": 7, "episode": 3, "gradient_steps": 118, "worker_id": 2, "worker_pid": 4173910}
+{"timestamp": "2026-11-13T11:32:36+00:00", "event": "actor_start", "worker_id": 7, "pid": 4173915, "episode": 13, "policy_version": 13}
+{"timestamp": "2026-11-13T11:32:36+00:00", "event": "actor_start", "worker_id": 0, "pid": 4173908, "episode": 14, "policy_version": 48}
+{"timestamp": "2026-11-13T11:32:36+00:00", "event": "actor_start", "worker_id": 2, "pid": 4173910, "episode": 15, "policy_version": 82}
+{"timestamp": "2026-11-13T11:32:37+00:00", "event": "train_completed", "completed": 8, "episode": 10, "gradient_steps": 154, "worker_id": 3, "worker_pid": 4173911}
+{"timestamp": "2026-11-13T11:32:37+00:00", "event": "actor_start", "worker_id": 3, "pid": 4173911, "episode": 16, "policy_version": 118}
+{"timestamp": "2026-11-13T11:32:38+00:00", "event": "train_completed", "completed": 9, "episode": 14, "gradient_steps": 191, "worker_id": 0, "worker_pid": 4173908}
+{"timestamp": "2026-11-13T11:32:38+00:00", "event": "actor_start", "worker_id": 0, "pid": 4173908, "episode": 17, "policy_version": 154}
+{"timestamp": "2026-11-13T11:32:38+00:00", "event": "train_completed", "completed": 10, "episode": 12, "gradient_steps": 227, "worker_id": 4, "worker_pid": 4173912}
+{"timestamp": "2026-11-13T11:32:38+00:00", "event": "training_state_saved", "reason": "periodic", "completed": 10, "gradient_steps": 227, "replay_size": 1421}
+{"timestamp": "2026-11-13T11:32:38+00:00", "event": "actor_start", "worker_id": 4, "pid": 4173912, "episode": 18, "policy_version": 191}
+{"timestamp": "2026-11-13T11:32:39+00:00", "event": "train_completed", "completed": 11, "episode": 15, "gradient_steps": 263, "worker_id": 2, "worker_pid": 4173910}
+{"timestamp": "2026-11-13T11:32:39+00:00", "event": "train_completed", "completed": 12, "episode": 16, "gradient_steps": 297, "worker_id": 3, "worker_pid": 4173911}
+{"timestamp": "2026-11-13T11:32:39+00:00", "event": "train_completed", "completed": 13, "episode": 6, "gradient_steps": 333, "worker_id": 5, "worker_pid": 4173913}
+{"timestamp": "2026-11-13T11:32:39+00:00", "event": "actor_start", "worker_id": 2, "pid": 4173910, "episode": 19, "policy_version": 227}
+{"timestamp": "2026-11-13T11:32:39+00:00", "event": "train_completed", "completed": 14, "episode": 17, "gradient_steps": 368, "worker_id": 0, "worker_pid": 4173908}
+{"timestamp": "2026-11-13T11:32:39+00:00", "event": "actor_start", "worker_id": 3, "pid": 4173911, "episode": 20, "policy_version": 263}
+{"timestamp": "2026-11-13T11:32:39+00:00", "event": "actor_start", "worker_id": 5, "pid": 4173913, "episode": 21, "policy_version": 297}
+{"timestamp": "2026-11-13T11:32:39+00:00", "event": "actor_start", "worker_id": 0, "pid": 4173908, "episode": 22, "policy_version": 333}
+{"timestamp": "2026-11-13T11:32:40+00:00", "event": "train_completed", "completed": 15, "episode": 18, "gradient_steps": 402, "worker_id": 4, "worker_pid": 4173912}
+{"timestamp": "2026-11-13T11:32:41+00:00", "event": "training_state_saved", "reason": "periodic", "completed": 15, "gradient_steps": 402, "replay_size": 2122}
+{"timestamp": "2026-11-13T11:32:41+00:00", "event": "actor_start", "worker_id": 4, "pid": 4173912, "episode": 23, "policy_version": 368}
+{"timestamp": "2026-11-13T11:32:41+00:00", "event": "train_completed", "completed": 16, "episode": 22, "gradient_steps": 438, "worker_id": 0, "worker_pid": 4173908}
+{"timestamp": "2026-11-13T11:32:41+00:00", "event": "actor_start", "worker_id": 0, "pid": 4173908, "episode": 24, "policy_version": 402}
+{"timestamp": "2026-11-13T11:32:42+00:00", "event": "train_completed", "completed": 17, "episode": 7, "gradient_steps": 471, "worker_id": 6, "worker_pid": 4173914}
+{"timestamp": "2026-11-13T11:32:42+00:00", "event": "actor_start", "worker_id": 6, "pid": 4173914, "episode": 25, "policy_version": 438}
+{"timestamp": "2026-11-13T11:32:42+00:00", "event": "train_completed", "completed": 18, "episode": 23, "gradient_steps": 506, "worker_id": 4, "worker_pid": 4173912}
+{"timestamp": "2026-11-13T11:32:43+00:00", "event": "train_completed", "completed": 19, "episode": 19, "gradient_steps": 543, "worker_id": 2, "worker_pid": 4173910}
+{"timestamp": "2026-11-13T11:32:44+00:00", "event": "train_completed", "completed": 20, "episode": 24, "gradient_steps": 579, "worker_id": 0, "worker_pid": 4173908}
+{"timestamp": "2026-11-13T11:32:44+00:00", "event": "training_state_saved", "reason": "periodic", "completed": 20, "gradient_steps": 579, "replay_size": 2830}
+{"timestamp": "2026-11-13T11:32:45+00:00", "event": "train_completed", "completed": 21, "episode": 25, "gradient_steps": 614, "worker_id": 6, "worker_pid": 4173914}
+{"timestamp": "2026-11-13T11:32:45+00:00", "event": "train_completed", "completed": 22, "episode": 20, "gradient_steps": 647, "worker_id": 3, "worker_pid": 4173911}
+{"timestamp": "2026-11-13T11:32:47+00:00", "event": "train_completed", "completed": 23, "episode": 13, "gradient_steps": 682, "worker_id": 7, "worker_pid": 4173915}
+{"timestamp": "2026-11-13T11:32:48+00:00", "event": "train_completed", "completed": 24, "episode": 21, "gradient_steps": 716, "worker_id": 5, "worker_pid": 4173913}
+{"timestamp": "2026-11-13T11:32:50+00:00", "event": "monitor", "completed": 24, "outstanding": 1, "gradient_steps": 716, "actor_status": {"7": {"pid": 4173915, "state": "completed", "episode": 13}, "0": {"pid": 4173908, "state": "completed", "episode": 24}, "1": {"pid": 4173909, "state": "running", "episode": 2, "observed_steps": 86, "seconds": 15.02}, "6": {"pid": 4173914, "state": "completed", "episode": 25}, "3": {"pid": 4173911, "state": "completed", "episode": 20}, "2": {"pid": 4173910, "state": "completed", "episode": 19}, "5": {"pid": 4173913, "state": "completed", "episode": 21}, "4": {"pid": 4173912, "state": "completed", "episode": 23}}}
+{"timestamp": "2026-11-13T11:32:51+00:00", "event": "train_completed", "completed": 25, "episode": 2, "gradient_steps": 750, "worker_id": 1, "worker_pid": 4173909}
+{"timestamp": "2026-11-13T11:32:51+00:00", "event": "phase_training_end", "stage_limit": 25, "completed": 25, "gradient_steps": 750}
+{"timestamp": "2026-11-13T11:32:51+00:00", "event": "training_state_saved", "reason": "before-validation", "completed": 25, "gradient_steps": 750, "replay_size": 3513}
+{"timestamp": "2026-11-13T11:32:51+00:00", "event": "validation_queued", "validation_id": "val_000025", "completed": 25, "gradient_steps": 750, "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v09a_d3qn_seed42_300/validation_snapshots/val_000025_grad_000000750.pt", "expected_runs": 216, "queue_backlog": 1}
+{"timestamp": "2026-11-13T11:32:51+00:00", "event": "phase_validation_start", "validation_id": "val_000025", "completed": 25, "gradient_steps": 750, "outstanding_rollouts": 0}
+{"timestamp": "2026-11-13T11:32:52+00:00", "event": "validation_started", "validation_id": "val_000025", "groups": 54, "runs": 216, "coordinator_pid": 4173907}
+{"timestamp": "2026-11-13T11:32:54+00:00", "event": "validation_worker_online", "validation_id": "val_000025", "pid": 4174386}
+{"timestamp": "2026-11-13T11:32:54+00:00", "event": "validation_task_start", "validation_id": "val_000025", "group_index": 0, "worker_pid": 4174386, "case": "../2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_worker_online", "validation_id": "val_000025", "pid": 4174381}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_task_start", "validation_id": "val_000025", "group_index": 1, "worker_pid": 4174381, "case": "../2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_worker_online", "validation_id": "val_000025", "pid": 4174384}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_task_start", "validation_id": "val_000025", "group_index": 2, "worker_pid": 4174384, "case": "../2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_worker_online", "validation_id": "val_000025", "pid": 4174385}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_worker_online", "validation_id": "val_000025", "pid": 4174387}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_task_start", "validation_id": "val_000025", "group_index": 3, "worker_pid": 4174385, "case": "../2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_task_start", "validation_id": "val_000025", "group_index": 4, "worker_pid": 4174387, "case": "../2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_worker_online", "validation_id": "val_000025", "pid": 4174383}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_task_start", "validation_id": "val_000025", "group_index": 5, "worker_pid": 4174383, "case": "../2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_worker_online", "validation_id": "val_000025", "pid": 4174382}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_task_start", "validation_id": "val_000025", "group_index": 6, "worker_pid": 4174382, "case": "../2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_worker_online", "validation_id": "val_000025", "pid": 4174380}
+{"timestamp": "2026-11-13T11:32:55+00:00", "event": "validation_task_start", "validation_id": "val_000025", "group_index": 7, "worker_pid": 4174380, "case": "../2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-13T11:33:06+00:00", "event": "validation_progress", "validation_id": "val_000025", "completed_groups": 0, "total_groups": 54, "completed_runs": 0, "total_runs": 216, "elapsed_seconds": 15.001, "worker_pids": []}

@@ -1,0 +1,13 @@
+policy,budget,spent,number_of_updates,number_of_triggered_updates,number_of_vessels_revised,weighted_wait,mean_weighted_wait,total_operational_slip,mean_turnaround,makespan,backend,case,scenario,seed
+no_replan,0,0,36,0,0,222.514389,18.542866,162.233538,39.897032,110.293411,heuristic,demo,shock,42
+no_replan,2,0,36,0,0,222.514389,18.542866,162.233538,39.897032,110.293411,heuristic,demo,shock,42
+no_replan,5,0,36,0,0,222.514389,18.542866,162.233538,39.897032,110.293411,heuristic,demo,shock,42
+threshold,0,0,36,17,0,222.514389,18.542866,162.233538,39.897032,110.293411,heuristic,demo,shock,42
+threshold,2,2,36,17,2,226.428865,18.869072,117.259532,40.223239,116.654589,heuristic,demo,shock,42
+threshold,5,4,36,17,4,205.504826,17.125402,94.751352,38.479569,114.584141,heuristic,demo,shock,42
+always,0,0,36,36,0,222.514389,18.542866,162.233538,39.897032,110.293411,heuristic,demo,shock,42
+always,2,2,36,36,2,221.547498,18.462291,163.200429,39.816458,110.293411,heuristic,demo,shock,42
+always,5,5,36,36,5,221.547498,18.462291,166.373359,39.816458,110.293411,heuristic,demo,shock,42
+budget_aware,0,0,36,36,0,222.514389,18.542866,162.233538,39.897032,110.293411,heuristic,demo,shock,42
+budget_aware,2,2,36,36,2,221.547498,18.462291,163.200429,39.816458,110.293411,heuristic,demo,shock,42
+budget_aware,5,5,36,36,5,221.547498,18.462291,166.373359,39.816458,110.293411,heuristic,demo,shock,42

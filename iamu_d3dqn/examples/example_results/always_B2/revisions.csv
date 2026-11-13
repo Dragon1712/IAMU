@@ -1,0 +1,3 @@
+time,vessel_id,old,new,estimated_gain,cumulative_budget
+0.48127,0,"{'vessel_id': 0, 'start': 4, 'end': 19.0, 'berth_start_m': 0.0, 'cranes': 4, 'duration': 15.0}","{'vessel_id': 0, 'start': 3.033109, 'end': 18.033109, 'berth_start_m': 0.0, 'cranes': 4, 'duration': 15.0}",0.96689,1
+0.48127,3,"{'vessel_id': 3, 'start': 19.0, 'end': 41.5, 'berth_start_m': 1262.0, 'cranes': 4, 'duration': 22.5}","{'vessel_id': 3, 'start': 18.033109, 'end': 40.533109, 'berth_start_m': 1262.0, 'cranes': 4, 'duration': 22.5}",0.96689,2

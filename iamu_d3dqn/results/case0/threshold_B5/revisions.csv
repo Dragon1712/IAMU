@@ -1,0 +1,6 @@
+time,vessel_id,old,new,estimated_gain,cumulative_budget
+16.22391,5,"{'vessel_id': 5, 'start': 51.63, 'end': 87.43, 'berth_start_m': 1608.9, 'cranes': 5, 'duration': 35.8}","{'vessel_id': 5, 'start': 49.811066, 'end': 85.611066, 'berth_start_m': 1608.9, 'cranes': 5, 'duration': 35.8}",1.81893,1
+16.22391,1,"{'vessel_id': 1, 'start': 18.72, 'end': 106.52, 'berth_start_m': 365.5, 'cranes': 5, 'duration': 87.8}","{'vessel_id': 1, 'start': 17.073441, 'end': 104.873441, 'berth_start_m': 365.5, 'cranes': 5, 'duration': 87.8}",1.64656,2
+25.07388,7,"{'vessel_id': 7, 'start': 86.85, 'end': 94.45, 'berth_start_m': 767.0, 'cranes': 5, 'duration': 7.6}","{'vessel_id': 7, 'start': 81.849681, 'end': 89.449681, 'berth_start_m': 767.0, 'cranes': 5, 'duration': 7.6}",5.00032,3
+25.07388,10,"{'vessel_id': 10, 'start': 94.22, 'end': 138.62, 'berth_start_m': 1059.6, 'cranes': 5, 'duration': 44.4}","{'vessel_id': 10, 'start': 90.15, 'end': 134.55, 'berth_start_m': 2382.8, 'cranes': 5, 'duration': 44.4}",7.59886,4
+29.77829,6,"{'vessel_id': 6, 'start': 85.25, 'end': 165.45, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 80.2}","{'vessel_id': 6, 'start': 84.978321, 'end': 165.178321, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 80.2}",0.27168,5

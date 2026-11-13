@@ -1,0 +1,5 @@
+scenario_format,policy,budget,spent,weighted_wait,change_vs_no_replan,makespan,arrival_lateness_slip,resource_conflict_slip
+exogenous_public_clock,no_replan,0,0,3641.247849,0.0,568.46,260.899917,1881.482748
+exogenous_public_clock,budget_aware,2,2,3435.692123,-205.555726,551.4,260.899917,1680.652467
+exogenous_public_clock,budget_aware,5,5,3428.437663,-212.810186,551.4,241.462484,1680.652467
+exogenous_public_clock,periodic,5,5,3000.994179,-640.25367,570.381522,164.201007,511.130088

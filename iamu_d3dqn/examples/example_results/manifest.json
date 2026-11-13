@@ -1,0 +1,19 @@
+{
+  "case": null,
+  "demo": true,
+  "scenario": "shock",
+  "seed": 42,
+  "uncertainty": 8.0,
+  "updates": 3,
+  "budgets": "0,2,5",
+  "policies": "no_replan,threshold,always,budget_aware",
+  "threshold": 3.0,
+  "period": 12.0,
+  "max_edits_per_event": 2,
+  "out": "/mnt/data/iamu_dynamic_v01/examples/example_results",
+  "backend": "heuristic",
+  "erldde_root": null,
+  "checkpoint": null,
+  "probe_so": null,
+  "build_probe": false
+}
