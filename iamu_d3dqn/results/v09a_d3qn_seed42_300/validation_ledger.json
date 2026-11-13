@@ -8,6 +8,29 @@
       "gradient_steps": 750,
       "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v09a_d3qn_seed42_300/validation_snapshots/val_000025_grad_000000750.pt",
       "snapshot_sha256": "a8ac3757687d7d3ee237d0cb0f30af2450aa865cc5cb78ea62e88eb02d336e67",
+      "status": "done",
+      "expected_runs": 216,
+      "expected_groups": 54,
+      "score": 1945.3419872383538,
+      "validation_seconds": 404.57982024084777,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        4174380,
+        4174381,
+        4174382,
+        4174383,
+        4174384,
+        4174385,
+        4174386,
+        4174387
+      ]
+    },
+    "val_000050": {
+      "id": "val_000050",
+      "completed": 50,
+      "gradient_steps": 1631,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v09a_d3qn_seed42_300/validation_snapshots/val_000050_grad_000001631.pt",
+      "snapshot_sha256": "5a764157d3866b9ede18a0403f7bbf7076691c9849bd34e1d966e180f19ae2cb",
       "status": "pending",
       "expected_runs": 216,
       "expected_groups": 54

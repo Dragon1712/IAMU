@@ -1,0 +1,2 @@
+validation_id,completed,mean_wait,mean_gain,worst_gain,mean_spent,gradient_steps,learner_gradient_steps_at_receive,validation_seconds,expected_runs,evaluated_runs,snapshot_sha256,worker_pids,wall_seconds
+val_000025,25,1945.3419872383538,27.84562166268459,-146.73772555639061,0.6111111111111112,750,750,404.57982024084777,216,216,a8ac3757687d7d3ee237d0cb0f30af2450aa865cc5cb78ea62e88eb02d336e67,4174380;4174381;4174382;4174383;4174384;4174385;4174386;4174387,427.09848198108375
