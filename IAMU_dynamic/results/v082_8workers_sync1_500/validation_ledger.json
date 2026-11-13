@@ -445,9 +445,22 @@
       "gradient_steps": 17379,
       "snapshot": "/home/moco/code/iamu/IAMU_dynamic/results/v082_8workers_sync1_500/validation_snapshots/val_000500_grad_000017379.pt",
       "snapshot_sha256": "ab6f912fe7245651fc403ff96fa0775b7dbf5d019abfc20847409934b5748a13",
-      "status": "pending",
+      "status": "done",
       "expected_runs": 216,
-      "expected_groups": 54
+      "expected_groups": 54,
+      "score": 1947.8338025209885,
+      "validation_seconds": 392.22081340197474,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        4176437,
+        4176438,
+        4176439,
+        4176440,
+        4176441,
+        4176442,
+        4176443,
+        4176444
+      ]
     }
   }
 }

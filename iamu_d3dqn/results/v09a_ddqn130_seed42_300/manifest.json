@@ -1,0 +1,108 @@
+{
+  "train_cases": [
+    "../2024LiERLDDE/case_code/3.txt",
+    "../2024LiERLDDE/case_code/4.txt",
+    "../2024LiERLDDE/case_code/5.txt",
+    "../2024LiERLDDE/case_code/6.txt",
+    "../2024LiERLDDE/case_code/7.txt"
+  ],
+  "val_cases": [
+    "../2024LiERLDDE/case_code/8.txt",
+    "../2024LiERLDDE/case_code/9.txt"
+  ],
+  "candidate_limit": 4,
+  "decision_clock": "union",
+  "period": 12.0,
+  "reward_scale": 100.0,
+  "candidate_screen": "positive",
+  "min_gain": 0.1,
+  "budget_features": "absolute",
+  "value_features": "global",
+  "scenarios": [
+    "shock",
+    "repeated",
+    "small"
+  ],
+  "budgets": [
+    2,
+    5,
+    10
+  ],
+  "uncertainties": [
+    4.0,
+    8.0,
+    12.0
+  ],
+  "updates": 2,
+  "train_seed_start": 200000,
+  "val_seeds": [
+    400001,
+    400002,
+    400003
+  ],
+  "training_args": {
+    "train_cases": [
+      "../2024LiERLDDE/case_code/3.txt",
+      "../2024LiERLDDE/case_code/4.txt",
+      "../2024LiERLDDE/case_code/5.txt",
+      "../2024LiERLDDE/case_code/6.txt",
+      "../2024LiERLDDE/case_code/7.txt"
+    ],
+    "val_cases": [
+      "../2024LiERLDDE/case_code/8.txt",
+      "../2024LiERLDDE/case_code/9.txt"
+    ],
+    "episodes": 300,
+    "workers": 8,
+    "validation_workers": 8,
+    "validation_progress_every": 6,
+    "state_every": 5,
+    "resume": false,
+    "log_every": 1,
+    "prefetch_per_worker": 1,
+    "sync_every": 1,
+    "worker_timeout": 60.0,
+    "max_idle_seconds": 0.0,
+    "scenarios": "shock,repeated,small",
+    "budgets": "2,5,10",
+    "train_seed_start": 200000,
+    "val_seeds": "400001:400003",
+    "uncertainties": "4,8,12",
+    "validation_uncertainty": 8.0,
+    "updates": 2,
+    "clock": "union",
+    "period": 12.0,
+    "candidate_limit": 4,
+    "reward_scale": 100.0,
+    "candidate_screen": "positive",
+    "budget_features": "absolute",
+    "value_features": "global",
+    "min_gain": 0.1,
+    "keep_margin": 0.1,
+    "greedy_exploration_prob": 0.75,
+    "hidden_dim": 130,
+    "q_network": "ddqn",
+    "lr": 0.0003,
+    "gamma": 1.0,
+    "replay_capacity": 50000,
+    "batch_size": 64,
+    "warmup": 512,
+    "updates_per_step": 0.25,
+    "max_updates_per_episode": 64,
+    "target_update": 250,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_episodes": 300,
+    "eval_every": 25,
+    "seed": 42,
+    "device": "cuda:3",
+    "out": "results/v09a_ddqn130_seed42_300"
+  },
+  "parallel_workers": 8,
+  "prefetch_per_worker": 1,
+  "actor_sync_every": 1,
+  "parallel_off_policy": true,
+  "validation_parallel": true,
+  "validation_sync_phases": true,
+  "warning": "Phase-synchronous validation; rollout completion order remains nondeterministic"
+}

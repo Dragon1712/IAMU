@@ -3474,3 +3474,9 @@
 [phase-validation] val_000500 completed=500 gradients=17379 elapsed=360.6s
 [validation-progress] val_000500 212/216 elapsed=375.0s pids=[4176437, 4176438, 4176439, 4176440, 4176441, 4176442, 4176443, 4176444]
 [phase-validation] val_000500 completed=500 gradients=17379 elapsed=375.7s
+[validation-progress] val_000500 212/216 elapsed=390.0s pids=[4176437, 4176438, 4176439, 4176440, 4176441, 4176442, 4176443, 4176444]
+[phase-validation] val_000500 completed=500 gradients=17379 elapsed=390.7s
+[validation-progress] val_000500 216/216 elapsed=392.1s pids=[4176437, 4176438, 4176439, 4176440, 4176441, 4176442, 4176443, 4176444]
+[validation-finished] val_000500 wait=1947.834 best=1905.896 validated_grad=17379 current_grad=17379 216 runs in 392.2s
+[training-complete] 500 episodes; all validation phases finished
+[complete] completed=500 gradients=17379 validations=20 validated_runs=4320 best=/home/moco/code/iamu/IAMU_dynamic/results/v082_8workers_sync1_500/best.pt
