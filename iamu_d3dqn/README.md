@@ -1,179 +1,115 @@
-# IAMU Dynamic Commitment Prototype v0.3 (causal ETA clock fix)
+# IAMU 三模型离线 Q 值诊断（DDQN-96 / DDQN-130 / CC-D3QN-96）
 
-**Event-driven berth–quay-crane scheduling with ETA updates and a limited budget of published-plan changes. No ERL-DDE retraining is required.**
+**与 GitHub `Dragon1712/IAMU` 中 `iamu_d3dqn/` 代码兼容。** 请将 `offline_q_diagnostics.py` 和 `test_offline_q_diagnostics.py` 复制到 `iamu_d3dqn/` 根目录，与 `train_budgeted_ddqn_parallel.py` 同级。
 
-> **v0.3 protocol change (non-backward-comparable)**: notification times now use only the initially published ETA, `t=eta0*(u+1)/(updates_per_vessel+1)`, never the hidden actual arrival. Updates after real arrival are suppressed. Hidden arrivals and forecast noise use separate RNG streams. **Rerun all previous benchmarks**; the old 72/450 evaluations are not directly comparable to newly generated scenarios. Read [ETA_CAUSALITY_AND_REGRESSION.md](ETA_CAUSALITY_AND_REGRESSION.md). Reproduce the legacy seed-22 failure and the same-truth reclocked control with `python diagnose_eta_regression.py --mode all` (hindsight is *offline diagnostic only*, never used for deciding actions). All 25 tests pass in the development environment.
+本工具不会训练模型、更新梯度或修改任何检查点。它只读取三个已经训练完成的 **冻结模型文件** `best.pt`，从原 IAMU 物理仿真器重建验证场景，计算各模型的 Q 值，并产生 CSV 诊断文件。
 
+## 先检查权重是否存在
 
-This prototype is deliberately a **new** planning/realization and commitment layer. It reads the **original ERL-DDE instance format** and can optionally use a **frozen original ERL-DDE `ES` checkpoint** to derive proposal order and berth-position hints. It **does not claim** to be the original authors' dynamic simulator, and it currently **does not optimize or simulate shore power**.
-
-## 1. What is implemented
-
-- The original `case_code/*.txt` **tab-separated** columns: ETA, workload, ship length, ship maximum cranes, and total port cranes (fifth column of **the first row**).
-- A hidden actual arrival time and **causal** ETA update event stream for each ship; randomized scenarios: `small`, `shock`, and `repeated`, controlled by seed. Only the environment sees actual arrivals.
-- An **initially published plan** (initial publication is free), persistent announced assignments, a global modification budget `B`, and per-ship cumulative revision counts. A plan edit is charged **once for each ship whose published start time, berth coordinate or assigned crane count actually changes**; repeated changes to the same ship are charged again.
-- **Immutability after real service starts**: ships already in service cannot be revised.
-- A separate physical **realization engine**, with actual arrival releases, 3,000-m continuous quay, safety gaps, and total crane capacity. If actual arrival is late or physical capacity is busy, the ship's operational start slips **without silently counting this as an announced revision**.
-- Event-driven heuristic controller choices: `no_replan`, `always`, `threshold`, `periodic` (independent scheduled clock), `budget_aware` (forecast improvement threshold). These are **untrained**, interpretable baselines, **not** learned revision policies.
-- Each decision event can revise at most `--max-edits-per-event` vessels and never exceeds the global budget. Initial/publication, forecasts, revisions and realized operations are saved separately; all methods receive exactly the same scenario and hidden actual arrivals.
-- Optional original, **pretrained** ERL-DDE network replay through the **original C++ source compiled in a separate probe library**. This uses the published `ES` policy's action selection order and suggested berth position **as hints to the new commitment planner**; it is not a faithful reuse of the original C++ dynamics as the execution layer.
-
-### Deliberate simplified assumptions (important for research validity)
-
-- The berth and crane **planning/realization engine in this package is simplified**. Continuous berth positions and non-overlap use the original quay-length/safety-ratio constants, and operation duration is `workload / assigned_cranes` at unit crane efficiency. It does not model the original fine-grained crane movement, reassignment, or original reward.
-- The candidate scheduler is a **greedy earliest-feasible insertion heuristic**, not the original ERL-DDE static optimizer, not optimal MILP/CP-SAT, and not a trained dynamic model. Optional `--repair-method alns2` evaluates small **ALNS-inspired** (not adaptive ALNS) two-vessel destroy/repair neighborhoods and alternative crane counts around immutable commitments. In ERL-DDE backend, frozen policy **hints** influence order and berth location; all constraints remain enforced by the new planner.
-- Future ETA predictions are treated as point forecasts when scoring revisions. Realized arrivals may differ, and the simulated future arrival trajectory remains hidden from the controller.
-- `periodic` now creates **independent clock ticks**, including when no ETA notification occurs. The clock horizon defaults to the originally published makespan plus one period, is derived solely from public information, and can be overridden with `--periodic-horizon`.
-- `always` means **consider a new plan at every ETA update**, not forcibly change a published assignment when its estimated objective is worse.
-- No shore-power compatibility, electricity capacity, grid emissions, connection/disconnection time, or monetary/CO2 metric is modeled. Those require additional data and explicitly validated resource constraints.
-- Do not compare numerical rewards from this simulator with ERL-DDE's negative `reward`. The objectives and physics differ.
-
-## 2. V0.2 enhancements grounded in transportation recovery implementations
-
-The implementation is **new IAMU Python code** (no wholesale copying or runtime dependency on third-party research systems):
-
-| Reference | Verified source location | Reused principle | Concrete IAMU implementation |
-|---|---|---|---|
-| RecovAir airline recovery | `broad-well/recovair-abm/src/dispatcher.rs`, `src/metrics.rs` | Separate event-driven physical operations from announced assignment-change events | `core.py` emits independent decision events, revision records, ETA updates, and late-arrival/resource slip components |
-| Yin et al., *INFORMS Journal on Computing*, [DOI](https://doi.org/10.1287/ijoc.2023.0391) | `INFORMSJoC/2023.0391/src/WindowsFormsApplication7/Algorithm/Heuristics.cs` | Hold unchanged scheduled services while locally adjusting affected services | `recovery.py::repair_subset` removes 1–2 unstarted commitments and repairs them around fixed reservations |
-| Learning-based MPC railway work | `fabcaio/railwaynet_learning/tests_learning_cl_heuristic.py` | Closed-loop feasibility recovery after candidate plans | `core.py::validate_plan` plus `recovery.py::repair_subset` evaluate full physical feasibility before publication |
-| Robust Railway open-source project | `transp-or/Robust_Railway/Robust_Railway/operators/` | Destroy/repair neighborhoods | Deterministic, **non-adaptive** `alns2` paired recovery; it is not a reimplementation of their ALNS |
-
-The original time/berth/crane physics, objectives, reward, and constraints differ. **No railway or aircraft pretrained weight is transferred.**
-
-New in v0.2:
-
-- `--repair-method alns2`: deterministic two-ship local destroy/repair neighbors selected via a resource-pressure graph. Only eligible unstarted ships can be changed; all other published commitments are fixed.
-- The `max-edits-per-event` and global budgets count **actually changed vessels**, not proposal calls or the number of destroyed ships.
-- `--revision-penalty`: optional value of preserving a scarce public promise; used to rank candidate improvements after feasibility checks.
-- A real `periodic` clock fires at fixed announced times even with zero ETA updates; distinct `decision_events.csv` and `eta_updates.csv` outputs.
-- `arrival_lateness_slip` versus `resource_conflict_slip` give a measurable decomposition of involuntary operational slip, **neither counts as an announced edit**.
-- `run_benchmark.py` supports paired multi-seed/multi-instance evaluation with shared disturbances and an explicit `no_replan` comparison.
-- The old `simulate(..., repair_method='single')` default remains a single-ship local search; the periodic-policy semantics and decision log format **have changed**.
-
-### Run new methods
+GitHub 仓库中目前有三个实验的 CSV、JSON，但未查到 `.pt` 权重文件。运行前请在训练服务器上执行：
 
 ```bash
-python run_experiment.py --demo --scenario shock --seed 42 \
-  --policies no_replan,budget_aware,periodic \
-  --budgets 0,2,5 --repair-method alns2 \
-  --max-repair-pairs 4 --revision-penalty 0.0 \
-  --period 12 --out results/v02_demo
-
-python run_benchmark.py --demo --scenarios shock,repeated \
-  --seeds 11,22,33 --budgets 0,2,5 \
-  --policies no_replan,budget_aware \
-  --repair-methods single,alns2 --out results/v02_benchmark
+cd ~/code/iamu/iamu_d3dqn
+ls -lh results/v082_8workers_sync1_300/best.pt \
+       results/v09a_ddqn130_seed42_300/best.pt \
+       results/v09a_d3qn_seed42_300/best.pt
 ```
 
-`run_benchmark.py` writes `runs.csv`, `paired_runs.csv`, `summary.csv` and `manifest.json`. The demo's results are **toy/synthetic**; they must not be reported as real-port or shore-power gains. On the 2-ship regression fixture, single repair yields 30 units weighted waiting, while pair repair yields 1 unit after two charged revisions. This is a constructed counterexample, not an empirical generalization.
+- 如果原 DDQN-96 只在旧目录，使用 `--ddqn96 ../IAMU_dynamic/results/v082_8workers_sync1_300/best.pt`。
+- 如果 `best.pt` 丢失，但服务器上保留了 **对应最佳验证检查点**，也可以用 `--ddqn96 /path/to/validation_snapshots/val_000150_grad_000005123.pt`；DDQN-130 的最佳点为 Episode 75 / grad 2506；D3QN-96 为 Episode 100 / grad 3387。注意必须核对 `validation_curve.csv` 和快照内容，不能任意选择不同检查点。
+- 不要使用 GitHub 的 `train_curve.csv` 或 `validation_curve.csv` 假装网络权重；它们不包含参数，无法计算 Q 值。
 
-## 3. Quick start: zero installs beyond Python standard library
-
-Start in a **new directory**, never in the directory of a running ERL-DDE training process:
+## 运行：完整验证集
 
 ```bash
-cd ~/code/iamu
-mkdir -p IAMU_dynamic
-cd IAMU_dynamic
-# Extract the ZIP contents here.
-python run_experiment.py --demo --scenario shock --seed 42 --budgets 0,2,5,unlimited --out results/demo
-python -m unittest discover -s tests -v
+cd ~/code/iamu/iamu_d3dqn
+export OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+
+python -u offline_q_diagnostics.py \
+  --ddqn96 results/v082_8workers_sync1_300/best.pt \
+  --ddqn130 results/v09a_ddqn130_seed42_300/best.pt \
+  --d3qn96 results/v09a_d3qn_seed42_300/best.pt \
+  --manifest results/v09a_d3qn_seed42_300/manifest.json \
+  --reference-policies keep,greedy,periodic \
+  --device cpu \
+  --out results/q_diag_3models_best_seed42 \
+  2>&1 | tee q_diag_3models_best_seed42.log
 ```
 
-Run **your own original paper instance** (no checkpoint required; new heuristic backend):
+默认直接复用 `manifest.json` 中的测试网格：Case 8/9 × `shock,repeated,small` × seed 400001–400003 × 预算 2/5/10，共 54 个配对实例。
+
+每个实例使用三种 **共同参考轨迹**（Keep、Greedy、Periodic），并让三个网络各自额外运行一条**不探索、无训练更新**的策略轨迹。因此默认执行 54 × 6 = **324 条事件驱动仿真轨迹**。三个模型在同一个参考状态上的 Q 输出可直接比较动作差值与排序；不同策略自己走到的状态不能直接拿绝对 Q 值作公平比较。
+
+可以先进行小规模自检：
 
 ```bash
-python run_experiment.py \
-  --case ../2024LiERLDDE/case_code/0.txt \
-  --scenario repeated --seed 123 --updates 2 \
-  --budgets 0,2,5 \
-  --policies no_replan,threshold,budget_aware \
-  --out results/case0_seed123
+python offline_q_diagnostics.py --max-groups 1 \
+  --out results/q_diag_smoke
 ```
 
-An output directory contains:
+如果三个 `best.pt` 都不在默认位置，应按前述命令传入路径。
 
-```
-comparison.csv
-manifest.json
-budget_aware_B5/
-    scenario.json              # includes hidden actual arrivals: for evaluation only
-    metrics.json
-    result.json
-    decision_events.csv        # all ETA notifications + independent clock ticks
-    eta_updates.csv            # only ETA notifications and available forecasts
-    revisions.csv              # each charged, ship-level announced revision
-    initial_published.csv
-    final_published.csv
-    realized.csv               # actual physical service times
-```
-
-### Load existing (frozen) ERL-DDE weights, NO training
-
-1. **Do not** modify the authors' `main.py`, `train.py`, `BACAP_env.cpp`, or `.so`.
-2. Copy a **completed, stable** checkpoint to a new location; do not read a file while it is being overwritten by running training.
-3. Install PyTorch in the environment if it is not already installed; have `g++` and `python3` available.
-4. Compile a **separate** read-only probe library and run pure inference:
+如果只想调查严重冲击和预算 2，可以使用：
 
 ```bash
-mkdir -p checkpoints
-cp ../2024LiERLDDE/BACAP_checkpoints/2/synced_model_0_55906.pth \
-   checkpoints/erldde_frozen_0.pth
-
-python run_experiment.py \
-  --case ../2024LiERLDDE/case_code/0.txt \
-  --backend erldde \
-  --erldde-root ../2024LiERLDDE \
-  --checkpoint checkpoints/erldde_frozen_0.pth \
-  --build-probe \
-  --updates 1 --scenario shock --seed 123 \
-  --budgets 0,2,5 \
-  --policies no_replan,budget_aware \
-  --out results/case0_frozen_erldde
+python offline_q_diagnostics.py \
+  --cases ../2024LiERLDDE/case_code/9.txt \
+  --scenarios shock --seeds 400001:400003 --budgets 2 \
+  --out results/q_diag_case9_shock_b2
 ```
 
-If the specified checkpoint directory does not exist, substitute the actual stable checkpoint path. The choice of seed and model checkpoint **must be recorded** when reporting experiments. On-demand frozen ERL-DDE replay on multiple ETA snapshots can take time; start with a single case and `--updates 1`.
+不需要各模型实际执行自身轨迹时可增加 `--no-onpolicy`，此时仅计算共同参考状态的 Q 值和动作分歧，不生成 Monte Carlo 误差统计。
 
-This mode builds `results/case0_frozen_erldde/probe_build/libBACAP_env_probe.so` from an include of the **local original** `BACAP_env.cpp`. It does not overwrite the published `.so` or Python wrapper. A tiny generated C++ accessor maps a waiting-list action index to a source ship ID so the ranking hints are attached to the right ship. Frozen `model.ES` is executed under `torch.no_grad()` on CPU; **no optimizer, `train_loop`, or parameter updates** occur.
+## 输出文件说明
 
-**Integration test scope:** the optional C++ probe build and checkpoint load have been tested against a small compiled **stub** that reproduces the C API; we have *not* run the original published full simulator with your trained checkpoint in this environment. Run this command on your server to complete that validation.
+| 输出文件 | 内容及用途 |
+|---|---|
+| `q_states.csv` | **每次决策×每个模型**：原始 Keep Q、最佳 Edit Q、Q-gap、网络会选的动作、实际执行动作、D3QN Value 和原始 Advantage |
+| `action_q_values.csv` | **每个合法动作**的 Q、相对 Keep 的 Q 差、加了 Keep margin 的选择分数、公开 ETA 规划器点预测收益；D3QN 额外输出 raw/centered Advantage |
+| `common_state_comparison.csv` | 参考轨迹中**同一个状态**对应三个模型的动作、Q-gap、是否一致 |
+| `choice_agreement_summary.csv` | 总体动作一致率及**至少存在一个合法 Edit 时**的动作一致率；建议后者作为首要诊断 |
+| `q_summary.csv` | 按网络、参考策略、情景、预算汇总可改约状态的 Q-gap 与 Edit 选择率，以及仅 Keep 合法的比例 |
+| `episode_outcomes.csv` | 参考策略及三个网络自身策略的真实等待、改约次数及相对 Keep/Periodic 的收益和后悔值 |
+| `performance_summary.csv` | 分预算/扰动及总计的平均等待、预算消耗和相对 Periodic 的 CVaR90 正向后悔值 |
+| `onpolicy_mc_returns.csv` | 每个模型自身运行状态的 `Q(所执行动作)`、实际后续**累计奖励**和两者误差 |
+| `q_calibration_summary.csv` | `Q - 实际回报` 的 Bias、MAE、RMSE、90 分位绝对误差；数值单位是训练用的 **缩放奖励** |
+| `diagnostic_manifest.json` | 参数、案例网格、真实检查点路径、SHA256、架构、参数数量、所选择 Episode 等，便于论文复现 |
 
-## 3. Protocol and budget definition
+## 如何解释结果
 
-At time 0, initial ETA announcements generate a fully published feasible schedule. For an event at time `t`:
+### 1. 共同状态动作差异是最直接的架构诊断
 
-1. The physical simulator executes already-published commitments up to `t` using **hidden actual arrivals**, and freezes every ship that already started.
-2. The new ETA notice is revealed for its ship; all other future actual arrivals remain hidden.
-3. A trigger rule chooses whether to consider edits.
-4. For each eligible, not-yet-started candidate, a new assignment is computed **around every unchanged published reservation**, enforcing quay non-overlap and crane capacity. A forecast dispatcher estimates downstream waiting-time improvement.
-5. The best positive-gain single-vessel change is announced if permitted by the chosen policy and remaining `B`. Repeat for up to `max-edits-per-event` and count each changed published assignment against the **cumulative** global budget.
-6. Save the decision and continue to next event. After the last event, run the hidden physical arrivals to completion and measure realized metrics.
+同一组 `global_features/action_features/mask` 输入三个冻结网络。对每个网络计算：
 
-The **candidate score never uses the hidden actual arrival vector**. It uses observed history and current ETA forecasts for ships yet to arrive. A past ship may physically start later than initially published without a publication change; the metric `total_operational_slip` makes this distinction visible.
+`q_gap = max_legal_edit Q(s, Edit) - Q(s, Keep)`
 
-## 4. Basic tests
+当 `q_gap > keep_margin = 0.1` 时，模型通常会优先 Edit；等于阈值时还需考虑候选分数及 argmax 次序。若没有合法 Edit，则 `q_gap` 为空，不应误当作 0。
+
+`choice_agreement_summary.csv` 分别提供含 Keep-only 状态的总体一致率，以及只在可执行 Edit 的状态上的一致率。**比较时优先看后者**，否则许多没有选择余地的状态会人为提高一致率。
+
+### 2. D3QN Value/Advantage 不能被误读
+
+D3QN 使用合法动作的 Masked Mean，所以 `Value` 代表**本网络预测的合法动作平均 Q 值**，不是理论最优状态价值。`adv_raw` 含有任意公共平移自由度，不宜跨状态或模型比较；分析时优先看 `adv_centered` 或 Q-gap。
+
+### 3. `Q - Monte Carlo 回报` 只能做离线校准诊断
+
+在网络自己的冻结策略轨迹上，计算从当前决策到终局的实际折算累计奖励 `G_t`（本实验 `gamma=1`）。定义：
+
+`error_q_minus_mc = Q(s_t, a_t) - G_t`
+
+均值为正表示相对这**一次真实到港扰动结果**的高估，负值表示低估；不等于已准确测得真实期望 Q，也不是动作的因果效应。随机 ETA、未观测未来扰动、对 Keep 的启发式偏置都应在解释时考虑。不要直接用模型内部 Q 值量级比较性能，应对比实际等待、后悔值和跨种子稳定性。
+
+### 4. 没有“历史训练梯度”
+
+本工具不重新训练。因此它不能恢复当时 Value/Advantage 梯度随训练变化的历史曲线；历史梯度需要在训练期间额外记录。这份工具只实现你要求的三个**已完成实验**的离线 Q 值与动作价值诊断。
+
+## 测试
 
 ```bash
-python -m unittest discover -s tests -v
-python -m compileall -q iamu_dynamic run_experiment.py
+cd ~/code/iamu/iamu_d3dqn
+python -m unittest test_offline_q_diagnostics -v
 ```
 
-The unit tests cover instance parser, seed reproducibility, announcement causality, planned/realized spatial + crane feasibility, budget accounting, started-ship freeze, `B=0` equivalence and non-anticipativity of future arrivals. A separate **stub-based** test verifies that the optional C++ accessor, ctypes ABI and frozen checkpoint adapter can be compiled and invoked.
+测试会创建三份**随机初始化的测试检查点**和两个小规模 TSV，验证 Q Mask、三个模型加载、参考策略、自己的运行、CSV 输出与有限回报计算。它不依赖已有 `best.pt`，也不构成真实港口模型性能证明。
 
-## 5. Scientific interpretation and next research steps
-
-- Treat this as a **V0.1 protocol prototype / benchmark harness**, not a validated industrial simulator or a reproduction of published ERL-DDE dynamic scheduling results.
-- The independent periodic trigger and bounded two-ship feasibility repair are available. Future work should still add a calibrated minimum advance-notice commitment horizon, multi-ship (larger than two) repair and optional MILP/CP-SAT validator.
-- V0.3 should add ship-level shore-power eligibility, plug count, kW capacity, connection/disconnection time, grid time-of-use prices, auxiliary-engine emissions and emissions factors. Each extension requires documented assumptions and constrained validation.
-- A subsequent **learning** stage can replace the `budget_aware` gate with a trained accept/defer/ship-subset policy while **keeping ERL-DDE frozen**. Compare on matched instances and seeds and use held-out cases.
-
-For research code reuse and paper comparison, see `REUSE_LITERATURE.md`.
-
-## V0.7 预算 RL 状态与动作筛选
-
-可选的绝对预算特征、基于公开 ETA 的候选全局改善及外部性特征、正收益动作筛选、Keep 偏置与 Greedy 引导探索，详见 [BUDGETED_RL_V07.md](BUDGETED_RL_V07.md)。
-
-**重要：** V0.7 将网络输入从 `(19,17)` 扩为 `(24,24)`，旧 V0.6 模型检查点不兼容。通过 `python -m unittest discover -s tests -v` 测试后，可运行 `EPISODES=300 EVAL_EVERY=50 bash run_v07_ablation.sh` 做机制消融（不要覆盖旧结果）。
-
-诊断最佳 V0.7 检查点在**验证集**的行为时，使用 `python diagnose_v07_validation.py --checkpoint results/v07_ablation_D/best.pt --save-actions`；`evaluate_budgeted_ddqn.py` 仅用于与训练、验证不重合的最终测试案例。
+本次交付在受限本地容器中通过基于相同 DDQN/D3QN 模型类、模拟环境接口的 2 项端到端冒烟测试；正式服务器上的真实 IAMU 动态仿真仍需执行上述 unittest 与全量诊断。

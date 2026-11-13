@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/moco/code/iamu/IAMU_dynamic/offline_q_diagnostics.py", line 574, in <module>
+    raise SystemExit(main())
+  File "/home/moco/code/iamu/IAMU_dynamic/offline_q_diagnostics.py", line 480, in main
+    raise FileNotFoundError("Missing local PyTorch weights: "+", ".join(missing)+
+FileNotFoundError: Missing local PyTorch weights: results/v09a_ddqn130_seed42_300/best.pt, results/v09a_d3qn_seed42_300/best.pt. GitHub CSV/JSON results do not contain best.pt. Pass --ddqn96/--ddqn130/--d3qn96 pointing to the trusted SERVER files (or matching frozen validation snapshots).

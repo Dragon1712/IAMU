@@ -1,0 +1,24 @@
+[protocol] all three model manifests match on evaluation settings
+[checkpoint] ddqn96 ddqn-96 epoch=150 results/v082_8workers_sync1_300/best.pt
+[checkpoint] ddqn130 ddqn-130 epoch=75 results/v09a_ddqn130_seed42_300/best.pt
+[checkpoint] d3qn96 d3qn-96 epoch=100 results/v09a_d3qn_seed42_300/best.pt
+[grid] 2 cases x 3 scenarios x 3 seeds x 3 budgets
+[progress] 3 validation groups done
+[progress] 6 validation groups done
+[progress] 9 validation groups done
+[progress] 12 validation groups done
+[progress] 15 validation groups done
+[progress] 18 validation groups done
+[progress] 21 validation groups done
+[progress] 24 validation groups done
+[progress] 27 validation groups done
+[progress] 30 validation groups done
+[progress] 33 validation groups done
+[progress] 36 validation groups done
+[progress] 39 validation groups done
+[progress] 42 validation groups done
+[progress] 45 validation groups done
+[progress] 48 validation groups done
+[progress] 51 validation groups done
+[progress] 54 validation groups done
+[complete] 54 groups, 324 episode rollouts -> results/q_diag_3models_best_seed42
