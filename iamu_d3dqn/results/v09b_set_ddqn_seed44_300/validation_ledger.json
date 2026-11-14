@@ -1,0 +1,16 @@
+{
+  "validation_runs_per_check": 216,
+  "validation_groups_per_check": 54,
+  "records": {
+    "val_000025": {
+      "id": "val_000025",
+      "completed": 25,
+      "gradient_steps": 747,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v09b_set_ddqn_seed44_300/validation_snapshots/val_000025_grad_000000747.pt",
+      "snapshot_sha256": "0d2611c3b239bf118e4956570420f0597952d85060889c3812818dddb5b44c04",
+      "status": "pending",
+      "expected_runs": 216,
+      "expected_groups": 54
+    }
+  }
+}

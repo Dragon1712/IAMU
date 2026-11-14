@@ -1,0 +1,13 @@
+# 仅忽略运行时数据，不忽略版本化实验源码
+__pycache__/
+*.py[cod]
+.pytest_cache/
+assets/cases/*.txt
+assets/checkpoints/**/*
+!assets/checkpoints/.gitkeep
+results/**/*
+!results/.gitkeep
+*.log
+
+# Local source paths / version snapshot (recorded inside run manifest)
+dependency_snapshot.json

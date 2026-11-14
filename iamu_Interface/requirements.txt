@@ -1,0 +1,3 @@
+# 与现有 erldde 环境一致即可，不建议重新安装覆盖 CUDA 版 PyTorch
+numpy>=1.23
+torch>=2.0
