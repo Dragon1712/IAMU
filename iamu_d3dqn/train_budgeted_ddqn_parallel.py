@@ -278,8 +278,8 @@ def _arguments():
     p.add_argument('--keep-margin',type=float,default=0.)
     p.add_argument('--greedy-exploration-prob',type=float,default=0.)
     p.add_argument('--hidden-dim',type=int,default=96)
-    p.add_argument('--q-network',choices=['ddqn','d3qn'],default='ddqn',
-                   help='Direct candidate Q (DDQN) or masked dueling candidate Q (CC-D3QN)')
+    p.add_argument('--q-network',choices=['ddqn','d3qn','set_ddqn','set_d3qn'],default='ddqn',
+                   help='ddqn / d3qn / set_ddqn / set_d3qn (masked Deep Sets + dueling)')
     p.add_argument('--lr',type=float,default=3e-4)
     p.add_argument('--gamma',type=float,default=1.)
     p.add_argument('--replay-capacity',type=int,default=50000)
