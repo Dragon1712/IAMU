@@ -1,0 +1,57 @@
+{
+  "experiment": "counterfactual",
+  "checkpoint": "/home/moco/code/iamu/iamu_d3dqn/results/v09b_set_ddqn_seed42_300/best.pt",
+  "checkpoint_sha256": "32c7e14e333fa96814171153684ac99c353f85d6c3682fa359c8ff11b1b62031",
+  "training_manifest": "/home/moco/code/iamu/iamu_d3dqn/results/v09b_set_ddqn_seed42_300/manifest.json",
+  "training_manifest_sha256": "b964bf658480da351347315c279e964c4aa2f8776db7b8787d595b17a01d74a4",
+  "training_margin": 0.1,
+  "evaluation_args": {
+    "command": "counterfactual",
+    "checkpoint": "results/v09b_set_ddqn_seed42_300/best.pt",
+    "manifest": "results/v09b_set_ddqn_seed42_300/manifest.json",
+    "out": "results/diag_counterfactual_set_ddqn_seed42",
+    "device": "cpu",
+    "cases": null,
+    "scenarios": null,
+    "seeds": null,
+    "budgets": null,
+    "overwrite": false,
+    "references": "keep,periodic",
+    "continuation": "model",
+    "states_per_group": 2,
+    "action_mode": "top_q"
+  },
+  "environment": {
+    "candidate_limit": 4,
+    "decision_clock": "union",
+    "period": 12.0,
+    "reward_scale": 100.0,
+    "candidate_screen": "positive",
+    "min_gain": 0.1,
+    "budget_features": "absolute",
+    "value_features": "global",
+    "updates": 2,
+    "uncertainty": 8.0
+  },
+  "cases": [
+    "../2024LiERLDDE/case_code/8.txt",
+    "../2024LiERLDDE/case_code/9.txt"
+  ],
+  "scenarios": [
+    "shock",
+    "repeated",
+    "small"
+  ],
+  "seeds": [
+    400001,
+    400002,
+    400003
+  ],
+  "budgets": [
+    2,
+    5,
+    10
+  ],
+  "n_records": 216,
+  "interpretation": "Counterfactual returns are for one realized ETA stream and the stated fixed suffix policy. Q is trained for its own greedy policy with keep margin; outcomes under other suffix policies are diagnostic, NOT an unbiased estimate of Q^star."
+}
