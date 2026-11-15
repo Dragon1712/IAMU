@@ -1,0 +1,5 @@
+[stability] groups=1 case=8 shock ETA=400001 B=2 states=1
+[stability] groups=2 case=8 shock ETA=400001 B=10 states=1
+[stability] groups=3 case=8 repeated ETA=400001 B=2 states=1
+[stability] groups=4 case=8 repeated ETA=400001 B=10 states=1
+[DONE] states=4, rows=36 => results/v10_e2_risk_stability_smoke

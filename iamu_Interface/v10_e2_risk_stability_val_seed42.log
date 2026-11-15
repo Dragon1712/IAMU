@@ -52,4 +52,4 @@
 [stability] groups=52 case=9 small ETA=400003 B=2 states=0
 [stability] groups=53 case=9 small ETA=400003 B=5 states=0
 [stability] groups=54 case=9 small ETA=400003 B=10 states=0
-[DONE] states=31, rows=279 => results/v10_e2_risk_stability_val_seed42
+[DONE] states=31, rows=279 => results/v10_e2_risk_stability_joint_seed42

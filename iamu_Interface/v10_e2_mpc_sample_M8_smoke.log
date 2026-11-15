@@ -1,0 +1,2 @@
+[v10] case=8 scenario=shock seed=400001 B=2
+V1.0 complete: 4 policy trajectories; results/v10_e2_mpc_sample_M8_smoke
