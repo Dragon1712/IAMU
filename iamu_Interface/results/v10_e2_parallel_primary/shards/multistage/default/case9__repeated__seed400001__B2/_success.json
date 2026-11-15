@@ -1,0 +1,7 @@
+{
+  "job": "multistage/default/case9__repeated__seed400001__B2",
+  "command_hash": "6b05571dd696e8e8dade1c5b54865b95328af0cbc74cc83085fc3e62a6f84173",
+  "output_sha256": "aaeb55ef89cbf3fe0d8ac94b3a687a1befea8803141ebe680dc330ba7709cd97",
+  "n_rows": 8,
+  "finish_utc": "2026-11-15T04:11:52.365540+00:00"
+}

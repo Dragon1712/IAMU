@@ -1,0 +1,7 @@
+{
+  "job": "risk_stability/default/case8__small__seed400002__B10",
+  "command_hash": "c09c8216357b84804b6799c8c931e67d89acda3b3f6e45c4c17918fd4a335b7f",
+  "output_sha256": "559880c4b265827119a317b9b4d60ef7ff1aae1e13c6d85125b0518a28ca51c0",
+  "n_rows": 18,
+  "finish_utc": "2026-11-15T04:00:53.088472+00:00"
+}

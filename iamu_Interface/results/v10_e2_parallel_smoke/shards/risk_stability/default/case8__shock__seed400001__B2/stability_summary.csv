@@ -1,0 +1,5 @@
+policy,sample_count,scenario,n_state_replicates,n_unique_states,mean_within_state_action_flip_rate,n_states_with_action_disagreement,mean_action_agreement,mean_best_tail_agreement,mean_best_mean_agreement,mean_tail_mae,mean_tail_max_error,mean_gain_mae,mean_harm_prob_mae,mean_risk_eval_seconds
+q_risk,16,ALL,2,1,0.0,0,1.0,1.0,1.0,15.656447967890472,15.656447967890472,6.799556659170932,0.0625,0.1728822614531964
+q_risk,16,shock,2,1,0.0,0,1.0,1.0,1.0,15.656447967890472,15.656447967890472,6.799556659170932,0.0625,0.1728822614531964
+q_risk,64,ALL,2,1,0.0,0,1.0,1.0,1.0,18.594423805672022,18.594423805672022,3.7097633300041046,0.03125,0.6887207007966936
+q_risk,64,shock,2,1,0.0,0,1.0,1.0,1.0,18.594423805672022,18.594423805672022,3.7097633300041046,0.03125,0.6887207007966936

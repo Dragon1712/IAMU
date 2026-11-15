@@ -1,0 +1,79 @@
+{
+  "arguments": {
+    "checkpoint": "/home/moco/code/iamu/iamu_Interface/assets/checkpoints/set_ddqn_seed42/best.pt",
+    "manifest": "/home/moco/code/iamu/iamu_Interface/assets/checkpoints/set_ddqn_seed42/manifest.json",
+    "cases": [
+      "/home/moco/code/iamu/iamu_Interface/assets/cases/8.txt"
+    ],
+    "scenarios": "repeated",
+    "seeds": "400003",
+    "budgets": "10",
+    "policies": "set_ddqn,q_risk,q_budget,q_joint,q_budget_heuristic,q_joint_heuristic",
+    "sigma": 7.12463033710398,
+    "belief": "censored",
+    "risk_samples": 16,
+    "risk_alpha": 0.9,
+    "beta_risk": 0.25,
+    "beta_budget": 0.25,
+    "legacy_beta_budget": 0.1,
+    "mpc_samples": 8,
+    "lookahead_stages": 2,
+    "lookahead_step_hours": 12.0,
+    "lookahead_risk_weight": 0.0,
+    "device": "cpu",
+    "candidate_provider": "single",
+    "erldde_repo": null,
+    "erldde_checkpoint": null,
+    "erldde_probe": null,
+    "smoke": false,
+    "verify_baseline": true,
+    "audit": true,
+    "dry_run": false,
+    "out": "/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/shards/multistage/default/case8__repeated__seed400003__B10"
+  },
+  "v09_training_parameters": {
+    "candidate_limit": 4,
+    "decision_clock": "union",
+    "period": 12.0,
+    "reward_scale": 100.0,
+    "min_gain": 0.1,
+    "candidate_screen": "positive",
+    "budget_features": "absolute",
+    "value_features": "global"
+  },
+  "git_head": null,
+  "dependency_snapshot_sha256": "7542503a558d81a4f26abab05dd775c706ff300208173ea2fe65890d4bb89806",
+  "implementation_sha256": {
+    "iamu_dynamic/v10_risk_features.py": "172e0da356123fcc9b7d4f805c99af6186d29bd48bfe3efe195a2172fa663036",
+    "iamu_dynamic/v10_budget_lookahead.py": "1faee7fb5f583ac0eb857b0065a3839633430c873e702e447fed7b33ae74f9e3",
+    "iamu_dynamic/v10_policy.py": "ba78966e6080ab49d1b49d6a2494cfa927bc9d141f324afbe5c77526dcbb281a",
+    "iamu_dynamic/v10_candidate_api.py": "ea9a4ef812e7fd605c23a199f2c952e77241dc6820b1a39b652b9253b304bb5f",
+    "iamu_dynamic/v10_candidate_integration.py": "c620d83f5a8b0976061140c98304d785c06211a67a903e6cb5833f8e99395aaf",
+    "experiments/eval_risk_budget_v10.py": "32d8bb2fa55f9e6fe9de0ed413c624b20826cbbd72fd764dd7e946efef68faa8"
+  },
+  "training_seed": 42,
+  "checkpoint_sha256": "32c7e14e333fa96814171153684ac99c353f85d6c3682fa359c8ff11b1b62031",
+  "manifest_sha256": "b964bf658480da351347315c279e964c4aa2f8776db7b8787d595b17a01d74a4",
+  "cases_sha256": {
+    "/home/moco/code/iamu/iamu_Interface/assets/cases/8.txt": "eb15848ca1eac1fce5f15c34d6e22c580e6aa5d1a7bbcdcd353f361c05960229"
+  },
+  "risk_specification": {
+    "sigma": 7.12463033710398,
+    "samples": 16,
+    "alpha": 0.9,
+    "belief": "censored"
+  },
+  "lookahead_specification": {
+    "stages": 2,
+    "step_hours": 12.0,
+    "signal_strength": 0.5,
+    "min_gain": 0.1,
+    "candidates_per_stage": 4,
+    "risk_weight": 0.0,
+    "alpha": 0.9
+  },
+  "budget_correction": "MPC-Q convex combination, not heuristic penalty",
+  "mpc_samples": 8,
+  "legacy_beta_budget": 0.1,
+  "important": "Validation-only; do not tune on independent test Cases 10-14"
+}

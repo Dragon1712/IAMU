@@ -1,0 +1,24 @@
+[
+  {
+    "workflow": "multistage",
+    "variant": "default",
+    "n_shards": 2,
+    "n_rows": 16,
+    "n_audit_rows": 2184,
+    "shard_rows": [
+      8,
+      8
+    ]
+  },
+  {
+    "workflow": "risk_stability",
+    "variant": "default",
+    "n_shards": 2,
+    "n_rows": 8,
+    "n_audit_rows": 0,
+    "shard_rows": [
+      4,
+      4
+    ]
+  }
+]

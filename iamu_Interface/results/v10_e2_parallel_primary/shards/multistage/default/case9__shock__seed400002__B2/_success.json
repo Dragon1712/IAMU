@@ -1,0 +1,7 @@
+{
+  "job": "multistage/default/case9__shock__seed400002__B2",
+  "command_hash": "9c4317d05a6ba8446ea1b52f6e59f047f95939948d047e485a7a8ad9a0251374",
+  "output_sha256": "f688055cc7489bc9150c02b70b52421e1f6e2418a72f3773396a7a0a876f29bc",
+  "n_rows": 8,
+  "finish_utc": "2026-11-15T04:10:23.833675+00:00"
+}

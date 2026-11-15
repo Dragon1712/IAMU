@@ -1,0 +1,7 @@
+{
+  "job": "risk_stability/default/case9__shock__seed400002__B10",
+  "command_hash": "4611c86ac5c98ef372f2aeff82cafb63b8c8f46d414c23c7435270b84ec10010",
+  "output_sha256": "68acf257a688b80f8b52a40a1065f93ef0f78a31567499853910a88b8f36f848",
+  "n_rows": 9,
+  "finish_utc": "2026-11-15T04:00:47.056943+00:00"
+}

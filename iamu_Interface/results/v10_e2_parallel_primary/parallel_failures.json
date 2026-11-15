@@ -1,0 +1,134 @@
+[
+  {
+    "job": "risk_stability/default/case8__repeated__seed400001__B2",
+    "error": "risk_stability/default/case8__repeated__seed400001__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__repeated__seed400001__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case8__shock__seed400001__B2",
+    "error": "risk_stability/default/case8__shock__seed400001__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__shock__seed400001__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case8__repeated__seed400002__B2",
+    "error": "risk_stability/default/case8__repeated__seed400002__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__repeated__seed400002__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case8__shock__seed400002__B2",
+    "error": "risk_stability/default/case8__shock__seed400002__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__shock__seed400002__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case8__repeated__seed400002__B5",
+    "error": "risk_stability/default/case8__repeated__seed400002__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__repeated__seed400002__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case8__repeated__seed400003__B2",
+    "error": "risk_stability/default/case8__repeated__seed400003__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__repeated__seed400003__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case8__repeated__seed400003__B5",
+    "error": "risk_stability/default/case8__repeated__seed400003__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__repeated__seed400003__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case8__repeated__seed400001__B10",
+    "error": "risk_stability/default/case8__repeated__seed400001__B10: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__repeated__seed400001__B10.log"
+  },
+  {
+    "job": "risk_stability/default/case8__repeated__seed400001__B5",
+    "error": "risk_stability/default/case8__repeated__seed400001__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__repeated__seed400001__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case8__shock__seed400002__B5",
+    "error": "risk_stability/default/case8__shock__seed400002__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__shock__seed400002__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case8__shock__seed400002__B10",
+    "error": "risk_stability/default/case8__shock__seed400002__B10: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__shock__seed400002__B10.log"
+  },
+  {
+    "job": "risk_stability/default/case8__shock__seed400003__B2",
+    "error": "risk_stability/default/case8__shock__seed400003__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__shock__seed400003__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case8__small__seed400002__B2",
+    "error": "risk_stability/default/case8__small__seed400002__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__small__seed400002__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case8__small__seed400003__B2",
+    "error": "risk_stability/default/case8__small__seed400003__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__small__seed400003__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case9__shock__seed400001__B2",
+    "error": "risk_stability/default/case9__shock__seed400001__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__shock__seed400001__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case8__small__seed400003__B5",
+    "error": "risk_stability/default/case8__small__seed400003__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case8__small__seed400003__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case9__shock__seed400001__B5",
+    "error": "risk_stability/default/case9__shock__seed400001__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__shock__seed400001__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case9__shock__seed400002__B5",
+    "error": "risk_stability/default/case9__shock__seed400002__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__shock__seed400002__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case9__shock__seed400002__B2",
+    "error": "risk_stability/default/case9__shock__seed400002__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__shock__seed400002__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case9__shock__seed400003__B2",
+    "error": "risk_stability/default/case9__shock__seed400003__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__shock__seed400003__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case9__repeated__seed400001__B2",
+    "error": "risk_stability/default/case9__repeated__seed400001__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__repeated__seed400001__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case9__repeated__seed400001__B5",
+    "error": "risk_stability/default/case9__repeated__seed400001__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__repeated__seed400001__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case9__repeated__seed400002__B2",
+    "error": "risk_stability/default/case9__repeated__seed400002__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__repeated__seed400002__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case9__repeated__seed400002__B5",
+    "error": "risk_stability/default/case9__repeated__seed400002__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__repeated__seed400002__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case9__repeated__seed400003__B2",
+    "error": "risk_stability/default/case9__repeated__seed400003__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__repeated__seed400003__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case9__small__seed400001__B2",
+    "error": "risk_stability/default/case9__small__seed400001__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__small__seed400001__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case9__repeated__seed400003__B5",
+    "error": "risk_stability/default/case9__repeated__seed400003__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__repeated__seed400003__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case9__small__seed400001__B5",
+    "error": "risk_stability/default/case9__small__seed400001__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__small__seed400001__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case9__small__seed400002__B2",
+    "error": "risk_stability/default/case9__small__seed400002__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__small__seed400002__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case9__small__seed400002__B5",
+    "error": "risk_stability/default/case9__small__seed400002__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__small__seed400002__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case9__small__seed400003__B2",
+    "error": "risk_stability/default/case9__small__seed400003__B2: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__small__seed400003__B2.log"
+  },
+  {
+    "job": "risk_stability/default/case9__small__seed400003__B5",
+    "error": "risk_stability/default/case9__small__seed400003__B5: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__small__seed400003__B5.log"
+  },
+  {
+    "job": "risk_stability/default/case9__small__seed400003__B10",
+    "error": "risk_stability/default/case9__small__seed400003__B10: exit=1; log=/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/logs/risk_stability/default/case9__small__seed400003__B10.log"
+  }
+]

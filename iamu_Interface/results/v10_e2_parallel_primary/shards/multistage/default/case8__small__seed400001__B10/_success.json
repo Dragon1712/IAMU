@@ -1,0 +1,7 @@
+{
+  "job": "multistage/default/case8__small__seed400001__B10",
+  "command_hash": "dce9e6ab911da8903929f4b7cb3fc5e8bb942d5c7a2177a7aa2f36811ed1b7cd",
+  "output_sha256": "0b59a89ce7c38c124b03a41da5d39a4dd62a2be834c8748bec7e00afdceeff98",
+  "n_rows": 8,
+  "finish_utc": "2026-11-15T04:08:44.337298+00:00"
+}

@@ -1,0 +1,40 @@
+{
+  "args": {
+    "checkpoint": "/home/moco/code/iamu/iamu_Interface/assets/checkpoints/set_ddqn_seed42/best.pt",
+    "manifest": "/home/moco/code/iamu/iamu_Interface/assets/checkpoints/set_ddqn_seed42/manifest.json",
+    "cases": [
+      "/home/moco/code/iamu/iamu_Interface/assets/cases/8.txt"
+    ],
+    "scenarios": "small",
+    "seeds": "400003",
+    "budgets": "2",
+    "sample_sizes": "16,64,128",
+    "reference_samples": 256,
+    "repeats": 3,
+    "states_per_group": 2,
+    "stride": 10,
+    "max_groups": 0,
+    "sigma": 7.12463033710398,
+    "alpha": 0.9,
+    "belief": "censored",
+    "beta_risk": 0.25,
+    "joint": false,
+    "beta_budget": 0.25,
+    "mpc_stages": 2,
+    "mpc_samples": 8,
+    "device": "cpu",
+    "out": "/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/shards/risk_stability/default/case8__small__seed400003__B2"
+  },
+  "checkpoint_sha256": "32c7e14e333fa96814171153684ac99c353f85d6c3682fa359c8ff11b1b62031",
+  "manifest_sha256": "b964bf658480da351347315c279e964c4aa2f8776db7b8787d595b17a01d74a4",
+  "source_sha256": {
+    "risk": "172e0da356123fcc9b7d4f805c99af6186d29bd48bfe3efe195a2172fa663036",
+    "policy": "ba78966e6080ab49d1b49d6a2494cfa927bc9d141f324afbe5c77526dcbb281a",
+    "mpc": "1faee7fb5f583ac0eb857b0065a3839633430c873e702e447fed7b33ae74f9e3",
+    "stability": "b18dc0f1275399d9683584c4d6299613b50014e32745539b20e94763a7083845"
+  },
+  "case_sha256": {
+    "/home/moco/code/iamu/iamu_Interface/assets/cases/8.txt": "eb15848ca1eac1fce5f15c34d6e22c580e6aa5d1a7bbcdcd353f361c05960229"
+  },
+  "warning": "Reference MC is an independent finite-sample approximation, not truth."
+}

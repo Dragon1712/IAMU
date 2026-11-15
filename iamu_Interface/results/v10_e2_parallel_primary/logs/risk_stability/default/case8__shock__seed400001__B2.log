@@ -1,0 +1,10 @@
+JOB: risk_stability/default/case8__shock__seed400001__B2
+CPU_PIN: [8]
+COMMAND: ['taskset', '-c', '8', '/home/moco/anaconda3/envs/erldde/bin/python', '-u', '/home/moco/code/iamu/iamu_Interface/experiments/eval_risk_sampling_stability_v10.py', '--checkpoint', '/home/moco/code/iamu/iamu_Interface/assets/checkpoints/set_ddqn_seed42/best.pt', '--manifest', '/home/moco/code/iamu/iamu_Interface/assets/checkpoints/set_ddqn_seed42/manifest.json', '--device', 'cpu', '--cases', '/home/moco/code/iamu/iamu_Interface/assets/cases/8.txt', '--scenarios', 'shock', '--seeds', '400001', '--budgets', '2', '--sample-sizes', '16,64,128', '--reference-samples', '256', '--repeats', '3', '--states-per-group', '2', '--stride', '10', '--sigma', '7.12463033710398', '--alpha', '0.9', '--belief', 'censored', '--beta-risk', '0.25', '--mpc-stages', '2', '--mpc-samples', '8', '--beta-budget', '0.25', '--out', '/home/moco/code/iamu/iamu_Interface/results/v10_e2_parallel_primary/shards/risk_stability/default/case8__shock__seed400001__B2']
+[stability] groups=1 case=8 shock ETA=400001 B=2 states=0
+Traceback (most recent call last):
+  File "/home/moco/code/iamu/iamu_Interface/experiments/eval_risk_sampling_stability_v10.py", line 277, in <module>
+    main()
+  File "/home/moco/code/iamu/iamu_Interface/experiments/eval_risk_sampling_stability_v10.py", line 270, in main
+    raise RuntimeError('No actionable states selected; reduce --stride')
+RuntimeError: No actionable states selected; reduce --stride
