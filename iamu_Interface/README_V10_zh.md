@@ -146,3 +146,18 @@ ERL-DDE 目前仅提供船舶顺序与位置偏好，通过现有 SlotPlanner �
 6. `dependency_snapshot.json` 记录源文件哈希，正式结果 `manifest.json` 记录实验配置和风险模块哈希。
 
 **方法依据和已上传实验分析：** 见同目录 `V10_实验依据与当前结果.md`。
+
+
+## V1.0-E2：多阶段预算前瞻与风险稳定性（2026-11-15）
+
+已新增独立的 E2 实验入口、旧版启发式对照和风险采样稳定性脚本。**新的 `q_budget/q_joint` 使用有限预算多阶段 MPC 与冻结 Q 的凸组合，不再使用旧版启发式预算扣分；如需复现旧 E1 请用 `q_budget_heuristic/q_joint_heuristic`。**
+
+完整公式、测试、运行命令及参数说明：见 [`README_E2_多阶段预算前瞻与风险采样稳定性.md`](README_E2_多阶段预算前瞻与风险采样稳定性.md)。
+
+快速开始：
+
+```bash
+python -m unittest discover -s tests -p 'test_v10_e2*.py' -v
+bash scripts/run_e2_multistage_smoke.sh
+bash scripts/run_e2_risk_stability_smoke.sh
+```

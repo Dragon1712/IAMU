@@ -141,8 +141,13 @@ def main():
     p.add_argument('--risk-samples', type=int, default=16)
     p.add_argument('--risk-alpha', type=float, default=.9)
     p.add_argument('--beta-risk', type=float, default=.25)
-    p.add_argument('--beta-budget', type=float, default=.10)
-    p.add_argument('--lookahead-stages', type=int, default=1)
+    p.add_argument('--beta-budget', type=float, default=.25,
+                   help='E2 convex MPC-Q mixing coefficient in [0,1]')
+    p.add_argument('--legacy-beta-budget', type=float, default=.10,
+                   help='Historical V1.0 heuristic coefficient; used only for *_heuristic')
+    p.add_argument('--mpc-samples', type=int, default=8,
+                   help='Number of ETA scenarios used for costly multi-stage recourse')
+    p.add_argument('--lookahead-stages', type=int, default=2)
     p.add_argument('--lookahead-step-hours', type=float, default=12.)
     p.add_argument('--lookahead-risk-weight', type=float, default=0.)
     p.add_argument('--device', default='cpu')
@@ -156,6 +161,8 @@ def main():
     p.add_argument('--dry-run', action='store_true')
     p.add_argument('--out', default=str(HERE / 'results' / 'v10_e1_val_seed42'))
     args = p.parse_args()
+    if args.mpc_samples > args.risk_samples:
+        p.error('--mpc-samples must be <= --risk-samples for nested CRN draws')
     if not Path(args.checkpoint).is_file():
         p.error('Checkpoint missing: '+args.checkpoint)
     manifest = json.loads(Path(args.manifest).read_text(encoding='utf-8'))
@@ -175,7 +182,8 @@ def main():
             stages=args.lookahead_stages,step_hours=args.lookahead_step_hours,
             risk_weight=args.lookahead_risk_weight, alpha=args.risk_alpha,
             min_gain=env_args['min_gain'],candidates_per_stage=env_args['candidate_limit']),
-        beta_risk=args.beta_risk,beta_budget=args.beta_budget)
+        beta_risk=args.beta_risk,beta_budget=args.beta_budget,
+        mpc_samples=args.mpc_samples,legacy_beta_budget=args.legacy_beta_budget)
     def case_file(raw):
         f = Path(raw)
         if f.is_file():
@@ -235,6 +243,9 @@ def main():
                 "cases_sha256":{p:digest(Path(p)) for p in cases},
                 "risk_specification":asdict(spec.risk),
                 "lookahead_specification":asdict(spec.lookahead),
+                "budget_correction": "MPC-Q convex combination, not heuristic penalty",
+                "mpc_samples":spec.mpc_samples,
+                "legacy_beta_budget":spec.legacy_beta_budget,
                 "important":"Validation-only; do not tune on independent test Cases 10-14"}
     if args.dry_run:
         print(json.dumps(rootinfo, ensure_ascii=False, indent=2)); return
