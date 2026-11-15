@@ -1,0 +1,81 @@
+{
+  "snapshot_created_utc": "2026-11-14T14:09:46.264601+00:00",
+  "source_root": "/home/moco/code/iamu/iamu_d3dqn",
+  "engine_files": [
+    {
+      "file": "iamu_dynamic/__init__.py",
+      "sha256": "0a50b2e44c2bdfa0a34f1e39ed59812d54091154f93fb6292f4995a70cf319ad",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/iamu_d3dqn/iamu_dynamic/__init__.py"
+    },
+    {
+      "file": "iamu_dynamic/core.py",
+      "sha256": "16129e0e82a6740721e5ef6a4b6d5d21b1f7b64f52a4fe977c731523756f8c81",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/iamu_d3dqn/iamu_dynamic/core.py"
+    },
+    {
+      "file": "iamu_dynamic/rl_env.py",
+      "sha256": "540ef184e868c46566999cc139395e30f350f0a7b065e46ff56b342b3fd9b214",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/iamu_d3dqn/iamu_dynamic/rl_env.py"
+    },
+    {
+      "file": "iamu_dynamic/rl_ddqn.py",
+      "sha256": "653e9250f6685e5999941b5e48446a6677ee60172381adca6d8d50e4b3c81404",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/iamu_d3dqn/iamu_dynamic/rl_ddqn.py"
+    },
+    {
+      "file": "iamu_dynamic/rl_experiment.py",
+      "sha256": "5d63c5c0b15848ba80c85f9ea115535fc9f319716810445b41c30703b5d69a50",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/iamu_d3dqn/iamu_dynamic/rl_experiment.py"
+    },
+    {
+      "file": "iamu_dynamic/risk_selection.py",
+      "sha256": "7d3607259915df6890659ba52e645b94124bfb98de35db93cac51b965e4f912a",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/iamu_d3dqn/iamu_dynamic/risk_selection.py"
+    },
+    {
+      "file": "iamu_dynamic/recovery.py",
+      "sha256": "4c55b81267d121085c818b7c4fb223978652b8110466d9609c987d8774794250",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/iamu_d3dqn/iamu_dynamic/recovery.py"
+    },
+    {
+      "file": "iamu_dynamic/legacy_erldde.py",
+      "sha256": "9a9c1e0af13d53b5727db2591aa085594a3e95f8223a6b92eb39d2d98e04f23a",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/iamu_d3dqn/iamu_dynamic/legacy_erldde.py"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/cases/8.txt",
+      "sha256": "eb15848ca1eac1fce5f15c34d6e22c580e6aa5d1a7bbcdcd353f361c05960229",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt"
+    },
+    {
+      "file": "assets/cases/9.txt",
+      "sha256": "68f9d35b0f499f342b271e4b9cc4538788eb29fc2b270e2a7e6917409956b6f8",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt"
+    },
+    {
+      "file": "assets/checkpoints/set_ddqn_seed42/best.pt",
+      "sha256": "32c7e14e333fa96814171153684ac99c353f85d6c3682fa359c8ff11b1b62031",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/iamu_d3dqn/results/v09b_set_ddqn_seed42_300/best.pt"
+    },
+    {
+      "file": "assets/checkpoints/set_ddqn_seed42/manifest.json",
+      "sha256": "b964bf658480da351347315c279e964c4aa2f8776db7b8787d595b17a01d74a4",
+      "status": "copied",
+      "original": "/home/moco/code/iamu/iamu_d3dqn/results/v09b_set_ddqn_seed42_300/manifest.json"
+    }
+  ],
+  "v10_scope": "frozen-policy evaluation and single-vessel ERL-DDE hints"
+}
