@@ -1,0 +1,6 @@
+case,scenario,eta_seed,budget,model,wait_diff,spent_matches,matches
+9,small,400002,10,v10_e4_b900_seed43_ep100,0.0,True,True
+9,small,400002,10,v10_e4_b900_seed43_ep200,0.0,True,True
+9,small,400002,10,v10_e4_b900_seed43_ep400,0.0,True,True
+9,small,400002,10,v10_e4_b900_seed43_ep600,0.0,True,True
+9,small,400002,10,v10_e4_b900_seed43_ep900,0.0,True,True

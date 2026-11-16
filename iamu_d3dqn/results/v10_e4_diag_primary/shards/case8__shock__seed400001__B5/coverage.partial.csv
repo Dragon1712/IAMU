@@ -1,0 +1,3 @@
+case,scenario,eta_seed,budget,anchor,n_eligible,n_selected
+8,shock,400001,5,early,5,2
+8,shock,400001,5,keep,31,2

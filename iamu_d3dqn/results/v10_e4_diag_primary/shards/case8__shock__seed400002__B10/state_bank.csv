@@ -1,0 +1,5 @@
+case,scenario,eta_seed,budget,anchor,event_index,event_time,event_type,remaining_budget,n_legal_edits,n_started,n_arrived
+8,shock,400002,10,early,123,324.0,clock,10,1,36,43
+8,shock,400002,10,early,128,384.0,clock,6,1,42,49
+8,shock,400002,10,keep,7,3.266666666666667,eta,10,1,0,2
+8,shock,400002,10,keep,124,336.0,clock,10,1,36,44

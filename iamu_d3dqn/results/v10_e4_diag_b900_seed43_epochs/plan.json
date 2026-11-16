@@ -1,0 +1,247 @@
+{
+  "arguments": {
+    "model": [
+      "results/v10_e4_b900_seed43@100",
+      "results/v10_e4_b900_seed43@200",
+      "results/v10_e4_b900_seed43@400",
+      "results/v10_e4_b900_seed43@600",
+      "results/v10_e4_b900_seed43@900"
+    ],
+    "anchor_model": null,
+    "cases": [
+      "../2024LiERLDDE/case_code/8.txt",
+      "../2024LiERLDDE/case_code/9.txt"
+    ],
+    "scenarios": "shock,repeated,small",
+    "eta_seeds": "400001:400003",
+    "budgets": "2,5,10",
+    "anchors": "early,keep",
+    "continuations": "anchor,greedy",
+    "states_per_group": 2,
+    "max_edit_actions": 4,
+    "workers": 8,
+    "device": "cpu",
+    "resume": false,
+    "dry_run": false,
+    "out": "results/v10_e4_diag_b900_seed43_epochs"
+  },
+  "n_shards": 54,
+  "shards": [
+    {
+      "label": "case8__shock__seed400001__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__shock__seed400001__B2"
+    },
+    {
+      "label": "case8__shock__seed400001__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__shock__seed400001__B5"
+    },
+    {
+      "label": "case8__shock__seed400001__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__shock__seed400001__B10"
+    },
+    {
+      "label": "case8__shock__seed400002__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__shock__seed400002__B2"
+    },
+    {
+      "label": "case8__shock__seed400002__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__shock__seed400002__B5"
+    },
+    {
+      "label": "case8__shock__seed400002__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__shock__seed400002__B10"
+    },
+    {
+      "label": "case8__shock__seed400003__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__shock__seed400003__B2"
+    },
+    {
+      "label": "case8__shock__seed400003__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__shock__seed400003__B5"
+    },
+    {
+      "label": "case8__shock__seed400003__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__shock__seed400003__B10"
+    },
+    {
+      "label": "case8__repeated__seed400001__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__repeated__seed400001__B2"
+    },
+    {
+      "label": "case8__repeated__seed400001__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__repeated__seed400001__B5"
+    },
+    {
+      "label": "case8__repeated__seed400001__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__repeated__seed400001__B10"
+    },
+    {
+      "label": "case8__repeated__seed400002__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__repeated__seed400002__B2"
+    },
+    {
+      "label": "case8__repeated__seed400002__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__repeated__seed400002__B5"
+    },
+    {
+      "label": "case8__repeated__seed400002__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__repeated__seed400002__B10"
+    },
+    {
+      "label": "case8__repeated__seed400003__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__repeated__seed400003__B2"
+    },
+    {
+      "label": "case8__repeated__seed400003__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__repeated__seed400003__B5"
+    },
+    {
+      "label": "case8__repeated__seed400003__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__repeated__seed400003__B10"
+    },
+    {
+      "label": "case8__small__seed400001__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__small__seed400001__B2"
+    },
+    {
+      "label": "case8__small__seed400001__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__small__seed400001__B5"
+    },
+    {
+      "label": "case8__small__seed400001__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__small__seed400001__B10"
+    },
+    {
+      "label": "case8__small__seed400002__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__small__seed400002__B2"
+    },
+    {
+      "label": "case8__small__seed400002__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__small__seed400002__B5"
+    },
+    {
+      "label": "case8__small__seed400002__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__small__seed400002__B10"
+    },
+    {
+      "label": "case8__small__seed400003__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__small__seed400003__B2"
+    },
+    {
+      "label": "case8__small__seed400003__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__small__seed400003__B5"
+    },
+    {
+      "label": "case8__small__seed400003__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case8__small__seed400003__B10"
+    },
+    {
+      "label": "case9__shock__seed400001__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__shock__seed400001__B2"
+    },
+    {
+      "label": "case9__shock__seed400001__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__shock__seed400001__B5"
+    },
+    {
+      "label": "case9__shock__seed400001__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__shock__seed400001__B10"
+    },
+    {
+      "label": "case9__shock__seed400002__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__shock__seed400002__B2"
+    },
+    {
+      "label": "case9__shock__seed400002__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__shock__seed400002__B5"
+    },
+    {
+      "label": "case9__shock__seed400002__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__shock__seed400002__B10"
+    },
+    {
+      "label": "case9__shock__seed400003__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__shock__seed400003__B2"
+    },
+    {
+      "label": "case9__shock__seed400003__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__shock__seed400003__B5"
+    },
+    {
+      "label": "case9__shock__seed400003__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__shock__seed400003__B10"
+    },
+    {
+      "label": "case9__repeated__seed400001__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__repeated__seed400001__B2"
+    },
+    {
+      "label": "case9__repeated__seed400001__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__repeated__seed400001__B5"
+    },
+    {
+      "label": "case9__repeated__seed400001__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__repeated__seed400001__B10"
+    },
+    {
+      "label": "case9__repeated__seed400002__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__repeated__seed400002__B2"
+    },
+    {
+      "label": "case9__repeated__seed400002__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__repeated__seed400002__B5"
+    },
+    {
+      "label": "case9__repeated__seed400002__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__repeated__seed400002__B10"
+    },
+    {
+      "label": "case9__repeated__seed400003__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__repeated__seed400003__B2"
+    },
+    {
+      "label": "case9__repeated__seed400003__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__repeated__seed400003__B5"
+    },
+    {
+      "label": "case9__repeated__seed400003__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__repeated__seed400003__B10"
+    },
+    {
+      "label": "case9__small__seed400001__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__small__seed400001__B2"
+    },
+    {
+      "label": "case9__small__seed400001__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__small__seed400001__B5"
+    },
+    {
+      "label": "case9__small__seed400001__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__small__seed400001__B10"
+    },
+    {
+      "label": "case9__small__seed400002__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__small__seed400002__B2"
+    },
+    {
+      "label": "case9__small__seed400002__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__small__seed400002__B5"
+    },
+    {
+      "label": "case9__small__seed400002__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__small__seed400002__B10"
+    },
+    {
+      "label": "case9__small__seed400003__B2",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__small__seed400003__B2"
+    },
+    {
+      "label": "case9__small__seed400003__B5",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__small__seed400003__B5"
+    },
+    {
+      "label": "case9__small__seed400003__B10",
+      "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__small__seed400003__B10"
+    }
+  ]
+}

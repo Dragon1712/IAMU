@@ -1,0 +1,9 @@
+model,scenario,budget,n_episodes,mean_wait,mean_spent,mean_actionable_events,total_actionable_events,actionable_keep_rate,mean_spent_fraction,mean_margin_only_keeps,mean_screened_proposals
+v10_e4_b900_seed43_ep100,ALL,2,1,2220.3177287888634,2,2,2,0.0,1.0,0,79
+v10_e4_b900_seed43_ep100,ALL,ALL,1,2220.3177287888634,2,2,2,0.0,1.0,0,79
+v10_e4_b900_seed43_ep100,shock,2,1,2220.3177287888634,2,2,2,0.0,1.0,0,79
+v10_e4_b900_seed43_ep100,shock,ALL,1,2220.3177287888634,2,2,2,0.0,1.0,0,79
+v10_e4_b900_seed43_ep900,ALL,2,1,2284.0890564195765,0,31,31,1.0,0.0,0,376
+v10_e4_b900_seed43_ep900,ALL,ALL,1,2284.0890564195765,0,31,31,1.0,0.0,0,376
+v10_e4_b900_seed43_ep900,shock,2,1,2284.0890564195765,0,31,31,1.0,0.0,0,376
+v10_e4_b900_seed43_ep900,shock,ALL,1,2284.0890564195765,0,31,31,1.0,0.0,0,376
