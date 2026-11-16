@@ -1,0 +1,671 @@
+{"timestamp": "2026-11-16T05:55:46+00:00", "event": "startup", "episodes": 900, "workers": 4, "validation_workers": 4, "validation_runs_per_check": 216}
+{"timestamp": "2026-11-16T05:55:46+00:00", "event": "processes_started", "validator_pid": 3282184, "actor_pids": [3282185, 3282186, 3282187, 3282188], "validation_workers": 4}
+{"timestamp": "2026-11-16T05:55:46+00:00", "event": "phase_training_start", "stage_limit": 100, "completed": 0, "gradient_steps": 0}
+{"timestamp": "2026-11-16T05:55:49+00:00", "event": "actor_online", "worker_id": 3, "pid": 3282188}
+{"timestamp": "2026-11-16T05:55:49+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 4, "policy_version": 0}
+{"timestamp": "2026-11-16T05:55:50+00:00", "event": "train_completed", "completed": 1, "episode": 4, "gradient_steps": 0, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:55:50+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 5, "policy_version": 0}
+{"timestamp": "2026-11-16T05:55:50+00:00", "event": "actor_online", "worker_id": 2, "pid": 3282187}
+{"timestamp": "2026-11-16T05:55:50+00:00", "event": "actor_online", "worker_id": 0, "pid": 3282185}
+{"timestamp": "2026-11-16T05:55:50+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 3, "policy_version": 0}
+{"timestamp": "2026-11-16T05:55:50+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 1, "policy_version": 0}
+{"timestamp": "2026-11-16T05:55:50+00:00", "event": "actor_online", "worker_id": 1, "pid": 3282186}
+{"timestamp": "2026-11-16T05:55:50+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 2, "policy_version": 0}
+{"timestamp": "2026-11-16T05:55:51+00:00", "event": "train_completed", "completed": 2, "episode": 5, "gradient_steps": 0, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:55:51+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 6, "policy_version": 0}
+{"timestamp": "2026-11-16T05:55:52+00:00", "event": "train_completed", "completed": 3, "episode": 1, "gradient_steps": 0, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:55:52+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 7, "policy_version": 0}
+{"timestamp": "2026-11-16T05:55:53+00:00", "event": "train_completed", "completed": 4, "episode": 3, "gradient_steps": 14, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:55:53+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 8, "policy_version": 0}
+{"timestamp": "2026-11-16T05:55:56+00:00", "event": "train_completed", "completed": 5, "episode": 6, "gradient_steps": 50, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:55:56+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 9, "policy_version": 14}
+{"timestamp": "2026-11-16T05:55:57+00:00", "event": "train_completed", "completed": 6, "episode": 9, "gradient_steps": 85, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:55:57+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 10, "policy_version": 50}
+{"timestamp": "2026-11-16T05:55:58+00:00", "event": "train_completed", "completed": 7, "episode": 10, "gradient_steps": 122, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:55:58+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 11, "policy_version": 85}
+{"timestamp": "2026-11-16T05:55:58+00:00", "event": "train_completed", "completed": 8, "episode": 8, "gradient_steps": 156, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:55:58+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 12, "policy_version": 122}
+{"timestamp": "2026-11-16T05:55:59+00:00", "event": "train_completed", "completed": 9, "episode": 11, "gradient_steps": 190, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:55:59+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 13, "policy_version": 156}
+{"timestamp": "2026-11-16T05:56:01+00:00", "event": "train_completed", "completed": 10, "episode": 7, "gradient_steps": 224, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:56:01+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 14, "policy_version": 190}
+{"timestamp": "2026-11-16T05:56:03+00:00", "event": "train_completed", "completed": 11, "episode": 12, "gradient_steps": 260, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:03+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 15, "policy_version": 224}
+{"timestamp": "2026-11-16T05:56:03+00:00", "event": "train_completed", "completed": 12, "episode": 14, "gradient_steps": 296, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:56:03+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 16, "policy_version": 260}
+{"timestamp": "2026-11-16T05:56:05+00:00", "event": "train_completed", "completed": 13, "episode": 16, "gradient_steps": 331, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:56:05+00:00", "event": "train_completed", "completed": 14, "episode": 15, "gradient_steps": 366, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:05+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 17, "policy_version": 296}
+{"timestamp": "2026-11-16T05:56:05+00:00", "event": "train_completed", "completed": 15, "episode": 13, "gradient_steps": 402, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:05+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 18, "policy_version": 331}
+{"timestamp": "2026-11-16T05:56:05+00:00", "event": "train_completed", "completed": 16, "episode": 2, "gradient_steps": 435, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:56:05+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 19, "policy_version": 366}
+{"timestamp": "2026-11-16T05:56:05+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 20, "policy_version": 402}
+{"timestamp": "2026-11-16T05:56:06+00:00", "event": "train_completed", "completed": 17, "episode": 17, "gradient_steps": 471, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:56:07+00:00", "event": "train_completed", "completed": 18, "episode": 18, "gradient_steps": 505, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:07+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 21, "policy_version": 435}
+{"timestamp": "2026-11-16T05:56:07+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 22, "policy_version": 471}
+{"timestamp": "2026-11-16T05:56:08+00:00", "event": "train_completed", "completed": 19, "episode": 22, "gradient_steps": 540, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:08+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 23, "policy_version": 505}
+{"timestamp": "2026-11-16T05:56:10+00:00", "event": "train_completed", "completed": 20, "episode": 19, "gradient_steps": 577, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:10+00:00", "event": "train_completed", "completed": 21, "episode": 23, "gradient_steps": 612, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:10+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 24, "policy_version": 540}
+{"timestamp": "2026-11-16T05:56:10+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 25, "policy_version": 577}
+{"timestamp": "2026-11-16T05:56:11+00:00", "event": "train_completed", "completed": 22, "episode": 20, "gradient_steps": 646, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:56:11+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 26, "policy_version": 612}
+{"timestamp": "2026-11-16T05:56:12+00:00", "event": "train_completed", "completed": 23, "episode": 24, "gradient_steps": 682, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:12+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 27, "policy_version": 646}
+{"timestamp": "2026-11-16T05:56:12+00:00", "event": "train_completed", "completed": 24, "episode": 25, "gradient_steps": 716, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:12+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 28, "policy_version": 682}
+{"timestamp": "2026-11-16T05:56:12+00:00", "event": "train_completed", "completed": 25, "episode": 26, "gradient_steps": 752, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:56:13+00:00", "event": "training_state_saved", "reason": "periodic", "completed": 25, "gradient_steps": 752, "replay_size": 3520}
+{"timestamp": "2026-11-16T05:56:13+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 29, "policy_version": 716}
+{"timestamp": "2026-11-16T05:56:13+00:00", "event": "train_completed", "completed": 26, "episode": 27, "gradient_steps": 789, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:13+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 30, "policy_version": 752}
+{"timestamp": "2026-11-16T05:56:14+00:00", "event": "train_completed", "completed": 27, "episode": 30, "gradient_steps": 822, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:14+00:00", "event": "train_completed", "completed": 28, "episode": 28, "gradient_steps": 857, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:14+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 31, "policy_version": 789}
+{"timestamp": "2026-11-16T05:56:14+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 32, "policy_version": 822}
+{"timestamp": "2026-11-16T05:56:16+00:00", "event": "monitor", "completed": 28, "outstanding": 4, "gradient_steps": 857, "actor_status": {"3": {"pid": 3282188, "state": "running", "episode": 31, "policy_version": 789}, "2": {"pid": 3282187, "state": "running", "episode": 32, "policy_version": 822}, "0": {"pid": 3282185, "state": "running", "episode": 21, "policy_version": 435}, "1": {"pid": 3282186, "state": "running", "episode": 29, "policy_version": 716}}}
+{"timestamp": "2026-11-16T05:56:17+00:00", "event": "train_completed", "completed": 29, "episode": 29, "gradient_steps": 894, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:56:17+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 33, "policy_version": 857}
+{"timestamp": "2026-11-16T05:56:17+00:00", "event": "train_completed", "completed": 30, "episode": 31, "gradient_steps": 929, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:17+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 34, "policy_version": 894}
+{"timestamp": "2026-11-16T05:56:18+00:00", "event": "train_completed", "completed": 31, "episode": 34, "gradient_steps": 965, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:18+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 35, "policy_version": 929}
+{"timestamp": "2026-11-16T05:56:19+00:00", "event": "train_completed", "completed": 32, "episode": 32, "gradient_steps": 1000, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:19+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 36, "policy_version": 965}
+{"timestamp": "2026-11-16T05:56:20+00:00", "event": "train_completed", "completed": 33, "episode": 35, "gradient_steps": 1034, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:20+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 37, "policy_version": 1000}
+{"timestamp": "2026-11-16T05:56:21+00:00", "event": "train_completed", "completed": 34, "episode": 36, "gradient_steps": 1071, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:21+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 38, "policy_version": 1034}
+{"timestamp": "2026-11-16T05:56:21+00:00", "event": "train_completed", "completed": 35, "episode": 21, "gradient_steps": 1105, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:56:21+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 39, "policy_version": 1071}
+{"timestamp": "2026-11-16T05:56:23+00:00", "event": "train_completed", "completed": 36, "episode": 39, "gradient_steps": 1140, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:56:23+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 40, "policy_version": 1105}
+{"timestamp": "2026-11-16T05:56:24+00:00", "event": "train_completed", "completed": 37, "episode": 37, "gradient_steps": 1177, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:24+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 41, "policy_version": 1140}
+{"timestamp": "2026-11-16T05:56:24+00:00", "event": "train_completed", "completed": 38, "episode": 38, "gradient_steps": 1212, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:24+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 42, "policy_version": 1177}
+{"timestamp": "2026-11-16T05:56:33+00:00", "event": "train_completed", "completed": 39, "episode": 40, "gradient_steps": 1246, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:56:33+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 43, "policy_version": 1212}
+{"timestamp": "2026-11-16T05:56:33+00:00", "event": "train_completed", "completed": 40, "episode": 41, "gradient_steps": 1280, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:33+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 44, "policy_version": 1246}
+{"timestamp": "2026-11-16T05:56:35+00:00", "event": "train_completed", "completed": 41, "episode": 43, "gradient_steps": 1315, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:56:35+00:00", "event": "train_completed", "completed": 42, "episode": 44, "gradient_steps": 1350, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:35+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 45, "policy_version": 1280}
+{"timestamp": "2026-11-16T05:56:35+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 46, "policy_version": 1315}
+{"timestamp": "2026-11-16T05:56:37+00:00", "event": "train_completed", "completed": 43, "episode": 46, "gradient_steps": 1386, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:37+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 47, "policy_version": 1350}
+{"timestamp": "2026-11-16T05:56:40+00:00", "event": "train_completed", "completed": 44, "episode": 42, "gradient_steps": 1421, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:56:40+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 48, "policy_version": 1386}
+{"timestamp": "2026-11-16T05:56:40+00:00", "event": "train_completed", "completed": 45, "episode": 47, "gradient_steps": 1456, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:40+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 49, "policy_version": 1421}
+{"timestamp": "2026-11-16T05:56:42+00:00", "event": "monitor", "completed": 45, "outstanding": 4, "gradient_steps": 1456, "actor_status": {"3": {"pid": 3282188, "state": "running", "episode": 49, "policy_version": 1421}, "2": {"pid": 3282187, "state": "running", "episode": 48, "policy_version": 1386}, "0": {"pid": 3282185, "state": "running", "episode": 45, "policy_version": 1280}, "1": {"pid": 3282186, "state": "running", "episode": 33, "observed_steps": 53, "seconds": 15.12}}}
+{"timestamp": "2026-11-16T05:56:43+00:00", "event": "train_completed", "completed": 46, "episode": 49, "gradient_steps": 1491, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:43+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 50, "policy_version": 1456}
+{"timestamp": "2026-11-16T05:56:44+00:00", "event": "train_completed", "completed": 47, "episode": 50, "gradient_steps": 1527, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:44+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 51, "policy_version": 1491}
+{"timestamp": "2026-11-16T05:56:47+00:00", "event": "train_completed", "completed": 48, "episode": 51, "gradient_steps": 1564, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:47+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 52, "policy_version": 1527}
+{"timestamp": "2026-11-16T05:56:49+00:00", "event": "train_completed", "completed": 49, "episode": 52, "gradient_steps": 1599, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:49+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 53, "policy_version": 1564}
+{"timestamp": "2026-11-16T05:56:51+00:00", "event": "train_completed", "completed": 50, "episode": 53, "gradient_steps": 1634, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:52+00:00", "event": "training_state_saved", "reason": "periodic", "completed": 50, "gradient_steps": 1634, "replay_size": 7048}
+{"timestamp": "2026-11-16T05:56:52+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 54, "policy_version": 1599}
+{"timestamp": "2026-11-16T05:56:52+00:00", "event": "train_completed", "completed": 51, "episode": 33, "gradient_steps": 1669, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:56:52+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 55, "policy_version": 1634}
+{"timestamp": "2026-11-16T05:56:52+00:00", "event": "train_completed", "completed": 52, "episode": 54, "gradient_steps": 1702, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:52+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 56, "policy_version": 1669}
+{"timestamp": "2026-11-16T05:56:53+00:00", "event": "train_completed", "completed": 53, "episode": 45, "gradient_steps": 1736, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:56:53+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 57, "policy_version": 1702}
+{"timestamp": "2026-11-16T05:56:54+00:00", "event": "train_completed", "completed": 54, "episode": 56, "gradient_steps": 1771, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:54+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 58, "policy_version": 1736}
+{"timestamp": "2026-11-16T05:56:54+00:00", "event": "train_completed", "completed": 55, "episode": 55, "gradient_steps": 1806, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:56:54+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 59, "policy_version": 1771}
+{"timestamp": "2026-11-16T05:56:54+00:00", "event": "train_completed", "completed": 56, "episode": 59, "gradient_steps": 1841, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:56:54+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 60, "policy_version": 1806}
+{"timestamp": "2026-11-16T05:56:55+00:00", "event": "train_completed", "completed": 57, "episode": 58, "gradient_steps": 1875, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:55+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 61, "policy_version": 1841}
+{"timestamp": "2026-11-16T05:56:56+00:00", "event": "train_completed", "completed": 58, "episode": 61, "gradient_steps": 1910, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:56+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 62, "policy_version": 1875}
+{"timestamp": "2026-11-16T05:56:58+00:00", "event": "train_completed", "completed": 59, "episode": 62, "gradient_steps": 1946, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:58+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 63, "policy_version": 1910}
+{"timestamp": "2026-11-16T05:56:59+00:00", "event": "train_completed", "completed": 60, "episode": 63, "gradient_steps": 1981, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:56:59+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 64, "policy_version": 1946}
+{"timestamp": "2026-11-16T05:57:01+00:00", "event": "train_completed", "completed": 61, "episode": 64, "gradient_steps": 2018, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:57:01+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 65, "policy_version": 1981}
+{"timestamp": "2026-11-16T05:57:02+00:00", "event": "train_completed", "completed": 62, "episode": 65, "gradient_steps": 2054, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:57:02+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 66, "policy_version": 2018}
+{"timestamp": "2026-11-16T05:57:04+00:00", "event": "monitor", "completed": 62, "outstanding": 4, "gradient_steps": 2054, "actor_status": {"3": {"pid": 3282188, "state": "running", "episode": 66, "policy_version": 2018}, "2": {"pid": 3282187, "state": "running", "episode": 48, "observed_steps": 54, "seconds": 15.15}, "0": {"pid": 3282185, "state": "running", "episode": 57, "policy_version": 1702}, "1": {"pid": 3282186, "state": "running", "episode": 60, "policy_version": 1806}}}
+{"timestamp": "2026-11-16T05:57:08+00:00", "event": "train_completed", "completed": 63, "episode": 48, "gradient_steps": 2088, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:08+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 67, "policy_version": 2054}
+{"timestamp": "2026-11-16T05:57:11+00:00", "event": "train_completed", "completed": 64, "episode": 57, "gradient_steps": 2122, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:11+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 68, "policy_version": 2088}
+{"timestamp": "2026-11-16T05:57:11+00:00", "event": "train_completed", "completed": 65, "episode": 60, "gradient_steps": 2156, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:57:11+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 69, "policy_version": 2122}
+{"timestamp": "2026-11-16T05:57:12+00:00", "event": "train_completed", "completed": 66, "episode": 69, "gradient_steps": 2191, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:57:12+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 70, "policy_version": 2156}
+{"timestamp": "2026-11-16T05:57:13+00:00", "event": "train_completed", "completed": 67, "episode": 68, "gradient_steps": 2225, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:13+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 71, "policy_version": 2191}
+{"timestamp": "2026-11-16T05:57:13+00:00", "event": "train_completed", "completed": 68, "episode": 66, "gradient_steps": 2261, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:57:13+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 72, "policy_version": 2225}
+{"timestamp": "2026-11-16T05:57:14+00:00", "event": "train_completed", "completed": 69, "episode": 70, "gradient_steps": 2295, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:57:14+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 73, "policy_version": 2261}
+{"timestamp": "2026-11-16T05:57:15+00:00", "event": "train_completed", "completed": 70, "episode": 71, "gradient_steps": 2331, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:15+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 74, "policy_version": 2295}
+{"timestamp": "2026-11-16T05:57:16+00:00", "event": "train_completed", "completed": 71, "episode": 74, "gradient_steps": 2367, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:16+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 75, "policy_version": 2331}
+{"timestamp": "2026-11-16T05:57:17+00:00", "event": "train_completed", "completed": 72, "episode": 67, "gradient_steps": 2402, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:17+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 76, "policy_version": 2367}
+{"timestamp": "2026-11-16T05:57:17+00:00", "event": "train_completed", "completed": 73, "episode": 75, "gradient_steps": 2439, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:17+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 77, "policy_version": 2402}
+{"timestamp": "2026-11-16T05:57:18+00:00", "event": "train_completed", "completed": 74, "episode": 77, "gradient_steps": 2474, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:18+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 78, "policy_version": 2439}
+{"timestamp": "2026-11-16T05:57:18+00:00", "event": "train_completed", "completed": 75, "episode": 73, "gradient_steps": 2508, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:57:20+00:00", "event": "training_state_saved", "reason": "periodic", "completed": 75, "gradient_steps": 2508, "replay_size": 10546}
+{"timestamp": "2026-11-16T05:57:20+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 79, "policy_version": 2474}
+{"timestamp": "2026-11-16T05:57:20+00:00", "event": "train_completed", "completed": 76, "episode": 79, "gradient_steps": 2544, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:57:20+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 80, "policy_version": 2508}
+{"timestamp": "2026-11-16T05:57:21+00:00", "event": "train_completed", "completed": 77, "episode": 78, "gradient_steps": 2579, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:21+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 81, "policy_version": 2544}
+{"timestamp": "2026-11-16T05:57:21+00:00", "event": "train_completed", "completed": 78, "episode": 76, "gradient_steps": 2616, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:21+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 82, "policy_version": 2579}
+{"timestamp": "2026-11-16T05:57:22+00:00", "event": "train_completed", "completed": 79, "episode": 82, "gradient_steps": 2651, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:22+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 83, "policy_version": 2616}
+{"timestamp": "2026-11-16T05:57:22+00:00", "event": "train_completed", "completed": 80, "episode": 72, "gradient_steps": 2684, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:57:22+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 84, "policy_version": 2651}
+{"timestamp": "2026-11-16T05:57:24+00:00", "event": "train_completed", "completed": 81, "episode": 81, "gradient_steps": 2720, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:24+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 85, "policy_version": 2684}
+{"timestamp": "2026-11-16T05:57:25+00:00", "event": "train_completed", "completed": 82, "episode": 83, "gradient_steps": 2755, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:25+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 86, "policy_version": 2720}
+{"timestamp": "2026-11-16T05:57:25+00:00", "event": "train_completed", "completed": 83, "episode": 86, "gradient_steps": 2790, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:25+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 87, "policy_version": 2755}
+{"timestamp": "2026-11-16T05:57:27+00:00", "event": "train_completed", "completed": 84, "episode": 87, "gradient_steps": 2826, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:27+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 88, "policy_version": 2790}
+{"timestamp": "2026-11-16T05:57:28+00:00", "event": "train_completed", "completed": 85, "episode": 88, "gradient_steps": 2861, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:28+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 89, "policy_version": 2826}
+{"timestamp": "2026-11-16T05:57:29+00:00", "event": "train_completed", "completed": 86, "episode": 80, "gradient_steps": 2895, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:57:29+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 90, "policy_version": 2861}
+{"timestamp": "2026-11-16T05:57:29+00:00", "event": "train_completed", "completed": 87, "episode": 85, "gradient_steps": 2931, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:29+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 91, "policy_version": 2895}
+{"timestamp": "2026-11-16T05:57:30+00:00", "event": "train_completed", "completed": 88, "episode": 89, "gradient_steps": 2967, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:30+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 92, "policy_version": 2931}
+{"timestamp": "2026-11-16T05:57:30+00:00", "event": "train_completed", "completed": 89, "episode": 91, "gradient_steps": 3000, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:30+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 93, "policy_version": 2967}
+{"timestamp": "2026-11-16T05:57:30+00:00", "event": "train_completed", "completed": 90, "episode": 84, "gradient_steps": 3036, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:57:30+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 94, "policy_version": 3000}
+{"timestamp": "2026-11-16T05:57:31+00:00", "event": "train_completed", "completed": 91, "episode": 93, "gradient_steps": 3072, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:31+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 95, "policy_version": 3036}
+{"timestamp": "2026-11-16T05:57:31+00:00", "event": "train_completed", "completed": 92, "episode": 90, "gradient_steps": 3106, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:57:31+00:00", "event": "train_completed", "completed": 93, "episode": 92, "gradient_steps": 3140, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:31+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 96, "policy_version": 3072}
+{"timestamp": "2026-11-16T05:57:31+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 97, "policy_version": 3106}
+{"timestamp": "2026-11-16T05:57:32+00:00", "event": "train_completed", "completed": 94, "episode": 95, "gradient_steps": 3176, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:32+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 98, "policy_version": 3140}
+{"timestamp": "2026-11-16T05:57:32+00:00", "event": "train_completed", "completed": 95, "episode": 94, "gradient_steps": 3213, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:57:32+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 99, "policy_version": 3176}
+{"timestamp": "2026-11-16T05:57:33+00:00", "event": "train_completed", "completed": 96, "episode": 97, "gradient_steps": 3246, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:33+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 100, "policy_version": 3213}
+{"timestamp": "2026-11-16T05:57:34+00:00", "event": "train_completed", "completed": 97, "episode": 98, "gradient_steps": 3282, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T05:57:34+00:00", "event": "train_completed", "completed": 98, "episode": 96, "gradient_steps": 3317, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T05:57:34+00:00", "event": "train_completed", "completed": 99, "episode": 99, "gradient_steps": 3352, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T05:57:35+00:00", "event": "train_completed", "completed": 100, "episode": 100, "gradient_steps": 3387, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T05:57:35+00:00", "event": "phase_training_end", "stage_limit": 100, "completed": 100, "gradient_steps": 3387}
+{"timestamp": "2026-11-16T05:57:36+00:00", "event": "training_state_saved", "reason": "before-validation", "completed": 100, "gradient_steps": 3387, "replay_size": 14062}
+{"timestamp": "2026-11-16T05:57:36+00:00", "event": "validation_queued", "validation_id": "val_000100", "completed": 100, "gradient_steps": 3387, "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000100_grad_000003387.pt", "expected_runs": 216, "queue_backlog": 1}
+{"timestamp": "2026-11-16T05:57:36+00:00", "event": "phase_validation_start", "validation_id": "val_000100", "completed": 100, "gradient_steps": 3387, "outstanding_rollouts": 0}
+{"timestamp": "2026-11-16T05:57:36+00:00", "event": "validation_started", "validation_id": "val_000100", "groups": 54, "runs": 216, "coordinator_pid": 3282184}
+{"timestamp": "2026-11-16T05:57:39+00:00", "event": "validation_worker_online", "validation_id": "val_000100", "pid": 3283562}
+{"timestamp": "2026-11-16T05:57:39+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 0, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T05:57:40+00:00", "event": "validation_worker_online", "validation_id": "val_000100", "pid": 3283561}
+{"timestamp": "2026-11-16T05:57:40+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 1, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T05:57:40+00:00", "event": "validation_worker_online", "validation_id": "val_000100", "pid": 3283563}
+{"timestamp": "2026-11-16T05:57:40+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 2, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T05:57:40+00:00", "event": "validation_worker_online", "validation_id": "val_000100", "pid": 3283564}
+{"timestamp": "2026-11-16T05:57:40+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 3, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T05:57:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 0, "total_groups": 54, "completed_runs": 0, "total_runs": 216, "elapsed_seconds": 15.001, "worker_pids": []}
+{"timestamp": "2026-11-16T05:58:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 0, "total_groups": 54, "completed_runs": 0, "total_runs": 216, "elapsed_seconds": 30.001, "worker_pids": []}
+{"timestamp": "2026-11-16T05:58:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 0, "total_groups": 54, "completed_runs": 0, "total_runs": 216, "elapsed_seconds": 45.001, "worker_pids": []}
+{"timestamp": "2026-11-16T05:58:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 0, "total_groups": 54, "completed_runs": 0, "total_runs": 216, "elapsed_seconds": 60.001, "worker_pids": []}
+{"timestamp": "2026-11-16T05:58:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 0, "total_groups": 54, "completed_runs": 0, "total_runs": 216, "elapsed_seconds": 75.001, "worker_pids": []}
+{"timestamp": "2026-11-16T05:58:55+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 4, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T05:59:06+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 5, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T05:59:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 2, "total_groups": 54, "completed_runs": 8, "total_runs": 216, "elapsed_seconds": 90.001, "worker_pids": [3283561, 3283563]}
+{"timestamp": "2026-11-16T05:59:13+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 6, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T05:59:19+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 7, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T05:59:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 4, "total_groups": 54, "completed_runs": 16, "total_runs": 216, "elapsed_seconds": 105.001, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T05:59:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 4, "total_groups": 54, "completed_runs": 16, "total_runs": 216, "elapsed_seconds": 120.001, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T05:59:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 4, "total_groups": 54, "completed_runs": 16, "total_runs": 216, "elapsed_seconds": 135.002, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:00:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 4, "total_groups": 54, "completed_runs": 16, "total_runs": 216, "elapsed_seconds": 150.002, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:00:18+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 8, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:00:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 5, "total_groups": 54, "completed_runs": 20, "total_runs": 216, "elapsed_seconds": 165.002, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:00:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 5, "total_groups": 54, "completed_runs": 20, "total_runs": 216, "elapsed_seconds": 180.002, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:00:40+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 9, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:00:40+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 6, "total_groups": 54, "completed_runs": 24, "total_runs": 216, "elapsed_seconds": 183.422, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:00:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 6, "total_groups": 54, "completed_runs": 24, "total_runs": 216, "elapsed_seconds": 195.002, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:00:54+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 10, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:01:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 7, "total_groups": 54, "completed_runs": 28, "total_runs": 216, "elapsed_seconds": 210.002, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:01:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 7, "total_groups": 54, "completed_runs": 28, "total_runs": 216, "elapsed_seconds": 225.002, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:01:23+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 11, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:01:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 8, "total_groups": 54, "completed_runs": 32, "total_runs": 216, "elapsed_seconds": 240.002, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:01:37+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 12, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:01:49+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 13, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:01:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 10, "total_groups": 54, "completed_runs": 40, "total_runs": 216, "elapsed_seconds": 255.003, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:02:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 10, "total_groups": 54, "completed_runs": 40, "total_runs": 216, "elapsed_seconds": 270.003, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:02:20+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 14, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:02:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 11, "total_groups": 54, "completed_runs": 44, "total_runs": 216, "elapsed_seconds": 285.003, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:02:28+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 15, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:02:28+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 12, "total_groups": 54, "completed_runs": 48, "total_runs": 216, "elapsed_seconds": 292.258, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:02:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 12, "total_groups": 54, "completed_runs": 48, "total_runs": 216, "elapsed_seconds": 300.003, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:02:42+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 16, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:02:48+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 17, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:02:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 14, "total_groups": 54, "completed_runs": 56, "total_runs": 216, "elapsed_seconds": 315.003, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:02:56+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 18, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:03:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 15, "total_groups": 54, "completed_runs": 60, "total_runs": 216, "elapsed_seconds": 330.003, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:03:07+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 19, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:03:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 16, "total_groups": 54, "completed_runs": 64, "total_runs": 216, "elapsed_seconds": 345.003, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:03:23+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 20, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:03:27+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 21, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:03:27+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 18, "total_groups": 54, "completed_runs": 72, "total_runs": 216, "elapsed_seconds": 350.415, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:03:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 18, "total_groups": 54, "completed_runs": 72, "total_runs": 216, "elapsed_seconds": 360.003, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:03:41+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 22, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:03:44+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 23, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:03:44+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 24, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:03:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 21, "total_groups": 54, "completed_runs": 84, "total_runs": 216, "elapsed_seconds": 375.004, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:04:01+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 25, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:04:02+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 26, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:04:05+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 27, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:04:05+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 24, "total_groups": 54, "completed_runs": 96, "total_runs": 216, "elapsed_seconds": 388.356, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:04:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 24, "total_groups": 54, "completed_runs": 96, "total_runs": 216, "elapsed_seconds": 390.004, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:04:19+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 28, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:04:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 25, "total_groups": 54, "completed_runs": 100, "total_runs": 216, "elapsed_seconds": 405.004, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:04:24+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 29, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:04:27+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 30, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:04:35+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 31, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:04:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 28, "total_groups": 54, "completed_runs": 112, "total_runs": 216, "elapsed_seconds": 420.004, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:04:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 28, "total_groups": 54, "completed_runs": 112, "total_runs": 216, "elapsed_seconds": 435.004, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:04:57+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 32, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:05:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 29, "total_groups": 54, "completed_runs": 116, "total_runs": 216, "elapsed_seconds": 450.004, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:05:12+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 33, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:05:12+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 30, "total_groups": 54, "completed_runs": 120, "total_runs": 216, "elapsed_seconds": 456.172, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:05:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 30, "total_groups": 54, "completed_runs": 120, "total_runs": 216, "elapsed_seconds": 465.004, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:05:28+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 34, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:05:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 31, "total_groups": 54, "completed_runs": 124, "total_runs": 216, "elapsed_seconds": 480.005, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:05:37+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 35, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:05:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 32, "total_groups": 54, "completed_runs": 128, "total_runs": 216, "elapsed_seconds": 495.005, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:06:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 32, "total_groups": 54, "completed_runs": 128, "total_runs": 216, "elapsed_seconds": 510.005, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:06:11+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 36, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:06:16+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 37, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:06:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 34, "total_groups": 54, "completed_runs": 136, "total_runs": 216, "elapsed_seconds": 525.006, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:06:25+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 38, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:06:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 35, "total_groups": 54, "completed_runs": 140, "total_runs": 216, "elapsed_seconds": 540.006, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:06:37+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 36, "total_groups": 54, "completed_runs": 144, "total_runs": 216, "elapsed_seconds": 540.383, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:06:37+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 39, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:06:41+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 40, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:06:46+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 41, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:06:48+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 42, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:06:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 39, "total_groups": 54, "completed_runs": 156, "total_runs": 216, "elapsed_seconds": 555.006, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:06:56+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 43, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:07:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 40, "total_groups": 54, "completed_runs": 160, "total_runs": 216, "elapsed_seconds": 570.006, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:07:10+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 44, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:07:14+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 45, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:07:14+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 42, "total_groups": 54, "completed_runs": 168, "total_runs": 216, "elapsed_seconds": 577.68, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:07:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 42, "total_groups": 54, "completed_runs": 168, "total_runs": 216, "elapsed_seconds": 585.006, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:07:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 42, "total_groups": 54, "completed_runs": 168, "total_runs": 216, "elapsed_seconds": 600.006, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:07:36+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 46, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:07:37+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 47, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:07:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 44, "total_groups": 54, "completed_runs": 176, "total_runs": 216, "elapsed_seconds": 615.006, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:08:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 44, "total_groups": 54, "completed_runs": 176, "total_runs": 216, "elapsed_seconds": 630.006, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:08:09+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 48, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:08:09+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 49, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:08:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 46, "total_groups": 54, "completed_runs": 184, "total_runs": 216, "elapsed_seconds": 645.007, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:08:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 46, "total_groups": 54, "completed_runs": 184, "total_runs": 216, "elapsed_seconds": 660.007, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:08:38+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 50, "worker_pid": 3283561, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:08:40+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 51, "worker_pid": 3283562, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:08:40+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 48, "total_groups": 54, "completed_runs": 192, "total_runs": 216, "elapsed_seconds": 664.103, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:08:42+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 52, "worker_pid": 3283564, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:08:44+00:00", "event": "validation_task_start", "validation_id": "val_000100", "group_index": 53, "worker_pid": 3283563, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:08:51+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 50, "total_groups": 54, "completed_runs": 200, "total_runs": 216, "elapsed_seconds": 675.007, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:09:06+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 50, "total_groups": 54, "completed_runs": 200, "total_runs": 216, "elapsed_seconds": 690.007, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:09:21+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 51, "total_groups": 54, "completed_runs": 204, "total_runs": 216, "elapsed_seconds": 705.007, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:09:36+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 52, "total_groups": 54, "completed_runs": 208, "total_runs": 216, "elapsed_seconds": 720.007, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:09:40+00:00", "event": "validation_progress", "validation_id": "val_000100", "completed_groups": 54, "total_groups": 54, "completed_runs": 216, "total_runs": 216, "elapsed_seconds": 724.279, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:09:40+00:00", "event": "best_updated", "validation_id": "val_000100", "mean_wait": 1919.096949918754, "snapshot_sha256": "8b67e829693adf06549b7b0f1d45dda4c9571e407e75ce91ce8710ce08893409"}
+{"timestamp": "2026-11-16T06:09:42+00:00", "event": "training_state_saved", "reason": "validation-finished", "completed": 100, "gradient_steps": 3387, "replay_size": 14062}
+{"timestamp": "2026-11-16T06:09:42+00:00", "event": "validation_finished", "validation_id": "val_000100", "mean_wait": 1919.096949918754, "elapsed_seconds": 724.343, "frozen_gradient_steps": 3387, "current_gradient_steps": 3387, "worker_pids": [3283561, 3283562, 3283563, 3283564]}
+{"timestamp": "2026-11-16T06:09:42+00:00", "event": "phase_validation_end", "validation_id": "val_000100", "completed": 100, "gradient_steps": 3387, "elapsed_seconds": 725.6519658970647}
+{"timestamp": "2026-11-16T06:09:42+00:00", "event": "phase_training_start", "stage_limit": 200, "completed": 100, "gradient_steps": 3387}
+{"timestamp": "2026-11-16T06:09:42+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 101, "policy_version": 3387}
+{"timestamp": "2026-11-16T06:09:42+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 102, "policy_version": 3387}
+{"timestamp": "2026-11-16T06:09:42+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 103, "policy_version": 3387}
+{"timestamp": "2026-11-16T06:09:42+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 104, "policy_version": 3387}
+{"timestamp": "2026-11-16T06:09:43+00:00", "event": "train_completed", "completed": 101, "episode": 101, "gradient_steps": 3421, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:09:43+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 105, "policy_version": 3387}
+{"timestamp": "2026-11-16T06:09:44+00:00", "event": "train_completed", "completed": 102, "episode": 102, "gradient_steps": 3457, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:09:44+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 106, "policy_version": 3421}
+{"timestamp": "2026-11-16T06:09:45+00:00", "event": "train_completed", "completed": 103, "episode": 106, "gradient_steps": 3492, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:09:45+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 107, "policy_version": 3457}
+{"timestamp": "2026-11-16T06:09:45+00:00", "event": "train_completed", "completed": 104, "episode": 105, "gradient_steps": 3527, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:09:45+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 108, "policy_version": 3492}
+{"timestamp": "2026-11-16T06:09:46+00:00", "event": "train_completed", "completed": 105, "episode": 107, "gradient_steps": 3563, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:09:46+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 109, "policy_version": 3527}
+{"timestamp": "2026-11-16T06:09:46+00:00", "event": "train_completed", "completed": 106, "episode": 103, "gradient_steps": 3597, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:09:46+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 110, "policy_version": 3563}
+{"timestamp": "2026-11-16T06:09:49+00:00", "event": "train_completed", "completed": 107, "episode": 108, "gradient_steps": 3632, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:09:49+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 111, "policy_version": 3597}
+{"timestamp": "2026-11-16T06:09:51+00:00", "event": "train_completed", "completed": 108, "episode": 104, "gradient_steps": 3666, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:09:51+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 112, "policy_version": 3632}
+{"timestamp": "2026-11-16T06:09:52+00:00", "event": "train_completed", "completed": 109, "episode": 110, "gradient_steps": 3701, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:09:52+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 113, "policy_version": 3666}
+{"timestamp": "2026-11-16T06:09:54+00:00", "event": "train_completed", "completed": 110, "episode": 111, "gradient_steps": 3735, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:09:54+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 114, "policy_version": 3701}
+{"timestamp": "2026-11-16T06:09:58+00:00", "event": "train_completed", "completed": 111, "episode": 113, "gradient_steps": 3768, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:09:58+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 115, "policy_version": 3735}
+{"timestamp": "2026-11-16T06:09:58+00:00", "event": "train_completed", "completed": 112, "episode": 109, "gradient_steps": 3803, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:09:58+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 116, "policy_version": 3768}
+{"timestamp": "2026-11-16T06:10:00+00:00", "event": "train_completed", "completed": 113, "episode": 114, "gradient_steps": 3839, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:00+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 117, "policy_version": 3803}
+{"timestamp": "2026-11-16T06:10:02+00:00", "event": "train_completed", "completed": 114, "episode": 115, "gradient_steps": 3873, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:02+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 118, "policy_version": 3839}
+{"timestamp": "2026-11-16T06:10:02+00:00", "event": "train_completed", "completed": 115, "episode": 117, "gradient_steps": 3907, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:02+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 119, "policy_version": 3873}
+{"timestamp": "2026-11-16T06:10:04+00:00", "event": "monitor", "completed": 115, "outstanding": 4, "gradient_steps": 3907, "actor_status": {"3": {"pid": 3282188, "state": "running", "episode": 112, "policy_version": 3632}, "2": {"pid": 3282187, "state": "running", "episode": 118, "policy_version": 3839}, "0": {"pid": 3282185, "state": "running", "episode": 119, "policy_version": 3873}, "1": {"pid": 3282186, "state": "running", "episode": 116, "policy_version": 3768}}}
+{"timestamp": "2026-11-16T06:10:05+00:00", "event": "train_completed", "completed": 116, "episode": 119, "gradient_steps": 3941, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:05+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 120, "policy_version": 3907}
+{"timestamp": "2026-11-16T06:10:10+00:00", "event": "train_completed", "completed": 117, "episode": 118, "gradient_steps": 3977, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:10+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 121, "policy_version": 3941}
+{"timestamp": "2026-11-16T06:10:11+00:00", "event": "train_completed", "completed": 118, "episode": 116, "gradient_steps": 4010, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:10:11+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 122, "policy_version": 3977}
+{"timestamp": "2026-11-16T06:10:11+00:00", "event": "train_completed", "completed": 119, "episode": 121, "gradient_steps": 4045, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:11+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 123, "policy_version": 4010}
+{"timestamp": "2026-11-16T06:10:12+00:00", "event": "train_completed", "completed": 120, "episode": 112, "gradient_steps": 4081, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:10:12+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 124, "policy_version": 4045}
+{"timestamp": "2026-11-16T06:10:13+00:00", "event": "train_completed", "completed": 121, "episode": 123, "gradient_steps": 4115, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:13+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 125, "policy_version": 4081}
+{"timestamp": "2026-11-16T06:10:14+00:00", "event": "train_completed", "completed": 122, "episode": 120, "gradient_steps": 4148, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:14+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 126, "policy_version": 4115}
+{"timestamp": "2026-11-16T06:10:16+00:00", "event": "train_completed", "completed": 123, "episode": 124, "gradient_steps": 4182, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:10:16+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 127, "policy_version": 4148}
+{"timestamp": "2026-11-16T06:10:17+00:00", "event": "train_completed", "completed": 124, "episode": 125, "gradient_steps": 4218, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:17+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 128, "policy_version": 4182}
+{"timestamp": "2026-11-16T06:10:18+00:00", "event": "train_completed", "completed": 125, "episode": 128, "gradient_steps": 4252, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:21+00:00", "event": "training_state_saved", "reason": "periodic", "completed": 125, "gradient_steps": 4252, "replay_size": 17519}
+{"timestamp": "2026-11-16T06:10:21+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 129, "policy_version": 4218}
+{"timestamp": "2026-11-16T06:10:21+00:00", "event": "train_completed", "completed": 126, "episode": 127, "gradient_steps": 4286, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:10:22+00:00", "event": "train_completed", "completed": 127, "episode": 129, "gradient_steps": 4322, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:22+00:00", "event": "train_completed", "completed": 128, "episode": 126, "gradient_steps": 4357, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:22+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 130, "policy_version": 4252}
+{"timestamp": "2026-11-16T06:10:22+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 131, "policy_version": 4286}
+{"timestamp": "2026-11-16T06:10:22+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 132, "policy_version": 4322}
+{"timestamp": "2026-11-16T06:10:23+00:00", "event": "train_completed", "completed": 129, "episode": 131, "gradient_steps": 4392, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:23+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 133, "policy_version": 4357}
+{"timestamp": "2026-11-16T06:10:25+00:00", "event": "monitor", "completed": 129, "outstanding": 4, "gradient_steps": 4392, "actor_status": {"3": {"pid": 3282188, "state": "running", "episode": 130, "policy_version": 4252}, "2": {"pid": 3282187, "state": "running", "episode": 133, "policy_version": 4357}, "0": {"pid": 3282185, "state": "running", "episode": 132, "policy_version": 4322}, "1": {"pid": 3282186, "state": "running", "episode": 122, "policy_version": 3977}}}
+{"timestamp": "2026-11-16T06:10:25+00:00", "event": "train_completed", "completed": 130, "episode": 133, "gradient_steps": 4428, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:25+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 134, "policy_version": 4392}
+{"timestamp": "2026-11-16T06:10:27+00:00", "event": "train_completed", "completed": 131, "episode": 132, "gradient_steps": 4461, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:27+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 135, "policy_version": 4428}
+{"timestamp": "2026-11-16T06:10:30+00:00", "event": "train_completed", "completed": 132, "episode": 134, "gradient_steps": 4495, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:30+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 136, "policy_version": 4461}
+{"timestamp": "2026-11-16T06:10:30+00:00", "event": "train_completed", "completed": 133, "episode": 135, "gradient_steps": 4530, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:30+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 137, "policy_version": 4495}
+{"timestamp": "2026-11-16T06:10:32+00:00", "event": "train_completed", "completed": 134, "episode": 130, "gradient_steps": 4564, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:10:32+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 138, "policy_version": 4530}
+{"timestamp": "2026-11-16T06:10:33+00:00", "event": "train_completed", "completed": 135, "episode": 137, "gradient_steps": 4599, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:33+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 139, "policy_version": 4564}
+{"timestamp": "2026-11-16T06:10:34+00:00", "event": "train_completed", "completed": 136, "episode": 138, "gradient_steps": 4636, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:10:34+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 140, "policy_version": 4599}
+{"timestamp": "2026-11-16T06:10:34+00:00", "event": "train_completed", "completed": 137, "episode": 136, "gradient_steps": 4672, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:34+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 141, "policy_version": 4636}
+{"timestamp": "2026-11-16T06:10:36+00:00", "event": "train_completed", "completed": 138, "episode": 140, "gradient_steps": 4708, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:10:36+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 142, "policy_version": 4672}
+{"timestamp": "2026-11-16T06:10:36+00:00", "event": "train_completed", "completed": 139, "episode": 141, "gradient_steps": 4743, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:36+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 143, "policy_version": 4708}
+{"timestamp": "2026-11-16T06:10:39+00:00", "event": "train_completed", "completed": 140, "episode": 142, "gradient_steps": 4777, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:10:39+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 144, "policy_version": 4743}
+{"timestamp": "2026-11-16T06:10:39+00:00", "event": "train_completed", "completed": 141, "episode": 122, "gradient_steps": 4811, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:10:39+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 145, "policy_version": 4777}
+{"timestamp": "2026-11-16T06:10:40+00:00", "event": "train_completed", "completed": 142, "episode": 144, "gradient_steps": 4846, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:10:40+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 146, "policy_version": 4811}
+{"timestamp": "2026-11-16T06:10:42+00:00", "event": "monitor", "completed": 142, "outstanding": 4, "gradient_steps": 4846, "actor_status": {"3": {"pid": 3282188, "state": "running", "episode": 146, "policy_version": 4811}, "2": {"pid": 3282187, "state": "running", "episode": 143, "policy_version": 4708}, "0": {"pid": 3282185, "state": "running", "episode": 139, "policy_version": 4564}, "1": {"pid": 3282186, "state": "running", "episode": 145, "policy_version": 4777}}}
+{"timestamp": "2026-11-16T06:10:43+00:00", "event": "train_completed", "completed": 143, "episode": 139, "gradient_steps": 4880, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:43+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 147, "policy_version": 4846}
+{"timestamp": "2026-11-16T06:10:45+00:00", "event": "train_completed", "completed": 144, "episode": 146, "gradient_steps": 4914, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:10:45+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 148, "policy_version": 4880}
+{"timestamp": "2026-11-16T06:10:45+00:00", "event": "train_completed", "completed": 145, "episode": 145, "gradient_steps": 4948, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:10:45+00:00", "event": "train_completed", "completed": 146, "episode": 147, "gradient_steps": 4983, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:45+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 149, "policy_version": 4914}
+{"timestamp": "2026-11-16T06:10:45+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 150, "policy_version": 4948}
+{"timestamp": "2026-11-16T06:10:46+00:00", "event": "train_completed", "completed": 147, "episode": 143, "gradient_steps": 5017, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:46+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 151, "policy_version": 4983}
+{"timestamp": "2026-11-16T06:10:46+00:00", "event": "train_completed", "completed": 148, "episode": 149, "gradient_steps": 5052, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:10:46+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 152, "policy_version": 5017}
+{"timestamp": "2026-11-16T06:10:47+00:00", "event": "train_completed", "completed": 149, "episode": 150, "gradient_steps": 5088, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:47+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 153, "policy_version": 5052}
+{"timestamp": "2026-11-16T06:10:47+00:00", "event": "train_completed", "completed": 150, "episode": 153, "gradient_steps": 5124, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:51+00:00", "event": "training_state_saved", "reason": "periodic", "completed": 150, "gradient_steps": 5124, "replay_size": 21010}
+{"timestamp": "2026-11-16T06:10:51+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 154, "policy_version": 5088}
+{"timestamp": "2026-11-16T06:10:51+00:00", "event": "train_completed", "completed": 151, "episode": 154, "gradient_steps": 5158, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:51+00:00", "event": "train_completed", "completed": 152, "episode": 151, "gradient_steps": 5194, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:51+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 155, "policy_version": 5124}
+{"timestamp": "2026-11-16T06:10:51+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 156, "policy_version": 5158}
+{"timestamp": "2026-11-16T06:10:53+00:00", "event": "train_completed", "completed": 153, "episode": 155, "gradient_steps": 5229, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:53+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 157, "policy_version": 5194}
+{"timestamp": "2026-11-16T06:10:54+00:00", "event": "train_completed", "completed": 154, "episode": 157, "gradient_steps": 5262, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:10:54+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 158, "policy_version": 5229}
+{"timestamp": "2026-11-16T06:10:55+00:00", "event": "train_completed", "completed": 155, "episode": 148, "gradient_steps": 5297, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:10:55+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 159, "policy_version": 5262}
+{"timestamp": "2026-11-16T06:10:55+00:00", "event": "train_completed", "completed": 156, "episode": 156, "gradient_steps": 5332, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:55+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 160, "policy_version": 5297}
+{"timestamp": "2026-11-16T06:10:57+00:00", "event": "train_completed", "completed": 157, "episode": 160, "gradient_steps": 5366, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:10:57+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 161, "policy_version": 5332}
+{"timestamp": "2026-11-16T06:10:59+00:00", "event": "monitor", "completed": 157, "outstanding": 4, "gradient_steps": 5366, "actor_status": {"3": {"pid": 3282188, "state": "running", "episode": 159, "policy_version": 5262}, "2": {"pid": 3282187, "state": "running", "episode": 161, "policy_version": 5332}, "0": {"pid": 3282185, "state": "running", "episode": 158, "policy_version": 5229}, "1": {"pid": 3282186, "state": "running", "episode": 152, "policy_version": 5017}}}
+{"timestamp": "2026-11-16T06:11:00+00:00", "event": "train_completed", "completed": 158, "episode": 152, "gradient_steps": 5401, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:00+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 162, "policy_version": 5366}
+{"timestamp": "2026-11-16T06:11:01+00:00", "event": "train_completed", "completed": 159, "episode": 159, "gradient_steps": 5436, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:11:01+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 163, "policy_version": 5401}
+{"timestamp": "2026-11-16T06:11:03+00:00", "event": "train_completed", "completed": 160, "episode": 163, "gradient_steps": 5471, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:11:03+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 164, "policy_version": 5436}
+{"timestamp": "2026-11-16T06:11:03+00:00", "event": "train_completed", "completed": 161, "episode": 162, "gradient_steps": 5506, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:03+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 165, "policy_version": 5471}
+{"timestamp": "2026-11-16T06:11:04+00:00", "event": "train_completed", "completed": 162, "episode": 161, "gradient_steps": 5540, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:04+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 166, "policy_version": 5506}
+{"timestamp": "2026-11-16T06:11:04+00:00", "event": "train_completed", "completed": 163, "episode": 158, "gradient_steps": 5576, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:11:04+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 167, "policy_version": 5540}
+{"timestamp": "2026-11-16T06:11:06+00:00", "event": "train_completed", "completed": 164, "episode": 166, "gradient_steps": 5611, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:06+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 168, "policy_version": 5576}
+{"timestamp": "2026-11-16T06:11:07+00:00", "event": "train_completed", "completed": 165, "episode": 164, "gradient_steps": 5646, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:11:07+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 169, "policy_version": 5611}
+{"timestamp": "2026-11-16T06:11:07+00:00", "event": "train_completed", "completed": 166, "episode": 168, "gradient_steps": 5680, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:07+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 170, "policy_version": 5646}
+{"timestamp": "2026-11-16T06:11:09+00:00", "event": "train_completed", "completed": 167, "episode": 165, "gradient_steps": 5714, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:09+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 171, "policy_version": 5680}
+{"timestamp": "2026-11-16T06:11:09+00:00", "event": "train_completed", "completed": 168, "episode": 170, "gradient_steps": 5751, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:09+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 172, "policy_version": 5714}
+{"timestamp": "2026-11-16T06:11:12+00:00", "event": "train_completed", "completed": 169, "episode": 171, "gradient_steps": 5787, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:12+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 173, "policy_version": 5751}
+{"timestamp": "2026-11-16T06:11:13+00:00", "event": "train_completed", "completed": 170, "episode": 172, "gradient_steps": 5822, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:13+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 174, "policy_version": 5787}
+{"timestamp": "2026-11-16T06:11:14+00:00", "event": "train_completed", "completed": 171, "episode": 173, "gradient_steps": 5858, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:14+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 175, "policy_version": 5822}
+{"timestamp": "2026-11-16T06:11:16+00:00", "event": "monitor", "completed": 171, "outstanding": 4, "gradient_steps": 5858, "actor_status": {"3": {"pid": 3282188, "state": "running", "episode": 169, "policy_version": 5611}, "2": {"pid": 3282187, "state": "running", "episode": 174, "policy_version": 5787}, "0": {"pid": 3282185, "state": "running", "episode": 167, "policy_version": 5540}, "1": {"pid": 3282186, "state": "running", "episode": 175, "policy_version": 5822}}}
+{"timestamp": "2026-11-16T06:11:16+00:00", "event": "train_completed", "completed": 172, "episode": 174, "gradient_steps": 5895, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:16+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 176, "policy_version": 5858}
+{"timestamp": "2026-11-16T06:11:19+00:00", "event": "train_completed", "completed": 173, "episode": 175, "gradient_steps": 5930, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:19+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 177, "policy_version": 5895}
+{"timestamp": "2026-11-16T06:11:21+00:00", "event": "train_completed", "completed": 174, "episode": 177, "gradient_steps": 5966, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:21+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 178, "policy_version": 5930}
+{"timestamp": "2026-11-16T06:11:25+00:00", "event": "train_completed", "completed": 175, "episode": 178, "gradient_steps": 6003, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:29+00:00", "event": "training_state_saved", "reason": "periodic", "completed": 175, "gradient_steps": 6003, "replay_size": 24523}
+{"timestamp": "2026-11-16T06:11:29+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 179, "policy_version": 5966}
+{"timestamp": "2026-11-16T06:11:30+00:00", "event": "train_completed", "completed": 176, "episode": 176, "gradient_steps": 6037, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:30+00:00", "event": "train_completed", "completed": 177, "episode": 179, "gradient_steps": 6071, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:30+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 180, "policy_version": 6003}
+{"timestamp": "2026-11-16T06:11:30+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 181, "policy_version": 6037}
+{"timestamp": "2026-11-16T06:11:30+00:00", "event": "train_completed", "completed": 178, "episode": 167, "gradient_steps": 6105, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:11:30+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 182, "policy_version": 6071}
+{"timestamp": "2026-11-16T06:11:31+00:00", "event": "train_completed", "completed": 179, "episode": 181, "gradient_steps": 6140, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:31+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 183, "policy_version": 6105}
+{"timestamp": "2026-11-16T06:11:32+00:00", "event": "train_completed", "completed": 180, "episode": 182, "gradient_steps": 6174, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:11:32+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 184, "policy_version": 6140}
+{"timestamp": "2026-11-16T06:11:34+00:00", "event": "train_completed", "completed": 181, "episode": 184, "gradient_steps": 6210, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:11:34+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 185, "policy_version": 6174}
+{"timestamp": "2026-11-16T06:11:34+00:00", "event": "train_completed", "completed": 182, "episode": 183, "gradient_steps": 6245, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:11:34+00:00", "event": "actor_start", "worker_id": 1, "pid": 3282186, "episode": 186, "policy_version": 6210}
+{"timestamp": "2026-11-16T06:11:35+00:00", "event": "train_completed", "completed": 183, "episode": 185, "gradient_steps": 6280, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:11:35+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 187, "policy_version": 6245}
+{"timestamp": "2026-11-16T06:11:37+00:00", "event": "monitor", "completed": 183, "outstanding": 4, "gradient_steps": 6280, "actor_status": {"3": {"pid": 3282188, "state": "running", "episode": 169, "observed_steps": 42, "seconds": 15.13}, "2": {"pid": 3282187, "state": "running", "episode": 180, "policy_version": 6003}, "0": {"pid": 3282185, "state": "running", "episode": 187, "policy_version": 6245}, "1": {"pid": 3282186, "state": "running", "episode": 186, "policy_version": 6210}}}
+{"timestamp": "2026-11-16T06:11:38+00:00", "event": "train_completed", "completed": 184, "episode": 180, "gradient_steps": 6317, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:38+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 188, "policy_version": 6280}
+{"timestamp": "2026-11-16T06:11:38+00:00", "event": "train_completed", "completed": 185, "episode": 169, "gradient_steps": 6353, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:11:38+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 189, "policy_version": 6317}
+{"timestamp": "2026-11-16T06:11:39+00:00", "event": "train_completed", "completed": 186, "episode": 188, "gradient_steps": 6388, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:39+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 190, "policy_version": 6353}
+{"timestamp": "2026-11-16T06:11:43+00:00", "event": "train_completed", "completed": 187, "episode": 190, "gradient_steps": 6422, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:43+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 191, "policy_version": 6388}
+{"timestamp": "2026-11-16T06:11:45+00:00", "event": "train_completed", "completed": 188, "episode": 189, "gradient_steps": 6456, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:11:45+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 192, "policy_version": 6422}
+{"timestamp": "2026-11-16T06:11:45+00:00", "event": "train_completed", "completed": 189, "episode": 191, "gradient_steps": 6492, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:45+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 193, "policy_version": 6456}
+{"timestamp": "2026-11-16T06:11:47+00:00", "event": "train_completed", "completed": 190, "episode": 193, "gradient_steps": 6526, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:47+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 194, "policy_version": 6492}
+{"timestamp": "2026-11-16T06:11:48+00:00", "event": "train_completed", "completed": 191, "episode": 192, "gradient_steps": 6561, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:11:48+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 195, "policy_version": 6526}
+{"timestamp": "2026-11-16T06:11:51+00:00", "event": "train_completed", "completed": 192, "episode": 187, "gradient_steps": 6597, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:11:51+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 196, "policy_version": 6561}
+{"timestamp": "2026-11-16T06:11:51+00:00", "event": "train_completed", "completed": 193, "episode": 195, "gradient_steps": 6632, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:11:51+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 197, "policy_version": 6597}
+{"timestamp": "2026-11-16T06:11:52+00:00", "event": "train_completed", "completed": 194, "episode": 196, "gradient_steps": 6668, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:11:52+00:00", "event": "actor_start", "worker_id": 0, "pid": 3282185, "episode": 198, "policy_version": 6632}
+{"timestamp": "2026-11-16T06:11:55+00:00", "event": "train_completed", "completed": 195, "episode": 194, "gradient_steps": 6702, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:11:55+00:00", "event": "actor_start", "worker_id": 2, "pid": 3282187, "episode": 199, "policy_version": 6668}
+{"timestamp": "2026-11-16T06:11:57+00:00", "event": "monitor", "completed": 195, "outstanding": 4, "gradient_steps": 6702, "actor_status": {"3": {"pid": 3282188, "state": "running", "episode": 197, "policy_version": 6597}, "2": {"pid": 3282187, "state": "running", "episode": 199, "policy_version": 6668}, "0": {"pid": 3282185, "state": "running", "episode": 198, "policy_version": 6632}, "1": {"pid": 3282186, "state": "running", "episode": 186, "observed_steps": 44, "seconds": 15.25}}}
+{"timestamp": "2026-11-16T06:11:58+00:00", "event": "train_completed", "completed": 196, "episode": 197, "gradient_steps": 6737, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:11:58+00:00", "event": "actor_start", "worker_id": 3, "pid": 3282188, "episode": 200, "policy_version": 6702}
+{"timestamp": "2026-11-16T06:11:58+00:00", "event": "train_completed", "completed": 197, "episode": 198, "gradient_steps": 6770, "worker_id": 0, "worker_pid": 3282185}
+{"timestamp": "2026-11-16T06:12:00+00:00", "event": "train_completed", "completed": 198, "episode": 200, "gradient_steps": 6805, "worker_id": 3, "worker_pid": 3282188}
+{"timestamp": "2026-11-16T06:12:01+00:00", "event": "train_completed", "completed": 199, "episode": 199, "gradient_steps": 6840, "worker_id": 2, "worker_pid": 3282187}
+{"timestamp": "2026-11-16T06:12:05+00:00", "event": "train_completed", "completed": 200, "episode": 186, "gradient_steps": 6876, "worker_id": 1, "worker_pid": 3282186}
+{"timestamp": "2026-11-16T06:12:05+00:00", "event": "phase_training_end", "stage_limit": 200, "completed": 200, "gradient_steps": 6876}
+{"timestamp": "2026-11-16T06:12:07+00:00", "event": "training_state_saved", "reason": "before-validation", "completed": 200, "gradient_steps": 6876, "replay_size": 28018}
+{"timestamp": "2026-11-16T06:12:07+00:00", "event": "validation_queued", "validation_id": "val_000200", "completed": 200, "gradient_steps": 6876, "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000200_grad_000006876.pt", "expected_runs": 216, "queue_backlog": 1}
+{"timestamp": "2026-11-16T06:12:07+00:00", "event": "phase_validation_start", "validation_id": "val_000200", "completed": 200, "gradient_steps": 6876, "outstanding_rollouts": 0}
+{"timestamp": "2026-11-16T06:12:07+00:00", "event": "validation_started", "validation_id": "val_000200", "groups": 54, "runs": 216, "coordinator_pid": 3282184}
+{"timestamp": "2026-11-16T06:12:10+00:00", "event": "validation_worker_online", "validation_id": "val_000200", "pid": 3295630}
+{"timestamp": "2026-11-16T06:12:10+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 0, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:12:10+00:00", "event": "validation_worker_online", "validation_id": "val_000200", "pid": 3295631}
+{"timestamp": "2026-11-16T06:12:10+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 1, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:12:11+00:00", "event": "validation_worker_online", "validation_id": "val_000200", "pid": 3295629}
+{"timestamp": "2026-11-16T06:12:11+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 2, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:12:11+00:00", "event": "validation_worker_online", "validation_id": "val_000200", "pid": 3295628}
+{"timestamp": "2026-11-16T06:12:11+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 3, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:12:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 0, "total_groups": 54, "completed_runs": 0, "total_runs": 216, "elapsed_seconds": 15.001, "worker_pids": []}
+{"timestamp": "2026-11-16T06:12:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 0, "total_groups": 54, "completed_runs": 0, "total_runs": 216, "elapsed_seconds": 30.001, "worker_pids": []}
+{"timestamp": "2026-11-16T06:12:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 0, "total_groups": 54, "completed_runs": 0, "total_runs": 216, "elapsed_seconds": 45.001, "worker_pids": []}
+{"timestamp": "2026-11-16T06:12:57+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 4, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:13:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 1, "total_groups": 54, "completed_runs": 4, "total_runs": 216, "elapsed_seconds": 60.001, "worker_pids": [3295630]}
+{"timestamp": "2026-11-16T06:13:13+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 5, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:13:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 2, "total_groups": 54, "completed_runs": 8, "total_runs": 216, "elapsed_seconds": 75.001, "worker_pids": [3295630, 3295631]}
+{"timestamp": "2026-11-16T06:13:23+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 6, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:13:28+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 7, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:13:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 4, "total_groups": 54, "completed_runs": 16, "total_runs": 216, "elapsed_seconds": 90.001, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:13:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 4, "total_groups": 54, "completed_runs": 16, "total_runs": 216, "elapsed_seconds": 105.001, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:14:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 4, "total_groups": 54, "completed_runs": 16, "total_runs": 216, "elapsed_seconds": 120.001, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:14:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 4, "total_groups": 54, "completed_runs": 16, "total_runs": 216, "elapsed_seconds": 135.002, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:14:23+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 8, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "shock", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:14:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 5, "total_groups": 54, "completed_runs": 20, "total_runs": 216, "elapsed_seconds": 150.002, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:14:42+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 9, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:14:42+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 6, "total_groups": 54, "completed_runs": 24, "total_runs": 216, "elapsed_seconds": 154.656, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:14:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 6, "total_groups": 54, "completed_runs": 24, "total_runs": 216, "elapsed_seconds": 165.002, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:14:57+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 10, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:15:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 7, "total_groups": 54, "completed_runs": 28, "total_runs": 216, "elapsed_seconds": 180.002, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:15:08+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 11, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:15:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 8, "total_groups": 54, "completed_runs": 32, "total_runs": 216, "elapsed_seconds": 195.002, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:15:25+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 12, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:15:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 9, "total_groups": 54, "completed_runs": 36, "total_runs": 216, "elapsed_seconds": 210.002, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:15:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 9, "total_groups": 54, "completed_runs": 36, "total_runs": 216, "elapsed_seconds": 225.002, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:15:57+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 13, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:16:04+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 14, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:16:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 11, "total_groups": 54, "completed_runs": 44, "total_runs": 216, "elapsed_seconds": 240.003, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:16:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 11, "total_groups": 54, "completed_runs": 44, "total_runs": 216, "elapsed_seconds": 255.003, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:16:24+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 15, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:16:24+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 12, "total_groups": 54, "completed_runs": 48, "total_runs": 216, "elapsed_seconds": 256.809, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:16:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 12, "total_groups": 54, "completed_runs": 48, "total_runs": 216, "elapsed_seconds": 270.003, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:16:38+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 16, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:16:49+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 17, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "repeated", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:16:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 14, "total_groups": 54, "completed_runs": 56, "total_runs": 216, "elapsed_seconds": 285.003, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:16:53+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 18, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:17:04+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 19, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:17:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 16, "total_groups": 54, "completed_runs": 64, "total_runs": 216, "elapsed_seconds": 300.003, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:17:15+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 20, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:17:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 17, "total_groups": 54, "completed_runs": 68, "total_runs": 216, "elapsed_seconds": 315.003, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:17:32+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 21, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:17:32+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 18, "total_groups": 54, "completed_runs": 72, "total_runs": 216, "elapsed_seconds": 325.119, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:17:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 18, "total_groups": 54, "completed_runs": 72, "total_runs": 216, "elapsed_seconds": 330.003, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:17:39+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 22, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:17:46+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 23, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:17:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 20, "total_groups": 54, "completed_runs": 80, "total_runs": 216, "elapsed_seconds": 345.003, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:17:55+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 24, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:18:01+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 25, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:18:02+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 26, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/8.txt", "scenario": "small", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:18:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 24, "total_groups": 54, "completed_runs": 96, "total_runs": 216, "elapsed_seconds": 359.622, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:18:07+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 27, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:18:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 24, "total_groups": 54, "completed_runs": 96, "total_runs": 216, "elapsed_seconds": 360.004, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:18:22+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 28, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:18:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 25, "total_groups": 54, "completed_runs": 100, "total_runs": 216, "elapsed_seconds": 375.004, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:18:23+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 29, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:18:27+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 30, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:18:36+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 31, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:18:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 28, "total_groups": 54, "completed_runs": 112, "total_runs": 216, "elapsed_seconds": 390.004, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:18:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 28, "total_groups": 54, "completed_runs": 112, "total_runs": 216, "elapsed_seconds": 405.004, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:19:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 28, "total_groups": 54, "completed_runs": 112, "total_runs": 216, "elapsed_seconds": 420.004, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:19:10+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 32, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:19:16+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 33, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:19:16+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 30, "total_groups": 54, "completed_runs": 120, "total_runs": 216, "elapsed_seconds": 428.772, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:19:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 30, "total_groups": 54, "completed_runs": 120, "total_runs": 216, "elapsed_seconds": 435.004, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:19:24+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 34, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:19:36+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 35, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "shock", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:19:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 32, "total_groups": 54, "completed_runs": 128, "total_runs": 216, "elapsed_seconds": 450.004, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:19:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 32, "total_groups": 54, "completed_runs": 128, "total_runs": 216, "elapsed_seconds": 465.004, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:19:56+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 36, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:20:03+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 37, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:20:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 34, "total_groups": 54, "completed_runs": 136, "total_runs": 216, "elapsed_seconds": 480.005, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:20:12+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 38, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:20:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 35, "total_groups": 54, "completed_runs": 140, "total_runs": 216, "elapsed_seconds": 495.005, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:20:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 35, "total_groups": 54, "completed_runs": 140, "total_runs": 216, "elapsed_seconds": 510.005, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:20:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 35, "total_groups": 54, "completed_runs": 140, "total_runs": 216, "elapsed_seconds": 525.005, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:20:57+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 39, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:20:57+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 36, "total_groups": 54, "completed_runs": 144, "total_runs": 216, "elapsed_seconds": 529.738, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:21:00+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 40, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:21:07+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 41, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:21:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 38, "total_groups": 54, "completed_runs": 152, "total_runs": 216, "elapsed_seconds": 540.005, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:21:20+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 42, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:21:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 39, "total_groups": 54, "completed_runs": 156, "total_runs": 216, "elapsed_seconds": 555.005, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:21:23+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 43, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:21:33+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 44, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "repeated", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:21:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 41, "total_groups": 54, "completed_runs": 164, "total_runs": 216, "elapsed_seconds": 570.005, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:21:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 41, "total_groups": 54, "completed_runs": 164, "total_runs": 216, "elapsed_seconds": 585.005, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:21:54+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 45, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400001, "budget": 2}
+{"timestamp": "2026-11-16T06:21:54+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 42, "total_groups": 54, "completed_runs": 168, "total_runs": 216, "elapsed_seconds": 587.096, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:21:54+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 46, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400001, "budget": 5}
+{"timestamp": "2026-11-16T06:22:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 43, "total_groups": 54, "completed_runs": 172, "total_runs": 216, "elapsed_seconds": 600.006, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:22:16+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 47, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400001, "budget": 10}
+{"timestamp": "2026-11-16T06:22:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 44, "total_groups": 54, "completed_runs": 176, "total_runs": 216, "elapsed_seconds": 615.006, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:22:25+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 48, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400002, "budget": 2}
+{"timestamp": "2026-11-16T06:22:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 45, "total_groups": 54, "completed_runs": 180, "total_runs": 216, "elapsed_seconds": 630.006, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:22:41+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 49, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400002, "budget": 5}
+{"timestamp": "2026-11-16T06:22:50+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 50, "worker_pid": 3295628, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400002, "budget": 10}
+{"timestamp": "2026-11-16T06:22:51+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 51, "worker_pid": 3295630, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400003, "budget": 2}
+{"timestamp": "2026-11-16T06:22:51+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 48, "total_groups": 54, "completed_runs": 192, "total_runs": 216, "elapsed_seconds": 643.09, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:22:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 48, "total_groups": 54, "completed_runs": 192, "total_runs": 216, "elapsed_seconds": 645.006, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:22:53+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 52, "worker_pid": 3295629, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400003, "budget": 5}
+{"timestamp": "2026-11-16T06:23:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 49, "total_groups": 54, "completed_runs": 196, "total_runs": 216, "elapsed_seconds": 660.006, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:23:15+00:00", "event": "validation_task_start", "validation_id": "val_000200", "group_index": 53, "worker_pid": 3295631, "case": "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt", "scenario": "small", "seed": 400003, "budget": 10}
+{"timestamp": "2026-11-16T06:23:22+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 51, "total_groups": 54, "completed_runs": 204, "total_runs": 216, "elapsed_seconds": 675.006, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:23:37+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 52, "total_groups": 54, "completed_runs": 208, "total_runs": 216, "elapsed_seconds": 690.006, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:23:52+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 53, "total_groups": 54, "completed_runs": 212, "total_runs": 216, "elapsed_seconds": 705.006, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:24:07+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 53, "total_groups": 54, "completed_runs": 212, "total_runs": 216, "elapsed_seconds": 720.007, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:24:20+00:00", "event": "validation_progress", "validation_id": "val_000200", "completed_groups": 54, "total_groups": 54, "completed_runs": 216, "total_runs": 216, "elapsed_seconds": 732.661, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:24:23+00:00", "event": "training_state_saved", "reason": "validation-finished", "completed": 200, "gradient_steps": 6876, "replay_size": 28018}
+{"timestamp": "2026-11-16T06:24:23+00:00", "event": "validation_finished", "validation_id": "val_000200", "mean_wait": 1923.6572915657998, "elapsed_seconds": 732.733, "frozen_gradient_steps": 6876, "current_gradient_steps": 6876, "worker_pids": [3295628, 3295629, 3295630, 3295631]}
+{"timestamp": "2026-11-16T06:24:23+00:00", "event": "phase_validation_end", "validation_id": "val_000200", "completed": 20

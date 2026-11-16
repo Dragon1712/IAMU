@@ -1,0 +1,13 @@
+[E4] a300 seed=44 cuda:2: completed
+[E4] a300 seed=43 cuda:1: completed
+[E4] a300 seed=42 cuda:0: completed
+[E4] b900 seed=42 cuda:3: completed
+[E4] c900 seed=42 cuda:2: completed
+[E4] b900 seed=44 cuda:1: completed
+[E4] b900 seed=43 cuda:0: completed
+[E4] c900 seed=43 cuda:3: completed
+[E4] d900 seed=43 cuda:2: completed
+[E4] d900 seed=42 cuda:1: completed
+[E4] c900 seed=44 cuda:0: completed
+[E4] d900 seed=44 cuda:3: completed
+[DONE] All 12 runs completed; inventory with inspect_e4.py

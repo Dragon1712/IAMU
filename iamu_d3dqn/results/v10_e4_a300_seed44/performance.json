@@ -1,0 +1,35 @@
+{
+  "completed_episodes": 300,
+  "workers_requested": 4,
+  "workers_used": 4,
+  "actor_pids": [
+    3143951,
+    3143952,
+    3143953,
+    3143954
+  ],
+  "validation_workers_requested": 4,
+  "validation_worker_pids": [
+    3145403,
+    3145404,
+    3145405,
+    3145406,
+    3154102,
+    3154103,
+    3154104,
+    3154105,
+    3163474,
+    3163475,
+    3163476,
+    3163477
+  ],
+  "completed_validations": 3,
+  "runs_per_validation": 216,
+  "total_validated_runs": 648,
+  "gradient_steps": 10355,
+  "total_wall_seconds": 2584.021717888303,
+  "avg_episodes_per_hour": 417.95314355275246,
+  "avg_actor_seconds": 5.484693255325158,
+  "avg_learner_seconds": 0.23408131372494,
+  "note": "Phase-synchronous: 4 rollout actors -> frozen snapshot -> 4 validation workers; validation never overlaps rollout training; actor completion order may differ"
+}
