@@ -1,0 +1,89 @@
+{
+  "args": {
+    "checkpoint": "/home/moco/code/iamu/iamu_Interface/assets/checkpoints/set_ddqn_seed42/best.pt",
+    "manifest": "/home/moco/code/iamu/iamu_Interface/assets/checkpoints/set_ddqn_seed42/manifest.json",
+    "cases": [
+      "/home/moco/code/iamu/iamu_Interface/assets/cases/8.txt",
+      "/home/moco/code/iamu/iamu_Interface/assets/cases/9.txt"
+    ],
+    "scenarios": "shock,repeated,small",
+    "seeds": "400001:400003",
+    "budgets": "2,5,10",
+    "modes": "q_only,q_risk_only,pure_mpc,pure_mpc_risk,q_fixed,q_confidence,q_agreement,q_adaptive",
+    "beta_budget": 0.25,
+    "beta_risk": 0.25,
+    "neutral_q": 0.0,
+    "risk_samples": 8,
+    "mpc_samples": 4,
+    "lookahead_stages": 2,
+    "lookahead_step_hours": 12.0,
+    "sigma": 7.12463033710398,
+    "belief": "censored",
+    "risk_alpha": 0.9,
+    "device": "cpu",
+    "verify_baseline": true,
+    "audit": true,
+    "smoke": true,
+    "dry_run": false,
+    "out": "results/v10_e3_fusion_smoke"
+  },
+  "modes": [
+    "q_only",
+    "q_risk_only",
+    "pure_mpc",
+    "pure_mpc_risk",
+    "q_fixed",
+    "q_confidence",
+    "q_agreement",
+    "q_adaptive"
+  ],
+  "git_head": null,
+  "implementation_sha256": {
+    "iamu_dynamic/v10_e3_confidence.py": "d2196f59b8da4d75e837bfbc72da583b5fd832acd724697e39673a77424cc456",
+    "iamu_dynamic/v10_e3_policy.py": "20caf724d1517749b1c71965e6578c50398d48288e9288fca9dc9ab733d01caf",
+    "iamu_dynamic/v10_budget_lookahead.py": "1faee7fb5f583ac0eb857b0065a3839633430c873e702e447fed7b33ae74f9e3",
+    "iamu_dynamic/v10_policy.py": "ba78966e6080ab49d1b49d6a2494cfa927bc9d141f324afbe5c77526dcbb281a",
+    "experiments/eval_e3_fusion_v10.py": "44b3a2659e0afd16a68d1f180d598935a6f90d54173ff771a4ea39aa7447659c"
+  },
+  "checkpoint_sha256": "32c7e14e333fa96814171153684ac99c353f85d6c3682fa359c8ff11b1b62031",
+  "manifest_sha256": "b964bf658480da351347315c279e964c4aa2f8776db7b8787d595b17a01d74a4",
+  "case_sha256": {
+    "/home/moco/code/iamu/iamu_Interface/assets/cases/8.txt": "eb15848ca1eac1fce5f15c34d6e22c580e6aa5d1a7bbcdcd353f361c05960229"
+  },
+  "training_seed": 42,
+  "env_args": {
+    "candidate_limit": 4,
+    "decision_clock": "union",
+    "period": 12.0,
+    "reward_scale": 100.0,
+    "min_gain": 0.1,
+    "candidate_screen": "positive",
+    "budget_features": "absolute",
+    "value_features": "global"
+  },
+  "model_spec": {
+    "base": {
+      "risk": {
+        "sigma": 7.12463033710398,
+        "samples": 8,
+        "alpha": 0.9,
+        "belief": "censored"
+      },
+      "lookahead": {
+        "stages": 2,
+        "step_hours": 12.0,
+        "signal_strength": 0.5,
+        "min_gain": 0.1,
+        "candidates_per_stage": 4,
+        "risk_weight": 0.0,
+        "alpha": 0.9
+      },
+      "beta_risk": 0.25,
+      "beta_budget": 0.25,
+      "mpc_samples": 4,
+      "legacy_beta_budget": 0.1
+    },
+    "neutral_q": 0.0
+  },
+  "interpretation": "Matched state-estimators; divergent policy paths have different future states. Validation-only."
+}

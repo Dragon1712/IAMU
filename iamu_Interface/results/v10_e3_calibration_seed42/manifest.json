@@ -1,0 +1,60 @@
+{
+  "arguments": {
+    "checkpoint": "/home/moco/code/iamu/iamu_Interface/assets/checkpoints/set_ddqn_seed42/best.pt",
+    "manifest": "/home/moco/code/iamu/iamu_Interface/assets/checkpoints/set_ddqn_seed42/manifest.json",
+    "cases": [
+      "assets/cases/8.txt",
+      "assets/cases/9.txt"
+    ],
+    "scenarios": "shock,repeated,small",
+    "seeds": "400001:400003",
+    "budgets": "2,5,10",
+    "states_per_group": 2,
+    "stride": 1,
+    "selection": "near_margin",
+    "min_candidates": 1,
+    "max_edit_actions": 4,
+    "risk_samples": 16,
+    "mpc_samples": 8,
+    "reference_samples": 64,
+    "future_worlds": 8,
+    "future_signals": 2,
+    "signal_strength": 0.5,
+    "stages": 2,
+    "step_hours": 12.0,
+    "beta_risk": 0.25,
+    "sigma": 7.12463033710398,
+    "alpha": 0.9,
+    "belief": "censored",
+    "device": "cpu",
+    "smoke": false,
+    "max_groups": 0,
+    "candidate_screen": null,
+    "out": "results/v10_e3_calibration_seed42"
+  },
+  "checkpoint_sha256": "32c7e14e333fa96814171153684ac99c353f85d6c3682fa359c8ff11b1b62031",
+  "model_manifest_sha256": "b964bf658480da351347315c279e964c4aa2f8776db7b8787d595b17a01d74a4",
+  "case_sha256": {
+    "assets/cases/8.txt": "eb15848ca1eac1fce5f15c34d6e22c580e6aa5d1a7bbcdcd353f361c05960229",
+    "assets/cases/9.txt": "68f9d35b0f499f342b271e4b9cc4538788eb29fc2b270e2a7e6917409956b6f8"
+  },
+  "code_sha256": {
+    "iamu_dynamic/v10_e3_confidence.py": "d2196f59b8da4d75e837bfbc72da583b5fd832acd724697e39673a77424cc456",
+    "iamu_dynamic/v10_e3_policy.py": "20caf724d1517749b1c71965e6578c50398d48288e9288fca9dc9ab733d01caf",
+    "experiments/eval_e3_value_calibration_v10.py": "928dd6c5dfd66a1ac147c3b7dbb1be02adaca4acc50db21deaf455d0ef07d237",
+    "iamu_dynamic/v10_budget_lookahead.py": "1faee7fb5f583ac0eb857b0065a3839633430c873e702e447fed7b33ae74f9e3"
+  },
+  "training_seed": 42,
+  "environment": {
+    "candidate_limit": 4,
+    "decision_clock": "union",
+    "period": 12.0,
+    "reward_scale": 100.0,
+    "min_gain": 0.1,
+    "candidate_screen": "positive",
+    "budget_features": "absolute",
+    "value_features": "global"
+  },
+  "design": "Synthetic posterior worlds and realized future are EVALUATION ONLY; not independent real-world truth",
+  "continuation": "frozen Set-aware DDQN; MPC future continuation uses greedy repairs"
+}

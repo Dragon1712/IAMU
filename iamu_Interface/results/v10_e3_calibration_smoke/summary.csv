@@ -1,0 +1,3 @@
+scenario,n_action_pairs,n_states,mc_reference_mae,mc_reference_ci_coverage,mc_reference_sign_agreement,synthetic_future_mae,h0_synthetic_future_mae,incremental_lookahead_abs_error_improvement,realized_future_mae,synthetic_sign_agreement,average_predicted_ci_width,mean_mpc_strength
+ALL,1,1,1.199784393603522,0,1,3.5199999999999814,3.519999999999982,4.440892098500626e-16,156.49054239690577,0,0.0,1.0
+shock,1,1,1.199784393603522,0,1,3.5199999999999814,3.519999999999982,4.440892098500626e-16,156.49054239690577,0,0.0,1.0

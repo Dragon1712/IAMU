@@ -1,0 +1,28 @@
+{
+  "name": "IAMU V1.0-E3 incremental experiment patch",
+  "scope": "iamu_Interface only, additive files",
+  "verified_against_repo_commit": "2d21713473e5",
+  "expected_existing_sha256": {
+    "iamu_dynamic/v10_policy.py": "ba78966e6080ab49d1b49d6a2494cfa927bc9d141f324afbe5c77526dcbb281a",
+    "iamu_dynamic/v10_budget_lookahead.py": "1faee7fb5f583ac0eb857b0065a3839633430c873e702e447fed7b33ae74f9e3",
+    "iamu_dynamic/v10_risk_features.py": "172e0da356123fcc9b7d4f805c99af6186d29bd48bfe3efe195a2172fa663036",
+    "experiments/eval_risk_budget_v10.py": "32d8bb2fa55f9e6fe9de0ed413c624b20826cbbd72fd764dd7e946efef68faa8"
+  },
+  "files_sha256": {
+    "iamu_Interface/README_E3_置信度预算前瞻与价值校准.md": "567167e5455a0aa5b08ee80e442e969bc0f98a462ca170a57ab8d388665f836c",
+    "iamu_Interface/CHANGELOG_V10_E3.md": "6269013b48d2428c037a9a3472df91837da5fe69a3ff6b78826d7cae20250881",
+    "iamu_Interface/iamu_dynamic/v10_e3_confidence.py": "d2196f59b8da4d75e837bfbc72da583b5fd832acd724697e39673a77424cc456",
+    "iamu_Interface/iamu_dynamic/v10_e3_policy.py": "20caf724d1517749b1c71965e6578c50398d48288e9288fca9dc9ab733d01caf",
+    "iamu_Interface/experiments/eval_e3_fusion_v10.py": "44b3a2659e0afd16a68d1f180d598935a6f90d54173ff771a4ea39aa7447659c",
+    "iamu_Interface/experiments/eval_e3_value_calibration_v10.py": "928dd6c5dfd66a1ac147c3b7dbb1be02adaca4acc50db21deaf455d0ef07d237",
+    "iamu_Interface/experiments/analyze_e3_v10.py": "662eb24f2518a43df425e8d0b47a25d1ad47b641321667b996459e2352f30ba2",
+    "iamu_Interface/scripts/run_e3_smoke.sh": "b6d617cfd5edd7cb0caa9cec4879d05d5977820e78134cbc5240e8781fc27222",
+    "iamu_Interface/scripts/run_e3_calibration_validation.sh": "b750719ebd955e7ca57051ae0a88566c1ec72d7f0595adea0e89fa5f3ac472d2",
+    "iamu_Interface/scripts/run_e3_fusion_validation.sh": "a34e4c281e3da23bb7ed454a2e785d98d3fa7560dace1a28f8360e304108e7b9",
+    "iamu_Interface/scripts/run_e3_parallel.py": "15179ab88a57d0e0988843425ae74d5f70677281a27d73bb65bd11285c04d245",
+    "iamu_Interface/scripts/check_e3_e2_parity.py": "3062cfc823927db7077b3f759c5c061449d40739fc02b67a13d184f1d235e7f9",
+    "iamu_Interface/tests/test_v10_e3_confidence.py": "834770340cb81b63650bcc270410d006fa687f33d5db156c7c66c899f54a9111",
+    "iamu_Interface/tests/test_v10_e3_real_env.py": "2902496ef4840abc7152e8580d35dfd2964f02cba8efbf3750a8132e80442585"
+  },
+  "limitations": "No real checkpoint or IAMU simulator snapshot in this container; server integration tests required"
+}

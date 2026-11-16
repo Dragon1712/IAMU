@@ -1,0 +1,9 @@
+mode,n_states,mean_oracle_regret,mean_realized_regret,oracle_action_accuracy,realized_action_accuracy
+q_only,1,0.0,152.97054239690578,0,0
+q_risk_only,1,0.0,152.97054239690578,0,0
+pure_mpc,1,0.0,152.97054239690578,0,0
+pure_mpc_risk,1,0.0,152.97054239690578,0,0
+q_fixed,1,0.0,152.97054239690578,0,0
+q_confidence,1,0.0,152.97054239690578,0,0
+q_agreement,1,0.0,152.97054239690578,0,0
+q_adaptive,1,0.0,152.97054239690578,0,0
