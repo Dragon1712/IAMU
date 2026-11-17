@@ -1,0 +1,26 @@
+{
+  "records": {
+    "val_000004": {
+      "id": "val_000004",
+      "completed": 4,
+      "gradient_steps": 65,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v11_smoke_parallel_check/validation_snapshots/val_000004_grad_000000065.pt",
+      "snapshot_sha256": "9b284a45f29c8b506d8d0221cc9c547193db2005228e4ef5ed209313561e61e2",
+      "status": "done",
+      "expected_runs": 4,
+      "evaluated_runs": 4,
+      "score": 2240.622978311433
+    },
+    "val_000008": {
+      "id": "val_000008",
+      "completed": 8,
+      "gradient_steps": 644,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v11_smoke_parallel_check/validation_snapshots/val_000008_grad_000000644.pt",
+      "snapshot_sha256": "58f2efd6d773fc1f6083b1138d5ce8f7522648b577affd92bfffa23f53574d5e",
+      "status": "done",
+      "expected_runs": 4,
+      "evaluated_runs": 4,
+      "score": 2211.8389917486707
+    }
+  }
+}

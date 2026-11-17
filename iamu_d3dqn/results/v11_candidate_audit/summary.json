@@ -1,0 +1,7 @@
+{
+  "n_states": 214,
+  "n_screened_pairs": 352,
+  "mean_returned": 0.6121495327102804,
+  "fraction_screened_positive_expost": 0.05113636363636364,
+  "interpretation": "ex-post single-realization, fixed Keep continuation; not an oracle"
+}
