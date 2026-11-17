@@ -1,0 +1,10 @@
+[E5-OFFLINE] mode=fixed_target ep=200 grad=6879 qgap=0.0949 keep=0.417
+[E5-OFFLINE] mode=fixed_target ep=225 grad=7749 qgap=0.0096 keep=0.431
+[E5-OFFLINE] mode=fixed_target ep=250 grad=8621 qgap=-0.0349 keep=0.819
+[E5-OFFLINE] mode=fixed_target ep=275 grad=9499 qgap=0.0132 keep=0.368
+[E5-OFFLINE] mode=fixed_target ep=300 grad=10381 qgap=-0.0137 keep=0.528
+[E5-OFFLINE] mode=fixed_target ep=325 grad=11258 qgap=-0.0177 keep=0.660
+[E5-OFFLINE] mode=fixed_target ep=350 grad=12135 qgap=0.0071 keep=0.535
+[E5-OFFLINE] mode=fixed_target ep=375 grad=13009 qgap=-0.0207 keep=0.438
+[E5-OFFLINE] mode=fixed_target ep=400 grad=13891 qgap=0.0102 keep=0.417
+[DONE] fixed_target 200 additional episode-schedule slices 7012 updates => results/v10_e5_offline_fixed_target_seed43

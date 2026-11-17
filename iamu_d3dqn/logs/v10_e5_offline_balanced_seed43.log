@@ -1,0 +1,10 @@
+[E5-OFFLINE] mode=balanced ep=200 grad=6879 qgap=0.0949 keep=0.417
+[E5-OFFLINE] mode=balanced ep=225 grad=7749 qgap=-0.0358 keep=0.528
+[E5-OFFLINE] mode=balanced ep=250 grad=8621 qgap=-0.0564 keep=0.569
+[E5-OFFLINE] mode=balanced ep=275 grad=9499 qgap=-0.0308 keep=0.410
+[E5-OFFLINE] mode=balanced ep=300 grad=10381 qgap=-0.0311 keep=0.556
+[E5-OFFLINE] mode=balanced ep=325 grad=11258 qgap=-0.0266 keep=0.646
+[E5-OFFLINE] mode=balanced ep=350 grad=12135 qgap=-0.0268 keep=0.590
+[E5-OFFLINE] mode=balanced ep=375 grad=13009 qgap=0.0025 keep=0.500
+[E5-OFFLINE] mode=balanced ep=400 grad=13891 qgap=-0.0254 keep=0.507
+[DONE] balanced 200 additional episode-schedule slices 7012 updates => results/v10_e5_offline_balanced_seed43

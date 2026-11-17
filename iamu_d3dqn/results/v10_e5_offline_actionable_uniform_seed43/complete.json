@@ -1,0 +1,7 @@
+{
+  "mode": "actionable_uniform",
+  "completed_ep": 400,
+  "total_gradient_updates": 7012,
+  "final_gradient_steps": 13891,
+  "replay_unchanged": true
+}

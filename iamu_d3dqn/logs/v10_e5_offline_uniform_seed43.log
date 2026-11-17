@@ -1,0 +1,10 @@
+[E5-OFFLINE] mode=uniform ep=200 grad=6879 qgap=0.0949 keep=0.417
+[E5-OFFLINE] mode=uniform ep=225 grad=7749 qgap=0.0188 keep=0.438
+[E5-OFFLINE] mode=uniform ep=250 grad=8621 qgap=-0.1260 keep=0.868
+[E5-OFFLINE] mode=uniform ep=275 grad=9499 qgap=-0.1056 keep=0.507
+[E5-OFFLINE] mode=uniform ep=300 grad=10381 qgap=-0.1037 keep=0.625
+[E5-OFFLINE] mode=uniform ep=325 grad=11258 qgap=-0.2559 keep=0.812
+[E5-OFFLINE] mode=uniform ep=350 grad=12135 qgap=-0.2321 keep=0.806
+[E5-OFFLINE] mode=uniform ep=375 grad=13009 qgap=-0.2009 keep=0.701
+[E5-OFFLINE] mode=uniform ep=400 grad=13891 qgap=-0.1183 keep=0.618
+[DONE] uniform 200 additional episode-schedule slices 7012 updates => results/v10_e5_offline_uniform_seed43
