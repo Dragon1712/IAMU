@@ -1,0 +1,9 @@
+flags,n,fraction
+budget_exhausted|decision_allowed|search_exhausted,22364,0.7898566080384262
+decision_allowed|has_raw_proposal|has_retained_edit|search_exhausted,2183,0.07709966800875892
+decision_allowed|has_raw_proposal|search_exhausted,1816,0.0641378823197005
+all_started|budget_exhausted|decision_allowed|search_exhausted,1034,0.03651903651903652
+decision_allowed|has_raw_proposal|has_retained_edit,456,0.016105107014197925
+decision_allowed|search_exhausted,223,0.007875962421416968
+initial_event|search_exhausted,200,0.007063643427279791
+all_started|decision_allowed|search_exhausted,38,0.0013420922511831602
