@@ -1,0 +1,5 @@
+usage: fixed_label_probe.py [-h] --fork FORK --reference-checkpoint
+                            REFERENCE_CHECKPOINT --compare COMPARE
+                            [--samples SAMPLES] [--seed SEED]
+                            [--trust-local-training-state] --out OUT
+fixed_label_probe.py: error: Use a new output directory
