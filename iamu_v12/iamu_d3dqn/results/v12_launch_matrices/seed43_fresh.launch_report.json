@@ -1,0 +1,14 @@
+[
+  {
+    "name": "uniform_seed43_v12",
+    "device": "cuda:0",
+    "code": 0,
+    "log": "results/logs/uniform_seed43_v12.log"
+  },
+  {
+    "name": "rho050_seed43_v12",
+    "device": "cuda:1",
+    "code": 0,
+    "log": "results/logs/rho050_seed43_v12.log"
+  }
+]

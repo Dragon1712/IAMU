@@ -1,0 +1,18 @@
+{
+  "val_000100": {
+    "rows": 216,
+    "score": 1933.728874978354,
+    "sha256": "150c4fb5b40b816f0df5db838c9818140189edf46d7f0d87a2b21479c761cbcf",
+    "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v12_A0_seed43_400/validation_snapshots/val_000100_grad_000003400.pt",
+    "status": "done",
+    "validation_seconds": 3226.5184752386995
+  },
+  "val_000200": {
+    "rows": 216,
+    "score": 1920.3795425830401,
+    "sha256": "ea90292dfda806c190464cf941582e1a0dc13a1c513a5e58c8561b9a6a8d6063",
+    "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v12_A0_seed43_400/validation_snapshots/val_000200_grad_000006940.pt",
+    "status": "done",
+    "validation_seconds": 3097.114843716845
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "schema": "v12-scientific-manifest-v1",
+  "scientific_config": {
+    "train_cases": [
+      "../2024LiERLDDE/case_code/1.txt",
+      "../2024LiERLDDE/case_code/2.txt",
+      "../2024LiERLDDE/case_code/3.txt",
+      "../2024LiERLDDE/case_code/4.txt",
+      "../2024LiERLDDE/case_code/5.txt",
+      "../2024LiERLDDE/case_code/6.txt",
+      "../2024LiERLDDE/case_code/7.txt"
+    ],
+    "val_cases": [
+      "../2024LiERLDDE/case_code/8.txt",
+      "../2024LiERLDDE/case_code/9.txt"
+    ],
+    "episodes": 400,
+    "round_size": 16,
+    "fork_episode": 200,
+    "exhaustion_tail_mode": "raw",
+    "scenarios": "shock,repeated,small",
+    "budgets": "2,5,10",
+    "train_seed_start": 200000,
+    "val_seeds": "400001:400003",
+    "uncertainties": "4,8,12",
+    "validation_uncertainty": 8.0,
+    "updates": 2,
+    "clock": "union",
+    "period": 12.0,
+    "candidate_limit": 4,
+    "reward_scale": 100.0,
+    "candidate_screen": "positive",
+    "budget_features": "absolute",
+    "value_features": "global",
+    "min_gain": 0.1,
+    "execution_margin": 0.0,
+    "bootstrap_margin": 0.0,
+    "greedy_exploration_prob": 0.0,
+    "hidden_dim": 96,
+    "q_network": "set_ddqn",
+    "lr": 0.0003,
+    "gamma": 1.0,
+    "replay_capacity": 50000,
+    "batch_size": 64,
+    "warmup": 512,
+    "updates_per_step": 1.0,
+    "max_updates_per_episode": 0,
+    "target_update": 250,
+    "replay_rho": 0.25,
+    "replay_weighting": "uniform",
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_episodes": 300,
+    "eval_every": 100,
+    "seed": 43
+  },
+  "runtime_config": {
+    "workers": 4,
+    "validation_workers": 2,
+    "state_every_rounds": 5,
+    "resume": false,
+    "dispatch_coordinator": false,
+    "device": "cuda:0",
+    "out": "results/v12_uniform_seed43"
+  },
+  "code_sha256": {
+    "iamu_dynamic/core.py": "16129e0e82a6740721e5ef6a4b6d5d21b1f7b64f52a4fe977c731523756f8c81",
+    "iamu_dynamic/rl_env_v11.py": "d1cad643ed8a426d1d001fab264b4bf5d889874152b28616b051c164741690ec",
+    "iamu_dynamic/rl_ddqn_v11.py": "38d31fc0d416b6488db5809994f90598c6955ddd6783caee32cf12e7065941de",
+    "iamu_dynamic/rl_experiment_v11.py": "169cd4163bf0331ea606fa5fe0cbe9f75f6fe8882b390859c11a3d9561a6eaf3",
+    "v11_protocol/train_v11.py": "ac03f8840d4549e2195749773592083667fc275d6e261d7243045e598fcecb2b",
+    "v11_protocol/indexed_replay.py": "a1cac421bbded145b0bcef644fb18282916766367ccc47de2cfca91c73403ae2",
+    "v11_protocol/launch_four_gpu.py": "25da96e96e9f57afc8325441fa42b95974be8eb68fe4c48054e6e5288a67e83b",
+    "v11_protocol/margin_scan.py": "d46bcfa04524351a57a6ddb2facecd785a28dc4e620865acefbb1224549f34f7",
+    "v11_protocol/audit_candidates.py": "14008321b1038d86f75363ad4eccb781bf7cdaac81fdd61e55f2e5389038577c",
+    "v11_protocol/replay_reasons.py": "4bf91978da8ed9b3347be5de126a2c696773450cb38834f649a8d3eef5729d6a",
+    "v11_protocol/fixed_label_probe.py": "82a7e19a02ca2e6f742400e263df17c94a649690acf1e66c497dfdabc8f9aa99",
+    "v11_protocol/v11_actors.py": "8e0c019a33389ed1fe3c8d0207457db66eb5e8f2f2d6bb5929a0100cb927979d",
+    "v11_protocol/rounds.py": "9ff3cf986dbd94314ee01f13debaba775c1180413c972bc0b332b388a12dd5b2",
+    "v11_protocol/validation_v11.py": "b834f255f5457a5d3b0909cf8958157e30599a7b7745a5126cc6510f422f76c5",
+    "v11_protocol/research_v12.py": "4c869d671b844da1984de4a61df68d8959fab511edb4e23d0608ff9f8d437223",
+    "v11_protocol/experiment_fingerprint_v12.py": "76ef1da56bbf27e407fedaf04bcede7064706a1ca3134272054a67b6e931fc83",
+    "v11_protocol/recovery_v12.py": "63df7ea24123403088da635be721e32e885b1a27e79d01b80738cacfb1a67b58",
+    "v11_protocol/dispatch_v12.py": "f024eac8b20db6932e6c6095582bc15063b797e779fc03cc48d4a3115838f05a",
+    "parallel_recovery_v081.py": "32c0cf5e006954ba6a21211c644561ab5c364719eea0d6ae9a793ad0cc4cef81",
+    "v11_protocol/build_decision_bank.py": "546150e2ed7159440e82240093d3060cc4e727ac27541e5e6a173962de794803",
+    "v11_protocol/evaluate_qgap_bank.py": "22339a864afc4c9926058b445e5664abb88f4296ac1b1980ed8395481b0b86fa",
+    "v11_protocol/counterfactual_decision_probe.py": "2f8eef2d054c2180ba002bdfd2a1284aee88e1e030edf1318299e86487894be0",
+    "v11_protocol/margin_scan_v12.py": "c53397b165a880518931159a93c129f021fff404028fd6b578ed53ca74063a7d",
+    "v11_protocol/replay_tail_audit_v12.py": "8790eb78ead1cbfd91d4b6404bf5c93f8e49dec55dd97a7d9da2d60ae3f79b89",
+    "tests_v11/test_research_v12.py": "091cc4f98b06400a02ac71f40e6443a8627419afa74ef7381a5b305d0988c633",
+    "tests_v11/test_replay_snapshot_v12.py": "643fa7dcda304aba2a05e5e09b5f788a2a0dd26a936b98c340703463d67d4a2f",
+    "tests_v11/test_real_env_v12.py": "b4efc9d262afa22473f3be6e1979123a0f58bb63713a868e308b67905d1e8278",
+    "tests_v11/test_recovery_v12.py": "6889617416268fb3ae3393fd8396f4c31b1ae52f15bad0c97512c75911bd6f9c",
+    "tests_v11/test_dispatch_v12.py": "964ecf2803aa3b32329157481b99460aa5710a9775100ada2903f6daf4cd9816",
+    "tests_v11/test_qgap_v12.py": "d9b85b1eef466dfd46a685a18d2d06742b2f61a849f5a1048dc38ba0e4630add",
+    "tests_v11/test_fingerprint_v12.py": "ef28e7d6d5e824a3f48dce9474bb10f7aba99efa620f576fa5fcc7bd3cf662ca"
+  },
+  "data_sha256": {
+    "train_cases": [
+      [
+        "../2024LiERLDDE/case_code/1.txt",
+        "1a0d0e3a17eab90bb6d0c72ce39db51d7c12e7c2e1e562fc62976d269bbd52a4"
+      ],
+      [
+        "../2024LiERLDDE/case_code/2.txt",
+        "7e101d12009b76cfee4b53c6d8c33cb44a39fef8530ec567e079d873d1cc8766"
+      ],
+      [
+        "../2024LiERLDDE/case_code/3.txt",
+        "4e29653b32c63d3716c356313e93b6d0668261be5a293048366a1946dc04d6dd"
+      ],
+      [
+        "../2024LiERLDDE/case_code/4.txt",
+        "289f16bdd0fd3f061160cc9034610060a29b7b10ec8e634e8073e4f1c714c7b1"
+      ],
+      [
+        "../2024LiERLDDE/case_code/5.txt",
+        "b9f2cf3ce870368a8466dd5da65ca5e0bc3a358f9a326b28e6e17786c16e9e2c"
+      ],
+      [
+        "../2024LiERLDDE/case_code/6.txt",
+        "229b4a9e6062a804011797d9a11d725940be4cc70b6eed0707cd4bc79b0c5531"
+      ],
+      [
+        "../2024LiERLDDE/case_code/7.txt",
+        "3fcc94fad8f2fd4d5a2c53bb66a88445812cc696b4edbed654f5d67bcc8c8091"
+      ]
+    ],
+    "val_cases": [
+      [
+        "../2024LiERLDDE/case_code/8.txt",
+        "eb15848ca1eac1fce5f15c34d6e22c580e6aa5d1a7bbcdcd353f361c05960229"
+      ],
+      [
+        "../2024LiERLDDE/case_code/9.txt",
+        "68f9d35b0f499f342b271e4b9cc4538788eb29fc2b270e2a7e6917409956b6f8"
+      ]
+    ]
+  },
+  "task_list_sha256": "77daa3883dad826d0e3e78747b08cd169197f3c51dead33a844a6144c70d4fef",
+  "git": {
+    "commit": null,
+    "dirty": null,
+    "tracked_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "software": {
+    "python": "3.10.22 (main, Oct 29 2026, 20:33:25) [GCC 14.3.0]",
+    "cpu_count": 24,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 3090",
+      "NVIDIA GeForce RTX 3090",
+      "NVIDIA GeForce RTX 3090",
+      "NVIDIA GeForce RTX 3090"
+    ],
+    "pytorch": "2.14.1+cu130",
+    "cuda": "13.0",
+    "numpy": "2.2.6",
+    "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39"
+  },
+  "protocol_version": "V1.2-frozen-round-ordered-consumption"
+}

@@ -1,0 +1,2 @@
+completed,validation_id,mean_wait,mean_spent,gradient_steps,evaluated_runs,validation_seconds
+100,val_000100,1965.2830523444427,0.6111111111111112,3400,216,4128.5544195408

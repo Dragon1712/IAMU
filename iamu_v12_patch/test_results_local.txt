@@ -1,0 +1,24 @@
+test_out_of_order_results_all_assigned_exactly_once (test_dispatch_v12.TestDispatchV12.test_out_of_order_results_all_assigned_exactly_once) ... ok
+test_code_and_data_changes_invalidate (test_fingerprint_v12.TestFingerprintV12.test_code_and_data_changes_invalidate) ... ok
+test_resume_flag_is_runtime_only (test_fingerprint_v12.TestFingerprintV12.test_resume_flag_is_runtime_only) ... ok
+test_exact_tie_keep_wins (test_qgap_v12.TestQGapV12.test_exact_tie_keep_wins) ... skipped 'Requires IAMU network module and its dependencies'
+test_margin_and_mask (test_qgap_v12.TestQGapV12.test_margin_and_mask) ... skipped 'Requires IAMU network module and its dependencies'
+test_non_actionable_not_defined (test_qgap_v12.TestQGapV12.test_non_actionable_not_defined) ... skipped 'Requires IAMU network module and its dependencies'
+test_no_search_event_not_marked_exhausted (test_real_env_v12.TestRealEnvV12.test_no_search_event_not_marked_exhausted) ... skipped 'Requires real IAMU environment'
+test_paired_branches_unchanged_source_and_budget (test_real_env_v12.TestRealEnvV12.test_paired_branches_unchanged_source_and_budget) ... skipped 'Requires real IAMU environment'
+test_continuous_vs_resume_training_parameters (test_recovery_v12.TestStrictResumeV12.test_continuous_vs_resume_training_parameters) ... ok
+test_save_restore_optimizer_rng_and_pool_sequence (test_recovery_v12.TestStrictResumeV12.test_save_restore_optimizer_rng_and_pool_sequence) ... ok
+test_rejects_corrupted_pool (test_replay_snapshot_v12.TestSnapshotV12.test_rejects_corrupted_pool) ... ok
+test_ring_order_and_sample_sequence_across_eviction (test_replay_snapshot_v12.TestSnapshotV12.test_ring_order_and_sample_sequence_across_eviction) ... ok
+test_budget_becomes_zero (test_research_v12.TestResearchV12.test_budget_becomes_zero) ... ok
+test_discounted_gamma (test_research_v12.TestResearchV12.test_discounted_gamma) ... ok
+test_never_exhausted_keeps_raw (test_research_v12.TestResearchV12.test_never_exhausted_keeps_raw) ... ok
+test_rejects_future_edit (test_research_v12.TestResearchV12.test_rejects_future_edit) ... ok
+test_rejects_partial_episode (test_research_v12.TestResearchV12.test_rejects_partial_episode) ... ok
+test_three_strata_disjoint (test_research_v12.TestResearchV12.test_three_strata_disjoint) ... ok
+test_zero_initial_budget (test_research_v12.TestResearchV12.test_zero_initial_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 2.259s
+
+OK (skipped=5)

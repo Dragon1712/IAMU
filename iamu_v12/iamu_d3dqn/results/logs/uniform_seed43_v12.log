@@ -1,0 +1,61 @@
+/home/moco/anaconda3/envs/erldde/bin/python -u -m v11_protocol.train_v11 --train-cases ../2024LiERLDDE/case_code/1.txt ../2024LiERLDDE/case_code/2.txt ../2024LiERLDDE/case_code/3.txt ../2024LiERLDDE/case_code/4.txt ../2024LiERLDDE/case_code/5.txt ../2024LiERLDDE/case_code/6.txt ../2024LiERLDDE/case_code/7.txt --val-cases ../2024LiERLDDE/case_code/8.txt ../2024LiERLDDE/case_code/9.txt --episodes 400 --eval-every 100 --round-size 16 --candidate-screen positive --candidate-limit 4 --clock union --period 12 --reward-scale 100 --gamma 1 --q-network set_ddqn --hidden-dim 96 --lr 0.0003 --target-update 250 --updates-per-step 1 --max-updates-per-episode 0 --greedy-exploration-prob 0 --epsilon-start 1 --epsilon-end 0.05 --epsilon-decay-episodes 300 --execution-margin 0 --bootstrap-margin 0 --exhaustion-tail-mode raw --seed 43 --replay-weighting uniform --replay-rho 0.25 --device cuda:0 --workers 4 --validation-workers 2 --out results/v12_uniform_seed43
+[v11 throughput] round=0 wall=50.110s queue_wait=38.509s learner=11.497s max_buffered=5 ep_per_hour=1149.47
+[v11 round] 1/28 ep=16 grad=1739 replay=2250
+[v11 throughput] round=1 wall=100.353s queue_wait=85.474s learner=14.599s max_buffered=5 ep_per_hour=573.97
+[v11 round] 2/28 ep=32 grad=3999 replay=4510
+[v11 throughput] round=2 wall=134.789s queue_wait=119.239s learner=15.047s max_buffered=12 ep_per_hour=427.33
+[v11 round] 3/28 ep=48 grad=6257 replay=6768
+[v11 throughput] round=3 wall=55.110s queue_wait=39.610s learner=14.815s max_buffered=5 ep_per_hour=1045.19
+[v11 round] 4/28 ep=64 grad=8530 replay=9041
+[v11 throughput] round=4 wall=56.544s queue_wait=41.638s learner=14.150s max_buffered=9 ep_per_hour=1018.67
+[v11 round] 5/28 ep=80 grad=10805 replay=11316
+[v11 throughput] round=5 wall=118.389s queue_wait=104.006s learner=13.580s max_buffered=9 ep_per_hour=486.53
+[v11 round] 6/28 ep=96 grad=13068 replay=13579
+[v11 throughput] round=6 wall=36.242s queue_wait=32.650s learner=3.421s max_buffered=3 ep_per_hour=397.33
+[v11 validation] episode=100 wait=1976.581 grad=13644 best=1976.581
+[v11 round] 7/28 ep=100 grad=13644 replay=14155
+[v11 throughput] round=7 wall=98.674s queue_wait=83.354s learner=14.143s max_buffered=11 ep_per_hour=583.74
+[v11 round] 8/28 ep=116 grad=15901 replay=16412
+[v11 throughput] round=8 wall=51.564s queue_wait=36.577s learner=13.709s max_buffered=6 ep_per_hour=1117.06
+[v11 round] 9/28 ep=132 grad=18156 replay=18667
+[v11 throughput] round=9 wall=54.409s queue_wait=38.773s learner=14.200s max_buffered=8 ep_per_hour=1058.66
+[v11 round] 10/28 ep=148 grad=20426 replay=20937
+[v11 throughput] round=10 wall=54.441s queue_wait=38.296s learner=14.429s max_buffered=6 ep_per_hour=1058.03
+[v11 round] 11/28 ep=164 grad=22709 replay=23220
+[v11 throughput] round=11 wall=103.398s queue_wait=87.862s learner=13.819s max_buffered=10 ep_per_hour=557.07
+[v11 round] 12/28 ep=180 grad=25004 replay=25515
+[v11 throughput] round=12 wall=67.183s queue_wait=52.151s learner=13.357s max_buffered=4 ep_per_hour=857.35
+[v11 round] 13/28 ep=196 grad=27247 replay=27758
+[v11 throughput] round=13 wall=23.151s queue_wait=19.569s learner=3.177s max_buffered=2 ep_per_hour=622.01
+[v11 validation] episode=200 wait=1971.369 grad=27803 best=1971.369
+[v11 round] 14/28 ep=200 grad=27803 replay=28314
+[v11 throughput] round=14 wall=82.382s queue_wait=64.656s learner=15.139s max_buffered=7 ep_per_hour=699.18
+[v11 round] 15/28 ep=216 grad=30034 replay=30545
+[v11 throughput] round=15 wall=168.590s queue_wait=150.641s learner=15.298s max_buffered=10 ep_per_hour=341.66
+[v11 round] 16/28 ep=232 grad=32303 replay=32814
+[v11 throughput] round=16 wall=140.620s queue_wait=122.479s learner=15.257s max_buffered=6 ep_per_hour=409.62
+[v11 round] 17/28 ep=248 grad=34554 replay=35065
+[v11 throughput] round=17 wall=179.919s queue_wait=161.047s learner=15.778s max_buffered=6 ep_per_hour=320.14
+[v11 round] 18/28 ep=264 grad=36849 replay=37360
+[v11 throughput] round=18 wall=198.766s queue_wait=181.508s learner=14.441s max_buffered=8 ep_per_hour=289.79
+[v11 round] 19/28 ep=280 grad=39094 replay=39605
+[v11 throughput] round=19 wall=205.093s queue_wait=187.222s learner=14.634s max_buffered=8 ep_per_hour=280.85
+[v11 round] 20/28 ep=296 grad=41346 replay=41857
+[v11 throughput] round=20 wall=80.977s queue_wait=77.314s learner=3.141s max_buffered=3 ep_per_hour=177.83
+[v11 validation] episode=300 wait=1969.714 grad=41920 best=1969.714
+[v11 round] 21/28 ep=300 grad=41920 replay=42431
+[v11 throughput] round=21 wall=242.545s queue_wait=222.912s learner=15.820s max_buffered=6 ep_per_hour=237.48
+[v11 round] 22/28 ep=316 grad=44184 replay=44695
+[v11 throughput] round=22 wall=236.814s queue_wait=218.029s learner=15.087s max_buffered=5 ep_per_hour=243.23
+[v11 round] 23/28 ep=332 grad=46413 replay=46924
+[v11 throughput] round=23 wall=256.326s queue_wait=237.282s learner=15.103s max_buffered=6 ep_per_hour=224.71
+[v11 round] 24/28 ep=348 grad=48676 replay=49187
+[v11 throughput] round=24 wall=215.210s queue_wait=196.684s learner=14.461s max_buffered=5 ep_per_hour=267.65
+[v11 round] 25/28 ep=364 grad=50926 replay=50000
+[v11 throughput] round=25 wall=242.827s queue_wait=224.158s learner=14.751s max_buffered=5 ep_per_hour=237.21
+[v11 round] 26/28 ep=380 grad=53205 replay=50000
+[v11 throughput] round=26 wall=206.052s queue_wait=188.119s learner=14.309s max_buffered=5 ep_per_hour=279.54
+[v11 round] 27/28 ep=396 grad=55486 replay=50000
+[v11 throughput] round=27 wall=107.678s queue_wait=103.718s learner=3.311s max_buffered=2 ep_per_hour=133.73
+[v11 validation] episode=400 wait=1961.208 grad=56068 best=1961.208
+[v11 round] 28/28 ep=400 grad=56068 replay=50000

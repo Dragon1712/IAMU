@@ -1,0 +1,23 @@
+{
+  "base_commit": "2d96981a38434014f14e31be5641d422d28835f8",
+  "backup": "/home/moco/code/iamu/v12_patch_backups/pre_v12_sources_20261118T080013Z_998606.zip",
+  "installed_files": [
+    "iamu_d3dqn/tests_v11/test_dispatch_v12.py",
+    "iamu_d3dqn/tests_v11/test_fingerprint_v12.py",
+    "iamu_d3dqn/tests_v11/test_qgap_v12.py",
+    "iamu_d3dqn/tests_v11/test_real_env_v12.py",
+    "iamu_d3dqn/tests_v11/test_recovery_v12.py",
+    "iamu_d3dqn/tests_v11/test_replay_snapshot_v12.py",
+    "iamu_d3dqn/tests_v11/test_research_v12.py",
+    "iamu_d3dqn/v11_protocol/build_decision_bank.py",
+    "iamu_d3dqn/v11_protocol/counterfactual_decision_probe.py",
+    "iamu_d3dqn/v11_protocol/dispatch_v12.py",
+    "iamu_d3dqn/v11_protocol/evaluate_qgap_bank.py",
+    "iamu_d3dqn/v11_protocol/experiment_fingerprint_v12.py",
+    "iamu_d3dqn/v11_protocol/margin_scan_v12.py",
+    "iamu_d3dqn/v11_protocol/recovery_v12.py",
+    "iamu_d3dqn/v11_protocol/replay_tail_audit_v12.py",
+    "iamu_d3dqn/v11_protocol/research_v12.py",
+    "iamu_d3dqn/v11_protocol/uniform_replay_v12.json"
+  ]
+}

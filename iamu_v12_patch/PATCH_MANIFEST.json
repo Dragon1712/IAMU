@@ -1,0 +1,35 @@
+{
+  "baseline_commit": "2d96981a38434014f14e31be5641d422d28835f8",
+  "expected_repo": "Dragon1712/IAMU",
+  "original_files_to_patch": [
+    "iamu_dynamic/rl_env_v11.py",
+    "iamu_dynamic/rl_ddqn_v11.py",
+    "v11_protocol/v11_actors.py",
+    "v11_protocol/indexed_replay.py",
+    "v11_protocol/fixed_label_probe.py",
+    "v11_protocol/train_v11.py"
+  ],
+  "files": {
+    "apply_v12.py": "e214b8d789b1bd6c0a8f6fd3823c6253e7549610764d1f67f051052d74d05f2e",
+    "README_zh.md": "90f32be1e2089ea3a8ab22ac4b61ebcb36b18f65f84b9276c2a4fdf9fb040821",
+    "CHANGELOG_V12_zh.md": "9c06a80ea10f1adb59bc0438e29c24cae7cdeff893752b0a40300ccc6ca2fcda",
+    "test_results_local.txt": "7e5ce46f693f46408d6b8c47a2db4ff72674218502ac7e9dd15b846a9714c1e5",
+    "payload/tests_v11/test_dispatch_v12.py": "964ecf2803aa3b32329157481b99460aa5710a9775100ada2903f6daf4cd9816",
+    "payload/tests_v11/test_fingerprint_v12.py": "ef28e7d6d5e824a3f48dce9474bb10f7aba99efa620f576fa5fcc7bd3cf662ca",
+    "payload/tests_v11/test_qgap_v12.py": "d9b85b1eef466dfd46a685a18d2d06742b2f61a849f5a1048dc38ba0e4630add",
+    "payload/tests_v11/test_real_env_v12.py": "b4efc9d262afa22473f3be6e1979123a0f58bb63713a868e308b67905d1e8278",
+    "payload/tests_v11/test_recovery_v12.py": "6889617416268fb3ae3393fd8396f4c31b1ae52f15bad0c97512c75911bd6f9c",
+    "payload/tests_v11/test_replay_snapshot_v12.py": "643fa7dcda304aba2a05e5e09b5f788a2a0dd26a936b98c340703463d67d4a2f",
+    "payload/tests_v11/test_research_v12.py": "091cc4f98b06400a02ac71f40e6443a8627419afa74ef7381a5b305d0988c633",
+    "payload/v11_protocol/build_decision_bank.py": "546150e2ed7159440e82240093d3060cc4e727ac27541e5e6a173962de794803",
+    "payload/v11_protocol/counterfactual_decision_probe.py": "2f8eef2d054c2180ba002bdfd2a1284aee88e1e030edf1318299e86487894be0",
+    "payload/v11_protocol/dispatch_v12.py": "f024eac8b20db6932e6c6095582bc15063b797e779fc03cc48d4a3115838f05a",
+    "payload/v11_protocol/evaluate_qgap_bank.py": "22339a864afc4c9926058b445e5664abb88f4296ac1b1980ed8395481b0b86fa",
+    "payload/v11_protocol/experiment_fingerprint_v12.py": "76ef1da56bbf27e407fedaf04bcede7064706a1ca3134272054a67b6e931fc83",
+    "payload/v11_protocol/margin_scan_v12.py": "c53397b165a880518931159a93c129f021fff404028fd6b578ed53ca74063a7d",
+    "payload/v11_protocol/recovery_v12.py": "63df7ea24123403088da635be721e32e885b1a27e79d01b80738cacfb1a67b58",
+    "payload/v11_protocol/replay_tail_audit_v12.py": "8790eb78ead1cbfd91d4b6404bf5c93f8e49dec55dd97a7d9da2d60ae3f79b89",
+    "payload/v11_protocol/research_v12.py": "4c869d671b844da1984de4a61df68d8959fab511edb4e23d0608ff9f8d437223",
+    "payload/v11_protocol/uniform_replay_v12.json": "44fd8560185a2befbd1973364a9e49eabf3ca75cd9d047fdb436697c4af3b4ec"
+  }
+}
