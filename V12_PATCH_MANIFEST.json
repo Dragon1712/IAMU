@@ -1,0 +1,48 @@
+{
+  "project": "IAMU-V1.2-decision-epoch",
+  "base_repository": "Dragon1712/IAMU",
+  "base_git_sha": "2d96981a38434014f14e31be5641d422d28835f8",
+  "change_policy": "Only iamu_d3dqn/v12_protocol and tests_v12 added",
+  "executed_tests": {
+    "pure_in_isolation": {
+      "run": 17,
+      "passed": 12,
+      "skipped_missing_v11": 5
+    },
+    "with_interface_compatible_mock": {
+      "run": 17,
+      "passed": 16,
+      "skipped_physical_env": 1
+    }
+  },
+  "not_executed": [
+    "real V1.1 IAMU physics smoke",
+    "4-actor 8-episode smoke",
+    "12x400-episode training",
+    "independent final test"
+  ],
+  "source_sha256": {
+    "V12_CHANGELOG.md": "7808a3f66038cf3c639d5623e199a7876c61ec588073e4f6ad002cda61d22e18",
+    "V12_MOCK_TEST_REPORT.txt": "7c6daa52bafeda9138573e057f7c932fe3add99b4ea0e0f1f2c51bb09b0ca918",
+    "V12_TEST_REPORT.txt": "3a9144134010268d03feed46a8f91ced22d7a3da0c1bec81a35d644b09b5addf",
+    "iamu_d3dqn/tests_v12/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "iamu_d3dqn/tests_v12/test_agent_v12.py": "45f99b6156e5eb04194d61c67615f2511f7eb3f128b6b5e5dfff2871ea517086",
+    "iamu_d3dqn/tests_v12/test_real_env_v12.py": "106b06212a3f1fa890c4f1be4ec9573fc8c32037d19b3d4ecb1a1e2b0c5cbb99",
+    "iamu_d3dqn/tests_v12/test_recovery_v12.py": "6fc8cba0f1efc3a1a1ae40ab67ad7a0c280ce9481db4016df9ec562e1c1a90cc",
+    "iamu_d3dqn/tests_v12/test_transitions_v12.py": "9ebbdd9f111fc4b70ab1afe383155d82b205230ae383d56bef8d3a467245b523",
+    "iamu_d3dqn/v12_protocol/README.md": "412a4a267009478a75c4428582cb7501e288da5f5c10d2b7bbdd11db350faf21",
+    "iamu_d3dqn/v12_protocol/__init__.py": "4ff6568f6603033354e7653076f633bc1702ccdd1cd4add873044c628ff9592b",
+    "iamu_d3dqn/v12_protocol/actors.py": "6a41968e85a4f385922b36315ac957c1eea49ae3f23d8fb2d6dbabb095ad76f5",
+    "iamu_d3dqn/v12_protocol/agent.py": "72a8a2d6b404f3976b05aefda0ccd94ddf41a3f796eac5a8b827ef2b34c5b338",
+    "iamu_d3dqn/v12_protocol/analyze.py": "686b26ba3c8c42e91eced4b80c6df4db43a0ad518c35f4e7e17b38f3af347adf",
+    "iamu_d3dqn/v12_protocol/compress.py": "5148bb54f8711f4a81a9fe8d670942b3463aec32d5b36882df28254c9bee750a",
+    "iamu_d3dqn/v12_protocol/fixed_data.py": "8691dd3771fbde0565b2db94f55b9bbfe52d8560c995475496f55a7729555941",
+    "iamu_d3dqn/v12_protocol/replay.py": "d9dfac90668c8e9a09028ed666cc86183c80184471577f1cf8e82609efe23ba9",
+    "iamu_d3dqn/v12_protocol/scripts/run_v12_main_matrix.sh": "f11d6710b9e0eebf2c791945599158269b7393de2ca237ec0862c26d03ce1bdc",
+    "iamu_d3dqn/v12_protocol/scripts/run_v12_smoke.sh": "5daf83e9935e04b1bc28de4984a5db07ced908df66e547e2934aea2b83b4bad1",
+    "iamu_d3dqn/v12_protocol/targets.py": "71b7fd3bef81a8308b698feffed7217e4bf7c11ddd1fb39c3f1ef15edcd6072c",
+    "iamu_d3dqn/v12_protocol/train.py": "2323ee8bd1ec1be9d17954b303d34c38282d0801f54943b48bb8a2e99be483a5",
+    "iamu_d3dqn/v12_protocol/transitions.py": "e3027f045ce39a5f2fdf7a336678564a395b9dcff15c74d7777d0ab4b6869f6c",
+    "iamu_d3dqn/v12_protocol/validation.py": "1273cd446cf60bc96c5f87c435a75f172ff946cff1dc9673ed1b8cb7174df41c"
+  }
+}

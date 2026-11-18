@@ -1,0 +1,22 @@
+test_checkpoint_metadata_round_trip (test_agent_v12.CheckpointAndAgentTests.test_checkpoint_metadata_round_trip) ... ok
+test_independent_macro_update_with_two_step_discount (test_agent_v12.CheckpointAndAgentTests.test_independent_macro_update_with_two_step_discount) ... ok
+test_gamma_half_two_step_and_no_double_gamma (test_agent_v12.IntervalTargets.test_gamma_half_two_step_and_no_double_gamma) ... ok
+test_single_full_episode_raw_return_and_compressed_ledger (test_real_env_v12.RealEnvironmentTests.test_single_full_episode_raw_return_and_compressed_ledger) ... skipped 'Training Case 1 not mounted'
+test_complete_state_restores_replay_rng_and_optimizer (test_recovery_v12.RecoveryTests.test_complete_state_restores_replay_rng_and_optimizer) ... ok
+test_scientific_config_mismatch_rejected (test_recovery_v12.RecoveryTests.test_scientific_config_mismatch_rejected) ... ok
+test_consecutive_decisions_have_unit_length (test_transitions_v12.CompressionTests.test_consecutive_decisions_have_unit_length) ... ok
+test_corrupt_budget_mask_or_chain_is_rejected (test_transitions_v12.CompressionTests.test_corrupt_budget_mask_or_chain_is_rejected) ... ok
+test_invalid_modes_and_gamma (test_transitions_v12.CompressionTests.test_invalid_modes_and_gamma) ... ok
+test_no_decision_and_zero_budget (test_transitions_v12.CompressionTests.test_no_decision_and_zero_budget) ... ok
+test_original_arrays_remain_unmodified_and_are_copied (test_transitions_v12.CompressionTests.test_original_arrays_remain_unmodified_and_are_copied) ... ok
+test_required_numerical_example (test_transitions_v12.CompressionTests.test_required_numerical_example) ... ok
+test_tail_after_last_edit_is_included_exactly_once (test_transitions_v12.CompressionTests.test_tail_after_last_edit_is_included_exactly_once) ... ok
+test_zero_elapsed_events_still_count_raw_step_gamma (test_transitions_v12.CompressionTests.test_zero_elapsed_events_still_count_raw_step_gamma) ... ok
+test_a1_stratified_and_invalid_a3 (test_transitions_v12.ReplayTests.test_a1_stratified_and_invalid_a3) ... ok
+test_episode_fifo_including_empty_episode (test_transitions_v12.ReplayTests.test_episode_fifo_including_empty_episode) ... ok
+test_restore_preserves_sample_sequence_and_index_order (test_transitions_v12.ReplayTests.test_restore_preserves_sample_sequence_and_index_order) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.631s
+
+OK (skipped=1)
