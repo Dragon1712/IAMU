@@ -1,0 +1,12 @@
+{
+  "source_out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e5_online_seed43",
+  "full_state_sha256": "1d2e54f0fea9a542b9f4df445be0f4abf3ffb5cf3d93d9b649bdb92384b10856",
+  "completed": 200,
+  "gradient_steps": 6879,
+  "replay_size": 28030,
+  "probe_sha256": "35be5c7ab2c2f7c8acebb0228ffa8e077ac85fb9e05a33b3b3c9653564b4b1e4",
+  "td_probe_sha256": "9c66aa8aeb6f224f46008ed02c9b010ea17b0310fa8122bbcdc318164a7d4bc9",
+  "validation_sha256": "7faf9612deb98b4315d66b7b3a63b4325725c56a39841eb30d551bbf7a4b614b",
+  "validation_id": "val_000200",
+  "status": "done"
+}

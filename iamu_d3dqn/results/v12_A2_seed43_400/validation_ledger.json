@@ -6,5 +6,29 @@
     "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v12_A2_seed43_400/validation_snapshots/val_000100_grad_000003400.pt",
     "status": "done",
     "validation_seconds": 4037.1949798711576
+  },
+  "val_000200": {
+    "rows": 216,
+    "score": 1969.4272216519082,
+    "sha256": "ad9a4566be8debb792a83408920bcda0456d01eddb2fc83430f0e18dcd8206a3",
+    "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v12_A2_seed43_400/validation_snapshots/val_000200_grad_000006940.pt",
+    "status": "done",
+    "validation_seconds": 3798.1135214893147
+  },
+  "val_000300": {
+    "rows": 216,
+    "score": 1964.0600337076087,
+    "sha256": "71c19e96d8cf10482032cc7413307e1cc85e1ed6223cc75a3d338ebbb4cb8627",
+    "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v12_A2_seed43_400/validation_snapshots/val_000300_grad_000010469.pt",
+    "status": "done",
+    "validation_seconds": 3807.8321774951182
+  },
+  "val_000400": {
+    "rows": 216,
+    "score": 1948.1023049345438,
+    "sha256": "7ad7bc4459c17b6fd71c9cf5995743c2bc1a61cb25bc6343735620cd95c03e84",
+    "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v12_A2_seed43_400/validation_snapshots/val_000400_grad_000014006.pt",
+    "status": "done",
+    "validation_seconds": 3775.7886513397098
   }
 }

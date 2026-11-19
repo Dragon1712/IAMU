@@ -1,0 +1,43 @@
+{
+  "package": "iamu-v12-mechanism-p0-p4",
+  "base_commit": "70606c7b7ac4c6fc9063e25c92f56f58e1061c76",
+  "intended_repo_subdir": "iamu_d3dqn",
+  "offline_no_git_required": true,
+  "touches_existing": [
+    "v12_protocol/replay.py",
+    "v12_protocol/validation.py",
+    "v12_protocol/fixed_data.py",
+    "v12_protocol/agent.py"
+  ],
+  "new_files": [
+    "tests_v12/test_diagnostic_protocol_next.py",
+    "tests_v12/test_probe_restore_next.py",
+    "v12_protocol/analyze_diagnostics.py",
+    "v12_protocol/baseline_cache.py",
+    "v12_protocol/counterfactual_probe.py",
+    "v12_protocol/diagnostics.py",
+    "v12_protocol/fixed_f1.py",
+    "v12_protocol/probe_bank.py",
+    "v12_protocol/probe_eval.py",
+    "v12_protocol/validation_next.py.template"
+  ],
+  "files": {
+    "apply_next.py": "fa80ce627896671f53eb0b4a6ac564f2bc6d10f8902d3960ed686429f347bd2f",
+    "run_next_linux.sh": "da0bc4bc3f1d47151cea5539f29deb2c4eec0dbd214a609095e31a766be6416d",
+    "README_zh.md": "93c98b08f99e01de1259b7a1209523dd9720482ffe9e88762668afa362ee554b",
+    "CHANGELOG_zh.md": "9bfa8a1007d5c9a8fdebac79376ad8e4bbd3762a84af3e0e16dafabfd91e515b",
+    "TEST_REPORT.txt": "ecc14628dc3da9e9499df073ee4ebb92a90f83a2569a95cd82109c70a8fb1bdd",
+    "payload/tests_v12/test_diagnostic_protocol_next.py": "01649af0a52a514ee9ba14b7a0c8caca1addd7562200bb037ed394f990f18288",
+    "payload/tests_v12/test_probe_restore_next.py": "e149b0319c264d267e38dcb28a27a96b43b4b97cbfacde5ad3608c86e195de13",
+    "payload/v12_protocol/analyze_diagnostics.py": "abcbbcbf0c94d7d0ac7fa258c563e48103bd804f0725e7c0c552de0466b4f519",
+    "payload/v12_protocol/baseline_cache.py": "53667e1647e50a565fa0f49a6c7f91ae4d8844e643f24fc5016d920f7f349746",
+    "payload/v12_protocol/counterfactual_probe.py": "47bf103f0a70d91bee573bb09f00397fd775759843cf2e3b13fba80c95a1d1c4",
+    "payload/v12_protocol/diagnostics.py": "99101c3763a38575771e5a14d5a8e86c86480cfab244ad99e8350fa1c042b872",
+    "payload/v12_protocol/fixed_f1.py": "80fe513b2c2b28d86e9afa4979293bb8362760b3f757c82942395fe44af69616",
+    "payload/v12_protocol/probe_bank.py": "5bab5fb1f0a64d89ba8f0e6fab4185da3ff90ab71191a436e17a432d01859dec",
+    "payload/v12_protocol/probe_eval.py": "7672067f207e89bf364b99b526d4a2a99fb408e4818309aa9187dc727f3cd317",
+    "payload/v12_protocol/validation_next.py.template": "a50b74a7fd144030b31730bbc7e8ea09e176487d311d2d1e7b8f6b5b30e75cb2"
+  },
+  "online_400ep_training_launched": false,
+  "real_server_tests_executed": false
+}

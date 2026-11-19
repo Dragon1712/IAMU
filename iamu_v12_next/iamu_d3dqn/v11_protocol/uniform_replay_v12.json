@@ -1,0 +1,39 @@
+{
+  "common": {
+    "train-cases": [
+      "../2024LiERLDDE/case_code/1.txt", "../2024LiERLDDE/case_code/2.txt",
+      "../2024LiERLDDE/case_code/3.txt", "../2024LiERLDDE/case_code/4.txt",
+      "../2024LiERLDDE/case_code/5.txt", "../2024LiERLDDE/case_code/6.txt",
+      "../2024LiERLDDE/case_code/7.txt"
+    ],
+    "val-cases": ["../2024LiERLDDE/case_code/8.txt", "../2024LiERLDDE/case_code/9.txt"],
+    "episodes": 400,
+    "eval-every": 100,
+    "round-size": 16,
+    "candidate-screen": "positive",
+    "candidate-limit": 4,
+    "clock": "union",
+    "period": 12,
+    "reward-scale": 100,
+    "gamma": 1,
+    "q-network": "set_ddqn",
+    "hidden-dim": 96,
+    "lr": 0.0003,
+    "target-update": 250,
+    "updates-per-step": 1,
+    "max-updates-per-episode": 0,
+    "greedy-exploration-prob": 0,
+    "epsilon-start": 1,
+    "epsilon-end": 0.05,
+    "epsilon-decay-episodes": 300,
+    "execution-margin": 0,
+    "bootstrap-margin": 0,
+    "exhaustion-tail-mode": "raw"
+  },
+  "jobs": [
+    {"name": "uniform_seed43_v12", "out": "results/v12_uniform_seed43", "overrides": {"seed": 43, "replay-weighting": "uniform", "replay-rho": 0.25}},
+    {"name": "rho050_seed43_v12", "out": "results/v12_rho050_seed43", "overrides": {"seed": 43, "replay-weighting": "unweighted", "replay-rho": 0.50}},
+    {"name": "uniform_seed42_v12", "out": "results/v12_uniform_seed42", "overrides": {"seed": 42, "replay-weighting": "uniform", "replay-rho": 0.25}},
+    {"name": "rho025_seed42_v12", "out": "results/v12_rho025_seed42", "overrides": {"seed": 42, "replay-weighting": "unweighted", "replay-rho": 0.25}}
+  ]
+}

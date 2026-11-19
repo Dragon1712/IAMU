@@ -1,0 +1,54 @@
+{
+  "experiment": "margin",
+  "checkpoint": "/home/moco/code/iamu/iamu_d3dqn/results/v09a_d3qn_seed42_300/best.pt",
+  "checkpoint_sha256": "566fdf106d1d2e49d8d954bdddaa57359785aecb0fb9dbde40a47b0b25c34419",
+  "training_manifest": "/home/moco/code/iamu/iamu_d3dqn/results/v09a_d3qn_seed42_300/manifest.json",
+  "training_manifest_sha256": "aaa5f21e3ae7b3e12fd3e07fbc1d9821e0f33dac2a0f196f2e458cf2d78d926d",
+  "training_margin": 0.1,
+  "evaluation_args": {
+    "command": "margin",
+    "checkpoint": "results/v09a_d3qn_seed42_300/best.pt",
+    "manifest": "results/v09a_d3qn_seed42_300/manifest.json",
+    "out": "results/diag_margin_d3qn96_best",
+    "device": "cpu",
+    "cases": null,
+    "scenarios": null,
+    "seeds": null,
+    "budgets": null,
+    "overwrite": false,
+    "margins": "0,0.025,0.05,0.075,0.1,0.125,0.15"
+  },
+  "environment": {
+    "candidate_limit": 4,
+    "decision_clock": "union",
+    "period": 12.0,
+    "reward_scale": 100.0,
+    "candidate_screen": "positive",
+    "min_gain": 0.1,
+    "budget_features": "absolute",
+    "value_features": "global",
+    "updates": 2,
+    "uncertainty": 8.0
+  },
+  "cases": [
+    "../2024LiERLDDE/case_code/8.txt",
+    "../2024LiERLDDE/case_code/9.txt"
+  ],
+  "scenarios": [
+    "shock",
+    "repeated",
+    "small"
+  ],
+  "seeds": [
+    400001,
+    400002,
+    400003
+  ],
+  "budgets": [
+    2,
+    5,
+    10
+  ],
+  "n_records": 378,
+  "interpretation": "Margin sweep modifies INFERENCE only; not a newly trained policy."
+}

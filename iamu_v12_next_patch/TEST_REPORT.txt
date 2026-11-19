@@ -1,0 +1,41 @@
+IAMU V1.2 P0–P4 offline patch: local checks (2026-11-18)
+
+BASIS: GitHub main 70606c7b7ac4c6fc9063e25c92f56f58e1061c76
+GitHub connector: READ OK; create branch: HTTP 403 Resource not accessible by integration.
+Local runtime: Linux Python 3.13, PyTorch 2.10.0+cpu, NumPy 2.3.5.
+Source availability: no real GitHub checkout in execution sandbox. Original V1.2
+modules were reviewed via read-only GitHub connector. Local tests use explicit
+compatible substitutes for V1.2 Agent, Replay, and V1.1 physical API.
+
+COMMAND: python -m unittest tests_v12.test_diagnostic_protocol_next -v
+RESULT: 11 tests, 11 passed, 0 failed, 0 skipped (interface-compatible mocks).
+  - Immutable baseline cache hit/miss, content-sensitive key and concurrent lock
+  - Candidate fingerprint reacts to changed proposal plan
+  - Replay old list-membership vs new set-membership 100 sampled batches
+  - Sampled Replay RNG/order after exact save/restore
+  - No-training, no-RNG Q-gap inference and network mode restoration
+  - TD recorder bins, preclip norm, missing-stratum semantics
+  - Training with/without detached callback: identical mock model weights/loss
+  - Static validation cache disabled/miss/hit: identical mock result rows,
+    changing min_gain produces miss, DDQN executes every task
+  - Synthetic scenario-prefix reconstruction and candidate-plan fingerprint audit
+  - Repeated independent pathwise branches under fixed synthetic continuation
+  - F1 4-step synthetic training creates real output schema/checkpoint files
+  - Pathwise wrong-keep, regret and delta_cost/100 scaling
+
+REPLAY FILTER TIMING (same dimensions as observed EP400 replay; SYNTHETIC):
+  28,330 index entries; 14,165 sampled-count keys
+  Original list membership: 2.645528 seconds
+  Set membership: 0.011807 seconds
+  Filtered dictionaries exactly equal
+WARNING: This microbenchmark is not wall-clock gain for full Replay or training.
+
+PYTHON SYNTAX: apply_next.py and all new .py files compiled; Bash script passes bash -n.
+GITHUB PATCH ANCHORS: read-only remote checks found each replacement anchor exactly once;
+source Git blob hashes recorded in apply_next.py. This does NOT substitute for
+actual server --check/--apply.
+
+NOT RUN: actual IAMU Case simulator, full V1.1 Set-aware DDQN, old model checkpoint
+Q-gap against real .pt files, 8-state pathwise smoke, 64/32 episode collections,
+A0–A3 F1 1000 gradient updates, CPU/GPU real integration, two-process validation
+cache full benchmark, final held-out tests, any 400-episode online training.

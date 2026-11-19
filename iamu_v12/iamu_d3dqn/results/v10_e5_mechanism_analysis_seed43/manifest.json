@@ -1,0 +1,16 @@
+{
+  "args": {
+    "online": "results/v10_e5_online_seed43",
+    "offline": [
+      "results/v10_e5_offline_uniform_seed43",
+      "results/v10_e5_offline_fixed_target_seed43",
+      "results/v10_e5_offline_actionable_uniform_seed43",
+      "results/v10_e5_offline_balanced_seed43"
+    ],
+    "eval": "results/v10_e5_validation_seed43",
+    "episodes": "200,250,300,350,400",
+    "out": "results/v10_e5_mechanism_analysis_seed43"
+  },
+  "fork_sha256": "1d2e54f0fea9a542b9f4df445be0f4abf3ffb5cf3d93d9b649bdb92384b10856",
+  "notes": "Conditional diagnostics and exploratory validation, not a proof of a unique root cause"
+}

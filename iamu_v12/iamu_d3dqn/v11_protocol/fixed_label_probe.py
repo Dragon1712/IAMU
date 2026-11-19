@@ -71,12 +71,6 @@ def main(argv=None):
         if not torch.equal(values,fork['online'][name]):
             raise AssertionError('Reference checkpoint does not match fork online network')
     ref.target.load_state_dict(fork['target'])
-    science = fork.get('config', {}).get('scientific_config',
-                fork.get('config', {}).get('training_args', {}))
-    ref.gamma = float(science.get('gamma', ref.gamma))
-    ref.bootstrap_margin = float(science.get('bootstrap_margin', ref.bootstrap_margin))
-    if not 0 < ref.gamma <= 1 or ref.bootstrap_margin < 0:
-        raise ValueError('Fork has invalid gamma/bootstrap margin')
     rng=random.Random(a.seed)
     replay=fork['replay_items']
     indices=rng.sample(range(len(replay)),min(a.samples,len(replay)))
@@ -95,9 +89,7 @@ def main(argv=None):
                 abs_error=abs(y-predicted)))
     write_csv(out/'fixed_label_errors.csv',rows)
     (out/'manifest.json').write_text(json.dumps(dict(fork_sha256=sha(a.fork),
-        selector_online_sha256=sha(a.reference_checkpoint),
-        evaluator_target_fork_sha256=sha(a.fork),
-        reference_gamma=ref.gamma,reference_bootstrap_margin=ref.bootstrap_margin,
+        selector_evaluator_sha256=sha(a.reference_checkpoint),reference_bootstrap_margin=ref.bootstrap_margin,
         sample_indices=indices,config=vars(a),truth_warning='Fixed target is bootstrap reference, not counterfactual return or Q*'),indent=2))
     print(f'[DONE] examples={len(examples)}, model comparisons={len(a.compare)} => {out}')
 

@@ -1,0 +1,21 @@
+{
+  "name": "IAMU E4-E TD Replay Mechanism",
+  "source_commit": "2ed2be13b833",
+  "files_sha256": {
+    "iamu_d3dqn/e4_mechanism/CHANGELOG.md": "891e7a20d0e63460b2f63c36817fb9d3394b0e7ba903602150c69e7b65c64792",
+    "iamu_d3dqn/e4_mechanism/README_E4_E_机制诊断.md": "65a8a027202eff3df44f6ca37a865f7b0e158427fe1f4fd844b48986d05d12c1",
+    "iamu_d3dqn/e4_mechanism/analyze_mechanism.py": "ca23e54df2ef5a1bd95b3f84de46ff0afeec05d15e8bf2512417dbe050777aac",
+    "iamu_d3dqn/e4_mechanism/build_instrumented_trainer.py": "203d5f1ce7ea0585663b1772345567de26d0e5bac4fd96ca4c0a80a51016e275",
+    "iamu_d3dqn/e4_mechanism/build_probe_bank.py": "b595dce0742e40a966b75056f88eeb68e7e4f99da3d82568c2627b626692f828",
+    "iamu_d3dqn/e4_mechanism/evaluate_snapshots.py": "96df58224fd74ec31731b876f36f7f06b9ae005d4ad380d80cd03828bf0b0aac",
+    "iamu_d3dqn/e4_mechanism/launch_online.py": "ca344987c2e953cd951de4f2897f9c20348dd23518eb9d626a7d8f966890f7e7",
+    "iamu_d3dqn/e4_mechanism/mechanism_core.py": "eacf8ee7b2f9b1cca9dc49c0da2e1366264bb6abf27936f9ba398271c6837bc6",
+    "iamu_d3dqn/e4_mechanism/offline_branch.py": "16d5919c77a848642b1ec7a6449ab5e973999b44dbb3b4209840338b801ae851",
+    "iamu_d3dqn/e4_mechanism/run_offline_four_gpu.sh": "c35aca7576e0c63571cbb565d3db18ff8878f5891ebf427092c4a2204d404950",
+    "iamu_d3dqn/e4_mechanism/td_probe.py": "29e7b881274cf67e8eda102bb99e4033e6765a1afb2bed3a433e05193339a7a4",
+    "iamu_d3dqn/e4_mechanism/telemetry.py": "5717a52331fe2961b7b79232b1da7d1f2344a027030fbf4aa50ab2ea0d4adac4",
+    "iamu_d3dqn/e4_mechanism/test_e5_mechanism.py": "2b241a3cd1012e68d5bfa92154ed0f2539b2ccc4d726a6c5edd5b4de9df117c4"
+  },
+  "verify": "10 unit tests passed, compile and bash syntax passed; server end-to-end not run",
+  "method": "Archive full state EP200 from fresh monitored run, fork same state to 4 fixed replay conditions"
+}

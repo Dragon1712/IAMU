@@ -1,0 +1,110 @@
+[
+  {
+    "condition": "a300",
+    "seed": 44,
+    "device": "cuda:2",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_a300_seed44",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_a300_seed44.log"
+  },
+  {
+    "condition": "a300",
+    "seed": 43,
+    "device": "cuda:1",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_a300_seed43",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_a300_seed43.log"
+  },
+  {
+    "condition": "a300",
+    "seed": 42,
+    "device": "cuda:0",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_a300_seed42",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_a300_seed42.log"
+  },
+  {
+    "condition": "b900",
+    "seed": 42,
+    "device": "cuda:3",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_b900_seed42",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_b900_seed42.log"
+  },
+  {
+    "condition": "c900",
+    "seed": 42,
+    "device": "cuda:2",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_c900_seed42",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_c900_seed42.log"
+  },
+  {
+    "condition": "b900",
+    "seed": 44,
+    "device": "cuda:1",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_b900_seed44",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_b900_seed44.log"
+  },
+  {
+    "condition": "b900",
+    "seed": 43,
+    "device": "cuda:0",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_b900_seed43",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_b900_seed43.log"
+  },
+  {
+    "condition": "c900",
+    "seed": 43,
+    "device": "cuda:3",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_c900_seed43",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_c900_seed43.log"
+  },
+  {
+    "condition": "d900",
+    "seed": 43,
+    "device": "cuda:2",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed43",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_d900_seed43.log"
+  },
+  {
+    "condition": "d900",
+    "seed": 42,
+    "device": "cuda:1",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_d900_seed42.log"
+  },
+  {
+    "condition": "c900",
+    "seed": 44,
+    "device": "cuda:0",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_c900_seed44",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_c900_seed44.log"
+  },
+  {
+    "condition": "d900",
+    "seed": 44,
+    "device": "cuda:3",
+    "code": 0,
+    "status": "completed",
+    "dir": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed44",
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e4_d900_seed44.log"
+  }
+]

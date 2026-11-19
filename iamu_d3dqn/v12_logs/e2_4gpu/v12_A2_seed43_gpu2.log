@@ -12,3 +12,21 @@
 [V12] round=11/28 EP=164 grad=5666 replay=3332 wall=49.31s
 [V12] round=12/28 EP=180 grad=6240 replay=3914 wall=117.32s
 [V12] round=13/28 EP=196 grad=6801 replay=4234 wall=60.38s
+[V12 validation] EP=200 mean_wait=1969.42722 best=1969.42722
+[V12] round=14/28 EP=200 grad=6940 replay=4338 wall=3821.08s
+[V12] round=15/28 EP=216 grad=7498 replay=4449 wall=41.25s
+[V12] round=16/28 EP=232 grad=8065 replay=4495 wall=91.11s
+[V12] round=17/28 EP=248 grad=8628 replay=4411 wall=78.04s
+[V12] round=18/28 EP=264 grad=9201 replay=4635 wall=48.36s
+[V12] round=19/28 EP=280 grad=9763 replay=5067 wall=124.36s
+[V12] round=20/28 EP=296 grad=10326 replay=5230 wall=82.92s
+[V12 validation] EP=300 mean_wait=1964.06003 best=1964.06003
+[V12] round=21/28 EP=300 grad=10469 replay=5386 wall=3882.08s
+[V12] round=22/28 EP=316 grad=11035 replay=5570 wall=70.90s
+[V12] round=23/28 EP=332 grad=11592 replay=5998 wall=86.79s
+[V12] round=24/28 EP=348 grad=12158 replay=6621 wall=123.49s
+[V12] round=25/28 EP=364 grad=12721 replay=7247 wall=99.89s
+[V12] round=26/28 EP=380 grad=13290 replay=7793 wall=154.75s
+[V12] round=27/28 EP=396 grad=13861 replay=8732 wall=159.90s
+[V12 validation] EP=400 mean_wait=1948.10230 best=1948.10230
+[V12] round=28/28 EP=400 grad=14006 replay=9177 wall=3854.41s

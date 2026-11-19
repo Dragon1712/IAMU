@@ -17,7 +17,6 @@ class RolloutJob:
     uncertainty: float
     budget: int
     epsilon: float
-    exploration_seed: int
 
 
 def _supports(function, parameter: str) -> bool:
@@ -69,9 +68,7 @@ def _actor_loop(worker_id: int, inbox, outbox, args: dict):
         case_cache: dict[str, Any] = {}
         model_version = -1
         while True:
-            idle_started = time.perf_counter()
             message = inbox.get()
-            idle_on_last_job = time.perf_counter()-idle_started
             if message[0] == 'stop':
                 break
             if message[0] == 'sync':
@@ -83,7 +80,7 @@ def _actor_loop(worker_id: int, inbox, outbox, args: dict):
                 raise ValueError(f'Unknown worker message: {message[0]}')
             _, job = message
             # Worker assignment does not determine per-job exploration RNG.
-            agent.rng.seed(job.exploration_seed)
+            agent.rng.seed(args['seed']*1000003+job.episode*10007+job.seed)
             if model_version < 0:
                 raise RuntimeError('Actor attempted rollout before weight synchronization')
             started = time.perf_counter()
@@ -119,9 +116,7 @@ def _actor_loop(worker_id: int, inbox, outbox, args: dict):
                     obs.mask.copy(), int(action), float(reward),
                     nxt.global_features.copy(), nxt.action_features.copy(),
                     nxt.mask.copy(), bool(done),
-                    dict(obs.decision_flags or {}),int(job.episode),
-                    int(obs.remaining_budget), int(nxt.remaining_budget),
-                    int((obs.decision_flags or {}).get('event_index', 0)), 1, 2))
+                    dict(obs.decision_flags or {}),int(job.episode)))
                 total_reward += reward
                 obs = nxt
                 # Nonblocking heartbeat: slow candidate projections can take
@@ -157,9 +152,6 @@ def _actor_loop(worker_id: int, inbox, outbox, args: dict):
                 'weighted_wait': raw_wait, 'reward_sum_scaled': total_reward,
                 'steps': len(transitions), 'forced_flags': flag_counts,
                 'actor_seconds': time.perf_counter()-started,
-                'candidate_generation_seconds': env.candidate_generation_seconds,
-                'forecast_projection_seconds': env.forecast_projection_seconds,
-                'worker_idle_seconds': idle_on_last_job,
                 'teacher_action_matches': teacher_steps,
                 'screened_proposals': getattr(env, 'screened_proposals', 0),
                 'last_revision_time': float(getattr(env, 'last_revision_time', 0.) or 0.),

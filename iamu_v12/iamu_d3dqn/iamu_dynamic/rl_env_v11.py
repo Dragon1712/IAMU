@@ -16,7 +16,6 @@ from dataclasses import dataclass
 import copy
 from typing import Optional
 import math
-import time
 import numpy as np
 
 from .core import (Scenario, SlotPlanner, RealizedRuntime, EPS,
@@ -123,8 +122,6 @@ class IAMUEventEnv:
         self.used = 0
         self.last_revision_time = None
         self.screened_proposals = 0
-        self.candidate_generation_seconds = 0.
-        self.forecast_projection_seconds = 0.
         self.action_audit = []
         self.event_index = 0
         self.event_type = 'initial'
@@ -186,18 +183,15 @@ class IAMUEventEnv:
         Started ships are deliberately excluded from the remaining-wait score,
         exactly as RealizedRuntime.score() does in V0.6.
         """
-        projection_started = time.perf_counter()
         future=copy.deepcopy(self.runtime)
         future.finish(plan,self.published_eta)
         pending=[i for i in self.ids if i not in self.runtime.started]
         starts={i:future.started[i].start for i in pending}
         costs={i:self.vessels[i].weight*max(0.,starts[i]-self.published_eta[i])
                for i in pending}
-        self.forecast_projection_seconds += time.perf_counter() - projection_started
         return starts,costs,sum(costs.values())
 
     def _refresh_candidates(self):
-        generation_started = time.perf_counter()
         self._candidates=[];self._candidate_ids=();self._candidate_data=[]
         initial=self.event_type=='initial'
         clock_allowed=(self.decision_clock!='clock' or self.event_type=='clock')
@@ -207,7 +201,7 @@ class IAMUEventEnv:
         flags=dict(initial_event=initial,decision_allowed=allowed,
             budget_exhausted=self.remaining_budget==0,all_started=not bool(ranked),
             has_raw_proposal=False,has_retained_edit=False,
-            search_performed=False,search_exhausted=False,pending_ships=len(ranked),ships_examined=0,
+            search_exhausted=True,pending_ships=len(ranked),ships_examined=0,
             event_index=int(self.event_index),event_time=float(self.event_time),
             unchanged_proposals=0,infeasible_proposals=0,screened_proposals=0,
             raw_proposals=0,returned_candidates=0)
@@ -217,14 +211,12 @@ class IAMUEventEnv:
             self._physical_mask=np.zeros(self.candidate_limit+1,dtype=np.bool_)
             self._physical_mask[0]=True
             self._heuristic_mask=self._physical_mask.copy()
-            self.candidate_generation_seconds += time.perf_counter() - generation_started
             return
         base_starts=base_costs=None
         base_score=0.
         positives=[];others=[];selected=[]
         quota_positive=(self.candidate_limit+1)//2
         quota_other=self.candidate_limit-quota_positive
-        flags['search_performed'] = True
         for vessel_id in ranked:
             flags['ships_examined']+=1
             plan,reason=self._proposal_with_reason(vessel_id)
@@ -274,7 +266,6 @@ class IAMUEventEnv:
         self._candidates=[x[1] for x in selected]
         self._candidate_data=[x[2] for x in selected]
         self._candidate_point_gains=[float(x[2]['gain']) for x in selected]
-        flags['search_exhausted'] = flags['ships_examined'] == len(ranked)
         flags['returned_candidates']=len(selected)
         flags['has_retained_edit']=bool(selected)
         self.decision_flags=flags
@@ -286,7 +277,6 @@ class IAMUEventEnv:
             self._heuristic_mask[idx]=entry[3]
         if not flags['search_exhausted'] and len(selected)<self.candidate_limit:
             raise AssertionError('Candidate search stopped short of K without exhaustion')
-        self.candidate_generation_seconds += time.perf_counter() - generation_started
 
     def _accrue_started(self):
         """Charge newly started vessel waiting exactly once."""

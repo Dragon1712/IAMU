@@ -1,0 +1,10 @@
+{
+  "val_000008": {
+    "rows": 8,
+    "score": 2247.656700546383,
+    "sha256": "73d8a6f4844bab3d483c778c9a8c392d2ffecd0029c85a7771f75b53c1bcd0f6",
+    "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v12_smoke_A1/validation_snapshots/val_000008_grad_000000289.pt",
+    "status": "done",
+    "validation_seconds": 160.9399139219895
+  }
+}

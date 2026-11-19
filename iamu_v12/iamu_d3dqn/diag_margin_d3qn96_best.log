@@ -1,0 +1,63 @@
+[margin] 1 groups complete / 54
+[margin] 2 groups complete / 54
+[margin] 3 groups complete / 54
+[margin] 4 groups complete / 54
+[margin] 5 groups complete / 54
+[margin] 6 groups complete / 54
+[margin] 7 groups complete / 54
+[margin] 8 groups complete / 54
+[margin] 9 groups complete / 54
+[margin] 10 groups complete / 54
+[margin] 11 groups complete / 54
+[margin] 12 groups complete / 54
+[margin] 13 groups complete / 54
+[margin] 14 groups complete / 54
+[margin] 15 groups complete / 54
+[margin] 16 groups complete / 54
+[margin] 17 groups complete / 54
+[margin] 18 groups complete / 54
+[margin] 19 groups complete / 54
+[margin] 20 groups complete / 54
+[margin] 21 groups complete / 54
+[margin] 22 groups complete / 54
+[margin] 23 groups complete / 54
+[margin] 24 groups complete / 54
+[margin] 25 groups complete / 54
+[margin] 26 groups complete / 54
+[margin] 27 groups complete / 54
+[margin] 28 groups complete / 54
+[margin] 29 groups complete / 54
+[margin] 30 groups complete / 54
+[margin] 31 groups complete / 54
+[margin] 32 groups complete / 54
+[margin] 33 groups complete / 54
+[margin] 34 groups complete / 54
+[margin] 35 groups complete / 54
+[margin] 36 groups complete / 54
+[margin] 37 groups complete / 54
+[margin] 38 groups complete / 54
+[margin] 39 groups complete / 54
+[margin] 40 groups complete / 54
+[margin] 41 groups complete / 54
+[margin] 42 groups complete / 54
+[margin] 43 groups complete / 54
+[margin] 44 groups complete / 54
+[margin] 45 groups complete / 54
+[margin] 46 groups complete / 54
+[margin] 47 groups complete / 54
+[margin] 48 groups complete / 54
+[margin] 49 groups complete / 54
+[margin] 50 groups complete / 54
+[margin] 51 groups complete / 54
+[margin] 52 groups complete / 54
+[margin] 53 groups complete / 54
+[margin] 54 groups complete / 54
+[margin] Aggregate ALL/ALL:
+  margin=0 wait=1916.392429 spent=4.667 CVaR90=89.472
+  margin=0.025 wait=1916.084861 spent=4.667 CVaR90=89.472
+  margin=0.05 wait=1915.317909 spent=4.352 CVaR90=89.472
+  margin=0.075 wait=1914.470487 spent=2.870 CVaR90=90.940
+  margin=0.1 wait=1916.753497 spent=0.907 CVaR90=86.466
+  margin=0.125 wait=1939.814826 spent=0.130 CVaR90=178.783
+  margin=0.15 wait=1947.689996 spent=0.056 CVaR90=257.126
+[complete] margin: 378 records -> results/diag_margin_d3qn96_best

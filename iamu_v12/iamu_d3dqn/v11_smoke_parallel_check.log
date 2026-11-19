@@ -1,0 +1,6 @@
+[v11 throughput] round=0 wall=12.141s queue_wait=11.146s learner=0.986s max_buffered=2 ep_per_hour=1186.04
+[v11 validation] episode=4 wait=2240.623 grad=65 best=2240.623
+[v11 round] 1/2 ep=4 grad=65 replay=576
+[v11 throughput] round=1 wall=7.581s queue_wait=3.695s learner=3.880s max_buffered=3 ep_per_hour=1899.60
+[v11 validation] episode=8 wait=2211.839 grad=644 best=2211.839
+[v11 round] 2/2 ep=8 grad=644 replay=1155

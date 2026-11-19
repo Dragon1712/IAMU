@@ -1,0 +1,8 @@
+{
+  "completed_episodes": 400,
+  "gradient_steps": 56015,
+  "best_val": 1967.5057909868965,
+  "protocol": "fixed-behavior-round, ordered-consumption",
+  "workers": 4,
+  "validation_workers": 4
+}

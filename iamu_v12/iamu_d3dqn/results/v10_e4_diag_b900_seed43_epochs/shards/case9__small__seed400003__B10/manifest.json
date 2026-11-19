@@ -1,0 +1,86 @@
+{
+  "config": {
+    "model": [
+      "results/v10_e4_b900_seed43@100",
+      "results/v10_e4_b900_seed43@200",
+      "results/v10_e4_b900_seed43@400",
+      "results/v10_e4_b900_seed43@600",
+      "results/v10_e4_b900_seed43@900"
+    ],
+    "anchor_model": null,
+    "cases": [
+      "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt"
+    ],
+    "scenarios": "small",
+    "eta_seeds": "400003",
+    "budgets": "10",
+    "anchors": "early,keep",
+    "continuations": "anchor,greedy",
+    "states_per_group": 2,
+    "max_edit_actions": 4,
+    "limit_groups": 0,
+    "device": "cpu",
+    "skip_checkpoint_hash": false,
+    "no_parity": false,
+    "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_diag_b900_seed43_epochs/shards/case9__small__seed400003__B10"
+  },
+  "environment": {
+    "candidate_limit": 4,
+    "decision_clock": "union",
+    "period": 12.0,
+    "candidate_screen": "positive",
+    "reward_scale": 100.0,
+    "min_gain": 0.1,
+    "budget_features": "absolute",
+    "value_features": "global"
+  },
+  "checkpoint_info": [
+    {
+      "label": "v10_e4_b900_seed43_ep100",
+      "path": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_b900_seed43/validation_snapshots/val_000100_grad_000003368.pt",
+      "sha256": "5cc8205452c68785e7978f0536b6343a1e285fef6b22f9ba3700870b5995ff18",
+      "episode": 100,
+      "gradient_steps": 3368,
+      "run_manifest_sha256": "749fdf1e912cecf3aff0c3fb29e6d14316904b099a4d4c364103002101f4740b"
+    },
+    {
+      "label": "v10_e4_b900_seed43_ep200",
+      "path": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_b900_seed43/validation_snapshots/val_000200_grad_000006879.pt",
+      "sha256": "b6721893a917682a91994261caf3dc3cbb2f232bc874211c04984849c549b322",
+      "episode": 200,
+      "gradient_steps": 6879,
+      "run_manifest_sha256": "749fdf1e912cecf3aff0c3fb29e6d14316904b099a4d4c364103002101f4740b"
+    },
+    {
+      "label": "v10_e4_b900_seed43_ep400",
+      "path": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_b900_seed43/validation_snapshots/val_000400_grad_000013891.pt",
+      "sha256": "0bb496db0fb02ba15683368ce94abe28d5d32860a6ebfef2259b69b888d242f2",
+      "episode": 400,
+      "gradient_steps": 13891,
+      "run_manifest_sha256": "749fdf1e912cecf3aff0c3fb29e6d14316904b099a4d4c364103002101f4740b"
+    },
+    {
+      "label": "v10_e4_b900_seed43_ep600",
+      "path": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_b900_seed43/validation_snapshots/val_000600_grad_000020897.pt",
+      "sha256": "c249583e117adac583de0dc1a9d3d427969ce38903d858c3aca1bb29ef7fa90a",
+      "episode": 600,
+      "gradient_steps": 20897,
+      "run_manifest_sha256": "749fdf1e912cecf3aff0c3fb29e6d14316904b099a4d4c364103002101f4740b"
+    },
+    {
+      "label": "v10_e4_b900_seed43_ep900",
+      "path": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_b900_seed43/validation_snapshots/val_000900_grad_000031362.pt",
+      "sha256": "34336effdd9a8df7b0923d87f0a8054ad328e3eaa4cc60176de223960c971877",
+      "episode": 900,
+      "gradient_steps": 31362,
+      "run_manifest_sha256": "749fdf1e912cecf3aff0c3fb29e6d14316904b099a4d4c364103002101f4740b"
+    }
+  ],
+  "anchor_checkpoint": "v10_e4_b900_seed43_ep100",
+  "script_sha256": "eaa3b7cbe4785a237b79ca36fdbe04200bc249d192660050a23464699b1c33fd",
+  "core_sha256": "adce2732cffbda1d3af6be0310ca769aee11affb6a998ca49a65b5003e4e6297",
+  "case_sha256": {
+    "/home/moco/code/iamu/2024LiERLDDE/case_code/9.txt": "68f9d35b0f499f342b271e4b9cc4538788eb29fc2b270e2a7e6917409956b6f8"
+  },
+  "evaluation_warning": "Known realized future is used ONLY to evaluate paired labels. Not a true conditional expectation. All sampled states are selected before inspection of counterfactual outcomes; training models are frozen."
+}

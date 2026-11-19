@@ -1,0 +1,177 @@
+{
+  "validation_runs_per_check": 216,
+  "validation_groups_per_check": 54,
+  "records": {
+    "val_000100": {
+      "id": "val_000100",
+      "completed": 100,
+      "gradient_steps": 3387,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000100_grad_000003387.pt",
+      "snapshot_sha256": "8b67e829693adf06549b7b0f1d45dda4c9571e407e75ce91ce8710ce08893409",
+      "status": "done",
+      "expected_runs": 216,
+      "expected_groups": 54,
+      "score": 1919.096949918754,
+      "validation_seconds": 724.3433946468867,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        3283561,
+        3283562,
+        3283563,
+        3283564
+      ]
+    },
+    "val_000200": {
+      "id": "val_000200",
+      "completed": 200,
+      "gradient_steps": 6876,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000200_grad_000006876.pt",
+      "snapshot_sha256": "7f4ddf0d3d8cd590309eb958d95603ca1fe6a6f8f3413a1acd5d93b75a9f9d86",
+      "status": "done",
+      "expected_runs": 216,
+      "expected_groups": 54,
+      "score": 1923.6572915657998,
+      "validation_seconds": 732.732595638372,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        3295628,
+        3295629,
+        3295630,
+        3295631
+      ]
+    },
+    "val_000300": {
+      "id": "val_000300",
+      "completed": 300,
+      "gradient_steps": 10372,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000300_grad_000010372.pt",
+      "snapshot_sha256": "9be871582c2dcd69204751706b8ad0123f8a2dcbe16178b4c9c5414cc8c96a63",
+      "status": "done",
+      "expected_runs": 216,
+      "expected_groups": 54,
+      "score": 1913.2876850986256,
+      "validation_seconds": 684.3133985013701,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        3306122,
+        3306123,
+        3306124,
+        3306125
+      ]
+    },
+    "val_000400": {
+      "id": "val_000400",
+      "completed": 400,
+      "gradient_steps": 13895,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000400_grad_000013895.pt",
+      "snapshot_sha256": "1eb00d45908d3137bee29d32e40a33275a16d03cd5436cc0a28d65a86bf6ddf3",
+      "status": "done",
+      "expected_runs": 216,
+      "expected_groups": 54,
+      "score": 1911.2342058146887,
+      "validation_seconds": 712.8621521727182,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        3316072,
+        3316073,
+        3316074,
+        3316075
+      ]
+    },
+    "val_000500": {
+      "id": "val_000500",
+      "completed": 500,
+      "gradient_steps": 17379,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000500_grad_000017379.pt",
+      "snapshot_sha256": "d1e93bb96fd73aa64343af839797f03fbbd3e4d5974340356ceb4e13bc8d053a",
+      "status": "done",
+      "expected_runs": 216,
+      "expected_groups": 54,
+      "score": 1907.4192129482735,
+      "validation_seconds": 739.8816977152601,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        3327040,
+        3327041,
+        3327042,
+        3327043
+      ]
+    },
+    "val_000600": {
+      "id": "val_000600",
+      "completed": 600,
+      "gradient_steps": 20884,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000600_grad_000020884.pt",
+      "snapshot_sha256": "88b5a9d2d82d0cf2c4df58251b4479c081685d96e3a17db298b5517e30c4580d",
+      "status": "done",
+      "expected_runs": 216,
+      "expected_groups": 54,
+      "score": 1910.1867031680965,
+      "validation_seconds": 695.1637510238215,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        3339637,
+        3339638,
+        3339639,
+        3339640
+      ]
+    },
+    "val_000700": {
+      "id": "val_000700",
+      "completed": 700,
+      "gradient_steps": 24373,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000700_grad_000024373.pt",
+      "snapshot_sha256": "6bcf2ad7e95a3a2294a79fed1603e31fc00e2cad79bfe8eb31826eba8e033543",
+      "status": "done",
+      "expected_runs": 216,
+      "expected_groups": 54,
+      "score": 1912.0226606061517,
+      "validation_seconds": 719.2578934030607,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        3350674,
+        3350675,
+        3350676,
+        3350677
+      ]
+    },
+    "val_000800": {
+      "id": "val_000800",
+      "completed": 800,
+      "gradient_steps": 27866,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000800_grad_000027866.pt",
+      "snapshot_sha256": "cb08a83c734075c58c6d7dbfa1c9d29f4005bc3ee068d097d29f00ec3d747d2c",
+      "status": "done",
+      "expected_runs": 216,
+      "expected_groups": 54,
+      "score": 1914.5434921028893,
+      "validation_seconds": 698.6461880118586,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        3362690,
+        3362691,
+        3362692,
+        3362693
+      ]
+    },
+    "val_000900": {
+      "id": "val_000900",
+      "completed": 900,
+      "gradient_steps": 31386,
+      "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e4_d900_seed42/validation_snapshots/val_000900_grad_000031386.pt",
+      "snapshot_sha256": "236452d9752b924403f71267336c9470aeede026c277e410ebddf09efed5aee9",
+      "status": "done",
+      "expected_runs": 216,
+      "expected_groups": 54,
+      "score": 1919.108935663953,
+      "validation_seconds": 527.5687353760004,
+      "evaluated_runs": 216,
+      "worker_pids": [
+        3375555,
+        3375556,
+        3375557,
+        3375558
+      ]
+    }
+  }
+}

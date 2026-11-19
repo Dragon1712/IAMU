@@ -1,0 +1,10 @@
+[E5-OFFLINE] mode=actionable_uniform ep=200 grad=6879 qgap=0.0949 keep=0.417
+[E5-OFFLINE] mode=actionable_uniform ep=225 grad=7749 qgap=-0.0259 keep=0.333
+[E5-OFFLINE] mode=actionable_uniform ep=250 grad=8621 qgap=-0.0213 keep=0.361
+[E5-OFFLINE] mode=actionable_uniform ep=275 grad=9499 qgap=-0.0212 keep=0.368
+[E5-OFFLINE] mode=actionable_uniform ep=300 grad=10381 qgap=-0.0616 keep=0.611
+[E5-OFFLINE] mode=actionable_uniform ep=325 grad=11258 qgap=-0.0270 keep=0.535
+[E5-OFFLINE] mode=actionable_uniform ep=350 grad=12135 qgap=-0.0176 keep=0.472
+[E5-OFFLINE] mode=actionable_uniform ep=375 grad=13009 qgap=-0.0155 keep=0.521
+[E5-OFFLINE] mode=actionable_uniform ep=400 grad=13891 qgap=0.0068 keep=0.292
+[DONE] actionable_uniform 200 additional episode-schedule slices 7012 updates => results/v10_e5_offline_actionable_uniform_seed43

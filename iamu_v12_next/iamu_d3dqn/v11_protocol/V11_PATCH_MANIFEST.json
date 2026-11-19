@@ -1,0 +1,30 @@
+{
+  "artifact": "IAMU V1.1 parallel fixed-policy-round protocol incremental source patch",
+  "based_on": "Dragon1712/IAMU commit 52dec41ac8ed",
+  "target": "iamu_d3dqn/",
+  "intended_behavior": "additive source variants; no historical source overwritten",
+  "locally_tested": "9 pure tests passed, 5 original IAMU simulator tests provided but skipped; syntax and 4 GPU dry-run passed",
+  "not_tested": "genuine IAMU physics, generated source on remote server, GPU end-to-end, numerical improvements",
+  "files_sha256": {
+    "iamu_d3dqn/tests_v11/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "iamu_d3dqn/tests_v11/test_indexed_and_protocol.py": "6a10e5e757e2111eeddfb774fbb83bc0444a0e617e9d2bd26a0a29bc4f205521",
+    "iamu_d3dqn/tests_v11/test_real_env_integration.py": "356bd2eb86e49f6d6896318cafac672fa0415149ef6db1746abfcc09ba93999b",
+    "iamu_d3dqn/v11_protocol/CHANGELOG.md": "7dad92cc421dc791c50a0010c5316cfb2d0484b953f9d231919f6776e275823c",
+    "iamu_d3dqn/v11_protocol/README_V11_zh.md": "14c6c01ca5ac4c8ba0953d587cb8a64cc47bf2302d4a71c5819f02e4b1f69287",
+    "iamu_d3dqn/v11_protocol/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "iamu_d3dqn/v11_protocol/audit_candidates.py": "14008321b1038d86f75363ad4eccb781bf7cdaac81fdd61e55f2e5389038577c",
+    "iamu_d3dqn/v11_protocol/batch_inference.py": "e12fa4f4831aa0986f27c2bcb66e8466fa90d63cbf6fbe0cec2a350885ac3683",
+    "iamu_d3dqn/v11_protocol/bootstrap_margin_3way.json": "73bfee913271cfad69b84257e1e3a55d2992b4494b081883275d81e484044247",
+    "iamu_d3dqn/v11_protocol/build_variants.py": "333c5794b943ffeaa6a8413346934c4ee4684d91ea54d1be65fb72415bcdc9fc",
+    "iamu_d3dqn/v11_protocol/fixed_label_probe.py": "9a18a682c67ab4cf1a033f86f5ac2f291ec89af5471d6a6cc40bb0003f41c785",
+    "iamu_d3dqn/v11_protocol/indexed_replay.py": "16a3cd2033c505ad1447b7e9665cc65fcfa7e669e77fbf58f01c6bf40ff06ede",
+    "iamu_d3dqn/v11_protocol/launch_four_gpu.py": "5cb31e5a411c55f1f7f5a6b8284c80660c59d44cfde359eab959b1443afaa1ae",
+    "iamu_d3dqn/v11_protocol/margin_scan.py": "d46bcfa04524351a57a6ddb2facecd785a28dc4e620865acefbb1224549f34f7",
+    "iamu_d3dqn/v11_protocol/mpc_interface.py": "bb8c95854f2b3b67c7a8a57537b1b77c19bd56a476147689da1a817cc82bb1f4",
+    "iamu_d3dqn/v11_protocol/replay_reasons.py": "4bf91978da8ed9b3347be5de126a2c696773450cb38834f649a8d3eef5729d6a",
+    "iamu_d3dqn/v11_protocol/rounds.py": "9ff3cf986dbd94314ee01f13debaba775c1180413c972bc0b332b388a12dd5b2",
+    "iamu_d3dqn/v11_protocol/train_v11.py": "6c0d38d115bff798a026a36d602caa485c2d8d90ea2c777beebbccd7c5ad3795",
+    "iamu_d3dqn/v11_protocol/validation_v11.py": "b834f255f5457a5d3b0909cf8958157e30599a7b7745a5126cc6510f422f76c5"
+  },
+  "model_weights_included": false
+}

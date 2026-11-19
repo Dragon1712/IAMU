@@ -1,0 +1,6 @@
+case,scenario,eta_seed,budget,model,weighted_wait,spent,episodes_snapshot,n_events,actionable_events,edit_events,keep_with_legal_edit,keep_due_to_positive_margin,q_prefers_keep_count,eligible_gap_positive_count,eligible_gap_over_margin,exhausted_steps,mean_best_q_gap,final_screened_proposals
+8,repeated,400002,10,v10_e4_b900_seed43_ep100,1310.5228942659894,8,100,139,9,8,1,1,0,9,8,0,0.20439031844337782,282
+8,repeated,400002,10,v10_e4_b900_seed43_ep200,1313.9511729888036,10,200,139,12,10,2,2,0,12,10,42,0.17535803218682608,225
+8,repeated,400002,10,v10_e4_b900_seed43_ep400,1356.9955342089113,1,400,139,8,1,7,6,1,7,1,0,0.05314999236725271,254
+8,repeated,400002,10,v10_e4_b900_seed43_ep600,1334.4030542797332,2,600,139,16,2,14,2,12,4,2,0,-0.10783752799034119,267
+8,repeated,400002,10,v10_e4_b900_seed43_ep900,1350.1294102397353,2,900,139,14,2,12,4,8,6,2,0,-0.03078726359776088,266

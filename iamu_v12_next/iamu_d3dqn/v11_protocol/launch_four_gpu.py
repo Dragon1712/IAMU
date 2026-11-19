@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+"""4 independent v11 runs, 4 GPUs total, 16 actor + 16 validation workers.
+
+Input matrix JSON contains explicit protocol overrides (not implicit selection).
+No GPU hosts >1 learner. Avoid changing experiment specs on resume.
+"""
+from __future__ import annotations
+import argparse,json,os,subprocess,sys,shlex
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--matrix',required=True)
+    p.add_argument('--devices',default='cuda:0,cuda:1,cuda:2,cuda:3')
+    p.add_argument('--actors-per-gpu',type=int,default=4)
+    p.add_argument('--validators-per-gpu',type=int,default=4)
+    p.add_argument('--dry-run',action='store_true')
+    a=p.parse_args()
+    matrix=json.loads(Path(a.matrix).read_text(encoding='utf-8'))
+    if not isinstance(matrix,dict) or not isinstance(matrix.get('common'),dict) or not isinstance(matrix.get('jobs'),list):
+        p.error('Matrix must have common={} and jobs=[{name,overrides},...]')
+    devices=a.devices.split(',')
+    if len(devices)!=4 or len(set(devices))!=4:p.error('Exactly 4 unique GPU devices needed')
+    if not (1<=a.actors_per_gpu<=32 and 1<=a.validators_per_gpu<=16):p.error('Invalid per GPU workers')
+    names=[x['name'] for x in matrix['jobs']]
+    if len(names)!=len(set(names)):p.error('Duplicate run names')
+    def cmd(job,device):
+        flags={**matrix['common'],**job.get('overrides',{})}
+        if any(k in flags for k in ('device','workers','validation-workers','out')):
+            p.error('Device/worker/output flags are scheduler-owned, remove from matrix')
+        if not 'out' in job:p.error(f'Job {job["name"]} needs explicit out')
+        result=[sys.executable,'-u','-m','v11_protocol.train_v11']
+        for k,v in flags.items():
+            if isinstance(v,bool):
+                if v:result.append('--'+k)
+            elif isinstance(v,list):result.extend(['--'+k,*map(str,v)])
+            else:result.extend(['--'+k,str(v)])
+        result+=['--device',device,'--workers',str(a.actors_per_gpu),
+                 '--validation-workers',str(a.validators_per_gpu),'--out',job['out']]
+        return result
+    work=[(job,devices[i%4],cmd(job,devices[i%4])) for i,job in enumerate(matrix['jobs'])]
+    for job,device,command in work:print(f'[{device}] {job["name"]}: {shlex.join(command)}',flush=True)
+    if a.dry_run:return
+    buckets={d:[] for d in devices}
+    for job,device,command in work:buckets[device].append((job,command))
+    def run(d):
+        results=[]
+        for job,command in buckets[d]:
+            log=Path(job['out']).parent/'logs'/f'{job["name"]}.log'
+            log.parent.mkdir(parents=True,exist_ok=True)
+            env=os.environ.copy();env.update(OMP_NUM_THREADS='1',MKL_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1')
+            with log.open('w',encoding='utf-8') as f:
+                f.write(shlex.join(command)+'\n');f.flush()
+                r=subprocess.run(command,cwd=ROOT,stdout=f,stderr=subprocess.STDOUT,env=env)
+            results.append(dict(name=job['name'],device=d,code=r.returncode,log=str(log)))
+            print(f'[4gpu] {job["name"]}: {"OK" if r.returncode==0 else "FAILED"} {log}',flush=True)
+        return results
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        done=[row for chunk in pool.map(run,devices) for row in chunk]
+    report=Path(a.matrix).with_suffix('.launch_report.json')
+    report.write_text(json.dumps(done,ensure_ascii=False,indent=2))
+    if any(row['code'] for row in done):raise SystemExit(1)
+
+if __name__=='__main__':main()

@@ -230,11 +230,6 @@ class Transition:
     done: bool
     reason_flags: dict | None = None
     episode_id: int | None = None
-    budget_before: int | None = None
-    budget_after: int | None = None
-    event_index: int | None = None
-    raw_steps: int = 1
-    transition_version: int = 2
 
 
 class ReplayBuffer:

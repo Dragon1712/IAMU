@@ -1,0 +1,15 @@
+{
+  "artifact": "IAMU E4 Training Sufficiency incremental pack",
+  "target_repository": "Dragon1712/IAMU",
+  "target_subdir": "iamu_d3dqn/e4_train_sufficiency",
+  "items": {
+    "e4_train_sufficiency/QUICKSTART.sh": "b99ed5385a70ecc6eca56104e38b5e2606e67d874317b490b3d36dcc11c75634",
+    "e4_train_sufficiency/README_E4.md": "9cadfb2a60df866ff829cb87dfad39359dfa233b63d4a6f5c7169cd8c30ff770",
+    "e4_train_sufficiency/inspect_e4.py": "b5798ad5f70ef4abc63ffb3391c1dd309704c57554e11301346d4108193128cc",
+    "e4_train_sufficiency/launch_e4.py": "e23a1548c89d53e9f5125aa83d03f8f9c187ce6eeb805af1e446819526a3f774",
+    "e4_train_sufficiency/test_e4.py": "ae5c7dbfe6aaa794929bf105e9918f4343a13efc26d41796b49cab151452e300"
+  },
+  "contains_checkpoint_weights": false,
+  "modifies_existing_trainer": false,
+  "algorithm": "existing train_budgeted_ddqn_parallel.py; --eval-every=100; from scratch"
+}

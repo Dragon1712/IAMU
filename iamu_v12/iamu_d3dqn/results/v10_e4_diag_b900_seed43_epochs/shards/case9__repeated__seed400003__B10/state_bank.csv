@@ -1,0 +1,5 @@
+case,scenario,eta_seed,budget,anchor,event_index,event_time,event_type,remaining_budget,n_legal_edits,n_started,n_arrived
+9,repeated,400003,10,early,16,30.356666666666666,eta,8,1,6,6
+9,repeated,400003,10,early,74,108.46,eta,4,1,13,19
+9,repeated,400003,10,keep,7,11.983333333333334,eta,10,1,3,4
+9,repeated,400003,10,keep,32,54.23,eta,10,1,7,7

@@ -1,0 +1,8 @@
+{
+  "n_shards": 54,
+  "n_episodes": 270,
+  "n_state_rows": 216,
+  "n_labels": 2600,
+  "n_matched_q_rows": 1904,
+  "n_parity": 270
+}

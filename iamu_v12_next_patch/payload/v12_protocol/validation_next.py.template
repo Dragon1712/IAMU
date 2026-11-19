@@ -1,0 +1,134 @@
+"""V1.2 validation: same paired cases, optional immutable baseline cache.
+
+Cache is OFF by default. To enable, set IAMU_V12_BASELINE_CACHE_DIR to a
+shared dedicated folder. Never cache DDQN; one DDQN rollout per task always.
+"""
+from __future__ import annotations
+import json
+import multiprocessing as mp
+import os
+import sys
+import time
+from pathlib import Path
+from concurrent.futures import ProcessPoolExecutor
+from statistics import mean
+import numpy as np
+import torch
+from iamu_dynamic.rl_experiment_v11 import (evaluate_paired,run_episode,write_csv)
+from iamu_dynamic import generate_scenario,read_case
+from .baseline_cache import baseline_cache_key,load_or_compute_baselines,file_sha
+
+_AGENT=None
+_CFG=None
+_CACHE_DIR=None
+_CACHE_CODE_HASHES=None
+
+
+def _init_worker(checkpoint,settings,cache_dir):
+    global _AGENT,_CFG,_CACHE_DIR,_CACHE_CODE_HASHES
+    from .agent import V12Agent
+    os.environ['CUDA_VISIBLE_DEVICES']=''
+    torch.set_num_threads(1)
+    _AGENT,meta=V12Agent.from_checkpoint(checkpoint,device='cpu')
+    _AGENT.online.eval();_CFG=settings;_CACHE_DIR=cache_dir
+    if cache_dir:
+        root=Path(__file__).resolve().parents[1]
+        # Includes physical simulator, candidate search, generator and baseline
+        # policy implementation, as well as the code composing cached rows.
+        paths=[root/'iamu_dynamic/core.py',root/'iamu_dynamic/rl_env_v11.py',
+               root/'iamu_dynamic/rl_experiment_v11.py',
+               root/'iamu_dynamic/risk_selection.py',Path(__file__)]
+        _CACHE_CODE_HASHES={str(p.relative_to(root)):file_sha(p) for p in paths}
+
+
+def _one(group):
+    case,sc,seed,budget=group
+    c=_CFG
+    kwargs=dict(candidate_limit=c['candidate_limit'],decision_clock=c['clock'],
+       period=c['period'],reward_scale=c['reward_scale'],
+       candidate_screen=c['candidate_screen'],min_gain=c['min_gain'],
+       budget_features=c['budget_features'],value_features=c['value_features'])
+    if not _CACHE_DIR:
+        rows,_=evaluate_paired(cases=[case],scenarios=[sc],seeds=[seed],budgets=[budget],
+            policies=['keep','greedy','ddqn','periodic'],agent=_AGENT,
+            candidate_limit=c['candidate_limit'],decision_clock=c['clock'],
+            period=c['period'],reward_scale=c['reward_scale'],
+            uncertainty=c['validation_uncertainty'],updates=c['updates'],
+            candidate_screen=c['candidate_screen'],min_gain=c['min_gain'],
+            budget_features=c['budget_features'],value_features=c['value_features'])
+        return dict(rows=rows,hit=0,miss=0,ddqn_seconds=0.)
+    task=dict(case=str(case),scenario=sc,seed=int(seed),budget=int(budget),
+              uncertainty=float(c['validation_uncertainty']),updates=int(c['updates']))
+    env_config=dict(kwargs)
+    key=baseline_cache_key(Path(case).read_bytes(),env_config,task,
+         _CACHE_CODE_HASHES,versions=dict(python=sys.version,torch=torch.__version__,
+                                         numpy=np.__version__))
+    vs,port=read_case(case)
+    instance=generate_scenario(vs,port,label=sc,seed=int(seed),
+              updates_per_vessel=c['updates'],uncertainty=c['validation_uncertainty'])
+    def make_row(method):
+        x=run_episode(instance,int(budget),method,
+              agent=_AGENT if method=='ddqn' else None,**kwargs)
+        return dict(case=str(case),scenario=sc,seed=int(seed),budget=int(budget),
+                    method=method,**x)
+    # Lock only serializes the static baseline computation; DDQN always runs.
+    base,hit=load_or_compute_baselines(_CACHE_DIR,key,
+                lambda:[make_row(policy) for policy in ('keep','greedy','periodic')])
+    for row,method in zip(base,('keep','greedy','periodic')):
+        if (row['method']!=method or row['case']!=str(case) or
+                row['scenario']!=sc or int(row['seed'])!=int(seed) or
+                int(row['budget'])!=int(budget)):
+            raise ValueError('Cached baseline rows mismatch task')
+    started=time.perf_counter()
+    ddqn=make_row('ddqn')
+    elapsed=time.perf_counter()-started
+    by={row['method']:row for row in [*base,ddqn]}
+    ordered=[by[name] for name in ('keep','greedy','ddqn','periodic')]
+    for row in ordered:
+        row['gain_vs_keep']=by['keep']['wait']-row['wait']
+        row['gain_vs_periodic']=by['periodic']['wait']-row['wait']
+        row['regret_vs_keep']=max(0.,row['wait']-by['keep']['wait'])
+    return dict(rows=ordered,hit=int(hit),miss=int(not hit),ddqn_seconds=elapsed)
+
+
+def validate(checkpoint,args,output):
+    from itertools import product
+    from iamu_dynamic.rl_experiment_v11 import parse_names,parse_ints
+    if args.clock!='union':raise ValueError('V1.2 benchmark requires union clock')
+    groups=list(product(args.val_cases,parse_names(args.scenarios),
+             parse_ints(args.val_seeds),parse_ints(args.budgets)))
+    config={k:getattr(args,k) for k in ('candidate_limit','clock','period','reward_scale',
+        'validation_uncertainty','updates','candidate_screen','min_gain',
+        'budget_features','value_features')}
+    # Explicit arg takes precedence; environment supports existing callers
+    # without changing their externally saved scientific configuration.
+    cache_dir=getattr(args,'baseline_cache_dir',None) or os.environ.get('IAMU_V12_BASELINE_CACHE_DIR')
+    wall_start=time.perf_counter()
+    with ProcessPoolExecutor(max_workers=args.validation_workers,
+        mp_context=mp.get_context('spawn'),initializer=_init_worker,
+        initargs=(str(checkpoint),config,str(Path(cache_dir).resolve()) if cache_dir else None)) as executor:
+        segments=list(executor.map(_one,groups,chunksize=1))
+    rows=[r for grp in segments for r in grp['rows']]
+    if len(rows)!=4*len(groups):raise AssertionError('Incomplete validation grid')
+    if any(int(r['spent'])>int(r['budget']) for r in rows):
+        raise AssertionError('Validation overspent budget')
+    out=Path(output)
+    if out.exists() and any(out.iterdir()):
+        raise FileExistsError('Refusing to overwrite existing validation output: '+str(out))
+    out.mkdir(parents=True,exist_ok=True)
+    write_csv(out/'runs.csv',rows)
+    summary=[]
+    for mode in ('keep','greedy','periodic','ddqn'):
+        subset=[r for r in rows if r['method']==mode]
+        summary.append(dict(method=mode,mean_wait=mean(float(r['wait']) for r in subset),
+                            mean_spent=mean(int(r['spent']) for r in subset),n=len(subset)))
+    write_csv(out/'summary.csv',summary)
+    duration=time.perf_counter()-wall_start
+    stats=dict(enabled=bool(cache_dir),baseline_cache_hits=sum(s['hit'] for s in segments),
+               baseline_cache_misses=sum(s['miss'] for s in segments),
+               ddqn_evaluated_tasks=len(groups),ddqn_seconds=sum(s['ddqn_seconds'] for s in segments),
+               validation_wall_seconds=duration,cache_dir=str(cache_dir) if cache_dir else None,
+               historical_baseline_runtime_seconds_in_runs=True)
+    (out/'baseline_cache_metrics.json').write_text(json.dumps(stats,indent=2),encoding='utf-8')
+    best=next(r for r in summary if r['method']=='ddqn')
+    return dict(score=best['mean_wait'],rows=len(rows),groups=len(groups),mean_spent=best['mean_spent'])

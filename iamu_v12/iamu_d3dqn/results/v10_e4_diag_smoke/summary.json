@@ -1,0 +1,22 @@
+{
+  "groups": 1,
+  "episodes": 2,
+  "actionable_events": 141,
+  "selected_states": 2,
+  "labeled_candidate_pairs": 12,
+  "matched_q_rows": 5,
+  "selected_by_anchor": {
+    "early": 1,
+    "keep": 1
+  },
+  "original_validation_checks": 2,
+  "all_parity_pass": true,
+  "generated_files": [
+    "trajectory_summary.csv",
+    "calibration_summary.csv",
+    "decision_summary.csv",
+    "matched_q_shift.csv",
+    "q_values.csv",
+    "counterfactual.csv"
+  ]
+}

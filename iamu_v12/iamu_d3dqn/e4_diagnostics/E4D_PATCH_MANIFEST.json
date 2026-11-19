@@ -1,0 +1,27 @@
+{
+  "patch": "IAMU V1.0 E4-D Keep-collapse and Q-gap fixed-state counterfactual diagnosis",
+  "target": "iamu_d3dqn/e4_diagnostics/ only",
+  "based_on_repo": "Dragon1712/IAMU",
+  "observed_latest_commit": "c6b88510bb77",
+  "original_train_source_sha256_from_E4_plan": "fd0bf9f983219675f50cdabb8863a77e0fa20df4cec87e3c674fe75171415180",
+  "no_existing_files_overwritten": true,
+  "checkpoint_weight_files_included": false,
+  "validated_locally": "18 tests executed; 16 passed; 2 server-only real-simulator tests skipped; toy end-to-end and checksum/parity tests passed",
+  "new_files": {
+    "CHANGELOG.md": "06bc73de8ede5d1b04d6326f931a85b47c6595e4490206a473f31e7908454b62",
+    "QUICKSTART.sh": "98f9bd9bf0ccf69b7e34f8c9c402527832bfba6b261b93eb642aa5027412b10e",
+    "README_E4_DIAG_zh.md": "f6a29af68d3a6185bd7e2d4c50b8caf36ce8870bce4c36a72637bb6a17b51d43",
+    "diagnose_keep_qgap.py": "eaa3b7cbe4785a237b79ca36fdbe04200bc249d192660050a23464699b1c33fd",
+    "diagnostic_core.py": "adce2732cffbda1d3af6be0310ca769aee11affb6a998ca49a65b5003e4e6297",
+    "run_parallel.py": "5c104b34e0bc9051cecc5bceb006c5a3d5b0a14408bc3c7cc61baa77b031e45e",
+    "summarize_diagnostic.py": "9fb59be987b83537a48745282dfddb3182eff579780e8d121b28c19decead148",
+    "test_diagnostic_core.py": "2d8ea5178f1456f76302ccfecedb0471531aaa548e69e9ff88ab79183d1ba4ee",
+    "test_diagnostic_runner.py": "12b4ef6766f89bc9b5c15054bc9ad85984c150aeb06d3fb7568e313c257b30a6",
+    "test_real_environment.py": "c5a56eff66f1b719b2b8df37bac6d55a347ebef6da43727bdf500922672a0d12"
+  },
+  "limitations": [
+    "No original V0.9 simulator or E4 .pt snapshots in local build container",
+    "No real E4-D result computed here",
+    "Single realized future is not unbiased conditional Q target"
+  ]
+}

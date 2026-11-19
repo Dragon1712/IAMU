@@ -1,0 +1,17 @@
+test_cvar_tail_fraction (test_multiseed_eval.FunctionsTests.test_cvar_tail_fraction) ... ok
+test_disjoint_cases (test_multiseed_eval.FunctionsTests.test_disjoint_cases) ... ok
+test_folder_mapping (test_multiseed_eval.FunctionsTests.test_folder_mapping) ... ok
+test_validate_curve (test_multiseed_eval.FunctionsTests.test_validate_curve) ... ok
+test_end_to_end_single_worker (test_multiseed_eval.SyntheticFullRunTests.test_end_to_end_single_worker) ... [test] 5/18 paired groups
+[test] 10/18 paired groups
+[test] 15/18 paired groups
+[test] 18/18 paired groups
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 4.813s
+
+OK
+[DONE] 18 paired groups, 162 runs -> /tmp/tmpvc95sddu/test_output
+set_ddqn96 - ddqn130: mean Δwait=-2.0000; seed wins=2/2; exploratory bootstrap95=[-2.0000, -2.0000]
+set_ddqn96 - ddqn96: mean Δwait=-5.0000; seed wins=2/2; exploratory bootstrap95=[-5.0000, -5.0000]

@@ -1,0 +1,14 @@
+test_mask_and_legal_action_scoring (test_offline_q_diagnostics.OfflineQDiagnosticsTests.test_mask_and_legal_action_scoring) ... ok
+test_three_network_full_smoke (test_offline_q_diagnostics.OfflineQDiagnosticsTests.test_three_network_full_smoke) ... [protocol] all three model manifests match on evaluation settings
+[checkpoint] ddqn96 ddqn-96 epoch=25 /tmp/tmp2qvw1vby/ddqn96/best.pt
+[checkpoint] ddqn130 ddqn-130 epoch=25 /tmp/tmp2qvw1vby/ddqn130/best.pt
+[checkpoint] d3qn96 d3qn-96 epoch=25 /tmp/tmp2qvw1vby/d3qn96/best.pt
+[grid] 2 cases x 1 scenarios x 1 seeds x 1 budgets
+[progress] 1 validation groups done
+[complete] 1 groups, 6 episode rollouts -> /tmp/tmp2qvw1vby/diagnosis
+ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.639s
+
+OK

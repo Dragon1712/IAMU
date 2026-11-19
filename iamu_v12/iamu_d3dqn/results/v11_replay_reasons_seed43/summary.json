@@ -1,0 +1,9 @@
+{
+  "total": 28314,
+  "episode_count": 200,
+  "forced_keep": 25675,
+  "budget_exhausted_any": 23398,
+  "all_started_any": 1072,
+  "forced_tail_quartile": 7131,
+  "clarification": "Labels are overlapping; primary reasons are for display only"
+}

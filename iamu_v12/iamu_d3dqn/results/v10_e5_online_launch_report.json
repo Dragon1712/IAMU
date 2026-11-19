@@ -1,0 +1,8 @@
+[
+  {
+    "seed": 43,
+    "exit_code": 0,
+    "log": "/home/moco/code/iamu/iamu_d3dqn/logs/v10_e5_online_seed43.log",
+    "out": "/home/moco/code/iamu/iamu_d3dqn/results/v10_e5_online_seed43"
+  }
+]

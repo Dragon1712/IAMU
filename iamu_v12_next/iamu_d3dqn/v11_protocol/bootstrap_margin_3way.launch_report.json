@@ -1,0 +1,26 @@
+[
+  {
+    "name": "M0_exec0_boot0",
+    "device": "cuda:0",
+    "code": 0,
+    "log": "results/logs/M0_exec0_boot0.log"
+  },
+  {
+    "name": "M1_exec01_boot0",
+    "device": "cuda:1",
+    "code": 0,
+    "log": "results/logs/M1_exec01_boot0.log"
+  },
+  {
+    "name": "M2_exec01_boot01",
+    "device": "cuda:2",
+    "code": 0,
+    "log": "results/logs/M2_exec01_boot01.log"
+  },
+  {
+    "name": "M1_exec01_boot0_seed42",
+    "device": "cuda:3",
+    "code": 0,
+    "log": "results/logs/M1_exec01_boot0_seed42.log"
+  }
+]

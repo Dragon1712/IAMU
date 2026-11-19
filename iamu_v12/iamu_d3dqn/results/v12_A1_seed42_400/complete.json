@@ -1,0 +1,13 @@
+{
+  "actor_seconds_sum": 4611.625873048324,
+  "best_validation_wait": 1943.6830107815988,
+  "completed_episodes": 400,
+  "gradient_steps": 13846,
+  "learner_seconds": 86.02410064963624,
+  "raw_env_steps": 56526,
+  "representation": "primitive",
+  "sampling": "stratified",
+  "unique_decision_transitions": 4013,
+  "validation_seconds": 12982.165480535477,
+  "wall_seconds": 15687.79710941296
+}

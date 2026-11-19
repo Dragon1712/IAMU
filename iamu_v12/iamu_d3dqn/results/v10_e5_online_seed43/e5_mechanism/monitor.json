@@ -1,0 +1,8 @@
+{
+  "probe_sha256": "35be5c7ab2c2f7c8acebb0228ffa8e077ac85fb9e05a33b3b3c9653564b4b1e4",
+  "fork": 200,
+  "every": 25,
+  "td_sample": 384,
+  "source": "same fixed PUBLIC state bank, read-only training metrics",
+  "note": "training_checkpoint carries Replay data; no future oracle used"
+}

@@ -14,5 +14,21 @@
     "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v12_A0_seed43_400/validation_snapshots/val_000200_grad_000006940.pt",
     "status": "done",
     "validation_seconds": 3097.114843716845
+  },
+  "val_000300": {
+    "rows": 216,
+    "score": 1956.1215793830122,
+    "sha256": "ec182ce4c91ccb5c2753f13b561b3640f1fcf3cb4ec6c131d3ab60fdaa5649bd",
+    "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v12_A0_seed43_400/validation_snapshots/val_000300_grad_000010469.pt",
+    "status": "done",
+    "validation_seconds": 3305.067476171069
+  },
+  "val_000400": {
+    "rows": 216,
+    "score": 1920.6218289014428,
+    "sha256": "0f0371b1f0660e13ec540da455534f25ff48b5775e942eed588b9359e3df73b0",
+    "snapshot": "/home/moco/code/iamu/iamu_d3dqn/results/v12_A0_seed43_400/validation_snapshots/val_000400_grad_000014006.pt",
+    "status": "done",
+    "validation_seconds": 3412.360757706221
   }
 }

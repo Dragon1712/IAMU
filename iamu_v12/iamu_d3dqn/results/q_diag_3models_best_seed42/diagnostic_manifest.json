@@ -1,0 +1,75 @@
+{
+  "source": "IAMU frozen V0.9-A experiments",
+  "grid_groups": 54,
+  "cases": [
+    "../2024LiERLDDE/case_code/8.txt",
+    "../2024LiERLDDE/case_code/9.txt"
+  ],
+  "case_sha256": {
+    "../2024LiERLDDE/case_code/8.txt": "eb15848ca1eac1fce5f15c34d6e22c580e6aa5d1a7bbcdcd353f361c05960229",
+    "../2024LiERLDDE/case_code/9.txt": "68f9d35b0f499f342b271e4b9cc4538788eb29fc2b270e2a7e6917409956b6f8"
+  },
+  "scenarios": [
+    "shock",
+    "repeated",
+    "small"
+  ],
+  "seeds": [
+    400001,
+    400002,
+    400003
+  ],
+  "budgets": [
+    2,
+    5,
+    10
+  ],
+  "reference_policies": [
+    "keep",
+    "greedy",
+    "periodic"
+  ],
+  "onpolicy": true,
+  "evaluation_config": {
+    "candidate_limit": 4,
+    "period": 12.0,
+    "reward_scale": 100.0,
+    "candidate_screen": "positive",
+    "min_gain": 0.1,
+    "budget_features": "absolute",
+    "value_features": "global",
+    "updates": 2,
+    "validation_uncertainty": 8.0,
+    "clock": "union"
+  },
+  "models": {
+    "ddqn96": {
+      "path": "/home/moco/code/iamu/iamu_d3dqn/results/v082_8workers_sync1_300/best.pt",
+      "sha256": "c5adefe56bbee14fa58ece981be2a91e0c72bcae1b495efb78899c1dcfef0b65",
+      "architecture": "ddqn",
+      "width": 96,
+      "parameters": 14113,
+      "selected_episode": 150,
+      "gradient_updates": 5123
+    },
+    "ddqn130": {
+      "path": "/home/moco/code/iamu/iamu_d3dqn/results/v09a_ddqn130_seed42_300/best.pt",
+      "sha256": "7200bc85c4c51ad63201624224d76c36a1aed01d9d8395fafc6d2496c4e006da",
+      "architecture": "ddqn",
+      "width": 130,
+      "parameters": 23531,
+      "selected_episode": 75,
+      "gradient_updates": 2506
+    },
+    "d3qn96": {
+      "path": "/home/moco/code/iamu/iamu_d3dqn/results/v09a_d3qn_seed42_300/best.pt",
+      "sha256": "566fdf106d1d2e49d8d954bdddaa57359785aecb0fb9dbde40a47b0b25c34419",
+      "architecture": "d3qn",
+      "width": 96,
+      "parameters": 23522,
+      "selected_episode": 100,
+      "gradient_updates": 3387
+    }
+  },
+  "note": "Common-state Q-gap and action agreement are comparable because observations are shared; raw Q levels across different visited states are not directly comparable. On-policy MC error is a single realized return-to-go under latent ETA uncertainty, not an oracle expected-Q target. Models were not trained or updated."
+}

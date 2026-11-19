@@ -1,0 +1,13 @@
+{
+  "policy": "budget_aware",
+  "budget": 5,
+  "spent": 5,
+  "number_of_updates": 24,
+  "number_of_triggered_updates": 24,
+  "number_of_vessels_revised": 5,
+  "weighted_wait": 357.531088,
+  "mean_weighted_wait": 29.794257,
+  "total_operational_slip": 0,
+  "mean_turnaround": 47.148424,
+  "makespan": 113.0
+}

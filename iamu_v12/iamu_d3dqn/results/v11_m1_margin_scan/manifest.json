@@ -1,0 +1,23 @@
+{
+  "checkpoint": "results/v11_m1_seed43/best.pt",
+  "model_meta": {
+    "selected_episode": 400,
+    "validation_id": "val_000400",
+    "validation_score": 1927.9388663951372,
+    "gradient_steps": 56068
+  },
+  "argv": {
+    "checkpoint": "results/v11_m1_seed43/best.pt",
+    "cases": [
+      "../2024LiERLDDE/case_code/8.txt",
+      "../2024LiERLDDE/case_code/9.txt"
+    ],
+    "margins": "0,0.05,0.1,0.15",
+    "seeds": "400001:400003",
+    "budgets": "2,5,10",
+    "scenarios": "shock,repeated,small",
+    "candidate_screen": "positive",
+    "out": "results/v11_m1_margin_scan"
+  },
+  "note": "frozen weights; execution-margin scan only; new v11 candidate space is migration diagnosis"
+}

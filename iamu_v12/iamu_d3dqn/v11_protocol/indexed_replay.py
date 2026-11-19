@@ -63,40 +63,6 @@ class IndexedReplay:
     def clear(self):
         self._slots=[None]*self.capacity;self._head=0;self._size=0
         self.actionable=DensePool();self.forced=DensePool()
-    def state_dict(self):
-        """Exact ring/pool order: restoring content alone is NOT sampler-identical."""
-        return dict(version=2, capacity=self.capacity, head=self._head,
-                    size=self._size, slots=list(self._slots),
-                    actionable=list(self.actionable.values),
-                    forced=list(self.forced.values), rng=self.rng.getstate())
-
-    def load_state_dict(self, state):
-        if state.get('version') != 2 or state.get('capacity') != self.capacity:
-            raise ValueError('Unsupported or incompatible IndexedReplay checkpoint')
-        head, size = int(state['head']), int(state['size'])
-        slots = list(state['slots'])
-        if not (0 <= head < self.capacity and 0 <= size <= self.capacity and
-                len(slots) == self.capacity):
-            raise ValueError('Invalid replay ring metadata')
-        active = {(head + i) % self.capacity for i in range(size)}
-        if any(slots[i] is None for i in active):
-            raise ValueError('Active replay ring slot is empty')
-        if any(slots[i] is not None for i in range(self.capacity) if i not in active):
-            raise ValueError('Replay has data in inactive slots')
-        a, f = list(state['actionable']), list(state['forced'])
-        if len(a) + len(f) != size or set(a).intersection(f) or set(a + f) != active:
-            raise ValueError('Replay index pools do not cover active ring exactly')
-        if any(not self._actionable(slots[i]) for i in a):
-            raise ValueError('Actionable pool has forced transition')
-        if any(self._actionable(slots[i]) for i in f):
-            raise ValueError('Forced pool has actionable transition')
-        self._slots = slots
-        self._head, self._size = head, size
-        self.actionable, self.forced = DensePool(), DensePool()
-        for i in a: self.actionable.add(i)
-        for i in f: self.forced.add(i)
-        self.rng.setstate(state['rng'])
-
     def stats(self):
         return dict(n=self._size,actionable=len(self.actionable),forced=len(self.forced),
             natural_fraction=len(self.actionable)/max(1,self._size))
