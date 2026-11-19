@@ -1,0 +1,25 @@
+test_bad_budget_is_rejected (test_compression_v13.CompressionTests.test_bad_budget_is_rejected) ... ok
+test_budget_exhaustion_edit_keeps_remaining_tail_once (test_compression_v13.CompressionTests.test_budget_exhaustion_edit_keeps_remaining_tail_once) ... ok
+test_exact_dp_gap_gamma_nine_tenths (test_compression_v13.CompressionTests.test_exact_dp_gap_gamma_nine_tenths) ... ok
+test_exact_dp_gap_gamma_one (test_compression_v13.CompressionTests.test_exact_dp_gap_gamma_one) ... ok
+test_keep_at_actionable_is_anchor (test_compression_v13.CompressionTests.test_keep_at_actionable_is_anchor) ... ok
+test_no_decisions_empty_but_cost_preserved (test_compression_v13.CompressionTests.test_no_decisions_empty_but_cost_preserved) ... ok
+test_requested_five_step_discount_example (test_compression_v13.CompressionTests.test_requested_five_step_discount_example) ... ok
+test_keep_stops_at_next_actionable (test_paired_target_v13.PairedMacroTests.test_keep_stops_at_next_actionable) ... ok
+test_last_edit_consumes_full_forced_tail (test_paired_target_v13.PairedMacroTests.test_last_edit_consumes_full_forced_tail) ... ok
+test_balanced_jobs_no_repeated_external_seed (test_pairing_v13.PairingTests.test_balanced_jobs_no_repeated_external_seed) ... ok
+test_pending_same_timestamp_event_is_not_lost (test_pairing_v13.PairingTests.test_pending_same_timestamp_event_is_not_lost) ... ok
+test_pre_generated_tape_is_reproducible (test_pairing_v13.PairingTests.test_pre_generated_tape_is_reproducible) ... ok
+test_state_id_is_stable (test_pairing_v13.PairingTests.test_state_id_is_stable) ... ok
+test_two_branches_same_exogenous_tape_different_reward (test_pairing_v13.PairingTests.test_two_branches_same_exogenous_tape_different_reward) ... ok
+test_real_engine_snapshot_replay_and_common_future (test_real_env_v13.RealEngineTests.test_real_engine_snapshot_replay_and_common_future) ... skipped "Full V1.1 physical engine not installed here: No module named 'iamu_dynamic'"
+test_uncertainty_not_called_wrong (test_summarize_v13.SummaryTests.test_uncertainty_not_called_wrong) ... ok
+test_manual_bellman_decomposition (test_targets_v13.TargetTests.test_manual_bellman_decomposition) ... ok
+test_terminal_ignores_target_q (test_targets_v13.TargetTests.test_terminal_ignores_target_q) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.007s
+
+OK (skipped=1)
+[CLI] seven modules --help passed
+[COMPILE] passed

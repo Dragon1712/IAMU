@@ -1,0 +1,16 @@
+{
+  "continuation": "greedy",
+  "model_sha256": {
+    "results/v12_A0_seed43_400/best.pt": "2e596d235891eea6fde56a7c273d94c1b828e105d1464155c32d750092d619b7",
+    "results/v12_A2_seed43_400/best.pt": "defb4b68d1d47bdb1dea59f03c07330425975f5f846e9753a0507eec57426eb1",
+    "results/v12_A3_seed43_400/best.pt": "b462bd67fb5edad559b28ffa238add42ea36d205d679c11efd493326cc314dcc"
+  },
+  "n_independent_tapes": 8,
+  "n_predictions": 360,
+  "n_states": 120,
+  "note": "Synthetic conditional continuation Q; not optimal Q*, no future data used by policy",
+  "original_future_rows": 360,
+  "probe_sha256": "d7615af2b577928d7a86170de8d1f37a1585f9530a1b6810c05e49f9d868219f",
+  "range_start": 0,
+  "range_stop": 120
+}

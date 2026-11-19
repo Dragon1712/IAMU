@@ -1,0 +1,63 @@
+{
+  "counts": {
+    "('1', 'repeated')": {
+      "available": 152,
+      "requested": 10,
+      "selected": 10,
+      "shortfall": 0
+    },
+    "('1', 'shock')": {
+      "available": 144,
+      "requested": 20,
+      "selected": 20,
+      "shortfall": 0
+    },
+    "('1', 'small')": {
+      "available": 166,
+      "requested": 10,
+      "selected": 10,
+      "shortfall": 0
+    },
+    "('2', 'repeated')": {
+      "available": 154,
+      "requested": 10,
+      "selected": 10,
+      "shortfall": 0
+    },
+    "('2', 'shock')": {
+      "available": 177,
+      "requested": 20,
+      "selected": 20,
+      "shortfall": 0
+    },
+    "('2', 'small')": {
+      "available": 148,
+      "requested": 10,
+      "selected": 10,
+      "shortfall": 0
+    },
+    "('3+', 'repeated')": {
+      "available": 580,
+      "requested": 10,
+      "selected": 10,
+      "shortfall": 0
+    },
+    "('3+', 'shock')": {
+      "available": 591,
+      "requested": 20,
+      "selected": 20,
+      "shortfall": 0
+    },
+    "('3+', 'small')": {
+      "available": 583,
+      "requested": 10,
+      "selected": 10,
+      "shortfall": 0
+    }
+  },
+  "data_sha256": "d7615af2b577928d7a86170de8d1f37a1585f9530a1b6810c05e49f9d868219f",
+  "n_probes": 120,
+  "replay_checked": 120,
+  "target": 120,
+  "warning": null
+}

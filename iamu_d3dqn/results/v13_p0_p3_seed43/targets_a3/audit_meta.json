@@ -1,0 +1,9 @@
+{
+  "full_dataset_macro_count": 2166,
+  "full_state_sha256": null,
+  "gamma": 1.0,
+  "model_sha256": "b462bd67fb5edad559b28ffa238add42ea36d205d679c11efd493326cc314dcc",
+  "n_logged": 2166,
+  "representation": "decision_epoch",
+  "target_source": "model_only_target_equal_online"
+}

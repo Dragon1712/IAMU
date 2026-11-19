@@ -1,0 +1,10 @@
+{
+  "checkpoint_sha256": "b462bd67fb5edad559b28ffa238add42ea36d205d679c11efd493326cc314dcc",
+  "meaning": "Paired one-macro TD targets, NOT true counterfactual action values",
+  "n_pairs": 960,
+  "n_rows": 1920,
+  "n_states": 120,
+  "n_tapes": 8,
+  "probes_sha256": "d7615af2b577928d7a86170de8d1f37a1585f9530a1b6810c05e49f9d868219f",
+  "target_kind": "model_only_target_equal_online"
+}

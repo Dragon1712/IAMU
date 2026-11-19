@@ -1,0 +1,9 @@
+{
+  "full_dataset_macro_count": 28256,
+  "full_state_sha256": null,
+  "gamma": 1.0,
+  "model_sha256": "2e596d235891eea6fde56a7c273d94c1b828e105d1464155c32d750092d619b7",
+  "n_logged": 10000,
+  "representation": "primitive",
+  "target_source": "model_only_target_equal_online"
+}

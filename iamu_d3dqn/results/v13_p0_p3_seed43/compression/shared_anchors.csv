@@ -1,0 +1,2167 @@
+state_id,episode_id,raw_step_index,scenario,source_budget,action,vessel_id,new_assignment,decision_epoch_n_raw_steps
+1:1,1,1,small,10,1,0,"{'vessel_id': 0, 'start': 7.241939, 'end': 71.241939, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",1
+1:2,1,2,small,9,1,0,"{'vessel_id': 0, 'start': 6.568002, 'end': 70.568002, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",4
+1:6,1,6,small,8,1,4,"{'vessel_id': 4, 'start': 25.586672, 'end': 88.986672, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",1
+1:7,1,7,small,7,0,,,1
+1:8,1,8,small,7,1,9,"{'vessel_id': 9, 'start': 88.986672, 'end': 159.586672, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 70.6}",1
+1:9,1,9,small,6,1,15,"{'vessel_id': 15, 'start': 159.586672, 'end': 226.586672, 'berth_start_m': 2324.5, 'cranes': 5, 'duration': 67.0}",1
+1:10,1,10,small,5,0,,,1
+1:11,1,11,small,5,1,16,"{'vessel_id': 16, 'start': 160.33, 'end': 198.33, 'berth_start_m': 1259.9, 'cranes': 5, 'duration': 38.0}",1
+1:12,1,12,small,4,1,5,"{'vessel_id': 5, 'start': 62.065721, 'end': 101.065721, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",1
+1:13,1,13,small,3,1,10,"{'vessel_id': 10, 'start': 101.065721, 'end': 116.865721, 'berth_start_m': 297.0, 'cranes': 5, 'duration': 15.8}",1
+1:14,1,14,small,2,2,20,"{'vessel_id': 20, 'start': 198.33, 'end': 243.13, 'berth_start_m': 1175.2, 'cranes': 5, 'duration': 44.8}",1
+1:15,1,15,small,1,0,,,1
+1:16,1,16,small,1,0,,,1
+1:17,1,17,small,1,0,,,1
+1:18,1,18,small,1,0,,,1
+1:19,1,19,small,1,0,,,1
+1:20,1,20,small,1,0,,,1
+1:21,1,21,small,1,0,,,1
+1:22,1,22,small,1,0,,,1
+1:23,1,23,small,1,0,,,1
+1:24,1,24,small,1,0,,,1
+1:25,1,25,small,1,0,,,1
+1:26,1,26,small,1,2,23,"{'vessel_id': 23, 'start': 226.586672, 'end': 309.586672, 'berth_start_m': 1803.2, 'cranes': 5, 'duration': 83.0}",121
+2:1,2,1,repeated,5,1,0,"{'vessel_id': 0, 'start': 11.561782, 'end': 104.761782, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+2:2,2,2,repeated,4,2,10,"{'vessel_id': 10, 'start': 104.761782, 'end': 135.361782, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",1
+2:3,2,3,repeated,3,1,1,"{'vessel_id': 1, 'start': 17.181328, 'end': 36.381328, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",1
+2:4,2,4,repeated,2,0,,,1
+2:5,2,5,repeated,2,1,3,"{'vessel_id': 3, 'start': 18.271198, 'end': 26.071198, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",6
+2:11,2,11,repeated,1,0,,,1
+2:12,2,12,repeated,1,1,6,"{'vessel_id': 6, 'start': 48.829109, 'end': 106.429109, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 57.6}",133
+3:1,3,1,repeated,2,1,0,"{'vessel_id': 0, 'start': 10.092181, 'end': 103.292181, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+3:2,3,2,repeated,1,0,,,1
+3:3,3,3,repeated,1,1,1,"{'vessel_id': 1, 'start': 15.967085, 'end': 35.167085, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",141
+4:1,4,1,repeated,10,1,0,"{'vessel_id': 0, 'start': 0.143333, 'end': 88.343333, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 88.2}",2
+4:3,4,3,repeated,9,1,2,"{'vessel_id': 2, 'start': 10.278837, 'end': 33.478837, 'berth_start_m': 667.5, 'cranes': 5, 'duration': 23.2}",2
+4:5,4,5,repeated,8,0,,,1
+4:6,4,6,repeated,8,1,4,"{'vessel_id': 4, 'start': 33.422063, 'end': 121.222063, 'berth_start_m': 2532.3, 'cranes': 5, 'duration': 87.8}",1
+4:7,4,7,repeated,7,0,,,1
+4:8,4,8,repeated,7,1,3,"{'vessel_id': 3, 'start': 20.202336, 'end': 62.602336, 'berth_start_m': 950.2, 'cranes': 5, 'duration': 42.4}",1
+4:9,4,9,repeated,6,1,13,"{'vessel_id': 13, 'start': 121.222063, 'end': 183.222063, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+4:10,4,10,repeated,5,1,8,"{'vessel_id': 8, 'start': 62.48, 'end': 97.48, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 35.0}",1
+4:11,4,11,repeated,4,0,,,1
+4:12,4,12,repeated,4,0,,,1
+4:13,4,13,repeated,4,1,7,"{'vessel_id': 7, 'start': 48.734417, 'end': 96.934417, 'berth_start_m': 1920.5, 'cranes': 5, 'duration': 48.2}",1
+4:14,4,14,repeated,3,1,9,"{'vessel_id': 9, 'start': 64.316742, 'end': 127.516742, 'berth_start_m': 683.2, 'cranes': 5, 'duration': 63.2}",1
+4:15,4,15,repeated,2,0,,,1
+4:16,4,16,repeated,2,1,11,"{'vessel_id': 11, 'start': 96.934417, 'end': 124.934417, 'berth_start_m': 1914.2, 'cranes': 5, 'duration': 28.0}",1
+4:17,4,17,repeated,1,0,,,1
+4:18,4,18,repeated,1,2,17,"{'vessel_id': 17, 'start': 127.516742, 'end': 204.516742, 'berth_start_m': 627.0, 'cranes': 5, 'duration': 77.0}",122
+5:3,5,3,shock,2,1,1,"{'vessel_id': 1, 'start': 3.354046, 'end': 33.754046, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 30.4}",2
+5:5,5,5,shock,1,1,4,"{'vessel_id': 4, 'start': 33.409723, 'end': 121.209723, 'berth_start_m': 2532.3, 'cranes': 5, 'duration': 87.8}",134
+6:1,6,1,repeated,10,1,0,"{'vessel_id': 0, 'start': 12.188287, 'end': 105.388287, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+6:2,6,2,repeated,9,1,10,"{'vessel_id': 10, 'start': 105.388287, 'end': 135.988287, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",2
+6:4,6,4,repeated,8,1,3,"{'vessel_id': 3, 'start': 24.533758, 'end': 32.333758, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+6:5,6,5,repeated,7,1,4,"{'vessel_id': 4, 'start': 31.902875, 'end': 47.902875, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",3
+6:8,6,8,repeated,6,1,1,"{'vessel_id': 1, 'start': 17.271857, 'end': 36.471857, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",2
+6:10,6,10,repeated,5,0,,,1
+6:11,6,11,repeated,5,1,5,"{'vessel_id': 5, 'start': 33.091633, 'end': 39.491633, 'berth_start_m': 751.7, 'cranes': 5, 'duration': 6.4}",1
+6:12,6,12,repeated,4,1,4,"{'vessel_id': 4, 'start': 29.931864, 'end': 45.931864, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",2
+6:14,6,14,repeated,3,1,8,"{'vessel_id': 8, 'start': 59.161652, 'end': 126.961652, 'berth_start_m': 1542.0, 'cranes': 5, 'duration': 67.8}",6
+6:20,6,20,repeated,2,1,6,"{'vessel_id': 6, 'start': 47.517872, 'end': 105.117872, 'berth_start_m': 745.8, 'cranes': 5, 'duration': 57.6}",1
+6:21,6,21,repeated,1,1,10,"{'vessel_id': 10, 'start': 105.117872, 'end': 135.717872, 'berth_start_m': 830.4, 'cranes': 5, 'duration': 30.6}",122
+7:1,7,1,small,2,1,0,"{'vessel_id': 0, 'start': 7.03425, 'end': 71.03425, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",3
+7:4,7,4,small,1,1,2,"{'vessel_id': 2, 'start': 24.132498, 'end': 38.732498, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",143
+8:3,8,3,small,10,1,1,"{'vessel_id': 1, 'start': 17.975723, 'end': 63.175723, 'berth_start_m': 203.5, 'cranes': 5, 'duration': 45.2}",2
+8:5,8,5,small,9,1,3,"{'vessel_id': 3, 'start': 33.10503, 'end': 52.50503, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",3
+8:8,8,8,small,8,1,1,"{'vessel_id': 1, 'start': 16.822829, 'end': 62.022829, 'berth_start_m': 203.5, 'cranes': 5, 'duration': 45.2}",1
+8:9,8,9,small,7,1,5,"{'vessel_id': 5, 'start': 46.23567, 'end': 141.43567, 'berth_start_m': 1226.1, 'cranes': 5, 'duration': 95.2}",1
+8:10,8,10,small,6,1,2,"{'vessel_id': 2, 'start': 27.464415, 'end': 54.864415, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",1
+8:11,8,11,small,5,1,6,"{'vessel_id': 6, 'start': 57.187548, 'end': 115.587548, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 58.4}",1
+8:12,8,12,small,4,1,11,"{'vessel_id': 11, 'start': 115.587548, 'end': 175.787548, 'berth_start_m': 592.6, 'cranes': 5, 'duration': 60.2}",1
+8:13,8,13,small,3,2,13,"{'vessel_id': 13, 'start': 141.43567, 'end': 172.83567, 'berth_start_m': 1089.1, 'cranes': 5, 'duration': 31.4}",1
+8:14,8,14,small,2,0,,,1
+8:15,8,15,small,2,1,3,"{'vessel_id': 3, 'start': 32.86799, 'end': 52.26799, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",1
+8:16,8,16,small,1,1,17,"{'vessel_id': 17, 'start': 172.83567, 'end': 230.03567, 'berth_start_m': 254.4, 'cranes': 5, 'duration': 57.2}",131
+9:1,9,1,small,10,1,0,"{'vessel_id': 0, 'start': 14.048708, 'end': 107.248708, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+9:2,9,2,small,9,0,,,1
+9:3,9,3,small,9,1,2,"{'vessel_id': 2, 'start': 19.696878, 'end': 108.696878, 'berth_start_m': 533.5, 'cranes': 5, 'duration': 89.0}",1
+9:4,9,4,small,8,1,1,"{'vessel_id': 1, 'start': 17.922143, 'end': 37.122143, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",1
+9:5,9,5,small,7,1,4,"{'vessel_id': 4, 'start': 26.635111, 'end': 42.635111, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}",1
+9:6,9,6,small,6,1,11,"{'vessel_id': 11, 'start': 108.696878, 'end': 142.496878, 'berth_start_m': 200.1, 'cranes': 5, 'duration': 33.8}",3
+9:9,9,9,small,5,0,,,1
+9:10,9,10,small,5,1,2,"{'vessel_id': 2, 'start': 18.208581, 'end': 107.208581, 'berth_start_m': 533.5, 'cranes': 5, 'duration': 89.0}",1
+9:11,9,11,small,4,2,10,"{'vessel_id': 10, 'start': 107.208581, 'end': 137.808581, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 30.6}",1
+9:12,9,12,small,3,1,3,"{'vessel_id': 3, 'start': 24.086604, 'end': 31.886604, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+9:13,9,13,small,2,1,4,"{'vessel_id': 4, 'start': 25.149987, 'end': 41.149987, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}",1
+9:14,9,14,small,1,0,,,1
+9:15,9,15,small,1,0,,,1
+9:16,9,16,small,1,0,,,1
+9:17,9,17,small,1,1,9,"{'vessel_id': 9, 'start': 73.618159, 'end': 112.418159, 'berth_start_m': 1904.6, 'cranes': 5, 'duration': 38.8}",128
+10:3,10,3,small,2,1,1,"{'vessel_id': 1, 'start': 4.314334, 'end': 34.714334, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 30.4}",2
+10:5,10,5,small,1,1,2,"{'vessel_id': 2, 'start': 11.891613, 'end': 35.091613, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 23.2}",136
+11:1,11,1,small,5,1,1,"{'vessel_id': 1, 'start': 5.560446, 'end': 35.960446, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",3
+11:4,11,4,small,4,1,2,"{'vessel_id': 2, 'start': 9.347844, 'end': 32.547844, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 23.2}",13
+11:17,11,17,small,3,1,5,"{'vessel_id': 5, 'start': 35.373055, 'end': 124.973055, 'berth_start_m': 2524.9, 'cranes': 5, 'duration': 89.6}",1
+11:18,11,18,small,2,1,11,"{'vessel_id': 11, 'start': 97.48, 'end': 125.48, 'berth_start_m': 1196.8, 'cranes': 5, 'duration': 28.0}",1
+11:19,11,19,small,1,1,14,"{'vessel_id': 14, 'start': 124.973055, 'end': 176.573055, 'berth_start_m': 1924.9, 'cranes': 5, 'duration': 51.6}",121
+12:3,12,3,repeated,5,1,1,"{'vessel_id': 1, 'start': 5.588669, 'end': 35.988669, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",1
+12:4,12,4,repeated,4,1,2,"{'vessel_id': 2, 'start': 13.854456, 'end': 37.054456, 'berth_start_m': 1625.4, 'cranes': 5, 'duration': 23.2}",1
+12:5,12,5,repeated,3,0,,,1
+12:6,12,6,repeated,3,1,3,"{'vessel_id': 3, 'start': 18.055212, 'end': 60.455212, 'berth_start_m': 810.7, 'cranes': 5, 'duration': 42.4}",1
+12:7,12,7,repeated,2,1,4,"{'vessel_id': 4, 'start': 29.818544, 'end': 117.618544, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 87.8}",1
+12:8,12,8,repeated,1,1,2,"{'vessel_id': 2, 'start': 12.0, 'end': 35.2, 'berth_start_m': 1625.4, 'cranes': 5, 'duration': 23.2}",133
+13:6,13,6,small,10,1,3,"{'vessel_id': 3, 'start': 43.663164, 'end': 120.863164, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 77.2}",1
+13:7,13,7,small,9,1,4,"{'vessel_id': 4, 'start': 51.310558, 'end': 119.910558, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",5
+13:12,13,12,small,8,1,3,"{'vessel_id': 3, 'start': 42.981245, 'end': 120.181245, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 77.2}",1
+13:13,13,13,small,7,1,4,"{'vessel_id': 4, 'start': 50.360546, 'end': 118.960546, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+13:14,13,14,small,6,1,5,"{'vessel_id': 5, 'start': 51.496741, 'end': 88.296741, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",4
+13:18,13,18,small,5,1,10,"{'vessel_id': 10, 'start': 120.19711, 'end': 132.59711, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 12.4}",2
+13:20,13,20,small,4,0,,,1
+13:21,13,21,small,4,0,,,1
+13:22,13,22,small,4,2,11,"{'vessel_id': 11, 'start': 123.245199, 'end': 159.445199, 'berth_start_m': 1765.1, 'cranes': 5, 'duration': 36.2}",1
+13:23,13,23,small,3,0,,,1
+13:24,13,24,small,3,0,,,1
+13:25,13,25,small,3,0,,,1
+13:26,13,26,small,3,0,,,1
+13:27,13,27,small,3,1,7,"{'vessel_id': 7, 'start': 84.417078, 'end': 150.217078, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 65.8}",1
+13:28,13,28,small,2,2,14,"{'vessel_id': 14, 'start': 150.217078, 'end': 162.017078, 'berth_start_m': 186.6, 'cranes': 5, 'duration': 11.8}",1
+13:29,13,29,small,1,2,13,"{'vessel_id': 13, 'start': 134.616606, 'end': 151.216606, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 16.6}",112
+14:1,14,1,small,2,0,,,1
+14:2,14,2,small,2,2,0,"{'vessel_id': 0, 'start': 13.50736, 'end': 106.70736, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+14:3,14,3,small,1,1,1,"{'vessel_id': 1, 'start': 15.778663, 'end': 34.978663, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",142
+15:2,15,2,shock,10,1,2,"{'vessel_id': 2, 'start': 31.031095, 'end': 58.431095, 'berth_start_m': 1547.3, 'cranes': 5, 'duration': 27.4}",5
+15:7,15,7,shock,9,1,5,"{'vessel_id': 5, 'start': 42.724365, 'end': 137.924365, 'berth_start_m': 1226.1, 'cranes': 5, 'duration': 95.2}",1
+15:8,15,8,shock,8,0,,,1
+15:9,15,9,shock,8,1,6,"{'vessel_id': 6, 'start': 51.819209, 'end': 110.219209, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 58.4}",1
+15:10,15,10,shock,7,1,7,"{'vessel_id': 7, 'start': 60.278998, 'end': 91.478998, 'berth_start_m': 1544.3, 'cranes': 5, 'duration': 31.2}",1
+15:11,15,11,shock,6,1,11,"{'vessel_id': 11, 'start': 110.219209, 'end': 170.419209, 'berth_start_m': 592.6, 'cranes': 5, 'duration': 60.2}",1
+15:12,15,12,shock,5,0,,,1
+15:13,15,13,shock,5,1,13,"{'vessel_id': 13, 'start': 137.924365, 'end': 169.324365, 'berth_start_m': 1089.1, 'cranes': 5, 'duration': 31.4}",1
+15:14,15,14,shock,4,1,8,"{'vessel_id': 8, 'start': 78.260435, 'end': 162.860435, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 84.6}",1
+15:15,15,15,shock,3,3,16,"{'vessel_id': 16, 'start': 162.860435, 'end': 245.860435, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 83.0}",1
+15:16,15,16,shock,2,4,18,"{'vessel_id': 18, 'start': 169.324365, 'end': 248.924365, 'berth_start_m': 1086.0, 'cranes': 5, 'duration': 79.6}",1
+15:17,15,17,shock,1,1,9,"{'vessel_id': 9, 'start': 89.549282, 'end': 148.349282, 'berth_start_m': 1874.7, 'cranes': 5, 'duration': 58.8}",126
+16:1,16,1,shock,5,1,0,"{'vessel_id': 0, 'start': 7.541961, 'end': 67.341961, 'berth_start_m': 1205.5, 'cranes': 5, 'duration': 59.8}",2
+16:3,16,3,shock,4,1,1,"{'vessel_id': 1, 'start': 3.963286, 'end': 94.963286, 'berth_start_m': 186.2, 'cranes': 5, 'duration': 91.0}",4
+16:7,16,7,shock,3,1,3,"{'vessel_id': 3, 'start': 23.032797, 'end': 49.632797, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",1
+16:8,16,8,shock,2,1,0,"{'vessel_id': 0, 'start': 12.0, 'end': 71.8, 'berth_start_m': 1565.1, 'cranes': 5, 'duration': 59.8}",4
+16:12,16,12,shock,1,1,7,"{'vessel_id': 7, 'start': 122.69, 'end': 133.09, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 10.4}",125
+17:1,17,1,repeated,2,1,1,"{'vessel_id': 1, 'start': 14.749475, 'end': 54.549475, 'berth_start_m': 353.2, 'cranes': 5, 'duration': 39.8}",1
+17:2,17,2,repeated,1,1,6,"{'vessel_id': 6, 'start': 54.549475, 'end': 78.749475, 'berth_start_m': 349.8, 'cranes': 5, 'duration': 24.2}",131
+18:1,18,1,shock,2,1,0,"{'vessel_id': 0, 'start': 11.166388, 'end': 22.566388, 'berth_start_m': 547.7, 'cranes': 5, 'duration': 11.4}",2
+18:3,18,3,shock,1,1,1,"{'vessel_id': 1, 'start': 8.71813, 'end': 26.11813, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",138
+19:1,19,1,shock,10,1,1,"{'vessel_id': 1, 'start': 4.953464, 'end': 35.353464, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",1
+19:2,19,2,shock,9,1,1,"{'vessel_id': 1, 'start': 6.243866, 'end': 36.643866, 'berth_start_m': 1610.5, 'cranes': 5, 'duration': 30.4}",3
+19:5,19,5,shock,8,1,3,"{'vessel_id': 3, 'start': 21.471696, 'end': 63.871696, 'berth_start_m': 950.2, 'cranes': 5, 'duration': 42.4}",5
+19:10,19,10,shock,7,0,,,1
+19:11,19,11,shock,7,1,6,"{'vessel_id': 6, 'start': 45.423882, 'end': 61.823882, 'berth_start_m': 1614.7, 'cranes': 5, 'duration': 16.4}",1
+19:12,19,12,shock,6,1,8,"{'vessel_id': 8, 'start': 61.823882, 'end': 96.823882, 'berth_start_m': 1611.0, 'cranes': 5, 'duration': 35.0}",1
+19:13,19,13,shock,5,1,11,"{'vessel_id': 11, 'start': 96.823882, 'end': 124.823882, 'berth_start_m': 2203.7, 'cranes': 5, 'duration': 28.0}",1
+19:14,19,14,shock,4,1,14,"{'vessel_id': 14, 'start': 124.823882, 'end': 176.423882, 'berth_start_m': 1924.9, 'cranes': 5, 'duration': 51.6}",1
+19:15,19,15,shock,3,0,,,1
+19:16,19,16,shock,3,0,,,1
+19:17,19,17,shock,3,0,,,16
+19:33,19,33,shock,3,0,,,1
+19:34,19,34,shock,3,0,,,1
+19:35,19,35,shock,3,0,,,1
+19:36,19,36,shock,3,1,4,"{'vessel_id': 4, 'start': 440.43, 'end': 528.23, 'berth_start_m': 1072.2, 'cranes': 5, 'duration': 87.8}",1
+19:37,19,37,shock,2,2,13,"{'vessel_id': 13, 'start': 99.6222, 'end': 161.6222, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+19:38,19,38,shock,1,0,,,1
+19:39,19,39,shock,1,0,,,1
+19:40,19,40,shock,1,0,,,1
+19:41,19,41,shock,1,4,22,"{'vessel_id': 22, 'start': 161.6222, 'end': 247.2222, 'berth_start_m': 208.8, 'cranes': 5, 'duration': 85.6}",99
+20:2,20,2,shock,2,1,2,"{'vessel_id': 2, 'start': 33.721747, 'end': 61.121747, 'berth_start_m': 1547.3, 'cranes': 5, 'duration': 27.4}",1
+20:3,20,3,shock,1,1,3,"{'vessel_id': 3, 'start': 31.3176, 'end': 50.7176, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",142
+21:1,21,1,repeated,5,1,0,"{'vessel_id': 0, 'start': 5.674484, 'end': 77.674484, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 72.0}",3
+21:4,21,4,repeated,4,1,2,"{'vessel_id': 2, 'start': 21.800895, 'end': 95.000895, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+21:5,21,5,repeated,3,1,3,"{'vessel_id': 3, 'start': 28.155086, 'end': 109.555086, 'berth_start_m': 1180.4, 'cranes': 5, 'duration': 81.4}",1
+21:6,21,6,repeated,2,1,4,"{'vessel_id': 4, 'start': 30.524509, 'end': 106.324509, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+21:7,21,7,repeated,1,2,8,"{'vessel_id': 8, 'start': 77.674484, 'end': 165.474484, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 87.8}",128
+22:1,22,1,small,5,1,1,"{'vessel_id': 1, 'start': 3.272425, 'end': 33.672425, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 30.4}",1
+22:2,22,2,small,4,1,2,"{'vessel_id': 2, 'start': 9.435263, 'end': 32.635263, 'berth_start_m': 667.5, 'cranes': 5, 'duration': 23.2}",6
+22:8,22,8,small,3,1,6,"{'vessel_id': 6, 'start': 45.366931, 'end': 61.766931, 'berth_start_m': 1614.7, 'cranes': 5, 'duration': 16.4}",1
+22:9,22,9,small,2,1,8,"{'vessel_id': 8, 'start': 61.766931, 'end': 96.766931, 'berth_start_m': 1611.0, 'cranes': 5, 'duration': 35.0}",1
+22:10,22,10,small,1,1,11,"{'vessel_id': 11, 'start': 96.766931, 'end': 124.766931, 'berth_start_m': 2203.7, 'cranes': 5, 'duration': 28.0}",128
+23:3,23,3,repeated,10,1,1,"{'vessel_id': 1, 'start': 13.277527, 'end': 30.677527, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",2
+23:5,23,5,repeated,9,1,3,"{'vessel_id': 3, 'start': 41.208015, 'end': 118.408015, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 77.2}",1
+23:6,23,6,repeated,8,1,4,"{'vessel_id': 4, 'start': 51.179065, 'end': 119.779065, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",4
+23:10,23,10,repeated,7,1,7,"{'vessel_id': 7, 'start': 74.31672, 'end': 140.11672, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 65.8}",1
+23:11,23,11,repeated,6,0,,,1
+23:12,23,12,repeated,6,0,,,1
+23:13,23,13,repeated,6,1,5,"{'vessel_id': 5, 'start': 52.479395, 'end': 89.279395, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",1
+23:14,23,14,repeated,5,1,4,"{'vessel_id': 4, 'start': 53.039334, 'end': 121.639334, 'berth_start_m': 1749.2, 'cranes': 5, 'duration': 68.6}",1
+23:15,23,15,repeated,4,0,,,1
+23:16,23,16,repeated,4,1,14,"{'vessel_id': 14, 'start': 147.55, 'end': 159.35, 'berth_start_m': 186.6, 'cranes': 5, 'duration': 11.8}",7
+23:23,23,23,repeated,3,0,,,1
+23:24,23,24,repeated,3,0,,,1
+23:25,23,25,repeated,3,0,,,1
+23:26,23,26,repeated,3,0,,,1
+23:27,23,27,repeated,3,0,,,1
+23:28,23,28,repeated,3,3,17,"{'vessel_id': 17, 'start': 170.391053, 'end': 180.791053, 'berth_start_m': 190.5, 'cranes': 5, 'duration': 10.4}",1
+23:29,23,29,repeated,2,0,,,1
+23:30,23,30,repeated,2,0,,,1
+23:31,23,31,repeated,2,0,,,1
+23:32,23,32,repeated,2,0,,,1
+23:33,23,33,repeated,2,3,20,"{'vessel_id': 20, 'start': 184.202873, 'end': 205.002873, 'berth_start_m': 188.1, 'cranes': 5, 'duration': 20.8}",1
+23:34,23,34,repeated,1,0,,,1
+23:35,23,35,repeated,1,0,,,1
+23:36,23,36,repeated,1,1,14,"{'vessel_id': 14, 'start': 147.129484, 'end': 158.929484, 'berth_start_m': 186.6, 'cranes': 5, 'duration': 11.8}",104
+24:3,24,3,shock,2,1,1,"{'vessel_id': 1, 'start': 11.613702, 'end': 42.013702, 'berth_start_m': 1610.5, 'cranes': 5, 'duration': 30.4}",1
+24:4,24,4,shock,1,0,,,1
+24:5,24,5,shock,1,1,2,"{'vessel_id': 2, 'start': 13.033924, 'end': 36.233924, 'berth_start_m': 1871.0, 'cranes': 5, 'duration': 23.2}",137
+25:1,25,1,shock,10,1,1,"{'vessel_id': 1, 'start': 15.513597, 'end': 55.313597, 'berth_start_m': 353.2, 'cranes': 5, 'duration': 39.8}",1
+25:2,25,2,shock,9,1,6,"{'vessel_id': 6, 'start': 55.313597, 'end': 79.513597, 'berth_start_m': 349.8, 'cranes': 5, 'duration': 24.2}",1
+25:3,25,3,shock,8,1,8,"{'vessel_id': 8, 'start': 79.513597, 'end': 167.313597, 'berth_start_m': 2080.8, 'cranes': 5, 'duration': 87.8}",1
+25:4,25,4,shock,7,1,9,"{'vessel_id': 9, 'start': 79.82, 'end': 161.22, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 81.4}",1
+25:5,25,5,shock,6,3,17,"{'vessel_id': 17, 'start': 167.313597, 'end': 240.713597, 'berth_start_m': 1859.5, 'cranes': 5, 'duration': 73.4}",1
+25:6,25,6,shock,5,0,,,1
+25:7,25,7,shock,5,0,,,1
+25:8,25,8,shock,5,1,5,"{'vessel_id': 5, 'start': 23.114852, 'end': 61.714852, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 38.6}",1
+25:9,25,9,shock,4,2,16,"{'vessel_id': 16, 'start': 161.22, 'end': 187.22, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 26.0}",1
+25:10,25,10,shock,3,1,7,"{'vessel_id': 7, 'start': 61.714852, 'end': 132.514852, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 70.8}",1
+25:11,25,11,shock,2,1,12,"{'vessel_id': 12, 'start': 109.69, 'end': 128.49, 'berth_start_m': 253.4, 'cranes': 5, 'duration': 18.8}",1
+25:12,25,12,shock,1,3,23,"{'vessel_id': 23, 'start': 193.27, 'end': 262.07, 'berth_start_m': 2295.1, 'cranes': 5, 'duration': 68.8}",119
+26:2,26,2,shock,5,1,1,"{'vessel_id': 1, 'start': 13.019542, 'end': 32.219542, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",3
+26:5,26,5,shock,4,1,4,"{'vessel_id': 4, 'start': 43.31955, 'end': 59.31955, 'berth_start_m': 1542.3, 'cranes': 5, 'duration': 16.0}",5
+26:10,26,10,shock,3,1,5,"{'vessel_id': 5, 'start': 60.714118, 'end': 67.114118, 'berth_start_m': 1905.2, 'cranes': 5, 'duration': 6.4}",2
+26:12,26,12,shock,2,1,6,"{'vessel_id': 6, 'start': 45.002373, 'end': 102.602373, 'berth_start_m': 745.8, 'cranes': 5, 'duration': 57.6}",1
+26:13,26,13,shock,1,1,3,"{'vessel_id': 3, 'start': 37.570571, 'end': 45.370571, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 7.8}",132
+27:2,27,2,repeated,10,1,2,"{'vessel_id': 2, 'start': 37.925415, 'end': 65.325415, 'berth_start_m': 1868.5, 'cranes': 5, 'duration': 27.4}",3
+27:5,27,5,repeated,9,1,4,"{'vessel_id': 4, 'start': 30.758239, 'end': 110.158239, 'berth_start_m': 952.6, 'cranes': 5, 'duration': 79.4}",1
+27:6,27,6,repeated,8,1,11,"{'vessel_id': 11, 'start': 110.158239, 'end': 170.358239, 'berth_start_m': 2297.1, 'cranes': 5, 'duration': 60.2}",1
+27:7,27,7,repeated,7,1,5,"{'vessel_id': 5, 'start': 45.155955, 'end': 140.355955, 'berth_start_m': 1208.5, 'cranes': 5, 'duration': 95.2}",1
+27:8,27,8,repeated,6,1,2,"{'vessel_id': 2, 'start': 32.306043, 'end': 59.706043, 'berth_start_m': 1529.7, 'cranes': 5, 'duration': 27.4}",1
+27:9,27,9,repeated,5,1,13,"{'vessel_id': 13, 'start': 140.355955, 'end': 171.755955, 'berth_start_m': 1089.1, 'cranes': 5, 'duration': 31.4}",1
+27:10,27,10,repeated,4,3,18,"{'vessel_id': 18, 'start': 170.358239, 'end': 249.958239, 'berth_start_m': 2304.6, 'cranes': 5, 'duration': 79.6}",1
+27:11,27,11,repeated,3,2,17,"{'vessel_id': 17, 'start': 171.755955, 'end': 228.955955, 'berth_start_m': 254.4, 'cranes': 5, 'duration': 57.2}",1
+27:12,27,12,repeated,2,1,7,"{'vessel_id': 7, 'start': 61.061792, 'end': 92.261792, 'berth_start_m': 1526.7, 'cranes': 5, 'duration': 31.2}",1
+27:13,27,13,repeated,1,0,,,1
+27:14,27,14,repeated,1,1,8,"{'vessel_id': 8, 'start': 73.370746, 'end': 157.970746, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 84.6}",131
+28:1,28,1,repeated,2,0,,,1
+28:2,28,2,repeated,2,2,0,"{'vessel_id': 0, 'start': 12.440134, 'end': 105.640134, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+28:3,28,3,repeated,1,1,2,"{'vessel_id': 2, 'start': 18.787912, 'end': 107.787912, 'berth_start_m': 533.5, 'cranes': 5, 'duration': 89.0}",141
+29:1,29,1,small,2,1,0,"{'vessel_id': 0, 'start': 13.364102, 'end': 106.564102, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+29:2,29,2,small,1,1,1,"{'vessel_id': 1, 'start': 18.454915, 'end': 37.654915, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",143
+30:1,30,1,shock,2,1,0,"{'vessel_id': 0, 'start': 12.471031, 'end': 33.871031, 'berth_start_m': 970.2, 'cranes': 5, 'duration': 21.4}",1
+30:2,30,2,shock,1,0,,,1
+30:3,30,3,shock,1,0,,,1
+30:4,30,4,shock,1,1,2,"{'vessel_id': 2, 'start': 20.925278, 'end': 48.325278, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",142
+31:1,31,1,shock,2,1,1,"{'vessel_id': 1, 'start': 20.873075, 'end': 43.273075, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",1
+31:2,31,2,shock,1,1,2,"{'vessel_id': 2, 'start': 22.949794, 'end': 37.549794, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",142
+32:1,32,1,small,10,1,1,"{'vessel_id': 1, 'start': 5.073215, 'end': 35.473215, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",3
+32:4,32,4,small,9,1,2,"{'vessel_id': 2, 'start': 11.769368, 'end': 34.969368, 'berth_start_m': 1625.4, 'cranes': 5, 'duration': 23.2}",2
+32:6,32,6,small,8,0,,,1
+32:7,32,7,small,8,1,4,"{'vessel_id': 4, 'start': 34.688666, 'end': 122.488666, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 87.8}",1
+32:8,32,8,small,7,1,13,"{'vessel_id': 13, 'start': 122.488666, 'end': 184.488666, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+32:9,32,9,small,6,1,3,"{'vessel_id': 3, 'start': 21.670604, 'end': 64.070604, 'berth_start_m': 810.7, 'cranes': 5, 'duration': 42.4}",1
+32:10,32,10,small,5,1,6,"{'vessel_id': 6, 'start': 45.954081, 'end': 62.354081, 'berth_start_m': 1614.7, 'cranes': 5, 'duration': 16.4}",1
+32:11,32,11,small,4,2,8,"{'vessel_id': 8, 'start': 62.354081, 'end': 97.354081, 'berth_start_m': 1611.0, 'cranes': 5, 'duration': 35.0}",1
+32:12,32,12,small,3,1,7,"{'vessel_id': 7, 'start': 48.592002, 'end': 96.792002, 'berth_start_m': 1920.5, 'cranes': 5, 'duration': 48.2}",1
+32:13,32,13,small,2,0,,,1
+32:14,32,14,small,2,0,,,1
+32:15,32,15,small,2,1,11,"{'vessel_id': 11, 'start': 96.792002, 'end': 124.792002, 'berth_start_m': 1914.2, 'cranes': 5, 'duration': 28.0}",1
+32:16,32,16,small,1,0,,,1
+32:17,32,17,small,1,0,,,1
+32:18,32,18,small,1,0,,,1
+32:19,32,19,small,1,0,,,1
+32:20,32,20,small,1,0,,,1
+32:21,32,21,small,1,0,,,1
+32:22,32,22,small,1,3,22,"{'vessel_id': 22, 'start': 184.488666, 'end': 270.088666, 'berth_start_m': 208.8, 'cranes': 5, 'duration': 85.6}",118
+33:4,33,4,small,10,1,2,"{'vessel_id': 2, 'start': 27.662402, 'end': 55.062402, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",3
+33:7,33,7,small,9,1,4,"{'vessel_id': 4, 'start': 36.652239, 'end': 116.052239, 'berth_start_m': 970.2, 'cranes': 5, 'duration': 79.4}",1
+33:8,33,8,small,8,1,11,"{'vessel_id': 11, 'start': 116.052239, 'end': 176.252239, 'berth_start_m': 2297.1, 'cranes': 5, 'duration': 60.2}",1
+33:9,33,9,small,7,1,5,"{'vessel_id': 5, 'start': 45.811294, 'end': 141.011294, 'berth_start_m': 1226.1, 'cranes': 5, 'duration': 95.2}",1
+33:10,33,10,small,6,2,13,"{'vessel_id': 13, 'start': 141.011294, 'end': 172.411294, 'berth_start_m': 1089.1, 'cranes': 5, 'duration': 31.4}",1
+33:11,33,11,small,5,1,17,"{'vessel_id': 17, 'start': 172.411294, 'end': 229.611294, 'berth_start_m': 254.4, 'cranes': 5, 'duration': 57.2}",1
+33:12,33,12,small,4,0,,,1
+33:13,33,13,small,4,0,,,1
+33:14,33,14,small,4,0,,,1
+33:15,33,15,small,4,0,,,1
+33:16,33,16,small,4,1,8,"{'vessel_id': 8, 'start': 81.745614, 'end': 166.345614, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 84.6}",1
+33:17,33,17,small,3,2,16,"{'vessel_id': 16, 'start': 166.345614, 'end': 249.345614, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 83.0}",1
+33:18,33,18,small,2,0,,,1
+33:19,33,19,small,2,0,,,1
+33:20,33,20,small,2,0,,,1
+33:21,33,21,small,2,0,,,1
+33:22,33,22,small,2,0,,,1
+33:23,33,23,small,2,0,,,1
+33:24,33,24,small,2,0,,,1
+33:25,33,25,small,2,0,,,1
+33:26,33,26,small,2,0,,,1
+33:27,33,27,small,2,0,,,1
+33:28,33,28,small,2,4,21,"{'vessel_id': 21, 'start': 229.611294, 'end': 271.811294, 'berth_start_m': 254.2, 'cranes': 5, 'duration': 42.2}",1
+33:29,33,29,small,1,0,,,1
+33:30,33,30,small,1,3,23,"{'vessel_id': 23, 'start': 249.345614, 'end': 275.945614, 'berth_start_m': 798.5, 'cranes': 5, 'duration': 26.6}",117
+34:2,34,2,repeated,10,1,0,"{'vessel_id': 0, 'start': 5.213333, 'end': 77.213333, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 72.0}",1
+34:3,34,3,repeated,9,1,8,"{'vessel_id': 8, 'start': 77.213333, 'end': 165.013333, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 87.8}",1
+34:4,34,4,repeated,8,1,2,"{'vessel_id': 2, 'start': 27.335832, 'end': 100.535832, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+34:5,34,5,repeated,7,2,16,"{'vessel_id': 16, 'start': 165.013333, 'end': 191.013333, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 26.0}",1
+34:6,34,6,repeated,6,1,10,"{'vessel_id': 10, 'start': 100.535832, 'end': 168.535832, 'berth_start_m': 572.3, 'cranes': 5, 'duration': 68.0}",1
+34:7,34,7,repeated,5,0,,,1
+34:8,34,8,repeated,5,0,,,1
+34:9,34,9,repeated,5,0,,,1
+34:10,34,10,repeated,5,0,,,1
+34:11,34,11,repeated,5,0,,,1
+34:12,34,12,repeated,5,0,,,1
+34:13,34,13,repeated,5,0,,,1
+34:14,34,14,repeated,5,0,,,1
+34:15,34,15,repeated,5,0,,,1
+34:16,34,16,repeated,5,0,,,1
+34:17,34,17,repeated,5,0,,,1
+34:18,34,18,repeated,5,0,,,1
+34:19,34,19,repeated,5,1,19,"{'vessel_id': 19, 'start': 168.535832, 'end': 239.335832, 'berth_start_m': 296.4, 'cranes': 5, 'duration': 70.8}",1
+34:20,34,20,repeated,4,0,,,1
+34:21,34,21,repeated,4,1,23,"{'vessel_id': 23, 'start': 193.27, 'end': 262.07, 'berth_start_m': 2295.1, 'cranes': 5, 'duration': 68.8}",1
+34:22,34,22,repeated,3,0,,,1
+34:23,34,23,repeated,3,0,,,1
+34:24,34,24,repeated,3,0,,,1
+34:25,34,25,repeated,3,0,,,1
+34:26,34,26,repeated,3,0,,,1
+34:27,34,27,repeated,3,0,,,1
+34:28,34,28,repeated,3,0,,,1
+34:29,34,29,repeated,3,0,,,1
+34:30,34,30,repeated,3,0,,,1
+34:31,34,31,repeated,3,0,,,1
+34:32,34,32,repeated,3,0,,,1
+34:33,34,33,repeated,3,0,,,1
+34:34,34,34,repeated,3,0,,,1
+34:35,34,35,repeated,3,0,,,1
+34:36,34,36,repeated,3,0,,,1
+34:37,34,37,repeated,3,0,,,1
+34:38,34,38,repeated,3,0,,,1
+34:39,34,39,repeated,3,0,,,1
+34:40,34,40,repeated,3,0,,,1
+34:41,34,41,repeated,3,0,,,1
+34:42,34,42,repeated,3,0,,,1
+34:43,34,43,repeated,3,0,,,1
+34:44,34,44,repeated,3,0,,,1
+34:45,34,45,repeated,3,0,,,1
+34:46,34,46,repeated,3,0,,,1
+34:47,34,47,repeated,3,0,,,1
+34:48,34,48,repeated,3,1,33,"{'vessel_id': 33, 'start': 262.07, 'end': 290.47, 'berth_start_m': 2131.0, 'cranes': 5, 'duration': 28.4}",88
+35:5,35,5,small,10,1,3,"{'vessel_id': 3, 'start': 23.817973, 'end': 109.817973, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+35:6,35,6,small,9,1,11,"{'vessel_id': 11, 'start': 109.817973, 'end': 182.817973, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+35:7,35,7,small,8,1,18,"{'vessel_id': 18, 'start': 182.817973, 'end': 275.017973, 'berth_start_m': 329.2, 'cranes': 5, 'duration': 92.2}",1
+35:8,35,8,small,7,0,,,1
+35:9,35,9,small,7,0,,,1
+35:10,35,10,small,7,1,3,"{'vessel_id': 3, 'start': 21.987594, 'end': 107.987594, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+35:11,35,11,small,6,1,11,"{'vessel_id': 11, 'start': 107.987594, 'end': 180.987594, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+35:12,35,12,small,5,1,5,"{'vessel_id': 5, 'start': 60.439158, 'end': 99.439158, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",1
+35:13,35,13,small,4,1,10,"{'vessel_id': 10, 'start': 99.439158, 'end': 115.239158, 'berth_start_m': 297.0, 'cranes': 5, 'duration': 15.8}",1
+35:14,35,14,small,3,0,,,1
+35:15,35,15,small,3,0,,,1
+35:16,35,16,small,3,0,,,1
+35:17,35,17,small,3,0,,,1
+35:18,35,18,small,3,3,13,"{'vessel_id': 13, 'start': 115.239158, 'end': 181.839158, 'berth_start_m': 2324.5, 'cranes': 5, 'duration': 66.6}",1
+35:19,35,19,small,2,0,,,1
+35:20,35,20,small,2,0,,,1
+35:21,35,21,small,2,0,,,1
+35:22,35,22,small,2,0,,,1
+35:23,35,23,small,2,0,,,1
+35:24,35,24,small,2,0,,,1
+35:25,35,25,small,2,0,,,1
+35:26,35,26,small,2,1,5,"{'vessel_id': 5, 'start': 58.872867, 'end': 97.872867, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",1
+35:27,35,27,small,1,3,18,"{'vessel_id': 18, 'start': 180.987594, 'end': 273.187594, 'berth_start_m': 214.2, 'cranes': 5, 'duration': 92.2}",120
+36:2,36,2,shock,2,1,2,"{'vessel_id': 2, 'start': 24.750897, 'end': 52.150897, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",5
+36:7,36,7,shock,1,1,5,"{'vessel_id': 5, 'start': 44.299761, 'end': 139.499761, 'berth_start_m': 1226.1, 'cranes': 5, 'duration': 95.2}",138
+37:1,37,1,shock,5,0,,,1
+37:2,37,2,shock,5,1,0,"{'vessel_id': 0, 'start': 12.820136, 'end': 72.620136, 'berth_start_m': 1565.1, 'cranes': 5, 'duration': 59.8}",3
+37:5,37,5,shock,4,1,3,"{'vessel_id': 3, 'start': 22.694821, 'end': 49.294821, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",3
+37:8,37,8,shock,3,1,5,"{'vessel_id': 5, 'start': 79.422183, 'end': 138.622183, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 59.2}",3
+37:11,37,11,shock,2,0,,,1
+37:12,37,12,shock,2,0,,,1
+37:13,37,13,shock,2,0,,,3
+37:16,37,16,shock,2,0,,,1
+37:17,37,17,shock,2,0,,,1
+37:18,37,18,shock,2,2,12,"{'vessel_id': 12, 'start': 112.71, 'end': 119.11, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 6.4}",1
+37:19,37,19,shock,1,1,11,"{'vessel_id': 11, 'start': 106.177322, 'end': 144.577322, 'berth_start_m': 1208.9, 'cranes': 5, 'duration': 38.4}",117
+38:3,38,3,small,2,1,1,"{'vessel_id': 1, 'start': 21.580868, 'end': 61.380868, 'berth_start_m': 353.2, 'cranes': 5, 'duration': 39.8}",1
+38:4,38,4,small,1,1,6,"{'vessel_id': 6, 'start': 61.380868, 'end': 85.580868, 'berth_start_m': 349.8, 'cranes': 5, 'duration': 24.2}",132
+39:1,39,1,shock,2,1,0,"{'vessel_id': 0, 'start': 8.485801, 'end': 19.885801, 'berth_start_m': 547.7, 'cranes': 5, 'duration': 11.4}",7
+39:8,39,8,shock,1,1,4,"{'vessel_id': 4, 'start': 53.231287, 'end': 121.831287, 'berth_start_m': 1749.2, 'cranes': 5, 'duration': 68.6}",134
+40:1,40,1,repeated,2,1,0,"{'vessel_id': 0, 'start': 5.989802, 'end': 65.789802, 'berth_start_m': 1205.5, 'cranes': 5, 'duration': 59.8}",1
+40:2,40,2,repeated,1,0,,,1
+40:3,40,3,repeated,1,1,0,"{'vessel_id': 0, 'start': 3.439752, 'end': 63.239752, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.8}",137
+41:3,41,3,shock,10,1,1,"{'vessel_id': 1, 'start': 5.672789, 'end': 96.672789, 'berth_start_m': 255.2, 'cranes': 5, 'duration': 91.0}",3
+41:6,41,6,shock,9,1,3,"{'vessel_id': 3, 'start': 22.131684, 'end': 48.731684, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",4
+41:10,41,10,shock,8,0,,,6
+41:16,41,16,shock,8,0,,,1
+41:17,41,17,shock,8,0,,,1
+41:18,41,18,shock,8,1,11,"{'vessel_id': 11, 'start': 119.375264, 'end': 157.775264, 'berth_start_m': 1259.5, 'cranes': 5, 'duration': 38.4}",1
+41:19,41,19,shock,7,1,12,"{'vessel_id': 12, 'start': 113.942597, 'end': 120.342597, 'berth_start_m': 185.9, 'cranes': 5, 'duration': 6.4}",1
+41:20,41,20,shock,6,0,,,5
+41:25,41,25,shock,6,1,16,"{'vessel_id': 16, 'start': 137.047801, 'end': 202.047801, 'berth_start_m': 556.6, 'cranes': 5, 'duration': 65.0}",1
+41:26,41,26,shock,5,1,22,"{'vessel_id': 22, 'start': 202.047801, 'end': 247.047801, 'berth_start_m': 255.7, 'cranes': 5, 'duration': 45.0}",1
+41:27,41,27,shock,4,0,,,1
+41:28,41,28,shock,4,0,,,1
+41:29,41,29,shock,4,0,,,1
+41:30,41,30,shock,4,1,30,"{'vessel_id': 30, 'start': 247.047801, 'end': 273.047801, 'berth_start_m': 1477.7, 'cranes': 5, 'duration': 26.0}",1
+41:31,41,31,shock,3,0,,,1
+41:32,41,32,shock,3,0,,,1
+41:33,41,33,shock,3,1,33,"{'vessel_id': 33, 'start': 273.047801, 'end': 280.847801, 'berth_start_m': 758.4, 'cranes': 5, 'duration': 7.8}",1
+41:34,41,34,shock,2,1,35,"{'vessel_id': 35, 'start': 280.847801, 'end': 336.847801, 'berth_start_m': 2005.7, 'cranes': 5, 'duration': 56.0}",6
+41:40,41,40,shock,1,1,10,"{'vessel_id': 10, 'start': 102.103966, 'end': 178.703966, 'berth_start_m': 1862.1, 'cranes': 5, 'duration': 76.6}",98
+42:1,42,1,repeated,2,1,1,"{'vessel_id': 1, 'start': 19.34281, 'end': 59.14281, 'berth_start_m': 353.2, 'cranes': 5, 'duration': 39.8}",1
+42:2,42,2,repeated,1,1,2,"{'vessel_id': 2, 'start': 20.732467, 'end': 93.932467, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",128
+43:2,43,2,shock,10,0,,,1
+43:3,43,3,shock,10,0,,,1
+43:4,43,4,shock,10,0,,,1
+43:5,43,5,shock,10,0,,,1
+43:6,43,6,shock,10,1,5,"{'vessel_id': 5, 'start': 35.522027, 'end': 125.122027, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 89.6}",1
+43:7,43,7,shock,9,3,14,"{'vessel_id': 14, 'start': 125.122027, 'end': 176.722027, 'berth_start_m': 2535.6, 'cranes': 5, 'duration': 51.6}",1
+43:8,43,8,shock,8,1,7,"{'vessel_id': 7, 'start': 45.653632, 'end': 93.853632, 'berth_start_m': 1920.5, 'cranes': 5, 'duration': 48.2}",1
+43:9,43,9,shock,7,1,1,"{'vessel_id': 1, 'start': 440.43, 'end': 470.83, 'berth_start_m': 1063.3, 'cranes': 5, 'duration': 30.4}",1
+43:10,43,10,shock,6,0,,,1
+43:11,43,11,shock,6,0,,,1
+43:12,43,12,shock,6,0,,,1
+43:13,43,13,shock,6,0,,,1
+43:14,43,14,shock,6,1,11,"{'vessel_id': 11, 'start': 93.853632, 'end': 121.853632, 'berth_start_m': 1914.2, 'cranes': 5, 'duration': 28.0}",1
+43:15,43,15,shock,5,0,,,1
+43:16,43,16,shock,5,0,,,1
+43:17,43,17,shock,5,0,,,1
+43:18,43,18,shock,5,0,,,1
+43:19,43,19,shock,5,0,,,1
+43:20,43,20,shock,5,0,,,1
+43:21,43,21,shock,5,1,7,"{'vessel_id': 7, 'start': 43.573704, 'end': 91.773704, 'berth_start_m': 1920.5, 'cranes': 5, 'duration': 48.2}",1
+43:22,43,22,shock,4,0,,,1
+43:23,43,23,shock,4,0,,,1
+43:24,43,24,shock,4,0,,,1
+43:25,43,25,shock,4,0,,,1
+43:26,43,26,shock,4,0,,,1
+43:27,43,27,shock,4,0,,,1
+43:28,43,28,shock,4,1,15,"{'vessel_id': 15, 'start': 121.853632, 'end': 153.053632, 'berth_start_m': 1912.1, 'cranes': 5, 'duration': 31.2}",88
+43:116,43,116,shock,3,1,26,"{'vessel_id': 26, 'start': 455.08, 'end': 534.48, 'berth_start_m': 2321.9, 'cranes': 5, 'duration': 79.4}",1
+43:117,43,117,shock,2,4,1,"{'vessel_id': 1, 'start': 264.0, 'end': 294.4, 'berth_start_m': 1558.4, 'cranes': 5, 'duration': 30.4}",1
+43:118,43,118,shock,1,2,26,"{'vessel_id': 26, 'start': 440.43, 'end': 519.83, 'berth_start_m': 1073.9, 'cranes': 5, 'duration': 79.4}",19
+44:2,44,2,shock,10,1,3,"{'vessel_id': 3, 'start': 39.144544, 'end': 116.344544, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 77.2}",1
+44:3,44,3,shock,9,0,,,1
+44:4,44,4,shock,9,1,5,"{'vessel_id': 5, 'start': 48.358176, 'end': 85.158176, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",1
+44:5,44,5,shock,8,2,4,"{'vessel_id': 4, 'start': 52.203336, 'end': 120.803336, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+44:6,44,6,shock,7,1,6,"{'vessel_id': 6, 'start': 60.140444, 'end': 94.140444, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",1
+44:7,44,7,shock,6,1,7,"{'vessel_id': 7, 'start': 79.010586, 'end': 144.810586, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 65.8}",1
+44:8,44,8,shock,5,1,4,"{'vessel_id': 4, 'start': 55.771417, 'end': 124.371417, 'berth_start_m': 2161.1, 'cranes': 5, 'duration': 68.6}",1
+44:9,44,9,shock,4,0,,,1
+44:10,44,10,shock,4,0,,,1
+44:11,44,11,shock,4,0,,,1
+44:12,44,12,shock,4,0,,,1
+44:13,44,13,shock,4,0,,,1
+44:14,44,14,shock,4,0,,,1
+44:15,44,15,shock,4,1,6,"{'vessel_id': 6, 'start': 58.746956, 'end': 92.746956, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",1
+44:16,44,16,shock,3,1,14,"{'vessel_id': 14, 'start': 147.55, 'end': 159.35, 'berth_start_m': 186.6, 'cranes': 5, 'duration': 11.8}",3
+44:19,44,19,shock,2,0,,,1
+44:20,44,20,shock,2,0,,,1
+44:21,44,21,shock,2,1,16,"{'vessel_id': 16, 'start': 164.481663, 'end': 207.281663, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 42.8}",1
+44:22,44,22,shock,1,0,,,1
+44:23,44,23,shock,1,0,,,1
+44:24,44,24,shock,1,1,7,"{'vessel_id': 7, 'start': 76.264507, 'end': 142.064507, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 65.8}",112
+45:1,45,1,small,5,1,0,"{'vessel_id': 0, 'start': 7.31648, 'end': 79.31648, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 72.0}",1
+45:2,45,2,small,4,2,8,"{'vessel_id': 8, 'start': 79.31648, 'end': 167.11648, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 87.8}",1
+45:3,45,3,small,3,0,,,1
+45:4,45,4,small,3,0,,,1
+45:5,45,5,small,3,0,,,1
+45:6,45,6,small,3,0,,,1
+45:7,45,7,small,3,1,5,"{'vessel_id': 5, 'start': 32.446213, 'end': 71.046213, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 38.6}",1
+45:8,45,8,small,2,1,7,"{'vessel_id': 7, 'start': 71.046213, 'end': 141.846213, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 70.8}",1
+45:9,45,9,small,1,0,,,1
+45:10,45,10,small,1,0,,,1
+45:11,45,11,small,1,0,,,1
+45:12,45,12,small,1,2,16,"{'vessel_id': 16, 'start': 167.11648, 'end': 193.11648, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 26.0}",124
+46:1,46,1,shock,5,1,0,"{'vessel_id': 0, 'start': 0.093333, 'end': 11.493333, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 11.4}",2
+46:3,46,3,shock,4,1,1,"{'vessel_id': 1, 'start': 32.135333, 'end': 49.535333, 'berth_start_m': 544.2, 'cranes': 5, 'duration': 17.4}",1
+46:4,46,4,shock,3,1,1,"{'vessel_id': 1, 'start': 45.192821, 'end': 62.592821, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 17.4}",2
+46:6,46,6,shock,2,0,,,1
+46:7,46,7,shock,2,1,4,"{'vessel_id': 4, 'start': 56.453215, 'end': 125.053215, 'berth_start_m': 2161.1, 'cranes': 5, 'duration': 68.6}",1
+46:8,46,8,shock,1,0,,,1
+46:9,46,9,shock,1,3,5,"{'vessel_id': 5, 'start': 51.18657, 'end': 87.98657, 'berth_start_m': 556.0, 'cranes': 5, 'duration': 36.8}",131
+47:2,47,2,repeated,10,1,2,"{'vessel_id': 2, 'start': 14.176842, 'end': 103.176842, 'berth_start_m': 533.5, 'cranes': 5, 'duration': 89.0}",1
+47:3,47,3,repeated,9,1,10,"{'vessel_id': 10, 'start': 103.176842, 'end': 133.776842, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 30.6}",1
+47:4,47,4,repeated,8,1,4,"{'vessel_id': 4, 'start': 25.498004, 'end': 41.498004, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}",1
+47:5,47,5,repeated,7,1,11,"{'vessel_id': 11, 'start': 107.41, 'end': 141.21, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 33.8}",2
+47:7,47,7,repeated,6,1,5,"{'vessel_id': 5, 'start': 41.37232, 'end': 47.77232, 'berth_start_m': 1415.0, 'cranes': 5, 'duration': 6.4}",2
+47:9,47,9,repeated,5,0,,,1
+47:10,47,10,repeated,5,1,4,"{'vessel_id': 4, 'start': 23.232799, 'end': 39.232799, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}",1
+47:11,47,11,repeated,4,1,7,"{'vessel_id': 7, 'start': 51.651484, 'end': 133.251484, 'berth_start_m': 1117.4, 'cranes': 5, 'duration': 81.6}",1
+47:12,47,12,repeated,3,0,,,1
+47:13,47,13,repeated,3,0,,,1
+47:14,47,14,repeated,3,2,8,"{'vessel_id': 8, 'start': 62.637876, 'end': 130.437876, 'berth_start_m': 1542.0, 'cranes': 5, 'duration': 67.8}",1
+47:15,47,15,repeated,2,1,9,"{'vessel_id': 9, 'start': 72.227822, 'end': 111.027822, 'berth_start_m': 1904.6, 'cranes': 5, 'duration': 38.8}",1
+47:16,47,16,repeated,1,1,5,"{'vessel_id': 5, 'start': 49.44397, 'end': 55.84397, 'berth_start_m': 1542.6, 'cranes': 5, 'duration': 6.4}",126
+48:1,48,1,repeated,10,1,1,"{'vessel_id': 1, 'start': 22.220709, 'end': 44.620709, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",1
+48:2,48,2,repeated,9,1,2,"{'vessel_id': 2, 'start': 23.592462, 'end': 38.192462, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",1
+48:3,48,3,repeated,8,0,,,1
+48:4,48,4,repeated,8,1,3,"{'vessel_id': 3, 'start': 24.050226, 'end': 110.050226, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+48:5,48,5,repeated,7,0,,,1
+48:6,48,6,repeated,7,1,11,"{'vessel_id': 11, 'start': 110.050226, 'end': 183.050226, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+48:7,48,7,repeated,6,0,,,1
+48:8,48,8,repeated,6,1,3,"{'vessel_id': 3, 'start': 22.094409, 'end': 108.094409, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+48:9,48,9,repeated,5,2,11,"{'vessel_id': 11, 'start': 108.094409, 'end': 181.094409, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+48:10,48,10,repeated,4,1,4,"{'vessel_id': 4, 'start': 26.501838, 'end': 89.901838, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",1
+48:11,48,11,repeated,3,1,6,"{'vessel_id': 6, 'start': 56.89524, 'end': 145.29524, 'berth_start_m': 1678.5, 'cranes': 5, 'duration': 88.4}",1
+48:12,48,12,repeated,2,0,,,1
+48:13,48,13,repeated,2,2,14,"{'vessel_id': 14, 'start': 145.29524, 'end': 212.69524, 'berth_start_m': 1618.3, 'cranes': 5, 'duration': 67.4}",1
+48:14,48,14,repeated,1,3,21,"{'vessel_id': 21, 'start': 212.69524, 'end': 223.69524, 'berth_start_m': 2170.9, 'cranes': 5, 'duration': 11.0}",131
+49:1,49,1,small,2,1,0,"{'vessel_id': 0, 'start': 2.429102, 'end': 62.229102, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.8}",1
+49:2,49,2,small,1,1,1,"{'vessel_id': 1, 'start': 9.764544, 'end': 100.764544, 'berth_start_m': 255.2, 'cranes': 5, 'duration': 91.0}",137
+50:3,50,3,repeated,2,1,1,"{'vessel_id': 1, 'start': 22.314811, 'end': 44.714811, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",2
+50:5,50,5,repeated,1,1,3,"{'vessel_id': 3, 'start': 19.001751, 'end': 105.001751, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",142
+51:3,51,3,small,2,1,1,"{'vessel_id': 1, 'start': 4.052292, 'end': 34.452292, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 30.4}",2
+51:5,51,5,small,1,1,2,"{'vessel_id': 2, 'start': 12.087426, 'end': 35.287426, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 23.2}",137
+52:2,52,2,small,5,1,1,"{'vessel_id': 1, 'start': 4.629361, 'end': 35.029361, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",4
+52:6,52,6,small,4,1,4,"{'vessel_id': 4, 'start': 33.553849, 'end': 121.353849, 'berth_start_m': 2532.3, 'cranes': 5, 'duration': 87.8}",1
+52:7,52,7,small,3,0,,,1
+52:8,52,8,small,3,1,13,"{'vessel_id': 13, 'start': 121.353849, 'end': 183.353849, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+52:9,52,9,small,2,0,,,1
+52:10,52,10,small,2,1,6,"{'vessel_id': 6, 'start': 45.885837, 'end': 62.285837, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 16.4}",1
+52:11,52,11,small,1,1,8,"{'vessel_id': 8, 'start': 62.285837, 'end': 97.285837, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 35.0}",129
+53:1,53,1,small,10,1,0,"{'vessel_id': 0, 'start': 7.048085, 'end': 71.048085, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",5
+53:6,53,6,small,9,1,4,"{'vessel_id': 4, 'start': 26.541718, 'end': 89.941718, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",1
+53:7,53,7,small,8,0,,,1
+53:8,53,8,small,8,1,9,"{'vessel_id': 9, 'start': 89.941718, 'end': 160.541718, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 70.6}",1
+53:9,53,9,small,7,0,,,1
+53:10,53,10,small,7,0,,,2
+53:12,53,12,small,7,1,5,"{'vessel_id': 5, 'start': 61.824591, 'end': 100.824591, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",1
+53:13,53,13,small,6,1,10,"{'vessel_id': 10, 'start': 100.824591, 'end': 116.624591, 'berth_start_m': 297.0, 'cranes': 5, 'duration': 15.8}",1
+53:14,53,14,small,5,0,,,12
+53:26,53,26,small,5,1,5,"{'vessel_id': 5, 'start': 60.5903, 'end': 99.5903, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",1
+53:27,53,27,small,4,0,,,1
+53:28,53,28,small,4,0,,,1
+53:29,53,29,small,4,0,,,1
+53:30,53,30,small,4,0,,,1
+53:31,53,31,small,4,1,10,"{'vessel_id': 10, 'start': 99.5903, 'end': 115.3903, 'berth_start_m': 297.0, 'cranes': 5, 'duration': 15.8}",1
+53:32,53,32,small,3,1,12,"{'vessel_id': 12, 'start': 115.3903, 'end': 177.5903, 'berth_start_m': 895.8, 'cranes': 5, 'duration': 62.2}",1
+53:33,53,33,small,2,0,,,1
+53:34,53,34,small,2,0,,,1
+53:35,53,35,small,2,0,,,1
+53:36,53,36,small,2,0,,,1
+53:37,53,37,small,2,0,,,1
+53:38,53,38,small,2,0,,,1
+53:39,53,39,small,2,0,,,1
+53:40,53,40,small,2,0,,,1
+53:41,53,41,small,2,1,17,"{'vessel_id': 17, 'start': 177.5903, 'end': 215.3903, 'berth_start_m': 895.8, 'cranes': 5, 'duration': 37.8}",1
+53:42,53,42,small,1,0,,,1
+53:43,53,43,small,1,1,21,"{'vessel_id': 21, 'start': 215.3903, 'end': 226.3903, 'berth_start_m': 684.8, 'cranes': 5, 'duration': 11.0}",104
+54:12,54,12,small,2,1,7,"{'vessel_id': 7, 'start': 61.550771, 'end': 92.750771, 'berth_start_m': 1544.3, 'cranes': 5, 'duration': 31.2}",4
+54:16,54,16,small,1,1,8,"{'vessel_id': 8, 'start': 81.069021, 'end': 165.669021, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 84.6}",131
+55:1,55,1,shock,5,0,,,1
+55:2,55,2,shock,5,1,0,"{'vessel_id': 0, 'start': 16.057461, 'end': 37.457461, 'berth_start_m': 1219.9, 'cranes': 5, 'duration': 21.4}",1
+55:3,55,3,shock,4,1,2,"{'vessel_id': 2, 'start': 40.687789, 'end': 68.087789, 'berth_start_m': 1868.5, 'cranes': 5, 'duration': 27.4}",1
+55:4,55,4,shock,3,1,3,"{'vessel_id': 3, 'start': 29.926108, 'end': 49.326108, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",5
+55:9,55,9,shock,2,0,,,1
+55:10,55,10,shock,2,1,6,"{'vessel_id': 6, 'start': 56.203435, 'end': 114.603435, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 58.4}",1
+55:11,55,11,shock,1,0,,,1
+55:12,55,12,shock,1,1,11,"{'vessel_id': 11, 'start': 114.603435, 'end': 174.803435, 'berth_start_m': 592.6, 'cranes': 5, 'duration': 60.2}",132
+56:1,56,1,small,10,1,0,"{'vessel_id': 0, 'start': 13.780284, 'end': 106.980284, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+56:2,56,2,small,9,0,,,1
+56:3,56,3,small,9,1,2,"{'vessel_id': 2, 'start': 20.184384, 'end': 109.184384, 'berth_start_m': 533.5, 'cranes': 5, 'duration': 89.0}",1
+56:4,56,4,small,8,1,1,"{'vessel_id': 1, 'start': 18.390742, 'end': 37.590742, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",1
+56:5,56,5,small,7,0,,,1
+56:6,56,6,small,7,1,11,"{'vessel_id': 11, 'start': 109.184384, 'end': 142.984384, 'berth_start_m': 200.1, 'cranes': 5, 'duration': 33.8}",2
+56:8,56,8,small,6,1,1,"{'vessel_id': 1, 'start': 16.817761, 'end': 36.017761, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",1
+56:9,56,9,small,5,1,10,"{'vessel_id': 10, 'start': 106.980284, 'end': 137.580284, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",5
+56:14,56,14,small,4,1,7,"{'vessel_id': 7, 'start': 54.03155, 'end': 135.63155, 'berth_start_m': 1117.4, 'cranes': 5, 'duration': 81.6}",14
+56:28,56,28,small,3,0,,,5
+56:33,56,33,small,3,0,,,1
+56:34,56,34,small,3,0,,,1
+56:35,56,35,small,3,0,,,25
+56:60,56,60,small,3,0,,,1
+56:61,56,61,small,3,1,14,"{'vessel_id': 14, 'start': 142.15623, 'end': 164.35623, 'berth_start_m': 830.4, 'cranes': 5, 'duration': 22.2}",1
+56:62,56,62,small,2,0,,,1
+56:63,56,63,small,2,0,,,1
+56:64,56,64,small,2,0,,,1
+56:65,56,65,small,2,0,,,1
+56:66,56,66,small,2,0,,,1
+56:67,56,67,small,2,0,,,1
+56:68,56,68,small,2,0,,,1
+56:69,56,69,small,2,0,,,1
+56:70,56,70,small,2,0,,,1
+56:71,56,71,small,2,0,,,1
+56:72,56,72,small,2,1,19,"{'vessel_id': 19, 'start': 164.35623, 'end': 186.55623, 'berth_start_m': 652.2, 'cranes': 5, 'duration': 22.2}",1
+56:73,56,73,small,1,0,,,1
+56:74,56,74,small,1,1,21,"{'vessel_id': 21, 'start': 186.55623, 'end': 203.75623, 'berth_start_m': 648.4, 'cranes': 5, 'duration': 17.2}",71
+57:5,57,5,shock,2,0,,,1
+57:6,57,6,shock,2,0,,,1
+57:7,57,7,shock,2,1,0,"{'vessel_id': 0, 'start': 12.443333, 'end': 33.843333, 'berth_start_m': 970.2, 'cranes': 5, 'duration': 21.4}",1
+57:8,57,8,shock,1,1,1,"{'vessel_id': 1, 'start': 37.469737, 'end': 82.669737, 'berth_start_m': 1873.8, 'cranes': 5, 'duration': 45.2}",139
+58:2,58,2,shock,10,1,3,"{'vessel_id': 3, 'start': 24.367268, 'end': 110.367268, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+58:3,58,3,shock,9,1,11,"{'vessel_id': 11, 'start': 110.367268, 'end': 183.367268, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+58:4,58,4,shock,8,1,18,"{'vessel_id': 18, 'start': 183.367268, 'end': 275.567268, 'berth_start_m': 329.2, 'cranes': 5, 'duration': 92.2}",1
+58:5,58,5,shock,7,0,,,1
+58:6,58,6,shock,7,1,1,"{'vessel_id': 1, 'start': 42.773721, 'end': 65.173721, 'berth_start_m': 1894.9, 'cranes': 5, 'duration': 22.4}",3
+58:9,58,9,shock,6,1,6,"{'vessel_id': 6, 'start': 63.443798, 'end': 151.843798, 'berth_start_m': 1678.5, 'cranes': 5, 'duration': 88.4}",1
+58:10,58,10,shock,5,0,,,1
+58:11,58,11,shock,5,1,7,"{'vessel_id': 7, 'start': 66.78234, 'end': 102.98234, 'berth_start_m': 2324.5, 'cranes': 5, 'duration': 36.2}",1
+58:12,58,12,shock,4,3,12,"{'vessel_id': 12, 'start': 105.88, 'end': 168.08, 'berth_start_m': 2324.5, 'cranes': 5, 'duration': 62.2}",1
+58:13,58,13,shock,3,1,10,"{'vessel_id': 10, 'start': 101.59, 'end': 117.39, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 15.8}",1
+58:14,58,14,shock,2,0,,,1
+58:15,58,15,shock,2,0,,,1
+58:16,58,16,shock,2,0,,,1
+58:17,58,17,shock,2,0,,,1
+58:18,58,18,shock,2,0,,,1
+58:19,58,19,shock,2,0,,,1
+58:20,58,20,shock,2,0,,,1
+58:21,58,21,shock,2,0,,,1
+58:22,58,22,shock,2,0,,,1
+58:23,58,23,shock,2,0,,,1
+58:24,58,24,shock,2,0,,,1
+58:25,58,25,shock,2,0,,,1
+58:26,58,26,shock,2,0,,,1
+58:27,58,27,shock,2,1,28,"{'vessel_id': 28, 'start': 275.567268, 'end': 295.167268, 'berth_start_m': 207.7, 'cranes': 5, 'duration': 19.6}",1
+58:28,58,28,shock,1,1,31,"{'vessel_id': 31, 'start': 295.167268, 'end': 306.167268, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 11.0}",114
+59:6,59,6,small,2,1,3,"{'vessel_id': 3, 'start': 43.716953, 'end': 120.916953, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 77.2}",1
+59:7,59,7,small,1,1,4,"{'vessel_id': 4, 'start': 51.967581, 'end': 120.567581, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",134
+60:8,60,8,shock,5,1,1,"{'vessel_id': 1, 'start': 53.895895, 'end': 76.295895, 'berth_start_m': 1894.9, 'cranes': 5, 'duration': 22.4}",5
+60:13,60,13,shock,4,1,6,"{'vessel_id': 6, 'start': 52.614905, 'end': 141.014905, 'berth_start_m': 1678.5, 'cranes': 5, 'duration': 88.4}",1
+60:14,60,14,shock,3,0,,,1
+60:15,60,15,shock,3,1,14,"{'vessel_id': 14, 'start': 141.014905, 'end': 208.414905, 'berth_start_m': 1618.3, 'cranes': 5, 'duration': 67.4}",1
+60:16,60,16,shock,2,1,21,"{'vessel_id': 21, 'start': 208.414905, 'end': 219.414905, 'berth_start_m': 1482.8, 'cranes': 5, 'duration': 11.0}",1
+60:17,60,17,shock,1,0,,,1
+60:18,60,18,shock,1,0,,,1
+60:19,60,19,shock,1,0,,,1
+60:20,60,20,shock,1,0,,,1
+60:21,60,21,shock,1,0,,,1
+60:22,60,22,shock,1,0,,,1
+60:23,60,23,shock,1,0,,,1
+60:24,60,24,shock,1,1,22,"{'vessel_id': 22, 'start': 216.66, 'end': 253.26, 'berth_start_m': 2426.2, 'cranes': 5, 'duration': 36.6}",122
+61:1,61,1,repeated,2,1,0,"{'vessel_id': 0, 'start': 0.093333, 'end': 11.493333, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 11.4}",2
+61:3,61,3,repeated,1,1,1,"{'vessel_id': 1, 'start': 15.903188, 'end': 33.303188, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",139
+62:3,62,3,repeated,5,1,3,"{'vessel_id': 3, 'start': 23.600765, 'end': 109.600765, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+62:4,62,4,repeated,4,1,4,"{'vessel_id': 4, 'start': 24.136582, 'end': 87.536582, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",1
+62:5,62,5,repeated,3,2,11,"{'vessel_id': 11, 'start': 109.600765, 'end': 182.600765, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+62:6,62,6,repeated,2,0,,,1
+62:7,62,7,repeated,2,1,1,"{'vessel_id': 1, 'start': 17.108998, 'end': 39.508998, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",1
+62:8,62,8,repeated,1,2,9,"{'vessel_id': 9, 'start': 87.536582, 'end': 158.136582, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 70.6}",137
+63:3,63,3,small,2,1,1,"{'vessel_id': 1, 'start': 3.658463, 'end': 34.058463, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 30.4}",2
+63:5,63,5,small,1,1,2,"{'vessel_id': 2, 'start': 12.669004, 'end': 35.869004, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 23.2}",136
+64:1,64,1,repeated,10,1,1,"{'vessel_id': 1, 'start': 19.957053, 'end': 42.357053, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",1
+64:2,64,2,repeated,9,1,2,"{'vessel_id': 2, 'start': 21.15143, 'end': 35.75143, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",1
+64:3,64,3,repeated,8,1,3,"{'vessel_id': 3, 'start': 23.683249, 'end': 109.683249, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+64:4,64,4,repeated,7,1,11,"{'vessel_id': 11, 'start': 109.683249, 'end': 182.683249, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+64:5,64,5,repeated,6,0,,,1
+64:6,64,6,repeated,6,1,3,"{'vessel_id': 3, 'start': 18.376247, 'end': 104.376247, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+64:7,64,7,repeated,5,1,11,"{'vessel_id': 11, 'start': 105.02, 'end': 178.02, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+64:8,64,8,repeated,4,1,18,"{'vessel_id': 18, 'start': 178.02, 'end': 270.22, 'berth_start_m': 329.2, 'cranes': 5, 'duration': 92.2}",1
+64:9,64,9,repeated,3,0,,,1
+64:10,64,10,repeated,3,0,,,1
+64:11,64,11,repeated,3,1,7,"{'vessel_id': 7, 'start': 77.016086, 'end': 113.216086, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 36.2}",1
+64:12,64,12,repeated,2,2,12,"{'vessel_id': 12, 'start': 113.216086, 'end': 175.416086, 'berth_start_m': 895.8, 'cranes': 5, 'duration': 62.2}",1
+64:13,64,13,repeated,1,0,,,1
+64:14,64,14,repeated,1,0,,,1
+64:15,64,15,repeated,1,0,,,1
+64:16,64,16,repeated,1,0,,,1
+64:17,64,17,repeated,1,0,,,1
+64:18,64,18,repeated,1,0,,,1
+64:19,64,19,repeated,1,0,,,1
+64:20,64,20,repeated,1,2,17,"{'vessel_id': 17, 'start': 175.416086, 'end': 213.216086, 'berth_start_m': 895.8, 'cranes': 5, 'duration': 37.8}",123
+65:1,65,1,small,5,1,0,"{'vessel_id': 0, 'start': 7.53174, 'end': 79.53174, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 72.0}",1
+65:2,65,2,small,4,1,8,"{'vessel_id': 8, 'start': 79.53174, 'end': 167.33174, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 87.8}",1
+65:3,65,3,small,3,1,16,"{'vessel_id': 16, 'start': 167.33174, 'end': 193.33174, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 26.0}",1
+65:4,65,4,small,2,1,2,"{'vessel_id': 2, 'start': 27.575247, 'end': 100.775247, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+65:5,65,5,small,1,1,3,"{'vessel_id': 3, 'start': 27.385534, 'end': 108.785534, 'berth_start_m': 1180.4, 'cranes': 5, 'duration': 81.4}",131
+66:3,66,3,shock,5,1,3,"{'vessel_id': 3, 'start': 19.858467, 'end': 62.258467, 'berth_start_m': 950.2, 'cranes': 5, 'duration': 42.4}",1
+66:4,66,4,shock,4,1,4,"{'vessel_id': 4, 'start': 30.35487, 'end': 118.15487, 'berth_start_m': 2532.3, 'cranes': 5, 'duration': 87.8}",1
+66:5,66,5,shock,3,0,,,1
+66:6,66,6,shock,3,1,8,"{'vessel_id': 8, 'start': 62.258467, 'end': 97.258467, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 35.0}",1
+66:7,66,7,shock,2,1,13,"{'vessel_id': 13, 'start': 118.15487, 'end': 180.15487, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+66:8,66,8,shock,1,1,6,"{'vessel_id': 6, 'start': 44.655387, 'end': 61.055387, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 16.4}",130
+67:3,67,3,repeated,5,1,1,"{'vessel_id': 1, 'start': 17.152415, 'end': 56.952415, 'berth_start_m': 353.2, 'cranes': 5, 'duration': 39.8}",1
+67:4,67,4,repeated,4,1,6,"{'vessel_id': 6, 'start': 56.952415, 'end': 81.152415, 'berth_start_m': 349.8, 'cranes': 5, 'duration': 24.2}",1
+67:5,67,5,repeated,3,2,9,"{'vessel_id': 9, 'start': 81.152415, 'end': 162.552415, 'berth_start_m': 314.6, 'cranes': 5, 'duration': 81.4}",1
+67:6,67,6,repeated,2,1,4,"{'vessel_id': 4, 'start': 25.959104, 'end': 101.759104, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+67:7,67,7,repeated,1,1,3,"{'vessel_id': 3, 'start': 19.96176, 'end': 101.36176, 'berth_start_m': 1180.4, 'cranes': 5, 'duration': 81.4}",128
+68:1,68,1,small,5,1,0,"{'vessel_id': 0, 'start': 6.544222, 'end': 70.544222, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",1
+68:2,68,2,small,4,1,0,"{'vessel_id': 0, 'start': 6.157272, 'end': 70.157272, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",2
+68:4,68,4,small,3,1,2,"{'vessel_id': 2, 'start': 23.669274, 'end': 38.269274, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",2
+68:6,68,6,small,2,1,4,"{'vessel_id': 4, 'start': 25.739455, 'end': 89.139455, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",1
+68:7,68,7,small,1,0,,,1
+68:8,68,8,small,1,0,,,1
+68:9,68,9,small,1,2,9,"{'vessel_id': 9, 'start': 89.139455, 'end': 159.739455, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 70.6}",138
+69:2,69,2,small,5,1,1,"{'vessel_id': 1, 'start': 18.335913, 'end': 37.535913, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",2
+69:4,69,4,small,4,1,3,"{'vessel_id': 3, 'start': 23.873473, 'end': 31.673473, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+69:5,69,5,small,3,1,4,"{'vessel_id': 4, 'start': 26.175132, 'end': 42.175132, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}",5
+69:10,69,10,small,2,1,5,"{'vessel_id': 5, 'start': 43.892543, 'end': 50.292543, 'berth_start_m': 751.7, 'cranes': 5, 'duration': 6.4}",1
+69:11,69,11,small,1,1,3,"{'vessel_id': 3, 'start': 23.245689, 'end': 31.045689, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",134
+70:5,70,5,repeated,2,1,3,"{'vessel_id': 3, 'start': 26.548996, 'end': 107.948996, 'berth_start_m': 1180.4, 'cranes': 5, 'duration': 81.4}",1
+70:6,70,6,repeated,1,1,4,"{'vessel_id': 4, 'start': 33.192563, 'end': 108.992563, 'berth_start_m': 2089.6, 'cranes': 5, 'duration': 75.8}",128
+71:3,71,3,shock,10,1,1,"{'vessel_id': 1, 'start': 8.447513, 'end': 99.447513, 'berth_start_m': 255.2, 'cranes': 5, 'duration': 91.0}",2
+71:5,71,5,shock,9,1,1,"{'vessel_id': 1, 'start': 6.64196, 'end': 97.64196, 'berth_start_m': 255.2, 'cranes': 5, 'duration': 91.0}",7
+71:12,71,12,shock,8,1,5,"{'vessel_id': 5, 'start': 74.027959, 'end': 133.227959, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 59.2}",1
+71:13,71,13,shock,7,0,,,1
+71:14,71,14,shock,7,0,,,6
+71:20,71,20,shock,7,1,11,"{'vessel_id': 11, 'start': 108.26942, 'end': 146.66942, 'berth_start_m': 1208.9, 'cranes': 5, 'duration': 38.4}",3
+71:23,71,23,shock,6,1,10,"{'vessel_id': 10, 'start': 99.133568, 'end': 175.733568, 'berth_start_m': 1862.1, 'cranes': 5, 'duration': 76.6}",6
+71:29,71,29,shock,5,0,,,1
+71:30,71,30,shock,5,0,,,1
+71:31,71,31,shock,5,0,,,1
+71:32,71,32,shock,5,1,2,"{'vessel_id': 2, 'start': 407.47, 'end': 480.67, 'berth_start_m': 185.3, 'cranes': 5, 'duration': 73.2}",1
+71:33,71,33,shock,4,0,,,1
+71:34,71,34,shock,4,0,,,1
+71:35,71,35,shock,4,0,,,1
+71:36,71,36,shock,4,0,,,1
+71:37,71,37,shock,4,0,,,1
+71:38,71,38,shock,4,0,,,1
+71:39,71,39,shock,4,1,18,"{'vessel_id': 18, 'start': 158.081748, 'end': 216.081748, 'berth_start_m': 1260.5, 'cranes': 5, 'duration': 58.0}",1
+71:40,71,40,shock,3,0,,,1
+71:41,71,41,shock,3,0,,,1
+71:42,71,42,shock,3,0,,,1
+71:43,71,43,shock,3,0,,,1
+71:44,71,44,shock,3,0,,,1
+71:45,71,45,shock,3,0,,,1
+71:46,71,46,shock,3,0,,,1
+71:47,71,47,shock,3,0,,,1
+71:48,71,48,shock,3,1,24,"{'vessel_id': 24, 'start': 216.081748, 'end': 226.281748, 'berth_start_m': 1261.3, 'cranes': 5, 'duration': 10.2}",1
+71:49,71,49,shock,2,0,,,1
+71:50,71,50,shock,2,0,,,1
+71:51,71,51,shock,2,0,,,1
+71:52,71,52,shock,2,1,26,"{'vessel_id': 26, 'start': 226.281748, 'end': 237.281748, 'berth_start_m': 1281.4, 'cranes': 5, 'duration': 11.0}",1
+71:53,71,53,shock,1,0,,,1
+71:54,71,54,shock,1,0,,,1
+71:55,71,55,shock,1,1,29,"{'vessel_id': 29, 'start': 239.589682, 'end': 293.589682, 'berth_start_m': 1152.1, 'cranes': 5, 'duration': 54.0}",85
+72:10,72,10,shock,5,1,5,"{'vessel_id': 5, 'start': 51.018256, 'end': 57.418256, 'berth_start_m': 1542.6, 'cranes': 5, 'duration': 6.4}",7
+72:17,72,17,shock,4,0,,,1
+72:18,72,18,shock,4,1,9,"{'vessel_id': 9, 'start': 65.924264, 'end': 104.724264, 'berth_start_m': 1904.6, 'cranes': 5, 'duration': 38.8}",1
+72:19,72,19,shock,3,0,,,1
+72:20,72,20,shock,3,1,11,"{'vessel_id': 11, 'start': 104.724264, 'end': 138.524264, 'berth_start_m': 2286.0, 'cranes': 5, 'duration': 33.8}",2
+72:22,72,22,shock,2,1,12,"{'vessel_id': 12, 'start': 109.76, 'end': 156.56, 'berth_start_m': 384.9, 'cranes': 5, 'duration': 46.8}",5
+72:27,72,27,shock,1,0,,,1
+72:28,72,28,shock,1,0,,,1
+72:29,72,29,shock,1,0,,,1
+72:30,72,30,shock,1,0,,,1
+72:31,72,31,shock,1,0,,,1
+72:32,72,32,shock,1,0,,,1
+72:33,72,33,shock,1,3,16,"{'vessel_id': 16, 'start': 146.792729, 'end': 172.592729, 'berth_start_m': 205.7, 'cranes': 5, 'duration': 25.8}",112
+73:2,73,2,shock,5,1,3,"{'vessel_id': 3, 'start': 16.832877, 'end': 24.632877, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+73:3,73,3,shock,4,1,4,"{'vessel_id': 4, 'start': 29.990213, 'end': 45.990213, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",3
+73:6,73,6,shock,3,0,,,1
+73:7,73,7,shock,3,1,5,"{'vessel_id': 5, 'start': 37.345624, 'end': 43.745624, 'berth_start_m': 751.7, 'cranes': 5, 'duration': 6.4}",3
+73:10,73,10,shock,2,1,8,"{'vessel_id': 8, 'start': 58.074219, 'end': 125.874219, 'berth_start_m': 1542.0, 'cranes': 5, 'duration': 67.8}",2
+73:12,73,12,shock,1,1,9,"{'vessel_id': 9, 'start': 69.638029, 'end': 108.438029, 'berth_start_m': 1904.6, 'cranes': 5, 'duration': 38.8}",128
+74:2,74,2,repeated,2,1,1,"{'vessel_id': 1, 'start': 18.012173, 'end': 37.212173, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",3
+74:5,74,5,repeated,1,1,4,"{'vessel_id': 4, 'start': 26.85329, 'end': 42.85329, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}",140
+75:1,75,1,small,2,1,0,"{'vessel_id': 0, 'start': 13.678481, 'end': 106.878481, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+75:2,75,2,small,1,1,10,"{'vessel_id': 10, 'start': 106.878481, 'end': 137.478481, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",143
+76:2,76,2,repeated,5,1,2,"{'vessel_id': 2, 'start': 9.333393, 'end': 82.533393, 'berth_start_m': 466.5, 'cranes': 5, 'duration': 73.2}",1
+76:3,76,3,repeated,4,1,8,"{'vessel_id': 8, 'start': 83.29, 'end': 145.89, 'berth_start_m': 1565.1, 'cranes': 5, 'duration': 62.6}",6
+76:9,76,9,repeated,3,0,,,1
+76:10,76,10,repeated,3,1,4,"{'vessel_id': 4, 'start': 25.577887, 'end': 109.177887, 'berth_start_m': 958.3, 'cranes': 5, 'duration': 83.6}",3
+76:13,76,13,repeated,2,0,,,1
+76:14,76,14,repeated,2,0,,,1
+76:15,76,15,repeated,2,1,9,"{'vessel_id': 9, 'start': 85.96622, 'end': 126.96622, 'berth_start_m': 474.6, 'cranes': 5, 'duration': 41.0}",1
+76:16,76,16,repeated,1,1,7,"{'vessel_id': 7, 'start': 61.165275, 'end': 71.565275, 'berth_start_m': 682.2, 'cranes': 5, 'duration': 10.4}",122
+77:1,77,1,small,5,1,1,"{'vessel_id': 1, 'start': 4.904069, 'end': 35.304069, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",4
+77:5,77,5,small,4,1,3,"{'vessel_id': 3, 'start': 21.364494, 'end': 63.764494, 'berth_start_m': 950.2, 'cranes': 5, 'duration': 42.4}",4
+77:9,77,9,small,3,1,3,"{'vessel_id': 3, 'start': 21.211791, 'end': 63.611791, 'berth_start_m': 950.2, 'cranes': 5, 'duration': 42.4}",1
+77:10,77,10,small,2,1,6,"{'vessel_id': 6, 'start': 45.331854, 'end': 61.731854, 'berth_start_m': 1614.7, 'cranes': 5, 'duration': 16.4}",1
+77:11,77,11,small,1,2,8,"{'vessel_id': 8, 'start': 61.731854, 'end': 96.731854, 'berth_start_m': 1611.0, 'cranes': 5, 'duration': 35.0}",129
+78:7,78,7,repeated,5,1,4,"{'vessel_id': 4, 'start': 28.949728, 'end': 112.549728, 'berth_start_m': 958.3, 'cranes': 5, 'duration': 83.6}",1
+78:8,78,8,repeated,4,1,5,"{'vessel_id': 5, 'start': 63.282917, 'end': 122.482917, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.2}",1
+78:9,78,9,repeated,3,1,6,"{'vessel_id': 6, 'start': 67.201085, 'end': 101.201085, 'berth_start_m': 1214.2, 'cranes': 5, 'duration': 34.0}",2
+78:11,78,11,repeated,2,1,7,"{'vessel_id': 7, 'start': 68.059263, 'end': 78.459263, 'berth_start_m': 682.2, 'cranes': 5, 'duration': 10.4}",1
+78:12,78,12,repeated,1,1,8,"{'vessel_id': 8, 'start': 82.80335, 'end': 145.40335, 'berth_start_m': 1565.1, 'cranes': 5, 'duration': 62.6}",124
+79:3,79,3,repeated,10,1,1,"{'vessel_id': 1, 'start': 5.331128, 'end': 35.731128, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",1
+79:4,79,4,repeated,9,1,1,"{'vessel_id': 1, 'start': 3.0, 'end': 33.4, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 30.4}",2
+79:6,79,6,repeated,8,1,2,"{'vessel_id': 2, 'start': 18.246527, 'end': 41.446527, 'berth_start_m': 1611.4, 'cranes': 5, 'duration': 23.2}",7
+79:13,79,13,repeated,7,1,7,"{'vessel_id': 7, 'start': 45.96863, 'end': 94.16863, 'berth_start_m': 1920.5, 'cranes': 5, 'duration': 48.2}",1
+79:14,79,14,repeated,6,1,11,"{'vessel_id': 11, 'start': 94.16863, 'end': 122.16863, 'berth_start_m': 1914.2, 'cranes': 5, 'duration': 28.0}",1
+79:15,79,15,repeated,5,2,14,"{'vessel_id': 14, 'start': 122.16863, 'end': 173.76863, 'berth_start_m': 1924.9, 'cranes': 5, 'duration': 51.6}",1
+79:16,79,16,repeated,4,1,9,"{'vessel_id': 9, 'start': 68.459098, 'end': 131.659098, 'berth_start_m': 809.6, 'cranes': 5, 'duration': 63.2}",1
+79:17,79,17,repeated,3,0,,,1
+79:18,79,18,repeated,3,0,,,1
+79:19,79,19,repeated,3,3,21,"{'vessel_id': 21, 'start': 173.76863, 'end': 231.76863, 'berth_start_m': 1639.7, 'cranes': 5, 'duration': 58.0}",1
+79:20,79,20,repeated,2,0,,,1
+79:21,79,21,repeated,2,0,,,1
+79:22,79,22,repeated,2,0,,,1
+79:23,79,23,repeated,2,0,,,1
+79:24,79,24,repeated,2,0,,,1
+79:25,79,25,repeated,2,0,,,1
+79:26,79,26,repeated,2,0,,,1
+79:27,79,27,repeated,2,0,,,1
+79:28,79,28,repeated,2,0,,,1
+79:29,79,29,repeated,2,0,,,1
+79:30,79,30,repeated,2,0,,,1
+79:31,79,31,repeated,2,0,,,1
+79:32,79,32,repeated,2,0,,,1
+79:33,79,33,repeated,2,0,,,1
+79:34,79,34,repeated,2,0,,,1
+79:35,79,35,repeated,2,2,17,"{'vessel_id': 17, 'start': 131.659098, 'end': 208.659098, 'berth_start_m': 627.0, 'cranes': 5, 'duration': 77.0}",107
+80:1,80,1,repeated,2,1,1,"{'vessel_id': 1, 'start': 7.522072, 'end': 98.522072, 'berth_start_m': 255.2, 'cranes': 5, 'duration': 91.0}",2
+80:3,80,3,repeated,1,0,,,1
+80:4,80,4,repeated,1,1,4,"{'vessel_id': 4, 'start': 28.83784, 'end': 112.43784, 'berth_start_m': 958.3, 'cranes': 5, 'duration': 83.6}",131
+81:1,81,1,small,5,1,0,"{'vessel_id': 0, 'start': 2.625844, 'end': 62.425844, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.8}",2
+81:3,81,3,small,4,1,1,"{'vessel_id': 1, 'start': 9.429488, 'end': 100.429488, 'berth_start_m': 255.2, 'cranes': 5, 'duration': 91.0}",1
+81:4,81,4,small,3,1,2,"{'vessel_id': 2, 'start': 10.432355, 'end': 83.632355, 'berth_start_m': 466.5, 'cranes': 5, 'duration': 73.2}",1
+81:5,81,5,small,2,2,8,"{'vessel_id': 8, 'start': 83.632355, 'end': 146.232355, 'berth_start_m': 1565.1, 'cranes': 5, 'duration': 62.6}",1
+81:6,81,6,small,1,0,,,1
+81:7,81,7,small,1,2,1,"{'vessel_id': 1, 'start': 8.662071, 'end': 99.662071, 'berth_start_m': 255.2, 'cranes': 5, 'duration': 91.0}",133
+82:3,82,3,small,5,1,1,"{'vessel_id': 1, 'start': 4.818776, 'end': 35.218776, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",2
+82:5,82,5,small,4,1,2,"{'vessel_id': 2, 'start': 9.966878, 'end': 33.166878, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 23.2}",1
+82:6,82,6,small,3,0,,,1
+82:7,82,7,small,3,1,3,"{'vessel_id': 3, 'start': 21.828338, 'end': 64.228338, 'berth_start_m': 810.7, 'cranes': 5, 'duration': 42.4}",3
+82:10,82,10,small,2,1,5,"{'vessel_id': 5, 'start': 36.293239, 'end': 125.893239, 'berth_start_m': 1225.4, 'cranes': 5, 'duration': 89.6}",1
+82:11,82,11,small,1,0,,,1
+82:12,82,12,small,1,0,,,1
+82:13,82,13,small,1,1,7,"{'vessel_id': 7, 'start': 48.770459, 'end': 96.970459, 'berth_start_m': 1920.5, 'cranes': 5, 'duration': 48.2}",129
+83:1,83,1,repeated,5,1,0,"{'vessel_id': 0, 'start': 4.166448, 'end': 63.966448, 'berth_start_m': 1205.5, 'cranes': 5, 'duration': 59.8}",4
+83:5,83,5,repeated,4,0,,,1
+83:6,83,6,repeated,4,1,4,"{'vessel_id': 4, 'start': 27.944919, 'end': 111.544919, 'berth_start_m': 958.3, 'cranes': 5, 'duration': 83.6}",1
+83:7,83,7,repeated,3,1,3,"{'vessel_id': 3, 'start': 22.591641, 'end': 49.191641, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",2
+83:9,83,9,repeated,2,0,,,1
+83:10,83,10,repeated,2,1,5,"{'vessel_id': 5, 'start': 60.295809, 'end': 119.495809, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.2}",1
+83:11,83,11,repeated,1,2,13,"{'vessel_id': 13, 'start': 119.495809, 'end': 127.495809, 'berth_start_m': 781.6, 'cranes': 5, 'duration': 8.0}",127
+84:3,84,3,shock,5,1,2,"{'vessel_id': 2, 'start': 17.32498, 'end': 106.32498, 'berth_start_m': 533.5, 'cranes': 5, 'duration': 89.0}",1
+84:4,84,4,shock,4,1,10,"{'vessel_id': 10, 'start': 106.32498, 'end': 136.92498, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 30.6}",4
+84:8,84,8,shock,3,0,,,1
+84:9,84,9,shock,3,1,7,"{'vessel_id': 7, 'start': 43.639875, 'end': 125.239875, 'berth_start_m': 2536.8, 'cranes': 5, 'duration': 81.6}",1
+84:10,84,10,shock,2,0,,,1
+84:11,84,11,shock,2,0,,,1
+84:12,84,12,shock,2,1,6,"{'vessel_id': 6, 'start': 50.63, 'end': 108.23, 'berth_start_m': 745.8, 'cranes': 5, 'duration': 57.6}",1
+84:13,84,13,shock,1,1,5,"{'vessel_id': 5, 'start': 44.565386, 'end': 50.965386, 'berth_start_m': 1118.0, 'cranes': 5, 'duration': 6.4}",126
+85:1,85,1,shock,5,1,0,"{'vessel_id': 0, 'start': 1.831535, 'end': 61.631535, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.8}",1
+85:2,85,2,shock,4,0,,,1
+85:3,85,3,shock,4,1,0,"{'vessel_id': 0, 'start': 9.916514, 'end': 69.716514, 'berth_start_m': 1205.5, 'cranes': 5, 'duration': 59.8}",9
+85:12,85,12,shock,3,1,5,"{'vessel_id': 5, 'start': 59.417351, 'end': 118.617351, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.2}",11
+85:23,85,23,shock,2,0,,,1
+85:24,85,24,shock,2,0,,,1
+85:25,85,25,shock,2,0,,,1
+85:26,85,26,shock,2,0,,,1
+85:27,85,27,shock,2,0,,,1
+85:28,85,28,shock,2,0,,,1
+85:29,85,29,shock,2,0,,,1
+85:30,85,30,shock,2,0,,,1
+85:31,85,31,shock,2,0,,,1
+85:32,85,32,shock,2,0,,,1
+85:33,85,33,shock,2,1,17,"{'vessel_id': 17, 'start': 407.47, 'end': 476.87, 'berth_start_m': 1903.7, 'cranes': 5, 'duration': 69.4}",1
+85:34,85,34,shock,1,1,20,"{'vessel_id': 20, 'start': 177.36617, 'end': 267.16617, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 89.8}",106
+86:1,86,1,shock,10,1,0,"{'vessel_id': 0, 'start': 9.849409, 'end': 21.249409, 'berth_start_m': 547.7, 'cranes': 5, 'duration': 11.4}",2
+86:3,86,3,shock,9,1,1,"{'vessel_id': 1, 'start': 12.976969, 'end': 30.376969, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",1
+86:4,86,4,shock,8,1,2,"{'vessel_id': 2, 'start': 32.499308, 'end': 123.299308, 'berth_start_m': 1750.4, 'cranes': 5, 'duration': 90.8}",5
+86:9,86,9,shock,7,1,5,"{'vessel_id': 5, 'start': 44.225596, 'end': 81.025596, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",5
+86:14,86,14,shock,6,1,0,"{'vessel_id': 0, 'start': 34.88, 'end': 46.28, 'berth_start_m': 182.1, 'cranes': 5, 'duration': 11.4}",13
+86:27,86,27,shock,5,1,10,"{'vessel_id': 10, 'start': 120.92, 'end': 133.32, 'berth_start_m': 188.5, 'cranes': 5, 'duration': 12.4}",2
+86:29,86,29,shock,4,0,,,1
+86:30,86,30,shock,4,0,,,1
+86:31,86,31,shock,4,0,,,1
+86:32,86,32,shock,4,0,,,1
+86:33,86,33,shock,4,0,,,1
+86:34,86,34,shock,4,0,,,1
+86:35,86,35,shock,4,0,,,1
+86:36,86,36,shock,4,0,,,1
+86:37,86,37,shock,4,0,,,1
+86:38,86,38,shock,4,0,,,1
+86:39,86,39,shock,4,1,19,"{'vessel_id': 19, 'start': 177.98275, 'end': 251.38275, 'berth_start_m': 407.9, 'cranes': 5, 'duration': 73.4}",1
+86:40,86,40,shock,3,0,,,1
+86:41,86,41,shock,3,0,,,1
+86:42,86,42,shock,3,0,,,1
+86:43,86,43,shock,3,0,,,1
+86:44,86,44,shock,3,0,,,1
+86:45,86,45,shock,3,0,,,1
+86:46,86,46,shock,3,0,,,1
+86:47,86,47,shock,3,0,,,1
+86:48,86,48,shock,3,0,,,1
+86:49,86,49,shock,3,1,20,"{'vessel_id': 20, 'start': 187.462199, 'end': 208.262199, 'berth_start_m': 188.1, 'cranes': 5, 'duration': 20.8}",3
+86:52,86,52,shock,2,0,,,1
+86:53,86,53,shock,2,2,17,"{'vessel_id': 17, 'start': 170.104733, 'end': 180.504733, 'berth_start_m': 190.5, 'cranes': 5, 'duration': 10.4}",1
+86:54,86,54,shock,1,0,,,1
+86:55,86,55,shock,1,2,25,"{'vessel_id': 25, 'start': 208.262199, 'end': 240.062199, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 31.8}",87
+87:2,87,2,shock,10,0,,,1
+87:3,87,3,shock,10,1,0,"{'vessel_id': 0, 'start': 15.976493, 'end': 27.376493, 'berth_start_m': 547.7, 'cranes': 5, 'duration': 11.4}",3
+87:6,87,6,shock,9,0,,,1
+87:7,87,7,shock,9,2,3,"{'vessel_id': 3, 'start': 40.80305, 'end': 118.00305, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 77.2}",1
+87:8,87,8,shock,8,2,4,"{'vessel_id': 4, 'start': 50.583228, 'end': 119.183228, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+87:9,87,9,shock,7,0,,,1
+87:10,87,10,shock,7,1,5,"{'vessel_id': 5, 'start': 45.464068, 'end': 82.264068, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",11
+87:21,87,21,shock,6,1,12,"{'vessel_id': 12, 'start': 126.440667, 'end': 192.440667, 'berth_start_m': 2165.0, 'cranes': 5, 'duration': 66.0}",25
+87:46,87,46,shock,5,1,10,"{'vessel_id': 10, 'start': 159.44, 'end': 171.84, 'berth_start_m': 1331.5, 'cranes': 5, 'duration': 12.4}",3
+87:49,87,49,shock,4,0,,,1
+87:50,87,50,shock,4,0,,,1
+87:51,87,51,shock,4,0,,,1
+87:52,87,52,shock,4,0,,,1
+87:53,87,53,shock,4,0,,,1
+87:54,87,54,shock,4,1,13,"{'vessel_id': 13, 'start': 123.705843, 'end': 140.305843, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 16.6}",1
+87:55,87,55,shock,3,0,,,1
+87:56,87,56,shock,3,0,,,1
+87:57,87,57,shock,3,0,,,1
+87:58,87,58,shock,3,0,,,1
+87:59,87,59,shock,3,0,,,1
+87:60,87,60,shock,3,1,12,"{'vessel_id': 12, 'start': 124.284266, 'end': 190.284266, 'berth_start_m': 2165.0, 'cranes': 5, 'duration': 66.0}",1
+87:61,87,61,shock,2,0,,,1
+87:62,87,62,shock,2,0,,,1
+87:63,87,63,shock,2,0,,,1
+87:64,87,64,shock,2,0,,,1
+87:65,87,65,shock,2,0,,,1
+87:66,87,66,shock,2,0,,,1
+87:67,87,67,shock,2,0,,,1
+87:68,87,68,shock,2,0,,,1
+87:69,87,69,shock,2,0,,,1
+87:70,87,70,shock,2,0,,,1
+87:71,87,71,shock,2,1,21,"{'vessel_id': 21, 'start': 190.284266, 'end': 207.084266, 'berth_start_m': 1333.0, 'cranes': 5, 'duration': 16.8}",1
+87:72,87,72,shock,1,0,,,1
+87:73,87,73,shock,1,0,,,1
+87:74,87,74,shock,1,0,,,1
+87:75,87,75,shock,1,0,,,1
+87:76,87,76,shock,1,0,,,1
+87:77,87,77,shock,1,0,,,1
+87:78,87,78,shock,1,0,,,1
+87:79,87,79,shock,1,0,,,1
+87:80,87,80,shock,1,1,24,"{'vessel_id': 24, 'start': 207.084266, 'end': 289.884266, 'berth_start_m': 1326.5, 'cranes': 5, 'duration': 82.8}",61
+88:4,88,4,repeated,10,1,2,"{'vessel_id': 2, 'start': 20.933193, 'end': 35.533193, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",1
+88:5,88,5,repeated,9,1,3,"{'vessel_id': 3, 'start': 22.656439, 'end': 108.656439, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+88:6,88,6,repeated,8,1,4,"{'vessel_id': 4, 'start': 25.796706, 'end': 89.196706, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",1
+88:7,88,7,repeated,7,0,,,1
+88:8,88,8,repeated,7,2,11,"{'vessel_id': 11, 'start': 108.656439, 'end': 181.656439, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+88:9,88,9,repeated,6,1,9,"{'vessel_id': 9, 'start': 89.196706, 'end': 159.796706, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 70.6}",1
+88:10,88,10,repeated,5,1,3,"{'vessel_id': 3, 'start': 19.990363, 'end': 105.990363, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+88:11,88,11,repeated,4,1,11,"{'vessel_id': 11, 'start': 105.990363, 'end': 178.990363, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+88:12,88,12,repeated,3,1,5,"{'vessel_id': 5, 'start': 57.593308, 'end': 96.593308, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",1
+88:13,88,13,repeated,2,0,,,1
+88:14,88,14,repeated,2,0,,,1
+88:15,88,15,repeated,2,1,10,"{'vessel_id': 10, 'start': 96.593308, 'end': 112.393308, 'berth_start_m': 297.0, 'cranes': 5, 'duration': 15.8}",1
+88:16,88,16,repeated,1,1,12,"{'vessel_id': 12, 'start': 112.393308, 'end': 174.593308, 'berth_start_m': 895.8, 'cranes': 5, 'duration': 62.2}",131
+89:11,89,11,shock,2,1,6,"{'vessel_id': 6, 'start': 50.04754, 'end': 138.44754, 'berth_start_m': 1678.5, 'cranes': 5, 'duration': 88.4}",1
+89:12,89,12,shock,1,1,14,"{'vessel_id': 14, 'start': 138.44754, 'end': 205.84754, 'berth_start_m': 1618.3, 'cranes': 5, 'duration': 67.4}",132
+90:4,90,4,repeated,5,1,2,"{'vessel_id': 2, 'start': 26.389823, 'end': 99.589823, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+90:5,90,5,repeated,4,1,10,"{'vessel_id': 10, 'start': 99.589823, 'end': 167.589823, 'berth_start_m': 572.3, 'cranes': 5, 'duration': 68.0}",1
+90:6,90,6,repeated,3,0,,,1
+90:7,90,7,repeated,3,1,5,"{'vessel_id': 5, 'start': 28.130988, 'end': 66.730988, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 38.6}",1
+90:8,90,8,repeated,2,2,17,"{'vessel_id': 17, 'start': 167.589823, 'end': 240.989823, 'berth_start_m': 1859.5, 'cranes': 5, 'duration': 73.4}",1
+90:9,90,9,repeated,1,1,7,"{'vessel_id': 7, 'start': 66.730988, 'end': 137.530988, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 70.8}",126
+91:3,91,3,repeated,5,1,1,"{'vessel_id': 1, 'start': 7.610942, 'end': 38.010942, 'berth_start_m': 1610.5, 'cranes': 5, 'duration': 30.4}",1
+91:4,91,4,repeated,4,0,,,1
+91:5,91,5,repeated,4,0,,,1
+91:6,91,6,repeated,4,0,,,1
+91:7,91,7,repeated,4,1,4,"{'vessel_id': 4, 'start': 31.2754, 'end': 119.0754, 'berth_start_m': 2532.3, 'cranes': 5, 'duration': 87.8}",1
+91:8,91,8,repeated,3,0,,,1
+91:9,91,9,repeated,3,1,5,"{'vessel_id': 5, 'start': 33.936105, 'end': 123.536105, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 89.6}",1
+91:10,91,10,repeated,2,1,3,"{'vessel_id': 3, 'start': 15.378847, 'end': 57.778847, 'berth_start_m': 950.2, 'cranes': 5, 'duration': 42.4}",1
+91:11,91,11,repeated,1,4,14,"{'vessel_id': 14, 'start': 123.536105, 'end': 175.136105, 'berth_start_m': 2535.6, 'cranes': 5, 'duration': 51.6}",130
+92:17,92,17,repeated,2,1,5,"{'vessel_id': 5, 'start': 27.544407, 'end': 66.144407, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 38.6}",1
+92:18,92,18,repeated,1,1,7,"{'vessel_id': 7, 'start': 66.144407, 'end': 136.944407, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 70.8}",117
+93:1,93,1,small,10,0,,,1
+93:2,93,2,small,10,1,0,"{'vessel_id': 0, 'start': 6.376015, 'end': 70.376015, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",1
+93:3,93,3,small,9,1,1,"{'vessel_id': 1, 'start': 21.368756, 'end': 43.768756, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",1
+93:4,93,4,small,8,1,2,"{'vessel_id': 2, 'start': 24.05464, 'end': 38.65464, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",4
+93:8,93,8,small,7,1,1,"{'vessel_id': 1, 'start': 20.763417, 'end': 43.163417, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",4
+93:12,93,12,small,6,0,,,1
+93:13,93,13,small,6,1,5,"{'vessel_id': 5, 'start': 61.277591, 'end': 100.277591, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",1
+93:14,93,14,small,5,0,,,1
+93:15,93,15,small,5,1,10,"{'vessel_id': 10, 'start': 100.277591, 'end': 116.077591, 'berth_start_m': 297.0, 'cranes': 5, 'duration': 15.8}",1
+93:16,93,16,small,4,1,12,"{'vessel_id': 12, 'start': 116.077591, 'end': 178.277591, 'berth_start_m': 895.8, 'cranes': 5, 'duration': 62.2}",1
+93:17,93,17,small,3,1,13,"{'vessel_id': 13, 'start': 116.66, 'end': 183.26, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 66.6}",1
+93:18,93,18,small,2,0,,,1
+93:19,93,19,small,2,0,,,1
+93:20,93,20,small,2,0,,,1
+93:21,93,21,small,2,0,,,1
+93:22,93,22,small,2,0,,,1
+93:23,93,23,small,2,3,19,"{'vessel_id': 19, 'start': 183.26, 'end': 278.66, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 95.4}",1
+93:24,93,24,small,1,0,,,1
+93:25,93,25,small,1,0,,,1
+93:26,93,26,small,1,0,,,1
+93:27,93,27,small,1,0,,,1
+93:28,93,28,small,1,0,,,1
+93:29,93,29,small,1,0,,,1
+93:30,93,30,small,1,0,,,1
+93:31,93,31,small,1,0,,,1
+93:32,93,32,small,1,0,,,1
+93:33,93,33,small,1,0,,,1
+93:34,93,34,small,1,0,,,1
+93:35,93,35,small,1,0,,,1
+93:36,93,36,small,1,0,,,1
+93:37,93,37,small,1,1,17,"{'vessel_id': 17, 'start': 178.277591, 'end': 216.077591, 'berth_start_m': 895.8, 'cranes': 5, 'duration': 37.8}",110
+94:1,94,1,repeated,5,1,0,"{'vessel_id': 0, 'start': 16.861355, 'end': 80.861355, 'berth_start_m': 1911.5, 'cranes': 5, 'duration': 64.0}",1
+94:2,94,2,repeated,4,1,0,"{'vessel_id': 0, 'start': 9.882273, 'end': 73.882273, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",9
+94:11,94,11,repeated,3,0,,,5
+94:16,94,16,repeated,3,1,8,"{'vessel_id': 8, 'start': 72.206818, 'end': 149.406818, 'berth_start_m': 1912.0, 'cranes': 5, 'duration': 77.2}",1
+94:17,94,17,repeated,2,2,14,"{'vessel_id': 14, 'start': 149.406818, 'end': 216.806818, 'berth_start_m': 2162.3, 'cranes': 5, 'duration': 67.4}",1
+94:18,94,18,repeated,1,1,22,"{'vessel_id': 22, 'start': 216.806818, 'end': 253.406818, 'berth_start_m': 1478.7, 'cranes': 5, 'duration': 36.6}",129
+95:8,95,8,shock,10,1,5,"{'vessel_id': 5, 'start': 38.712755, 'end': 45.112755, 'berth_start_m': 1415.0, 'cranes': 5, 'duration': 6.4}",2
+95:10,95,10,shock,9,0,,,1
+95:11,95,11,shock,9,1,6,"{'vessel_id': 6, 'start': 50.246502, 'end': 107.846502, 'berth_start_m': 745.8, 'cranes': 5, 'duration': 57.6}",1
+95:12,95,12,shock,8,1,7,"{'vessel_id': 7, 'start': 53.776928, 'end': 135.376928, 'berth_start_m': 1117.4, 'cranes': 5, 'duration': 81.6}",1
+95:13,95,13,shock,7,2,4,"{'vessel_id': 4, 'start': 34.953597, 'end': 50.953597, 'berth_start_m': 1846.2, 'cranes': 5, 'duration': 16.0}",1
+95:14,95,14,shock,6,2,11,"{'vessel_id': 11, 'start': 107.846502, 'end': 141.646502, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 33.8}",1
+95:15,95,15,shock,5,2,12,"{'vessel_id': 12, 'start': 109.76, 'end': 156.56, 'berth_start_m': 384.9, 'cranes': 5, 'duration': 46.8}",1
+95:16,95,16,shock,4,1,8,"{'vessel_id': 8, 'start': 58.162236, 'end': 125.962236, 'berth_start_m': 1542.0, 'cranes': 5, 'duration': 67.8}",13
+95:29,95,29,shock,3,0,,,1
+95:30,95,30,shock,3,0,,,1
+95:31,95,31,shock,3,0,,,1
+95:32,95,32,shock,3,0,,,1
+95:33,95,33,shock,3,1,16,"{'vessel_id': 16, 'start': 146.558967, 'end': 172.358967, 'berth_start_m': 205.7, 'cranes': 5, 'duration': 25.8}",1
+95:34,95,34,shock,2,0,,,1
+95:35,95,35,shock,2,0,,,1
+95:36,95,36,shock,2,0,,,1
+95:37,95,37,shock,2,0,,,1
+95:38,95,38,shock,2,0,,,1
+95:39,95,39,shock,2,0,,,1
+95:40,95,40,shock,2,0,,,1
+95:41,95,41,shock,2,0,,,1
+95:42,95,42,shock,2,0,,,1
+95:43,95,43,shock,2,0,,,1
+95:44,95,44,shock,2,0,,,1
+95:45,95,45,shock,2,0,,,1
+95:46,95,46,shock,2,0,,,1
+95:47,95,47,shock,2,0,,,1
+95:48,95,48,shock,2,0,,,1
+95:49,95,49,shock,2,1,1,"{'vessel_id': 1, 'start': 125.962236, 'end': 145.162236, 'berth_start_m': 1542.0, 'cranes': 5, 'duration': 19.2}",1
+95:50,95,50,shock,1,0,,,1
+95:51,95,51,shock,1,0,,,1
+95:52,95,52,shock,1,0,,,1
+95:53,95,53,shock,1,0,,,1
+95:54,95,54,shock,1,0,,,1
+95:55,95,55,shock,1,0,,,1
+95:56,95,56,shock,1,1,20,"{'vessel_id': 20, 'start': 172.358967, 'end': 246.158967, 'berth_start_m': 1448.6, 'cranes': 5, 'duration': 73.8}",87
+96:1,96,1,repeated,10,1,0,"{'vessel_id': 0, 'start': 13.44925, 'end': 106.64925, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+96:2,96,2,repeated,9,1,10,"{'vessel_id': 10, 'start': 106.64925, 'end': 137.24925, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",1
+96:3,96,3,repeated,8,1,2,"{'vessel_id': 2, 'start': 11.951403, 'end': 100.951403, 'berth_start_m': 533.5, 'cranes': 5, 'duration': 89.0}",1
+96:4,96,4,repeated,7,3,11,"{'vessel_id': 11, 'start': 100.951403, 'end': 134.751403, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 33.8}",1
+96:5,96,5,repeated,6,1,4,"{'vessel_id': 4, 'start': 33.797859, 'end': 49.797859, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",1
+96:6,96,6,repeated,5,1,3,"{'vessel_id': 3, 'start': 18.048006, 'end': 25.848006, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",4
+96:10,96,10,repeated,4,1,5,"{'vessel_id': 5, 'start': 39.356614, 'end': 45.756614, 'berth_start_m': 751.7, 'cranes': 5, 'duration': 6.4}",1
+96:11,96,11,repeated,3,0,,,1
+96:12,96,12,repeated,3,1,4,"{'vessel_id': 4, 'start': 28.976734, 'end': 44.976734, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",1
+96:13,96,13,repeated,2,0,,,1
+96:14,96,14,repeated,2,1,8,"{'vessel_id': 8, 'start': 59.47522, 'end': 127.27522, 'berth_start_m': 1542.0, 'cranes': 5, 'duration': 67.8}",1
+96:15,96,15,repeated,1,0,,,1
+96:16,96,16,repeated,1,2,12,"{'vessel_id': 12, 'start': 111.1, 'end': 157.9, 'berth_start_m': 384.9, 'cranes': 5, 'duration': 46.8}",127
+97:2,97,2,shock,2,1,0,"{'vessel_id': 0, 'start': 22.838737, 'end': 44.238737, 'berth_start_m': 1219.9, 'cranes': 5, 'duration': 21.4}",1
+97:3,97,3,shock,1,1,2,"{'vessel_id': 2, 'start': 33.247039, 'end': 60.647039, 'berth_start_m': 1547.3, 'cranes': 5, 'duration': 27.4}",142
+98:1,98,1,small,5,1,0,"{'vessel_id': 0, 'start': 7.048538, 'end': 71.048538, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",1
+98:2,98,2,small,4,1,0,"{'vessel_id': 0, 'start': 5.963546, 'end': 69.963546, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",2
+98:4,98,4,small,3,1,2,"{'vessel_id': 2, 'start': 24.061731, 'end': 38.661731, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",1
+98:5,98,5,small,2,1,3,"{'vessel_id': 3, 'start': 23.133218, 'end': 109.133218, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+98:6,98,6,small,1,1,11,"{'vessel_id': 11, 'start': 109.133218, 'end': 182.133218, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",141
+99:1,99,1,small,10,1,0,"{'vessel_id': 0, 'start': 13.470847, 'end': 106.670847, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+99:2,99,2,small,9,1,1,"{'vessel_id': 1, 'start': 17.52891, 'end': 36.72891, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",1
+99:3,99,3,small,8,1,10,"{'vessel_id': 10, 'start': 106.670847, 'end': 137.270847, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",3
+99:6,99,6,small,7,1,0,"{'vessel_id': 0, 'start': 12.585862, 'end': 105.785862, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+99:7,99,7,small,6,0,,,1
+99:8,99,8,small,6,0,,,1
+99:9,99,9,small,6,0,,,1
+99:10,99,10,small,6,0,,,1
+99:11,99,11,small,6,1,5,"{'vessel_id': 5, 'start': 43.388645, 'end': 49.788645, 'berth_start_m': 751.7, 'cranes': 5, 'duration': 6.4}",1
+99:12,99,12,small,5,1,4,"{'vessel_id': 4, 'start': 27.599891, 'end': 43.599891, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",1
+99:13,99,13,small,4,0,,,1
+99:14,99,14,small,4,0,,,1
+99:15,99,15,small,4,0,,,1
+99:16,99,16,small,4,0,,,1
+99:17,99,17,small,4,0,,,1
+99:18,99,18,small,4,0,,,1
+99:19,99,19,small,4,1,5,"{'vessel_id': 5, 'start': 43.087989, 'end': 49.487989, 'berth_start_m': 751.7, 'cranes': 5, 'duration': 6.4}",1
+99:20,99,20,small,3,0,,,1
+99:21,99,21,small,3,0,,,1
+99:22,99,22,small,3,1,10,"{'vessel_id': 10, 'start': 105.785862, 'end': 136.385862, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",5
+99:27,99,27,small,2,0,,,1
+99:28,99,28,small,2,0,,,1
+99:29,99,29,small,2,1,14,"{'vessel_id': 14, 'start': 141.497265, 'end': 163.697265, 'berth_start_m': 830.4, 'cranes': 5, 'duration': 22.2}",1
+99:30,99,30,small,1,0,,,1
+99:31,99,31,small,1,0,,,1
+99:32,99,32,small,1,0,,,1
+99:33,99,33,small,1,0,,,1
+99:34,99,34,small,1,0,,,26
+99:60,99,60,small,1,0,,,1
+99:61,99,61,small,1,0,,,1
+99:62,99,62,small,1,0,,,1
+99:63,99,63,small,1,0,,,1
+99:64,99,64,small,1,0,,,1
+99:65,99,65,small,1,0,,,1
+99:66,99,66,small,1,0,,,1
+99:67,99,67,small,1,0,,,1
+99:68,99,68,small,1,0,,,1
+99:69,99,69,small,1,0,,,1
+99:70,99,70,small,1,3,15,"{'vessel_id': 15, 'start': 146.674463, 'end': 217.474463, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 70.8}",75
+100:33,100,33,shock,2,0,,,1
+100:34,100,34,shock,2,0,,,1
+100:35,100,35,shock,2,0,,,1
+100:36,100,36,shock,2,0,,,1
+100:37,100,37,shock,2,0,,,1
+100:38,100,38,shock,2,0,,,1
+100:39,100,39,shock,2,0,,,1
+100:40,100,40,shock,2,0,,,1
+100:41,100,41,shock,2,0,,,1
+100:42,100,42,shock,2,0,,,1
+100:43,100,43,shock,2,0,,,1
+100:44,100,44,shock,2,0,,,1
+100:45,100,45,shock,2,0,,,1
+100:46,100,46,shock,2,0,,,1
+100:47,100,47,shock,2,0,,,1
+100:48,100,48,shock,2,0,,,1
+100:49,100,49,shock,2,0,,,1
+100:50,100,50,shock,2,0,,,1
+100:51,100,51,shock,2,0,,,1
+100:52,100,52,shock,2,0,,,1
+100:53,100,53,shock,2,2,9,"{'vessel_id': 9, 'start': 96.658755, 'end': 137.658755, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 41.0}",1
+100:54,100,54,shock,1,1,4,"{'vessel_id': 4, 'start': 407.47, 'end': 491.07, 'berth_start_m': 188.4, 'cranes': 5, 'duration': 83.6}",84
+101:1,101,1,shock,2,0,,,1
+101:2,101,2,shock,2,0,,,2
+101:4,101,4,shock,2,1,2,"{'vessel_id': 2, 'start': 27.263543, 'end': 54.663543, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",1
+101:5,101,5,shock,1,0,,,1
+101:6,101,6,shock,1,0,,,1
+101:7,101,7,shock,1,0,,,1
+101:8,101,8,shock,1,1,3,"{'vessel_id': 3, 'start': 31.670867, 'end': 51.070867, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",139
+102:4,102,4,repeated,5,0,,,1
+102:5,102,5,repeated,5,0,,,1
+102:6,102,6,repeated,5,0,,,1
+102:7,102,7,repeated,5,0,,,1
+102:8,102,8,repeated,5,0,,,1
+102:9,102,9,repeated,5,0,,,1
+102:10,102,10,repeated,5,1,3,"{'vessel_id': 3, 'start': 33.028338, 'end': 52.428338, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",1
+102:11,102,11,repeated,4,0,,,1
+102:12,102,12,repeated,4,1,3,"{'vessel_id': 3, 'start': 29.736492, 'end': 49.136492, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",1
+102:13,102,13,repeated,3,1,4,"{'vessel_id': 4, 'start': 36.200676, 'end': 115.600676, 'berth_start_m': 970.2, 'cranes': 5, 'duration': 79.4}",1
+102:14,102,14,repeated,2,0,,,1
+102:15,102,15,repeated,2,0,,,1
+102:16,102,16,repeated,2,0,,,1
+102:17,102,17,repeated,2,0,,,1
+102:18,102,18,repeated,2,1,9,"{'vessel_id': 9, 'start': 85.021926, 'end': 143.821926, 'berth_start_m': 1874.7, 'cranes': 5, 'duration': 58.8}",1
+102:19,102,19,repeated,1,0,,,1
+102:20,102,20,repeated,1,3,14,"{'vessel_id': 14, 'start': 143.821926, 'end': 234.621926, 'berth_start_m': 1478.4, 'cranes': 5, 'duration': 90.8}",126
+103:1,103,1,shock,10,0,,,1
+103:2,103,2,shock,10,1,2,"{'vessel_id': 2, 'start': 15.218551, 'end': 38.418551, 'berth_start_m': 1611.4, 'cranes': 5, 'duration': 23.2}",1
+103:3,103,3,shock,9,1,3,"{'vessel_id': 3, 'start': 19.454387, 'end': 61.854387, 'berth_start_m': 810.7, 'cranes': 5, 'duration': 42.4}",1
+103:4,103,4,shock,8,0,,,1
+103:5,103,5,shock,8,1,8,"{'vessel_id': 8, 'start': 61.854387, 'end': 96.854387, 'berth_start_m': 2199.9, 'cranes': 5, 'duration': 35.0}",1
+103:6,103,6,shock,7,1,11,"{'vessel_id': 11, 'start': 96.854387, 'end': 124.854387, 'berth_start_m': 2203.7, 'cranes': 5, 'duration': 28.0}",1
+103:7,103,7,shock,6,0,,,1
+103:8,103,8,shock,6,1,14,"{'vessel_id': 14, 'start': 124.854387, 'end': 176.454387, 'berth_start_m': 1924.9, 'cranes': 5, 'duration': 51.6}",2
+103:10,103,10,shock,5,0,,,1
+103:11,103,11,shock,5,0,,,1
+103:12,103,12,shock,5,0,,,1
+103:13,103,13,shock,5,1,4,"{'vessel_id': 4, 'start': 32.283921, 'end': 120.083921, 'berth_start_m': 2532.3, 'cranes': 5, 'duration': 87.8}",1
+103:14,103,14,shock,4,1,13,"{'vessel_id': 13, 'start': 120.083921, 'end': 182.083921, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+103:15,103,15,shock,3,0,,,1
+103:16,103,16,shock,3,0,,,1
+103:17,103,17,shock,3,1,22,"{'vessel_id': 22, 'start': 182.083921, 'end': 267.683921, 'berth_start_m': 208.8, 'cranes': 5, 'duration': 85.6}",1
+103:18,103,18,shock,2,1,29,"{'vessel_id': 29, 'start': 267.683921, 'end': 348.883921, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 81.2}",1
+103:19,103,19,shock,1,0,,,1
+103:20,103,20,shock,1,1,38,"{'vessel_id': 38, 'start': 348.883921, 'end': 389.683921, 'berth_start_m': 1963.7, 'cranes': 5, 'duration': 40.8}",117
+104:3,104,3,shock,5,1,2,"{'vessel_id': 2, 'start': 19.249528, 'end': 108.249528, 'berth_start_m': 533.5, 'cranes': 5, 'duration': 89.0}",1
+104:4,104,4,shock,4,0,,,1
+104:5,104,5,shock,4,2,4,"{'vessel_id': 4, 'start': 35.605185, 'end': 51.605185, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",1
+104:6,104,6,shock,3,0,,,1
+104:7,104,7,shock,3,1,0,"{'vessel_id': 0, 'start': 457.26, 'end': 550.46, 'berth_start_m': 904.1, 'cranes': 5, 'duration': 93.2}",1
+104:8,104,8,shock,2,0,,,1
+104:9,104,9,shock,2,0,,,1
+104:10,104,10,shock,2,2,10,"{'vessel_id': 10, 'start': 80.84, 'end': 111.44, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",1
+104:11,104,11,shock,1,1,4,"{'vessel_id': 4, 'start': 44.113803, 'end': 60.113803, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 16.0}",132
+105:3,105,3,small,5,0,,,1
+105:4,105,4,small,5,0,,,1
+105:5,105,5,small,5,0,,,1
+105:6,105,6,small,5,0,,,1
+105:7,105,7,small,5,0,,,1
+105:8,105,8,small,5,1,3,"{'vessel_id': 3, 'start': 23.815141, 'end': 50.415141, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",2
+105:10,105,10,small,4,1,4,"{'vessel_id': 4, 'start': 28.973037, 'end': 112.573037, 'berth_start_m': 958.3, 'cranes': 5, 'duration': 83.6}",1
+105:11,105,11,small,3,1,5,"{'vessel_id': 5, 'start': 62.115673, 'end': 121.315673, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 59.2}",3
+105:14,105,14,small,2,0,,,1
+105:15,105,15,small,2,0,,,1
+105:16,105,16,small,2,0,,,1
+105:17,105,17,small,2,1,10,"{'vessel_id': 10, 'start': 103.358049, 'end': 179.958049, 'berth_start_m': 1862.1, 'cranes': 5, 'duration': 76.6}",1
+105:18,105,18,small,1,0,,,1
+105:19,105,19,small,1,2,19,"{'vessel_id': 19, 'start': 179.958049, 'end': 208.558049, 'berth_start_m': 1611.4, 'cranes': 5, 'duration': 28.6}",120
+106:2,106,2,shock,5,1,2,"{'vessel_id': 2, 'start': 30.54903, 'end': 57.94903, 'berth_start_m': 1547.3, 'cranes': 5, 'duration': 27.4}",4
+106:6,106,6,shock,4,0,,,1
+106:7,106,7,shock,4,1,5,"{'vessel_id': 5, 'start': 42.449496, 'end': 137.649496, 'berth_start_m': 1226.1, 'cranes': 5, 'duration': 95.2}",1
+106:8,106,8,shock,3,0,,,1
+106:9,106,9,shock,3,0,,,1
+106:10,106,10,shock,3,1,13,"{'vessel_id': 13, 'start': 137.649496, 'end': 169.049496, 'berth_start_m': 1089.1, 'cranes': 5, 'duration': 31.4}",1
+106:11,106,11,shock,2,0,,,1
+106:12,106,12,shock,2,1,17,"{'vessel_id': 17, 'start': 169.049496, 'end': 226.249496, 'berth_start_m': 254.4, 'cranes': 5, 'duration': 57.2}",1
+106:13,106,13,shock,1,1,21,"{'vessel_id': 21, 'start': 226.249496, 'end': 268.449496, 'berth_start_m': 254.2, 'cranes': 5, 'duration': 42.2}",129
+107:3,107,3,small,2,1,1,"{'vessel_id': 1, 'start': 16.574855, 'end': 33.974855, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",2
+107:5,107,5,small,1,0,,,1
+107:6,107,6,small,1,0,,,1
+107:7,107,7,small,1,1,2,"{'vessel_id': 2, 'start': 17.704941, 'end': 108.504941, 'berth_start_m': 303.6, 'cranes': 5, 'duration': 90.8}",134
+108:2,108,2,shock,5,0,,,1
+108:3,108,3,shock,5,0,,,1
+108:4,108,4,shock,5,0,,,1
+108:5,108,5,shock,5,1,2,"{'vessel_id': 2, 'start': 23.629659, 'end': 51.029659, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",2
+108:7,108,7,shock,4,0,,,1
+108:8,108,8,shock,4,1,4,"{'vessel_id': 4, 'start': 31.972397, 'end': 111.372397, 'berth_start_m': 970.2, 'cranes': 5, 'duration': 79.4}",1
+108:9,108,9,shock,3,3,12,"{'vessel_id': 12, 'start': 113.76, 'end': 190.56, 'berth_start_m': 2304.6, 'cranes': 5, 'duration': 76.8}",1
+108:10,108,10,shock,2,0,,,1
+108:11,108,11,shock,2,0,,,1
+108:12,108,12,shock,2,2,6,"{'vessel_id': 6, 'start': 54.25675, 'end': 112.65675, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 58.4}",1
+108:13,108,13,shock,1,2,7,"{'vessel_id': 7, 'start': 58.996561, 'end': 90.196561, 'berth_start_m': 1544.3, 'cranes': 5, 'duration': 31.2}",131
+109:1,109,1,repeated,10,1,0,"{'vessel_id': 0, 'start': 10.930181, 'end': 104.130181, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+109:2,109,2,repeated,9,1,10,"{'vessel_id': 10, 'start': 104.130181, 'end': 134.730181, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",2
+109:4,109,4,repeated,8,0,,,1
+109:5,109,5,repeated,8,1,4,"{'vessel_id': 4, 'start': 28.65239, 'end': 44.65239, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",1
+109:6,109,6,repeated,7,0,,,1
+109:7,109,7,repeated,7,0,,,1
+109:8,109,8,repeated,7,1,3,"{'vessel_id': 3, 'start': 22.006973, 'end': 29.806973, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+109:9,109,9,repeated,6,0,,,1
+109:10,109,10,repeated,6,1,3,"{'vessel_id': 3, 'start': 19.466571, 'end': 27.266571, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+109:11,109,11,repeated,5,0,,,1
+109:12,109,12,repeated,5,1,5,"{'vessel_id': 5, 'start': 47.267604, 'end': 53.667604, 'berth_start_m': 1118.0, 'cranes': 5, 'duration': 6.4}",1
+109:13,109,13,repeated,4,0,,,1
+109:14,109,14,repeated,4,1,6,"{'vessel_id': 6, 'start': 50.941971, 'end': 108.541971, 'berth_start_m': 745.8, 'cranes': 5, 'duration': 57.6}",1
+109:15,109,15,repeated,3,2,11,"{'vessel_id': 11, 'start': 108.541971, 'end': 142.341971, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 33.8}",1
+109:16,109,16,repeated,2,0,,,1
+109:17,109,17,repeated,2,0,,,1
+109:18,109,18,repeated,2,2,12,"{'vessel_id': 12, 'start': 109.76, 'end': 156.56, 'berth_start_m': 384.9, 'cranes': 5, 'duration': 46.8}",1
+109:19,109,19,repeated,1,0,,,1
+109:20,109,20,repeated,1,2,8,"{'vessel_id': 8, 'start': 62.028067, 'end': 129.828067, 'berth_start_m': 1542.0, 'cranes': 5, 'duration': 67.8}",123
+110:11,110,11,small,10,1,6,"{'vessel_id': 6, 'start': 61.35884, 'end': 95.35884, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",2
+110:13,110,13,small,9,1,7,"{'vessel_id': 7, 'start': 84.048548, 'end': 149.848548, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 65.8}",1
+110:14,110,14,small,8,0,,,1
+110:15,110,15,small,8,0,,,1
+110:16,110,16,small,8,0,,,1
+110:17,110,17,small,8,0,,,1
+110:18,110,18,small,8,0,,,1
+110:19,110,19,small,8,1,4,"{'vessel_id': 4, 'start': 51.953874, 'end': 120.553874, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+110:20,110,20,small,7,1,14,"{'vessel_id': 14, 'start': 149.848548, 'end': 161.648548, 'berth_start_m': 186.6, 'cranes': 5, 'duration': 11.8}",1
+110:21,110,21,small,6,1,6,"{'vessel_id': 6, 'start': 59.637015, 'end': 93.637015, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",1
+110:22,110,22,small,5,1,11,"{'vessel_id': 11, 'start': 123.512961, 'end': 159.712961, 'berth_start_m': 1765.1, 'cranes': 5, 'duration': 36.2}",7
+110:29,110,29,small,4,0,,,1
+110:30,110,30,small,4,0,,,1
+110:31,110,31,small,4,1,7,"{'vessel_id': 7, 'start': 83.357085, 'end': 149.157085, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 65.8}",1
+110:32,110,32,small,3,0,,,1
+110:33,110,33,small,3,0,,,1
+110:34,110,34,small,3,0,,,1
+110:35,110,35,small,3,2,19,"{'vessel_id': 19, 'start': 180.878869, 'end': 254.278869, 'berth_start_m': 407.9, 'cranes': 5, 'duration': 73.4}",1
+110:36,110,36,small,2,2,30,"{'vessel_id': 30, 'start': 254.278869, 'end': 307.678869, 'berth_start_m': 390.6, 'cranes': 5, 'duration': 53.4}",1
+110:37,110,37,small,1,2,37,"{'vessel_id': 37, 'start': 307.678869, 'end': 364.878869, 'berth_start_m': 188.1, 'cranes': 5, 'duration': 57.2}",106
+111:10,111,10,small,10,0,,,1
+111:11,111,11,small,10,0,,,1
+111:12,111,12,small,10,0,,,1
+111:13,111,13,small,10,0,,,1
+111:14,111,14,small,10,0,,,1
+111:15,111,15,small,10,0,,,1
+111:16,111,16,small,10,2,5,"{'vessel_id': 5, 'start': 43.524517, 'end': 49.924517, 'berth_start_m': 751.7, 'cranes': 5, 'duration': 6.4}",1
+111:17,111,17,small,9,2,6,"{'vessel_id': 6, 'start': 52.63458, 'end': 110.23458, 'berth_start_m': 745.8, 'cranes': 5, 'duration': 57.6}",1
+111:18,111,18,small,8,2,7,"{'vessel_id': 7, 'start': 54.471025, 'end': 136.071025, 'berth_start_m': 1117.4, 'cranes': 5, 'duration': 81.6}",1
+111:19,111,19,small,7,0,,,1
+111:20,111,20,small,7,0,,,1
+111:21,111,21,small,7,0,,,1
+111:22,111,22,small,7,0,,,1
+111:23,111,23,small,7,2,6,"{'vessel_id': 6, 'start': 51.675269, 'end': 109.275269, 'berth_start_m': 745.8, 'cranes': 5, 'duration': 57.6}",1
+111:24,111,24,small,6,0,,,1
+111:25,111,25,small,6,0,,,1
+111:26,111,26,small,6,0,,,1
+111:27,111,27,small,6,0,,,1
+111:28,111,28,small,6,3,12,"{'vessel_id': 12, 'start': 109.275269, 'end': 156.075269, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 46.8}",1
+111:29,111,29,small,5,0,,,1
+111:30,111,30,small,5,0,,,1
+111:31,111,31,small,5,3,14,"{'vessel_id': 14, 'start': 141.209528, 'end': 163.409528, 'berth_start_m': 638.3, 'cranes': 5, 'duration': 22.2}",1
+111:32,111,32,small,4,2,16,"{'vessel_id': 16, 'start': 148.77607, 'end': 174.57607, 'berth_start_m': 205.7, 'cranes': 5, 'duration': 25.8}",1
+111:33,111,33,small,3,0,,,1
+111:34,111,34,small,3,0,,,1
+111:35,111,35,small,3,2,20,"{'vessel_id': 20, 'start': 174.57607, 'end': 248.37607, 'berth_start_m': 1448.6, 'cranes': 5, 'duration': 73.8}",1
+111:36,111,36,small,2,0,,,1
+111:37,111,37,small,2,2,29,"{'vessel_id': 29, 'start': 248.37607, 'end': 293.37607, 'berth_start_m': 885.3, 'cranes': 5, 'duration': 45.0}",1
+111:38,111,38,small,1,2,33,"{'vessel_id': 33, 'start': 293.37607, 'end': 380.77607, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 87.4}",107
+112:1,112,1,small,5,0,,,1
+112:2,112,2,small,5,0,,,1
+112:3,112,3,small,5,1,0,"{'vessel_id': 0, 'start': 13.797547, 'end': 106.997547, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+112:4,112,4,small,4,1,1,"{'vessel_id': 1, 'start': 17.550001, 'end': 36.750001, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",1
+112:5,112,5,small,3,1,4,"{'vessel_id': 4, 'start': 28.903827, 'end': 44.903827, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",3
+112:8,112,8,small,2,1,1,"{'vessel_id': 1, 'start': 17.344677, 'end': 36.544677, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",4
+112:12,112,12,small,1,1,6,"{'vessel_id': 6, 'start': 53.018536, 'end': 110.618536, 'berth_start_m': 745.8, 'cranes': 5, 'duration': 57.6}",133
+113:1,113,1,small,2,0,,,1
+113:2,113,2,small,2,1,0,"{'vessel_id': 0, 'start': 7.056035, 'end': 79.056035, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 72.0}",1
+113:3,113,3,small,1,1,8,"{'vessel_id': 8, 'start': 79.056035, 'end': 166.856035, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 87.8}",133
+114:1,114,1,small,10,0,,,1
+114:2,114,2,small,10,1,1,"{'vessel_id': 1, 'start': 15.47759, 'end': 32.87759, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",1
+114:3,114,3,small,9,1,1,"{'vessel_id': 1, 'start': 13.264652, 'end': 30.664652, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",4
+114:7,114,7,small,8,0,,,1
+114:8,114,8,small,8,0,,,1
+114:9,114,9,small,8,2,4,"{'vessel_id': 4, 'start': 51.638737, 'end': 120.238737, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+114:10,114,10,small,7,0,,,1
+114:11,114,11,small,7,0,,,1
+114:12,114,12,small,7,1,5,"{'vessel_id': 5, 'start': 51.715193, 'end': 88.515193, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",1
+114:13,114,13,small,6,0,,,1
+114:14,114,14,small,6,1,5,"{'vessel_id': 5, 'start': 51.174051, 'end': 87.974051, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",1
+114:15,114,15,small,5,1,6,"{'vessel_id': 6, 'start': 61.260774, 'end': 95.260774, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",13
+114:28,114,28,small,4,0,,,1
+114:29,114,29,small,4,0,,,1
+114:30,114,30,small,4,0,,,1
+114:31,114,31,small,4,0,,,1
+114:32,114,32,small,4,0,,,1
+114:33,114,33,small,4,1,17,"{'vessel_id': 17, 'start': 169.673967, 'end': 180.073967, 'berth_start_m': 190.5, 'cranes': 5, 'duration': 10.4}",1
+114:34,114,34,small,3,0,,,1
+114:35,114,35,small,3,2,19,"{'vessel_id': 19, 'start': 179.890286, 'end': 253.290286, 'berth_start_m': 407.9, 'cranes': 5, 'duration': 73.4}",1
+114:36,114,36,small,2,1,18,"{'vessel_id': 18, 'start': 170.627062, 'end': 212.627062, 'berth_start_m': 991.0, 'cranes': 5, 'duration': 42.0}",1
+114:37,114,37,small,1,2,30,"{'vessel_id': 30, 'start': 253.290286, 'end': 306.690286, 'berth_start_m': 390.6, 'cranes': 5, 'duration': 53.4}",104
+115:1,115,1,small,2,0,,,4
+115:5,115,5,small,2,1,3,"{'vessel_id': 3, 'start': 24.155878, 'end': 110.155878, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+115:6,115,6,small,1,0,,,1
+115:7,115,7,small,1,1,4,"{'vessel_id': 4, 'start': 26.019633, 'end': 89.419633, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",140
+116:3,116,3,repeated,10,1,2,"{'vessel_id': 2, 'start': 26.528907, 'end': 53.928907, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",1
+116:4,116,4,repeated,9,0,,,1
+116:5,116,5,repeated,9,0,,,1
+116:6,116,6,repeated,9,0,,,1
+116:7,116,7,repeated,9,2,4,"{'vessel_id': 4, 'start': 35.9924, 'end': 115.3924, 'berth_start_m': 970.2, 'cranes': 5, 'duration': 79.4}",1
+116:8,116,8,repeated,8,0,,,1
+116:9,116,9,repeated,8,0,,,1
+116:10,116,10,repeated,8,1,7,"{'vessel_id': 7, 'start': 61.589726, 'end': 92.789726, 'berth_start_m': 1544.3, 'cranes': 5, 'duration': 31.2}",1
+116:11,116,11,repeated,7,0,,,1
+116:12,116,12,repeated,7,0,,,1
+116:13,116,13,repeated,7,1,2,"{'vessel_id': 2, 'start': 24.886667, 'end': 52.286667, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",1
+116:14,116,14,repeated,6,0,,,1
+116:15,116,15,repeated,6,1,6,"{'vessel_id': 6, 'start': 52.909502, 'end': 111.309502, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 58.4}",1
+116:16,116,16,repeated,5,1,11,"{'vessel_id': 11, 'start': 111.309502, 'end': 171.509502, 'berth_start_m': 592.6, 'cranes': 5, 'duration': 60.2}",1
+116:17,116,17,repeated,4,2,17,"{'vessel_id': 17, 'start': 171.509502, 'end': 228.709502, 'berth_start_m': 254.4, 'cranes': 5, 'duration': 57.2}",1
+116:18,116,18,repeated,3,1,10,"{'vessel_id': 10, 'start': 95.91055, 'end': 160.71055, 'berth_start_m': 367.4, 'cranes': 5, 'duration': 64.8}",1
+116:19,116,19,repeated,2,1,15,"{'vessel_id': 15, 'start': 160.71055, 'end': 176.91055, 'berth_start_m': 1877.7, 'cranes': 5, 'duration': 16.2}",1
+116:20,116,20,repeated,1,1,19,"{'vessel_id': 19, 'start': 176.91055, 'end': 272.31055, 'berth_start_m': 1880.0, 'cranes': 5, 'duration': 95.4}",125
+117:1,117,1,shock,10,1,2,"{'vessel_id': 2, 'start': 10.489075, 'end': 83.689075, 'berth_start_m': 466.5, 'cranes': 5, 'duration': 73.2}",1
+117:2,117,2,shock,9,0,,,1
+117:3,117,3,shock,9,1,8,"{'vessel_id': 8, 'start': 83.689075, 'end': 146.289075, 'berth_start_m': 1565.1, 'cranes': 5, 'duration': 62.6}",10
+117:13,117,13,shock,8,1,10,"{'vessel_id': 10, 'start': 100.91, 'end': 177.51, 'berth_start_m': 1862.1, 'cranes': 5, 'duration': 76.6}",1
+117:14,117,14,shock,7,1,19,"{'vessel_id': 19, 'start': 177.51, 'end': 206.11, 'berth_start_m': 1611.4, 'cranes': 5, 'duration': 28.6}",1
+117:15,117,15,shock,6,0,,,1
+117:16,117,16,shock,6,0,,,1
+117:17,117,17,shock,6,3,22,"{'vessel_id': 22, 'start': 206.11, 'end': 251.11, 'berth_start_m': 255.7, 'cranes': 5, 'duration': 45.0}",1
+117:18,117,18,shock,5,1,11,"{'vessel_id': 11, 'start': 124.508731, 'end': 162.908731, 'berth_start_m': 1259.5, 'cranes': 5, 'duration': 38.4}",1
+117:19,117,19,shock,4,0,,,1
+117:20,117,20,shock,4,2,12,"{'vessel_id': 12, 'start': 113.44344, 'end': 119.84344, 'berth_start_m': 185.9, 'cranes': 5, 'duration': 6.4}",1
+117:21,117,21,shock,3,0,,,1
+117:22,117,22,shock,3,1,13,"{'vessel_id': 13, 'start': 124.024395, 'end': 132.024395, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 8.0}",1
+117:23,117,23,shock,2,0,,,1
+117:24,117,24,shock,2,1,30,"{'vessel_id': 30, 'start': 251.11, 'end': 277.11, 'berth_start_m': 2254.0, 'cranes': 5, 'duration': 26.0}",2
+117:26,117,26,shock,1,1,5,"{'vessel_id': 5, 'start': 66.606548, 'end': 125.806548, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 59.2}",109
+118:3,118,3,small,5,1,1,"{'vessel_id': 1, 'start': 17.952261, 'end': 63.152261, 'berth_start_m': 203.5, 'cranes': 5, 'duration': 45.2}",2
+118:5,118,5,small,4,1,3,"{'vessel_id': 3, 'start': 32.239623, 'end': 51.639623, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",3
+118:8,118,8,small,3,0,,,1
+118:9,118,9,small,3,0,,,2
+118:11,118,11,small,3,1,6,"{'vessel_id': 6, 'start': 57.536138, 'end': 115.936138, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 58.4}",1
+118:12,118,12,small,2,1,7,"{'vessel_id': 7, 'start': 61.609181, 'end': 92.809181, 'berth_start_m': 1544.3, 'cranes': 5, 'duration': 31.2}",1
+118:13,118,13,small,1,0,,,1
+118:14,118,14,small,1,1,11,"{'vessel_id': 11, 'start': 115.936138, 'end': 176.136138, 'berth_start_m': 592.6, 'cranes': 5, 'duration': 60.2}",133
+119:9,119,9,shock,10,0,,,1
+119:10,119,10,shock,10,0,,,1
+119:11,119,11,shock,10,0,,,1
+119:12,119,12,shock,10,0,,,1
+119:13,119,13,shock,10,3,6,"{'vessel_id': 6, 'start': 55.712376, 'end': 114.112376, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 58.4}",1
+119:14,119,14,shock,9,0,,,1
+119:15,119,15,shock,9,1,4,"{'vessel_id': 4, 'start': 475.69, 'end': 555.09, 'berth_start_m': 345.4, 'cranes': 5, 'duration': 79.4}",1
+119:16,119,16,shock,8,0,,,1
+119:17,119,17,shock,8,0,,,1
+119:18,119,18,shock,8,4,11,"{'vessel_id': 11, 'start': 108.04, 'end': 168.24, 'berth_start_m': 2297.1, 'cranes': 5, 'duration': 60.2}",1
+119:19,119,19,shock,7,0,,,1
+119:20,119,20,shock,7,3,9,"{'vessel_id': 9, 'start': 81.591044, 'end': 140.391044, 'berth_start_m': 1874.7, 'cranes': 5, 'duration': 58.8}",1
+119:21,119,21,shock,6,0,,,1
+119:22,119,22,shock,6,4,13,"{'vessel_id': 13, 'start': 140.391044, 'end': 171.791044, 'berth_start_m': 2564.4, 'cranes': 5, 'duration': 31.4}",1
+119:23,119,23,shock,5,2,1,"{'vessel_id': 1, 'start': 38.586667, 'end': 83.786667, 'berth_start_m': 2297.1, 'cranes': 5, 'duration': 45.2}",1
+119:24,119,24,shock,4,0,,,1
+119:25,119,25,shock,4,3,12,"{'vessel_id': 12, 'start': 114.112376, 'end': 190.912376, 'berth_start_m': 590.0, 'cranes': 5, 'duration': 76.8}",1
+119:26,119,26,shock,3,0,,,1
+119:27,119,27,shock,3,4,17,"{'vessel_id': 17, 'start': 168.24, 'end': 225.44, 'berth_start_m': 254.4, 'cranes': 5, 'duration': 57.2}",1
+119:28,119,28,shock,2,4,20,"{'vessel_id': 20, 'start': 190.912376, 'end': 269.512376, 'berth_start_m': 555.8, 'cranes': 5, 'duration': 78.6}",1
+119:29,119,29,shock,1,2,8,"{'vessel_id': 8, 'start': 76.280925, 'end': 160.880925, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 84.6}",118
+120:3,120,3,shock,10,0,,,1
+120:4,120,4,shock,10,2,1,"{'vessel_id': 1, 'start': 19.939153, 'end': 42.339153, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",1
+120:5,120,5,shock,9,1,3,"{'vessel_id': 3, 'start': 17.151246, 'end': 103.151246, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+120:6,120,6,shock,8,2,11,"{'vessel_id': 11, 'start': 105.02, 'end': 178.02, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+120:7,120,7,shock,7,3,18,"{'vessel_id': 18, 'start': 178.02, 'end': 270.22, 'berth_start_m': 329.2, 'cranes': 5, 'duration': 92.2}",1
+120:8,120,8,shock,6,1,0,"{'vessel_id': 0, 'start': 17.786667, 'end': 81.786667, 'berth_start_m': 1911.5, 'cranes': 5, 'duration': 64.0}",1
+120:9,120,9,shock,5,0,,,1
+120:10,120,10,shock,5,0,,,1
+120:11,120,11,shock,5,0,,,1
+120:12,120,12,shock,5,1,28,"{'vessel_id': 28, 'start': 270.22, 'end': 289.82, 'berth_start_m': 207.7, 'cranes': 5, 'duration': 19.6}",4
+120:16,120,16,shock,4,0,,,1
+120:17,120,17,shock,4,0,,,1
+120:18,120,18,shock,4,0,,,1
+120:19,120,19,shock,4,0,,,1
+120:20,120,20,shock,4,1,11,"{'vessel_id': 11, 'start': 103.151246, 'end': 176.151246, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+120:21,120,21,shock,3,1,18,"{'vessel_id': 18, 'start': 176.151246, 'end': 268.351246, 'berth_start_m': 329.2, 'cranes': 5, 'duration': 92.2}",2
+120:23,120,23,shock,2,1,5,"{'vessel_id': 5, 'start': 56.135807, 'end': 95.135807, 'berth_start_m': 308.7, 'cranes': 5, 'duration': 39.0}",1
+120:24,120,24,shock,1,1,10,"{'vessel_id': 10, 'start': 95.135807, 'end': 110.935807, 'berth_start_m': 297.0, 'cranes': 5, 'duration': 15.8}",119
+121:1,121,1,small,2,0,,,1
+121:2,121,2,small,2,1,1,"{'vessel_id': 1, 'start': 5.469418, 'end': 35.869418, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",3
+121:5,121,5,small,1,0,,,1
+121:6,121,6,small,1,1,2,"{'vessel_id': 2, 'start': 12.173882, 'end': 35.373882, 'berth_start_m': 1625.4, 'cranes': 5, 'duration': 23.2}",135
+122:1,122,1,small,10,0,,,2
+122:3,122,3,small,10,1,1,"{'vessel_id': 1, 'start': 4.90736, 'end': 35.30736, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",9
+122:12,122,12,small,9,0,,,1
+122:13,122,13,small,9,1,6,"{'vessel_id': 6, 'start': 45.798819, 'end': 62.198819, 'berth_start_m': 1614.7, 'cranes': 5, 'duration': 16.4}",1
+122:14,122,14,small,8,1,8,"{'vessel_id': 8, 'start': 62.198819, 'end': 97.198819, 'berth_start_m': 1611.0, 'cranes': 5, 'duration': 35.0}",1
+122:15,122,15,small,7,1,11,"{'vessel_id': 11, 'start': 97.198819, 'end': 125.198819, 'berth_start_m': 2203.7, 'cranes': 5, 'duration': 28.0}",1
+122:16,122,16,small,6,1,14,"{'vessel_id': 14, 'start': 125.198819, 'end': 176.798819, 'berth_start_m': 1924.9, 'cranes': 5, 'duration': 51.6}",1
+122:17,122,17,small,5,1,21,"{'vessel_id': 21, 'start': 176.798819, 'end': 234.798819, 'berth_start_m': 1639.7, 'cranes': 5, 'duration': 58.0}",1
+122:18,122,18,small,4,1,24,"{'vessel_id': 24, 'start': 234.798819, 'end': 289.998819, 'berth_start_m': 481.6, 'cranes': 5, 'duration': 55.2}",1
+122:19,122,19,small,3,1,31,"{'vessel_id': 31, 'start': 289.998819, 'end': 296.598819, 'berth_start_m': 206.2, 'cranes': 5, 'duration': 6.6}",1
+122:20,122,20,small,2,1,6,"{'vessel_id': 6, 'start': 44.86506, 'end': 61.26506, 'berth_start_m': 1614.7, 'cranes': 5, 'duration': 16.4}",1
+122:21,122,21,small,1,1,8,"{'vessel_id': 8, 'start': 61.26506, 'end': 96.26506, 'berth_start_m': 1611.0, 'cranes': 5, 'duration': 35.0}",121
+123:3,123,3,shock,5,1,2,"{'vessel_id': 2, 'start': 19.239711, 'end': 42.439711, 'berth_start_m': 1611.4, 'cranes': 5, 'duration': 23.2}",1
+123:4,123,4,shock,4,0,,,1
+123:5,123,5,shock,4,1,2,"{'vessel_id': 2, 'start': 18.439797, 'end': 41.639797, 'berth_start_m': 1611.4, 'cranes': 5, 'duration': 23.2}",1
+123:6,123,6,shock,3,0,,,1
+123:7,123,7,shock,3,0,,,1
+123:8,123,8,shock,3,0,,,1
+123:9,123,9,shock,3,1,4,"{'vessel_id': 4, 'start': 34.289543, 'end': 122.089543, 'berth_start_m': 2532.3, 'cranes': 5, 'duration': 87.8}",1
+123:10,123,10,shock,2,2,13,"{'vessel_id': 13, 'start': 122.089543, 'end': 184.089543, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+123:11,123,11,shock,1,2,22,"{'vessel_id': 22, 'start': 184.089543, 'end': 269.689543, 'berth_start_m': 208.8, 'cranes': 5, 'duration': 85.6}",128
+124:2,124,2,shock,5,1,3,"{'vessel_id': 3, 'start': 22.736722, 'end': 30.536722, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+124:3,124,3,shock,4,1,4,"{'vessel_id': 4, 'start': 39.085213, 'end': 55.085213, 'berth_start_m': 1542.3, 'cranes': 5, 'duration': 16.0}",1
+124:4,124,4,shock,3,1,0,"{'vessel_id': 0, 'start': 9.588625, 'end': 102.788625, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+124:5,124,5,shock,2,1,10,"{'vessel_id': 10, 'start': 102.788625, 'end': 133.388625, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",1
+124:6,124,6,shock,1,1,5,"{'vessel_id': 5, 'start': 50.926716, 'end': 57.326716, 'berth_start_m': 1970.5, 'cranes': 5, 'duration': 6.4}",134
+125:1,125,1,small,10,1,1,"{'vessel_id': 1, 'start': 15.661282, 'end': 33.061282, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",1
+125:2,125,2,small,9,0,,,1
+125:3,125,3,small,9,0,,,1
+125:4,125,4,small,9,1,1,"{'vessel_id': 1, 'start': 15.309757, 'end': 32.709757, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",1
+125:5,125,5,small,8,0,,,1
+125:6,125,6,small,8,0,,,1
+125:7,125,7,small,8,1,4,"{'vessel_id': 4, 'start': 52.927211, 'end': 121.527211, 'berth_start_m': 1749.2, 'cranes': 5, 'duration': 68.6}",1
+125:8,125,8,small,7,1,2,"{'vessel_id': 2, 'start': 17.526667, 'end': 108.326667, 'berth_start_m': 303.6, 'cranes': 5, 'duration': 90.8}",1
+125:9,125,9,small,6,0,,,1
+125:10,125,10,small,6,2,6,"{'vessel_id': 6, 'start': 61.315513, 'end': 95.315513, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",1
+125:11,125,11,small,5,0,,,2
+125:13,125,13,small,5,0,,,1
+125:14,125,14,small,5,1,4,"{'vessel_id': 4, 'start': 52.311493, 'end': 120.911493, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",4
+125:18,125,18,small,4,0,,,1
+125:19,125,19,small,4,0,,,1
+125:20,125,20,small,4,0,,,1
+125:21,125,21,small,4,0,,,1
+125:22,125,22,small,4,1,6,"{'vessel_id': 6, 'start': 60.313552, 'end': 94.313552, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",1
+125:23,125,23,small,3,1,10,"{'vessel_id': 10, 'start': 120.989848, 'end': 133.389848, 'berth_start_m': 188.5, 'cranes': 5, 'duration': 12.4}",1
+125:24,125,24,small,2,1,11,"{'vessel_id': 11, 'start': 121.754607, 'end': 157.954607, 'berth_start_m': 1765.1, 'cranes': 5, 'duration': 36.2}",3
+125:27,125,27,small,1,0,,,1
+125:28,125,28,small,1,1,7,"{'vessel_id': 7, 'start': 84.149306, 'end': 149.949306, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 65.8}",113
+126:35,126,35,shock,2,0,,,1
+126:36,126,36,shock,2,1,19,"{'vessel_id': 19, 'start': 377.82, 'end': 448.62, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 70.8}",1
+126:37,126,37,shock,1,0,,,1
+126:38,126,38,shock,1,2,21,"{'vessel_id': 21, 'start': 174.354473, 'end': 182.954473, 'berth_start_m': 295.9, 'cranes': 5, 'duration': 8.6}",96
+127:1,127,1,shock,2,0,,,1
+127:2,127,2,shock,2,1,0,"{'vessel_id': 0, 'start': 14.696733, 'end': 26.096733, 'berth_start_m': 547.7, 'cranes': 5, 'duration': 11.4}",5
+127:7,127,7,shock,1,0,,,1
+127:8,127,8,shock,1,1,4,"{'vessel_id': 4, 'start': 58.524028, 'end': 127.124028, 'berth_start_m': 2161.1, 'cranes': 5, 'duration': 68.6}",133
+128:1,128,1,small,5,1,0,"{'vessel_id': 0, 'start': 13.899416, 'end': 107.099416, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+128:2,128,2,small,4,0,,,1
+128:3,128,3,small,4,0,,,1
+128:4,128,4,small,4,0,,,1
+128:5,128,5,small,4,0,,,1
+128:6,128,6,small,4,2,3,"{'vessel_id': 3, 'start': 23.726089, 'end': 31.526089, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+128:7,128,7,small,3,1,0,"{'vessel_id': 0, 'start': 12.532996, 'end': 105.732996, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+128:8,128,8,small,2,0,,,1
+128:9,128,9,small,2,1,4,"{'vessel_id': 4, 'start': 26.826676, 'end': 42.826676, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}",1
+128:10,128,10,small,1,0,,,1
+128:11,128,11,small,1,0,,,1
+128:12,128,12,small,1,0,,,1
+128:13,128,13,small,1,0,,,1
+128:14,128,14,small,1,0,,,1
+128:15,128,15,small,1,2,7,"{'vessel_id': 7, 'start': 53.675297, 'end': 135.275297, 'berth_start_m': 1117.4, 'cranes': 5, 'duration': 81.6}",130
+129:8,129,8,shock,2,1,3,"{'vessel_id': 3, 'start': 23.357217, 'end': 49.957217, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",2
+129:10,129,10,shock,1,1,5,"{'vessel_id': 5, 'start': 60.424644, 'end': 119.624644, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 59.2}",127
+130:1,130,1,repeated,10,0,,,2
+130:3,130,3,repeated,10,1,2,"{'vessel_id': 2, 'start': 8.81787, 'end': 32.01787, 'berth_start_m': 667.5, 'cranes': 5, 'duration': 23.2}",1
+130:4,130,4,repeated,9,0,,,1
+130:5,130,5,repeated,9,0,,,1
+130:6,130,6,repeated,9,3,3,"{'vessel_id': 3, 'start': 20.987696, 'end': 63.387696, 'berth_start_m': 950.2, 'cranes': 5, 'duration': 42.4}",1
+130:7,130,7,repeated,8,0,,,1
+130:8,130,8,repeated,8,0,,,1
+130:9,130,9,repeated,8,0,,,1
+130:10,130,10,repeated,8,0,,,1
+130:11,130,11,repeated,8,0,,,1
+130:12,130,12,repeated,8,2,6,"{'vessel_id': 6, 'start': 44.510798, 'end': 60.910798, 'berth_start_m': 1614.7, 'cranes': 5, 'duration': 16.4}",1
+130:13,130,13,repeated,7,3,8,"{'vessel_id': 8, 'start': 60.910798, 'end': 95.910798, 'berth_start_m': 1611.0, 'cranes': 5, 'duration': 35.0}",1
+130:14,130,14,repeated,6,1,4,"{'vessel_id': 4, 'start': 26.55674, 'end': 114.35674, 'berth_start_m': 2532.3, 'cranes': 5, 'duration': 87.8}",1
+130:15,130,15,repeated,5,2,11,"{'vessel_id': 11, 'start': 95.910798, 'end': 123.910798, 'berth_start_m': 2203.7, 'cranes': 5, 'duration': 28.0}",1
+130:16,130,16,repeated,4,3,14,"{'vessel_id': 14, 'start': 123.910798, 'end': 175.510798, 'berth_start_m': 1924.9, 'cranes': 5, 'duration': 51.6}",1
+130:17,130,17,repeated,3,0,,,1
+130:18,130,18,repeated,3,3,13,"{'vessel_id': 13, 'start': 114.35674, 'end': 176.35674, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+130:19,130,19,repeated,2,2,7,"{'vessel_id': 7, 'start': 46.481105, 'end': 94.681105, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 48.2}",1
+130:20,130,20,repeated,1,0,,,1
+130:21,130,21,repeated,1,2,7,"{'vessel_id': 7, 'start': 46.254888, 'end': 94.454888, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 48.2}",118
+131:3,131,3,shock,5,0,,,5
+131:8,131,8,shock,5,1,4,"{'vessel_id': 4, 'start': 34.008058, 'end': 121.808058, 'berth_start_m': 2532.3, 'cranes': 5, 'duration': 87.8}",1
+131:9,131,9,shock,4,1,13,"{'vessel_id': 13, 'start': 121.808058, 'end': 183.808058, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+131:10,131,10,shock,3,0,,,1
+131:11,131,11,shock,3,1,5,"{'vessel_id': 5, 'start': 29.854565, 'end': 119.454565, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 89.6}",1
+131:12,131,12,shock,2,0,,,1
+131:13,131,13,shock,2,0,,,1
+131:14,131,14,shock,2,4,15,"{'vessel_id': 15, 'start': 119.454565, 'end': 150.654565, 'berth_start_m': 1196.8, 'cranes': 5, 'duration': 31.2}",1
+131:15,131,15,shock,1,0,,,1
+131:16,131,16,shock,1,0,,,1
+131:17,131,17,shock,1,2,19,"{'vessel_id': 19, 'start': 150.654565, 'end': 232.054565, 'berth_start_m': 834.5, 'cranes': 5, 'duration': 81.4}",124
+132:2,132,2,shock,2,0,,,1
+132:3,132,3,shock,2,1,2,"{'vessel_id': 2, 'start': 9.888258, 'end': 33.088258, 'berth_start_m': 667.5, 'cranes': 5, 'duration': 23.2}",1
+132:4,132,4,shock,1,1,2,"{'vessel_id': 2, 'start': 7.091022, 'end': 30.291022, 'berth_start_m': 667.5, 'cranes': 5, 'duration': 23.2}",135
+133:1,133,1,repeated,10,1,3,"{'vessel_id': 3, 'start': 20.269832, 'end': 46.869832, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",3
+133:4,133,4,repeated,9,0,,,1
+133:5,133,5,repeated,9,0,,,1
+133:6,133,6,repeated,9,0,,,1
+133:7,133,7,repeated,9,2,5,"{'vessel_id': 5, 'start': 57.832575, 'end': 117.032575, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 59.2}",1
+133:8,133,8,repeated,8,2,13,"{'vessel_id': 13, 'start': 117.62, 'end': 125.62, 'berth_start_m': 781.6, 'cranes': 5, 'duration': 8.0}",1
+133:9,133,9,repeated,7,0,,,1
+133:10,133,10,repeated,7,1,10,"{'vessel_id': 10, 'start': 100.91, 'end': 177.51, 'berth_start_m': 1862.1, 'cranes': 5, 'duration': 76.6}",1
+133:11,133,11,repeated,6,0,,,1
+133:12,133,12,repeated,6,1,7,"{'vessel_id': 7, 'start': 66.374404, 'end': 76.774404, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 10.4}",1
+133:13,133,13,repeated,5,0,,,1
+133:14,133,14,repeated,5,3,19,"{'vessel_id': 19, 'start': 177.51, 'end': 206.11, 'berth_start_m': 1611.4, 'cranes': 5, 'duration': 28.6}",1
+133:15,133,15,repeated,4,0,,,1
+133:16,133,16,repeated,4,0,,,1
+133:17,133,17,repeated,4,2,12,"{'vessel_id': 12, 'start': 113.596755, 'end': 119.996755, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 6.4}",1
+133:18,133,18,repeated,3,3,15,"{'vessel_id': 15, 'start': 131.017709, 'end': 187.817709, 'berth_start_m': 325.6, 'cranes': 5, 'duration': 56.8}",1
+133:19,133,19,repeated,2,1,9,"{'vessel_id': 9, 'start': 91.63272, 'end': 132.63272, 'berth_start_m': 2485.5, 'cranes': 5, 'duration': 41.0}",1
+133:20,133,20,repeated,1,3,21,"{'vessel_id': 21, 'start': 187.817709, 'end': 283.217709, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 95.4}",112
+134:2,134,2,repeated,2,1,2,"{'vessel_id': 2, 'start': 8.778223, 'end': 99.578223, 'berth_start_m': 1750.4, 'cranes': 5, 'duration': 90.8}",1
+134:3,134,3,repeated,1,0,,,1
+134:4,134,4,repeated,1,1,1,"{'vessel_id': 1, 'start': 15.364555, 'end': 32.764555, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",136
+135:1,135,1,repeated,5,0,,,1
+135:2,135,2,repeated,5,1,0,"{'vessel_id': 0, 'start': 1.94, 'end': 61.74, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.8}",13
+135:15,135,15,repeated,4,1,7,"{'vessel_id': 7, 'start': 72.616581, 'end': 83.016581, 'berth_start_m': 682.2, 'cranes': 5, 'duration': 10.4}",1
+135:16,135,16,repeated,3,1,8,"{'vessel_id': 8, 'start': 83.016581, 'end': 145.616581, 'berth_start_m': 1565.1, 'cranes': 5, 'duration': 62.6}",7
+135:23,135,23,repeated,2,1,5,"{'vessel_id': 5, 'start': 76.086993, 'end': 135.286993, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 59.2}",1
+135:24,135,24,repeated,1,1,14,"{'vessel_id': 14, 'start': 132.676044, 'end': 183.276044, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 50.6}",116
+136:3,136,3,small,5,1,1,"{'vessel_id': 1, 'start': 4.622566, 'end': 35.022566, 'berth_start_m': 1364.9, 'cranes': 5, 'duration': 30.4}",2
+136:5,136,5,small,4,0,,,1
+136:6,136,6,small,4,0,,,1
+136:7,136,7,small,4,1,2,"{'vessel_id': 2, 'start': 9.680397, 'end': 32.880397, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 23.2}",1
+136:8,136,8,small,3,0,,,1
+136:9,136,9,small,3,1,4,"{'vessel_id': 4, 'start': 33.74169, 'end': 121.54169, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 87.8}",1
+136:10,136,10,small,2,0,,,1
+136:11,136,11,small,2,1,13,"{'vessel_id': 13, 'start': 121.54169, 'end': 183.54169, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+136:12,136,12,small,1,1,6,"{'vessel_id': 6, 'start': 45.955888, 'end': 62.355888, 'berth_start_m': 1614.7, 'cranes': 5, 'duration': 16.4}",130
+137:14,137,14,repeated,5,0,,,1
+137:15,137,15,repeated,5,0,,,1
+137:16,137,16,repeated,5,1,3,"{'vessel_id': 3, 'start': 27.706514, 'end': 109.106514, 'berth_start_m': 1180.4, 'cranes': 5, 'duration': 81.4}",1
+137:17,137,17,repeated,4,2,12,"{'vessel_id': 12, 'start': 109.106514, 'end': 127.906514, 'berth_start_m': 921.0, 'cranes': 5, 'duration': 18.8}",1
+137:18,137,18,repeated,3,2,13,"{'vessel_id': 13, 'start': 127.906514, 'end': 175.506514, 'berth_start_m': 923.4, 'cranes': 5, 'duration': 47.6}",1
+137:19,137,19,repeated,2,1,4,"{'vessel_id': 4, 'start': 31.800445, 'end': 107.600445, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+137:20,137,20,repeated,1,1,11,"{'vessel_id': 11, 'start': 107.600445, 'end': 137.800445, 'berth_start_m': 1443.6, 'cranes': 5, 'duration': 30.2}",116
+138:2,138,2,repeated,10,1,1,"{'vessel_id': 1, 'start': 14.005218, 'end': 33.205218, 'berth_start_m': 267.3, 'cranes': 5, 'duration': 19.2}",1
+138:3,138,3,repeated,9,1,3,"{'vessel_id': 3, 'start': 21.642752, 'end': 29.442752, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+138:4,138,4,repeated,8,1,4,"{'vessel_id': 4, 'start': 28.998353, 'end': 44.998353, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",2
+138:6,138,6,repeated,7,1,5,"{'vessel_id': 5, 'start': 43.381829, 'end': 49.781829, 'berth_start_m': 751.7, 'cranes': 5, 'duration': 6.4}",1
+138:7,138,7,repeated,6,0,,,1
+138:8,138,8,repeated,6,2,3,"{'vessel_id': 3, 'start': 17.833333, 'end': 25.633333, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+138:9,138,9,repeated,5,1,4,"{'vessel_id': 4, 'start': 23.401944, 'end': 39.401944, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}",1
+138:10,138,10,repeated,4,1,6,"{'vessel_id': 6, 'start': 52.447657, 'end': 110.047657, 'berth_start_m': 745.8, 'cranes': 5, 'duration': 57.6}",1
+138:11,138,11,repeated,3,1,12,"{'vessel_id': 12, 'start': 110.047657, 'end': 156.847657, 'berth_start_m': 542.2, 'cranes': 5, 'duration': 46.8}",2
+138:13,138,13,repeated,2,1,9,"{'vessel_id': 9, 'start': 70.475616, 'end': 109.275616, 'berth_start_m': 1904.6, 'cranes': 5, 'duration': 38.8}",1
+138:14,138,14,repeated,1,1,11,"{'vessel_id': 11, 'start': 109.275616, 'end': 143.075616, 'berth_start_m': 2286.0, 'cranes': 5, 'duration': 33.8}",127
+139:1,139,1,small,10,1,1,"{'vessel_id': 1, 'start': 15.914297, 'end': 33.314297, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",1
+139:2,139,2,small,9,0,,,1
+139:3,139,3,small,9,1,2,"{'vessel_id': 2, 'start': 18.341679, 'end': 109.141679, 'berth_start_m': 303.6, 'cranes': 5, 'duration': 90.8}",4
+139:7,139,7,small,8,1,4,"{'vessel_id': 4, 'start': 51.390694, 'end': 119.990694, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",8
+139:15,139,15,small,7,1,8,"{'vessel_id': 8, 'start': 104.273312, 'end': 190.073312, 'berth_start_m': 742.7, 'cranes': 5, 'duration': 85.8}",1
+139:16,139,16,small,6,1,21,"{'vessel_id': 21, 'start': 190.11, 'end': 206.91, 'berth_start_m': 1333.0, 'cranes': 5, 'duration': 16.8}",1
+139:17,139,17,small,5,0,,,1
+139:18,139,18,small,5,2,23,"{'vessel_id': 23, 'start': 206.91, 'end': 283.31, 'berth_start_m': 659.2, 'cranes': 5, 'duration': 76.4}",1
+139:19,139,19,small,4,0,,,1
+139:20,139,20,small,4,2,10,"{'vessel_id': 10, 'start': 120.337308, 'end': 132.737308, 'berth_start_m': 188.5, 'cranes': 5, 'duration': 12.4}",1
+139:21,139,21,small,3,0,,,1
+139:22,139,22,small,3,4,32,"{'vessel_id': 32, 'start': 283.31, 'end': 294.91, 'berth_start_m': 585.4, 'cranes': 5, 'duration': 11.6}",1
+139:23,139,23,small,2,0,,,1
+139:24,139,24,small,2,0,,,1
+139:25,139,25,small,2,0,,,1
+139:26,139,26,small,2,3,35,"{'vessel_id': 35, 'start': 294.91, 'end': 387.71, 'berth_start_m': 1973.4, 'cranes': 5, 'duration': 92.8}",1
+139:27,139,27,small,1,0,,,1
+139:28,139,28,small,1,2,11,"{'vessel_id': 11, 'start': 123.196646, 'end': 159.396646, 'berth_start_m': 1765.1, 'cranes': 5, 'duration': 36.2}",113
+140:2,140,2,shock,10,0,,,2
+140:4,140,4,shock,10,0,,,1
+140:5,140,5,shock,10,0,,,1
+140:6,140,6,shock,10,0,,,1
+140:7,140,7,shock,10,3,3,"{'vessel_id': 3, 'start': 25.046541, 'end': 106.446541, 'berth_start_m': 1180.4, 'cranes': 5, 'duration': 81.4}",1
+140:8,140,8,shock,9,1,2,"{'vessel_id': 2, 'start': 23.41805, 'end': 96.61805, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+140:9,140,9,shock,8,4,11,"{'vessel_id': 11, 'start': 106.446541, 'end': 136.646541, 'berth_start_m': 2081.4, 'cranes': 5, 'duration': 30.2}",1
+140:10,140,10,shock,7,1,4,"{'vessel_id': 4, 'start': 28.634404, 'end': 104.434404, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+140:11,140,11,shock,6,1,5,"{'vessel_id': 5, 'start': 29.338416, 'end': 67.938416, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 38.6}",1
+140:12,140,12,shock,5,1,7,"{'vessel_id': 7, 'start': 67.938416, 'end': 138.738416, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 70.8}",1
+140:13,140,13,shock,4,4,12,"{'vessel_id': 12, 'start': 104.434404, 'end': 123.234404, 'berth_start_m': 1441.8, 'cranes': 5, 'duration': 18.8}",1
+140:14,140,14,shock,3,3,13,"{'vessel_id': 13, 'start': 123.234404, 'end': 170.834404, 'berth_start_m': 923.4, 'cranes': 5, 'duration': 47.6}",1
+140:15,140,15,shock,2,0,,,1
+140:16,140,16,shock,2,0,,,1
+140:17,140,17,shock,2,3,14,"{'vessel_id': 14, 'start': 136.646541, 'end': 166.846541, 'berth_start_m': 1298.5, 'cranes': 5, 'duration': 30.2}",1
+140:18,140,18,shock,1,0,,,1
+140:19,140,19,shock,1,3,17,"{'vessel_id': 17, 'start': 166.846541, 'end': 240.246541, 'berth_start_m': 1859.5, 'cranes': 5, 'duration': 73.4}",113
+141:1,141,1,repeated,10,0,,,1
+141:2,141,2,repeated,10,1,0,"{'vessel_id': 0, 'start': 6.229693, 'end': 17.629693, 'berth_start_m': 307.1, 'cranes': 5, 'duration': 11.4}",1
+141:3,141,3,repeated,9,0,,,1
+141:4,141,4,repeated,9,2,1,"{'vessel_id': 1, 'start': 15.333996, 'end': 32.733996, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",1
+141:5,141,5,repeated,8,2,2,"{'vessel_id': 2, 'start': 16.399599, 'end': 107.199599, 'berth_start_m': 1750.4, 'cranes': 5, 'duration': 90.8}",1
+141:6,141,6,repeated,7,1,1,"{'vessel_id': 1, 'start': 12.710976, 'end': 30.110976, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",2
+141:8,141,8,repeated,6,1,3,"{'vessel_id': 3, 'start': 36.357048, 'end': 113.557048, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 77.2}",1
+141:9,141,9,repeated,5,0,,,1
+141:10,141,10,repeated,5,0,,,1
+141:11,141,11,repeated,5,1,6,"{'vessel_id': 6, 'start': 56.547214, 'end': 90.547214, 'berth_start_m': 181.4, 'cranes': 5, 'duration': 34.0}",1
+141:12,141,12,repeated,4,1,4,"{'vessel_id': 4, 'start': 47.430409, 'end': 116.030409, 'berth_start_m': 515.8, 'cranes': 5, 'duration': 68.6}",3
+141:15,141,15,repeated,3,1,4,"{'vessel_id': 4, 'start': 40.643019, 'end': 109.243019, 'berth_start_m': 515.8, 'cranes': 5, 'duration': 68.6}",1
+141:16,141,16,repeated,2,0,,,1
+141:17,141,17,repeated,2,1,5,"{'vessel_id': 5, 'start': 46.187305, 'end': 82.987305, 'berth_start_m': 738.2, 'cranes': 5, 'duration': 36.8}",2
+141:19,141,19,repeated,1,0,,,1
+141:20,141,20,repeated,1,0,,,1
+141:21,141,21,repeated,1,0,,,1
+141:22,141,22,repeated,1,0,,,1
+141:23,141,23,repeated,1,0,,,1
+141:24,141,24,repeated,1,0,,,1
+141:25,141,25,repeated,1,2,11,"{'vessel_id': 11, 'start': 122.678671, 'end': 158.878671, 'berth_start_m': 1765.1, 'cranes': 5, 'duration': 36.2}",118
+142:3,142,3,repeated,10,1,3,"{'vessel_id': 3, 'start': 24.602874, 'end': 106.002874, 'berth_start_m': 1180.4, 'cranes': 5, 'duration': 81.4}",1
+142:4,142,4,repeated,9,3,12,"{'vessel_id': 12, 'start': 106.002874, 'end': 124.802874, 'berth_start_m': 921.0, 'cranes': 5, 'duration': 18.8}",1
+142:5,142,5,repeated,8,0,,,1
+142:6,142,6,repeated,8,3,13,"{'vessel_id': 13, 'start': 124.802874, 'end': 172.402874, 'berth_start_m': 923.4, 'cranes': 5, 'duration': 47.6}",1
+142:7,142,7,repeated,7,0,,,1
+142:8,142,8,repeated,7,3,20,"{'vessel_id': 20, 'start': 172.402874, 'end': 208.202874, 'berth_start_m': 606.7, 'cranes': 5, 'duration': 35.8}",1
+142:9,142,9,repeated,6,0,,,1
+142:10,142,10,repeated,6,1,4,"{'vessel_id': 4, 'start': 31.663097, 'end': 107.463097, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+142:11,142,11,repeated,5,4,24,"{'vessel_id': 24, 'start': 208.202874, 'end': 227.202874, 'berth_start_m': 600.0, 'cranes': 5, 'duration': 19.0}",1
+142:12,142,12,repeated,4,0,,,1
+142:13,142,13,repeated,4,0,,,1
+142:14,142,14,repeated,4,1,3,"{'vessel_id': 3, 'start': 21.07, 'end': 102.47, 'berth_start_m': 1180.4, 'cranes': 5, 'duration': 81.4}",1
+142:15,142,15,repeated,3,3,12,"{'vessel_id': 12, 'start': 102.47, 'end': 121.27, 'berth_start_m': 921.0, 'cranes': 5, 'duration': 18.8}",1
+142:16,142,16,repeated,2,1,5,"{'vessel_id': 5, 'start': 31.996253, 'end': 70.596253, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 38.6}",1
+142:17,142,17,repeated,1,3,13,"{'vessel_id': 13, 'start': 121.27, 'end': 168.87, 'berth_start_m': 923.4, 'cranes': 5, 'duration': 47.6}",117
+143:1,143,1,repeated,2,0,,,1
+143:2,143,2,repeated,2,0,,,1
+143:3,143,3,repeated,2,0,,,1
+143:4,143,4,repeated,2,0,,,1
+143:5,143,5,repeated,2,2,2,"{'vessel_id': 2, 'start': 23.635251, 'end': 96.835251, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+143:6,143,6,repeated,1,3,10,"{'vessel_id': 10, 'start': 96.835251, 'end': 164.835251, 'berth_start_m': 572.3, 'cranes': 5, 'duration': 68.0}",127
+144:7,144,7,small,2,1,3,"{'vessel_id': 3, 'start': 42.626957, 'end': 119.826957, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 77.2}",1
+144:8,144,8,small,1,1,4,"{'vessel_id': 4, 'start': 52.212823, 'end': 120.812823, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",134
+145:2,145,2,small,5,1,0,"{'vessel_id': 0, 'start': 4.386551, 'end': 64.186551, 'berth_start_m': 1205.5, 'cranes': 5, 'duration': 59.8}",5
+145:7,145,7,small,4,0,,,1
+145:8,145,8,small,4,2,3,"{'vessel_id': 3, 'start': 22.188587, 'end': 48.788587, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",1
+145:9,145,9,small,3,0,,,1
+145:10,145,10,small,3,1,4,"{'vessel_id': 4, 'start': 28.026085, 'end': 111.626085, 'berth_start_m': 958.3, 'cranes': 5, 'duration': 83.6}",10
+145:20,145,20,small,2,0,,,1
+145:21,145,21,small,2,1,11,"{'vessel_id': 11, 'start': 110.550683, 'end': 148.950683, 'berth_start_m': 1208.9, 'cranes': 5, 'duration': 38.4}",2
+145:23,145,23,small,1,1,5,"{'vessel_id': 5, 'start': 63.029344, 'end': 122.229344, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.2}",117
+146:2,146,2,repeated,10,0,,,1
+146:3,146,3,repeated,10,1,0,"{'vessel_id': 0, 'start': 7.516667, 'end': 79.516667, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 72.0}",1
+146:4,146,4,repeated,9,0,,,1
+146:5,146,5,repeated,9,2,8,"{'vessel_id': 8, 'start': 79.516667, 'end': 167.316667, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 87.8}",1
+146:6,146,6,repeated,8,0,,,1
+146:7,146,7,repeated,8,2,2,"{'vessel_id': 2, 'start': 24.441935, 'end': 97.641935, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+146:8,146,8,repeated,7,3,16,"{'vessel_id': 16, 'start': 167.316667, 'end': 193.316667, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 26.0}",1
+146:9,146,9,repeated,6,0,,,1
+146:10,146,10,repeated,6,1,5,"{'vessel_id': 5, 'start': 32.521871, 'end': 71.121871, 'berth_start_m': 1863.2, 'cranes': 5, 'duration': 38.6}",1
+146:11,146,11,repeated,5,3,23,"{'vessel_id': 23, 'start': 193.316667, 'end': 262.116667, 'berth_start_m': 2295.1, 'cranes': 5, 'duration': 68.8}",1
+146:12,146,12,repeated,4,2,10,"{'vessel_id': 10, 'start': 97.641935, 'end': 165.641935, 'berth_start_m': 572.3, 'cranes': 5, 'duration': 68.0}",1
+146:13,146,13,repeated,3,1,3,"{'vessel_id': 3, 'start': 22.126438, 'end': 103.526438, 'berth_start_m': 1180.4, 'cranes': 5, 'duration': 81.4}",1
+146:14,146,14,repeated,2,0,,,1
+146:15,146,15,repeated,2,0,,,1
+146:16,146,16,repeated,2,4,12,"{'vessel_id': 12, 'start': 103.526438, 'end': 122.326438, 'berth_start_m': 921.0, 'cranes': 5, 'duration': 18.8}",1
+146:17,146,17,repeated,1,0,,,1
+146:18,146,18,repeated,1,1,4,"{'vessel_id': 4, 'start': 30.550902, 'end': 106.350902, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",117
+147:1,147,1,shock,2,1,0,"{'vessel_id': 0, 'start': 13.024173, 'end': 106.224173, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+147:2,147,2,shock,1,0,,,1
+147:3,147,3,shock,1,1,10,"{'vessel_id': 10, 'start': 106.224173, 'end': 136.824173, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",141
+148:1,148,1,shock,5,0,,,1
+148:2,148,2,shock,5,0,,,18
+148:20,148,20,shock,5,0,,,1
+148:21,148,21,shock,5,0,,,1
+148:22,148,22,shock,5,1,10,"{'vessel_id': 10, 'start': 159.44, 'end': 171.84, 'berth_start_m': 1331.5, 'cranes': 5, 'duration': 12.4}",1
+148:23,148,23,shock,4,1,12,"{'vessel_id': 12, 'start': 119.66865, 'end': 185.66865, 'berth_start_m': 2165.0, 'cranes': 5, 'duration': 66.0}",1
+148:24,148,24,shock,3,1,21,"{'vessel_id': 21, 'start': 190.11, 'end': 206.91, 'berth_start_m': 1333.0, 'cranes': 5, 'duration': 16.8}",1
+148:25,148,25,shock,2,0,,,1
+148:26,148,26,shock,2,1,14,"{'vessel_id': 14, 'start': 157.926935, 'end': 169.726935, 'berth_start_m': 203.6, 'cranes': 5, 'duration': 11.8}",1
+148:27,148,27,shock,1,1,23,"{'vessel_id': 23, 'start': 206.91, 'end': 283.31, 'berth_start_m': 659.2, 'cranes': 5, 'duration': 76.4}",116
+149:3,149,3,small,10,1,1,"{'vessel_id': 1, 'start': 16.183189, 'end': 33.583189, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",4
+149:7,149,7,small,9,1,2,"{'vessel_id': 2, 'start': 17.948231, 'end': 108.748231, 'berth_start_m': 303.6, 'cranes': 5, 'duration': 90.8}",2
+149:9,149,9,small,8,0,,,1
+149:10,149,10,small,8,2,4,"{'vessel_id': 4, 'start': 50.889427, 'end': 119.489427, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+149:11,149,11,small,7,0,,,1
+149:12,149,12,small,7,1,5,"{'vessel_id': 5, 'start': 52.469377, 'end': 89.269377, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",1
+149:13,149,13,small,6,0,,,1
+149:14,149,14,small,6,0,,,1
+149:15,149,15,small,6,0,,,1
+149:16,149,16,small,6,1,4,"{'vessel_id': 4, 'start': 49.6889, 'end': 118.2889, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+149:17,149,17,small,5,1,8,"{'vessel_id': 8, 'start': 105.105726, 'end': 190.905726, 'berth_start_m': 742.7, 'cranes': 5, 'duration': 85.8}",1
+149:18,149,18,small,4,0,,,1
+149:19,149,19,small,4,0,,,1
+149:20,149,20,small,4,0,,,1
+149:21,149,21,small,4,2,9,"{'vessel_id': 9, 'start': 107.65467, 'end': 158.05467, 'berth_start_m': 999.8, 'cranes': 5, 'duration': 50.4}",1
+149:22,149,22,small,3,0,,,1
+149:23,149,23,small,3,0,,,1
+149:24,149,24,small,3,0,,,1
+149:25,149,25,small,3,0,,,1
+149:26,149,26,small,3,1,7,"{'vessel_id': 7, 'start': 83.877545, 'end': 149.677545, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 65.8}",1
+149:27,149,27,small,2,0,,,1
+149:28,149,28,small,2,4,21,"{'vessel_id': 21, 'start': 190.905726, 'end': 207.705726, 'berth_start_m': 1333.0, 'cranes': 5, 'duration': 16.8}",1
+149:29,149,29,small,1,1,7,"{'vessel_id': 7, 'start': 82.082304, 'end': 147.882304, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 65.8}",114
+150:2,150,2,shock,10,0,,,1
+150:3,150,3,shock,10,0,,,1
+150:4,150,4,shock,10,0,,,1
+150:5,150,5,shock,10,1,2,"{'vessel_id': 2, 'start': 49.839456, 'end': 64.439456, 'berth_start_m': 1911.3, 'cranes': 5, 'duration': 14.6}",27
+150:32,150,32,shock,9,0,,,1
+150:33,150,33,shock,9,1,7,"{'vessel_id': 7, 'start': 77.53613, 'end': 113.73613, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 36.2}",83
+150:116,150,116,shock,8,1,23,"{'vessel_id': 23, 'start': 458.13, 'end': 541.13, 'berth_start_m': 283.8, 'cranes': 5, 'duration': 83.0}",1
+150:117,150,117,shock,7,3,27,"{'vessel_id': 27, 'start': 235.033333, 'end': 300.233333, 'berth_start_m': 1803.2, 'cranes': 5, 'duration': 65.2}",1
+150:118,150,118,shock,6,1,31,"{'vessel_id': 31, 'start': 263.48, 'end': 274.48, 'berth_start_m': 1318.2, 'cranes': 5, 'duration': 11.0}",1
+150:119,150,119,shock,5,0,,,1
+150:120,150,120,shock,5,2,43,"{'vessel_id': 43, 'start': 300.68805, 'end': 327.08805, 'berth_start_m': 1010.6, 'cranes': 5, 'duration': 26.4}",1
+150:121,150,121,shock,4,0,,,1
+150:122,150,122,shock,4,0,,,1
+150:123,150,123,shock,4,1,33,"{'vessel_id': 33, 'start': 300.0, 'end': 378.4, 'berth_start_m': 607.6, 'cranes': 5, 'duration': 78.4}",1
+150:124,150,124,shock,3,4,46,"{'vessel_id': 46, 'start': 389.06, 'end': 400.86, 'berth_start_m': 1602.8, 'cranes': 5, 'duration': 11.8}",1
+150:125,150,125,shock,2,0,,,1
+150:126,150,126,shock,2,1,47,"{'vessel_id': 47, 'start': 400.86, 'end': 438.46, 'berth_start_m': 1603.6, 'cranes': 5, 'duration': 37.6}",1
+150:127,150,127,shock,1,0,,,1
+150:128,150,128,shock,1,2,49,"{'vessel_id': 49, 'start': 438.46, 'end': 529.26, 'berth_start_m': 1605.5, 'cranes': 5, 'duration': 90.8}",17
+151:16,151,16,shock,5,1,8,"{'vessel_id': 8, 'start': 82.281275, 'end': 159.481275, 'berth_start_m': 1912.0, 'cranes': 5, 'duration': 77.2}",1
+151:17,151,17,shock,4,0,,,1
+151:18,151,18,shock,4,1,15,"{'vessel_id': 15, 'start': 159.481275, 'end': 226.481275, 'berth_start_m': 1887.3, 'cranes': 5, 'duration': 67.0}",18
+151:36,151,36,shock,3,0,,,1
+151:37,151,37,shock,3,0,,,1
+151:38,151,38,shock,3,0,,,1
+151:39,151,39,shock,3,0,,,1
+151:40,151,40,shock,3,1,8,"{'vessel_id': 8, 'start': 81.333169, 'end': 158.533169, 'berth_start_m': 1912.0, 'cranes': 5, 'duration': 77.2}",78
+151:118,151,118,shock,2,0,,,1
+151:119,151,119,shock,2,0,,,1
+151:120,151,120,shock,2,0,,,1
+151:121,151,121,shock,2,0,,,26
+152:1,152,1,repeated,5,1,2,"{'vessel_id': 2, 'start': 22.152403, 'end': 49.552403, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",4
+152:5,152,5,repeated,4,1,5,"{'vessel_id': 5, 'start': 43.623927, 'end': 138.823927, 'berth_start_m': 1226.1, 'cranes': 5, 'duration': 95.2}",1
+152:6,152,6,repeated,3,0,,,1
+152:7,152,7,repeated,3,0,,,1
+152:8,152,8,repeated,3,0,,,1
+152:9,152,9,repeated,3,1,13,"{'vessel_id': 13, 'start': 138.823927, 'end': 170.223927, 'berth_start_m': 1089.1, 'cranes': 5, 'duration': 31.4}",1
+152:10,152,10,repeated,2,0,,,1
+152:11,152,11,repeated,2,1,17,"{'vessel_id': 17, 'start': 170.223927, 'end': 227.423927, 'berth_start_m': 254.4, 'cranes': 5, 'duration': 57.2}",1
+152:12,152,12,repeated,1,1,8,"{'vessel_id': 8, 'start': 79.501269, 'end': 164.101269, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 84.6}",131
+153:1,153,1,small,2,1,0,"{'vessel_id': 0, 'start': 7.26369, 'end': 71.26369, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",1
+153:2,153,2,small,1,0,,,2
+153:4,153,4,small,1,0,,,1
+153:5,153,5,small,1,0,,,1
+153:6,153,6,small,1,2,3,"{'vessel_id': 3, 'start': 24.08743, 'end': 110.08743, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",141
+154:4,154,4,shock,10,1,4,"{'vessel_id': 4, 'start': 32.372053, 'end': 48.372053, 'berth_start_m': 1182.9, 'cranes': 5, 'duration': 16.0}",3
+154:7,154,7,shock,9,1,2,"{'vessel_id': 2, 'start': 457.26, 'end': 546.26, 'berth_start_m': 901.2, 'cranes': 5, 'duration': 89.0}",1
+154:8,154,8,shock,8,2,11,"{'vessel_id': 11, 'start': 98.2, 'end': 132.0, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 33.8}",1
+154:9,154,9,shock,7,0,,,1
+154:10,154,10,shock,7,1,6,"{'vessel_id': 6, 'start': 53.114478, 'end': 110.714478, 'berth_start_m': 276.3, 'cranes': 5, 'duration': 57.6}",1
+154:11,154,11,shock,6,3,12,"{'vessel_id': 12, 'start': 110.714478, 'end': 157.514478, 'berth_start_m': 384.9, 'cranes': 5, 'duration': 46.8}",1
+154:12,154,12,shock,5,0,,,1
+154:13,154,13,shock,5,1,3,"{'vessel_id': 3, 'start': 37.435914, 'end': 45.235914, 'berth_start_m': 1610.8, 'cranes': 5, 'duration': 7.8}",4
+154:17,154,17,shock,4,0,,,1
+154:18,154,18,shock,4,1,11,"{'vessel_id': 11, 'start': 89.416556, 'end': 123.216556, 'berth_start_m': 678.0, 'cranes': 5, 'duration': 33.8}",1
+154:19,154,19,shock,3,0,,,1
+154:20,154,20,shock,3,0,,,1
+154:21,154,21,shock,3,0,,,1
+154:22,154,22,shock,3,0,,,1
+154:23,154,23,shock,3,1,1,"{'vessel_id': 1, 'start': 37.806667, 'end': 57.006667, 'berth_start_m': 1849.0, 'cranes': 5, 'duration': 19.2}",1
+154:24,154,24,shock,2,0,,,3
+154:27,154,27,shock,2,0,,,1
+154:28,154,28,shock,2,0,,,1
+154:29,154,29,shock,2,1,15,"{'vessel_id': 15, 'start': 143.223499, 'end': 214.023499, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 70.8}",1
+154:30,154,30,shock,1,1,24,"{'vessel_id': 24, 'start': 214.023499, 'end': 233.823499, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.8}",113
+155:3,155,3,small,5,0,,,1
+155:4,155,4,small,5,1,2,"{'vessel_id': 2, 'start': 27.430606, 'end': 100.630606, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+155:5,155,5,small,4,0,,,1
+155:6,155,6,small,4,2,1,"{'vessel_id': 1, 'start': 22.179069, 'end': 61.979069, 'berth_start_m': 353.2, 'cranes': 5, 'duration': 39.8}",1
+155:7,155,7,small,3,0,,,1
+155:8,155,8,small,3,0,,,1
+155:9,155,9,small,3,0,,,1
+155:10,155,10,small,3,0,,,1
+155:11,155,11,small,3,3,6,"{'vessel_id': 6, 'start': 61.979069, 'end': 86.179069, 'berth_start_m': 349.8, 'cranes': 5, 'duration': 24.2}",1
+155:12,155,12,small,2,4,10,"{'vessel_id': 10, 'start': 100.630606, 'end': 168.630606, 'berth_start_m': 572.3, 'cranes': 5, 'duration': 68.0}",1
+155:13,155,13,small,1,0,,,1
+155:14,155,14,small,1,4,4,"{'vessel_id': 4, 'start': 31.681018, 'end': 107.481018, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",122
+156:4,156,4,small,5,1,2,"{'vessel_id': 2, 'start': 27.377158, 'end': 100.577158, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+156:5,156,5,small,4,0,,,1
+156:6,156,6,small,4,0,,,1
+156:7,156,7,small,4,1,10,"{'vessel_id': 10, 'start': 100.577158, 'end': 168.577158, 'berth_start_m': 572.3, 'cranes': 5, 'duration': 68.0}",129
+157:1,157,1,repeated,2,0,,,1
+157:2,157,2,repeated,2,0,,,1
+157:3,157,3,repeated,2,0,,,1
+157:4,157,4,repeated,2,1,1,"{'vessel_id': 1, 'start': 15.047827, 'end': 60.247827, 'berth_start_m': 203.5, 'cranes': 5, 'duration': 45.2}",1
+157:5,157,5,repeated,1,0,,,1
+157:6,157,6,repeated,1,0,,,1
+157:7,157,7,repeated,1,1,3,"{'vessel_id': 3, 'start': 25.992557, 'end': 45.392557, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",136
+158:4,158,4,small,10,0,,,1
+158:5,158,5,small,10,0,,,1
+158:6,158,6,small,10,1,2,"{'vessel_id': 2, 'start': 17.691505, 'end': 108.491505, 'berth_start_m': 303.6, 'cranes': 5, 'duration': 90.8}",3
+158:9,158,9,small,9,0,,,1
+158:10,158,10,small,9,1,4,"{'vessel_id': 4, 'start': 51.252559, 'end': 119.852559, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+158:11,158,11,small,8,1,6,"{'vessel_id': 6, 'start': 61.327925, 'end': 95.327925, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",4
+158:15,158,15,small,7,0,,,1
+158:16,158,16,small,7,1,4,"{'vessel_id': 4, 'start': 50.68078, 'end': 119.28078, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",3
+158:19,158,19,small,6,0,,,1
+158:20,158,20,small,6,1,9,"{'vessel_id': 9, 'start': 108.883831, 'end': 159.283831, 'berth_start_m': 999.8, 'cranes': 5, 'duration': 50.4}",1
+158:21,158,21,small,5,1,6,"{'vessel_id': 6, 'start': 60.965912, 'end': 94.965912, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",1
+158:22,158,22,small,4,0,,,1
+158:23,158,23,small,4,2,11,"{'vessel_id': 11, 'start': 123.597194, 'end': 159.797194, 'berth_start_m': 1765.1, 'cranes': 5, 'duration': 36.2}",1
+158:24,158,24,small,3,0,,,1
+158:25,158,25,small,3,1,12,"{'vessel_id': 12, 'start': 128.96832, 'end': 194.96832, 'berth_start_m': 2165.0, 'cranes': 5, 'duration': 66.0}",1
+158:26,158,26,small,2,1,22,"{'vessel_id': 22, 'start': 194.96832, 'end': 226.96832, 'berth_start_m': 1762.0, 'cranes': 5, 'duration': 32.0}",1
+158:27,158,27,small,1,1,27,"{'vessel_id': 27, 'start': 226.96832, 'end': 287.96832, 'berth_start_m': 959.5, 'cranes': 5, 'duration': 61.0}",116
+159:2,159,2,repeated,5,0,,,1
+159:3,159,3,repeated,5,2,0,"{'vessel_id': 0, 'start': 7.516667, 'end': 79.516667, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 72.0}",1
+159:4,159,4,repeated,4,3,8,"{'vessel_id': 8, 'start': 79.516667, 'end': 167.316667, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 87.8}",1
+159:5,159,5,repeated,3,0,,,1
+159:6,159,6,repeated,3,2,1,"{'vessel_id': 1, 'start': 22.072206, 'end': 61.872206, 'berth_start_m': 353.2, 'cranes': 5, 'duration': 39.8}",1
+159:7,159,7,repeated,2,3,4,"{'vessel_id': 4, 'start': 28.482701, 'end': 104.282701, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+159:8,159,8,repeated,1,1,2,"{'vessel_id': 2, 'start': 22.32486, 'end': 95.52486, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",127
+160:1,160,1,small,2,0,,,1
+160:2,160,2,small,2,0,,,1
+160:3,160,3,small,2,1,0,"{'vessel_id': 0, 'start': 13.377588, 'end': 106.577588, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+160:4,160,4,small,1,0,,,1
+160:5,160,5,small,1,1,10,"{'vessel_id': 10, 'start': 106.577588, 'end': 137.177588, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",140
+161:2,161,2,repeated,2,0,,,1
+161:3,161,3,repeated,2,0,,,1
+161:4,161,4,repeated,2,1,2,"{'vessel_id': 2, 'start': 12.0, 'end': 102.8, 'berth_start_m': 303.6, 'cranes': 5, 'duration': 90.8}",1
+161:5,161,5,repeated,1,1,3,"{'vessel_id': 3, 'start': 36.867665, 'end': 114.067665, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 77.2}",135
+162:2,162,2,small,2,0,,,1
+162:3,162,3,small,2,0,,,1
+162:4,162,4,small,2,1,0,"{'vessel_id': 0, 'start': 4.055255, 'end': 63.855255, 'berth_start_m': 1205.5, 'cranes': 5, 'duration': 59.8}",1
+162:5,162,5,small,1,0,,,1
+162:6,162,6,small,1,1,1,"{'vessel_id': 1, 'start': 8.365408, 'end': 99.365408, 'berth_start_m': 186.2, 'cranes': 5, 'duration': 91.0}",134
+163:1,163,1,small,2,1,1,"{'vessel_id': 1, 'start': 4.033677, 'end': 34.433677, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 30.4}",2
+163:3,163,3,small,1,0,,,2
+163:5,163,5,small,1,0,,,1
+163:6,163,6,small,1,1,3,"{'vessel_id': 3, 'start': 21.495274, 'end': 63.895274, 'berth_start_m': 950.2, 'cranes': 5, 'duration': 42.4}",134
+164:1,164,1,small,10,1,0,"{'vessel_id': 0, 'start': 6.173447, 'end': 70.173447, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",2
+164:3,164,3,small,9,0,,,1
+164:4,164,4,small,9,2,2,"{'vessel_id': 2, 'start': 23.783564, 'end': 38.383564, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",1
+164:5,164,5,small,8,0,,,1
+164:6,164,6,small,8,2,4,"{'vessel_id': 4, 'start': 26.166928, 'end': 89.566928, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",1
+164:7,164,7,small,7,0,,,1
+164:8,164,8,small,7,0,,,1
+164:9,164,9,small,7,0,,,1
+164:10,164,10,small,7,2,2,"{'vessel_id': 2, 'start': 23.286021, 'end': 37.886021, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",1
+164:11,164,11,small,6,0,,,1
+164:12,164,12,small,6,1,3,"{'vessel_id': 3, 'start': 24.12127, 'end': 110.12127, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+164:13,164,13,small,5,3,11,"{'vessel_id': 11, 'start': 110.12127, 'end': 183.12127, 'berth_start_m': 489.9, 'cranes': 5, 'duration': 73.0}",1
+164:14,164,14,small,4,2,9,"{'vessel_id': 9, 'start': 89.566928, 'end': 160.166928, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 70.6}",1
+164:15,164,15,small,3,0,,,1
+164:16,164,16,small,3,0,,,1
+164:17,164,17,small,3,1,7,"{'vessel_id': 7, 'start': 78.768712, 'end': 114.968712, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 36.2}",1
+164:18,164,18,small,2,0,,,1
+164:19,164,19,small,2,4,16,"{'vessel_id': 16, 'start': 160.166928, 'end': 198.166928, 'berth_start_m': 1259.9, 'cranes': 5, 'duration': 38.0}",1
+164:20,164,20,small,1,0,,,1
+164:21,164,21,small,1,3,20,"{'vessel_id': 20, 'start': 198.166928, 'end': 242.966928, 'berth_start_m': 1175.2, 'cranes': 5, 'duration': 44.8}",125
+165:2,165,2,repeated,5,1,1,"{'vessel_id': 1, 'start': 15.728418, 'end': 33.128418, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 17.4}",3
+165:5,165,5,repeated,4,0,,,1
+165:6,165,6,repeated,4,1,5,"{'vessel_id': 5, 'start': 48.933318, 'end': 85.733318, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",1
+165:7,165,7,repeated,3,0,,,1
+165:8,165,8,repeated,3,1,4,"{'vessel_id': 4, 'start': 50.185804, 'end': 118.785804, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+165:9,165,9,repeated,2,0,,,1
+165:10,165,10,repeated,2,0,,,1
+165:11,165,11,repeated,2,1,7,"{'vessel_id': 7, 'start': 82.982713, 'end': 148.782713, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 65.8}",1
+165:12,165,12,repeated,1,1,14,"{'vessel_id': 14, 'start': 148.782713, 'end': 160.582713, 'berth_start_m': 186.6, 'cranes': 5, 'duration': 11.8}",127
+166:2,166,2,shock,10,1,0,"{'vessel_id': 0, 'start': 3.488316, 'end': 24.888316, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 21.4}",1
+166:3,166,3,shock,9,1,1,"{'vessel_id': 1, 'start': 15.43273, 'end': 60.63273, 'berth_start_m': 203.5, 'cranes': 5, 'duration': 45.2}",1
+166:4,166,4,shock,8,0,,,1
+166:5,166,5,shock,8,0,,,1
+166:6,166,6,shock,8,1,2,"{'vessel_id': 2, 'start': 27.256192, 'end': 54.656192, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",4
+166:10,166,10,shock,7,0,,,1
+166:11,166,11,shock,7,2,6,"{'vessel_id': 6, 'start': 54.453125, 'end': 112.853125, 'berth_start_m': 2297.1, 'cranes': 5, 'duration': 58.4}",1
+166:12,166,12,shock,6,0,,,1
+166:13,166,13,shock,6,1,7,"{'vessel_id': 7, 'start': 59.972353, 'end': 91.172353, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 31.2}",1
+166:14,166,14,shock,5,0,,,1
+166:15,166,15,shock,5,0,,,1
+166:16,166,16,shock,5,0,,,1
+166:17,166,17,shock,5,0,,,1
+166:18,166,18,shock,5,0,,,1
+166:19,166,19,shock,5,0,,,1
+166:20,166,20,shock,5,0,,,1
+166:21,166,21,shock,5,2,11,"{'vessel_id': 11, 'start': 112.853125, 'end': 173.053125, 'berth_start_m': 592.6, 'cranes': 5, 'duration': 60.2}",1
+166:22,166,22,shock,4,0,,,1
+166:23,166,23,shock,4,0,,,1
+166:24,166,24,shock,4,0,,,1
+166:25,166,25,shock,4,0,,,1
+166:26,166,26,shock,4,0,,,1
+166:27,166,27,shock,4,1,6,"{'vessel_id': 6, 'start': 52.391394, 'end': 110.791394, 'berth_start_m': 2297.1, 'cranes': 5, 'duration': 58.4}",1
+166:28,166,28,shock,3,4,18,"{'vessel_id': 18, 'start': 173.053125, 'end': 252.653125, 'berth_start_m': 2304.6, 'cranes': 5, 'duration': 79.6}",1
+166:29,166,29,shock,2,3,11,"{'vessel_id': 11, 'start': 110.791394, 'end': 170.991394, 'berth_start_m': 592.6, 'cranes': 5, 'duration': 60.2}",1
+166:30,166,30,shock,1,4,22,"{'vessel_id': 22, 'start': 240.69, 'end': 269.49, 'berth_start_m': 1393.9, 'cranes': 5, 'duration': 28.8}",116
+167:1,167,1,repeated,5,0,,,1
+167:2,167,2,repeated,5,2,1,"{'vessel_id': 1, 'start': 6.926871, 'end': 97.926871, 'berth_start_m': 255.2, 'cranes': 5, 'duration': 91.0}",1
+167:3,167,3,repeated,4,1,1,"{'vessel_id': 1, 'start': 6.606667, 'end': 97.606667, 'berth_start_m': 255.2, 'cranes': 5, 'duration': 91.0}",6
+167:9,167,9,repeated,3,1,4,"{'vessel_id': 4, 'start': 21.731022, 'end': 105.331022, 'berth_start_m': 958.3, 'cranes': 5, 'duration': 83.6}",1
+167:10,167,10,repeated,2,0,,,1
+167:11,167,11,repeated,2,0,,,1
+167:12,167,12,repeated,2,0,,,1
+167:13,167,13,repeated,2,0,,,1
+167:14,167,14,repeated,2,2,6,"{'vessel_id': 6, 'start': 69.137554, 'end': 103.137554, 'berth_start_m': 1214.2, 'cranes': 5, 'duration': 34.0}",1
+167:15,167,15,repeated,1,1,5,"{'vessel_id': 5, 'start': 59.991103, 'end': 119.191103, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 59.2}",123
+168:1,168,1,repeated,5,1,0,"{'vessel_id': 0, 'start': 6.170537, 'end': 65.970537, 'berth_start_m': 1205.5, 'cranes': 5, 'duration': 59.8}",5
+168:6,168,6,repeated,4,0,,,1
+168:7,168,7,repeated,4,1,3,"{'vessel_id': 3, 'start': 22.993321, 'end': 49.593321, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",1
+168:8,168,8,repeated,3,0,,,1
+168:9,168,9,repeated,3,1,6,"{'vessel_id': 6, 'start': 70.227759, 'end': 104.227759, 'berth_start_m': 1214.2, 'cranes': 5, 'duration': 34.0}",1
+168:10,168,10,repeated,2,0,,,1
+168:11,168,11,repeated,2,1,5,"{'vessel_id': 5, 'start': 63.119012, 'end': 122.319012, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.2}",5
+168:16,168,16,repeated,1,1,11,"{'vessel_id': 11, 'start': 113.727944, 'end': 152.127944, 'berth_start_m': 1259.5, 'cranes': 5, 'duration': 38.4}",120
+169:1,169,1,small,5,0,,,1
+169:2,169,2,small,5,0,,,1
+169:3,169,3,small,5,0,,,2
+169:5,169,5,small,5,1,3,"{'vessel_id': 3, 'start': 21.65236, 'end': 64.05236, 'berth_start_m': 950.2, 'cranes': 5, 'duration': 42.4}",1
+169:6,169,6,small,4,1,4,"{'vessel_id': 4, 'start': 34.337003, 'end': 122.137003, 'berth_start_m': 2532.3, 'cranes': 5, 'duration': 87.8}",1
+169:7,169,7,small,3,1,13,"{'vessel_id': 13, 'start': 122.137003, 'end': 184.137003, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 62.0}",1
+169:8,169,8,small,2,0,,,1
+169:9,169,9,small,2,0,,,1
+169:10,169,10,small,2,1,22,"{'vessel_id': 22, 'start': 184.137003, 'end': 269.737003, 'berth_start_m': 208.8, 'cranes': 5, 'duration': 85.6}",1
+169:11,169,11,small,1,0,,,1
+169:12,169,12,small,1,1,29,"{'vessel_id': 29, 'start': 269.737003, 'end': 350.937003, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 81.2}",128
+170:7,170,7,repeated,10,0,,,1
+170:8,170,8,repeated,10,2,4,"{'vessel_id': 4, 'start': 51.260261, 'end': 119.860261, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+170:9,170,9,repeated,9,0,,,1
+170:10,170,10,repeated,9,0,,,1
+170:11,170,11,repeated,9,1,5,"{'vessel_id': 5, 'start': 47.287533, 'end': 84.087533, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",3
+170:14,170,14,repeated,8,1,8,"{'vessel_id': 8, 'start': 102.492137, 'end': 188.292137, 'berth_start_m': 742.7, 'cranes': 5, 'duration': 85.8}",1
+170:15,170,15,repeated,7,0,,,1
+170:16,170,16,repeated,7,0,,,1
+170:17,170,17,repeated,7,1,9,"{'vessel_id': 9, 'start': 108.543971, 'end': 158.943971, 'berth_start_m': 999.8, 'cranes': 5, 'duration': 50.4}",1
+170:18,170,18,repeated,6,2,21,"{'vessel_id': 21, 'start': 190.11, 'end': 206.91, 'berth_start_m': 1333.0, 'cranes': 5, 'duration': 16.8}",1
+170:19,170,19,repeated,5,0,,,1
+170:20,170,20,repeated,5,0,,,1
+170:21,170,21,repeated,5,1,6,"{'vessel_id': 6, 'start': 52.260381, 'end': 86.260381, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",1
+170:22,170,22,repeated,4,0,,,1
+170:23,170,23,repeated,4,2,23,"{'vessel_id': 23, 'start': 206.91, 'end': 283.31, 'berth_start_m': 659.2, 'cranes': 5, 'duration': 76.4}",1
+170:24,170,24,repeated,3,0,,,1
+170:25,170,25,repeated,3,2,32,"{'vessel_id': 32, 'start': 283.31, 'end': 294.91, 'berth_start_m': 585.4, 'cranes': 5, 'duration': 11.6}",1
+170:26,170,26,repeated,2,1,11,"{'vessel_id': 11, 'start': 119.397929, 'end': 155.597929, 'berth_start_m': 1765.1, 'cranes': 5, 'duration': 36.2}",1
+170:27,170,27,repeated,1,0,,,1
+170:28,170,28,repeated,1,1,35,"{'vessel_id': 35, 'start': 294.91, 'end': 387.71, 'berth_start_m': 1973.4, 'cranes': 5, 'duration': 92.8}",112
+171:1,171,1,small,10,1,0,"{'vessel_id': 0, 'start': 6.763499, 'end': 70.763499, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 64.0}",2
+171:3,171,3,small,9,1,1,"{'vessel_id': 1, 'start': 22.587194, 'end': 44.987194, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",1
+171:4,171,4,small,8,0,,,1
+171:5,171,5,small,8,1,2,"{'vessel_id': 2, 'start': 23.236027, 'end': 37.836027, 'berth_start_m': 647.8, 'cranes': 5, 'duration': 14.6}",1
+171:6,171,6,small,7,0,,,1
+171:7,171,7,small,7,1,4,"{'vessel_id': 4, 'start': 26.315105, 'end': 89.715105, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",1
+171:8,171,8,small,6,0,,,1
+171:9,171,9,small,6,0,,,1
+171:10,171,10,small,6,0,,,1
+171:11,171,11,small,6,0,,,1
+171:12,171,12,small,6,1,5,"{'vessel_id': 5, 'start': 62.107016, 'end': 101.107016, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",1
+171:13,171,13,small,5,3,10,"{'vessel_id': 10, 'start': 101.107016, 'end': 116.907016, 'berth_start_m': 297.0, 'cranes': 5, 'duration': 15.8}",1
+171:14,171,14,small,4,0,,,1
+171:15,171,15,small,4,0,,,1
+171:16,171,16,small,4,0,,,1
+171:17,171,17,small,4,0,,,1
+171:18,171,18,small,4,0,,,1
+171:19,171,19,small,4,0,,,1
+171:20,171,20,small,4,2,13,"{'vessel_id': 13, 'start': 116.907016, 'end': 183.507016, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 66.6}",1
+171:21,171,21,small,3,3,19,"{'vessel_id': 19, 'start': 183.507016, 'end': 278.907016, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 95.4}",1
+171:22,171,22,small,2,1,9,"{'vessel_id': 9, 'start': 89.715105, 'end': 160.315105, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 70.6}",1
+171:23,171,23,small,1,1,15,"{'vessel_id': 15, 'start': 160.315105, 'end': 227.315105, 'berth_start_m': 2324.5, 'cranes': 5, 'duration': 67.0}",124
+172:1,172,1,repeated,2,1,0,"{'vessel_id': 0, 'start': 13.080999, 'end': 106.280999, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+172:2,172,2,repeated,1,0,,,1
+172:3,172,3,repeated,1,0,,,1
+172:4,172,4,repeated,1,0,,,1
+172:5,172,5,repeated,1,0,,,1
+172:6,172,6,repeated,1,0,,,1
+172:7,172,7,repeated,1,0,,,1
+172:8,172,8,repeated,1,3,4,"{'vessel_id': 4, 'start': 18.550668, 'end': 34.550668, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}",137
+173:3,173,3,small,5,1,3,"{'vessel_id': 3, 'start': 32.37064, 'end': 51.77064, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",5
+173:8,173,8,small,4,1,2,"{'vessel_id': 2, 'start': 27.318762, 'end': 54.718762, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",1
+173:9,173,9,small,3,1,6,"{'vessel_id': 6, 'start': 57.181421, 'end': 115.581421, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 58.4}",1
+173:10,173,10,small,2,0,,,1
+173:11,173,11,small,2,1,11,"{'vessel_id': 11, 'start': 115.581421, 'end': 175.781421, 'berth_start_m': 592.6, 'cranes': 5, 'duration': 60.2}",1
+173:12,173,12,small,1,0,,,1
+173:13,173,13,small,1,0,,,1
+173:14,173,14,small,1,0,,,1
+173:15,173,15,small,1,1,18,"{'vessel_id': 18, 'start': 175.781421, 'end': 255.381421, 'berth_start_m': 1086.0, 'cranes': 5, 'duration': 79.6}",130
+174:12,174,12,repeated,5,1,5,"{'vessel_id': 5, 'start': 59.710186, 'end': 98.710186, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",1
+174:13,174,13,repeated,4,1,6,"{'vessel_id': 6, 'start': 61.256855, 'end': 149.656855, 'berth_start_m': 1678.5, 'cranes': 5, 'duration': 88.4}",1
+174:14,174,14,repeated,3,0,,,1
+174:15,174,15,repeated,3,0,,,1
+174:16,174,16,repeated,3,2,10,"{'vessel_id': 10, 'start': 98.710186, 'end': 114.510186, 'berth_start_m': 297.0, 'cranes': 5, 'duration': 15.8}",1
+174:17,174,17,repeated,2,3,13,"{'vessel_id': 13, 'start': 114.510186, 'end': 181.110186, 'berth_start_m': 2324.5, 'cranes': 5, 'duration': 66.6}",1
+174:18,174,18,repeated,1,0,,,1
+174:19,174,19,repeated,1,0,,,1
+174:20,174,20,repeated,1,0,,,1
+174:21,174,21,repeated,1,3,18,"{'vessel_id': 18, 'start': 181.110186, 'end': 273.310186, 'berth_start_m': 2426.2, 'cranes': 5, 'duration': 92.2}",126
+175:7,175,7,shock,2,1,3,"{'vessel_id': 3, 'start': 24.00322, 'end': 50.60322, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",3
+175:10,175,10,shock,1,0,,,1
+175:11,175,11,shock,1,0,,,1
+175:12,175,12,shock,1,2,3,"{'vessel_id': 3, 'start': 23.315361, 'end': 49.915361, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",127
+176:1,176,1,small,5,0,,,3
+176:4,176,4,small,5,1,2,"{'vessel_id': 2, 'start': 26.962694, 'end': 100.162694, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+176:5,176,5,small,4,0,,,1
+176:6,176,6,small,4,3,10,"{'vessel_id': 10, 'start': 100.162694, 'end': 168.162694, 'berth_start_m': 572.3, 'cranes': 5, 'duration': 68.0}",1
+176:7,176,7,small,3,0,,,1
+176:8,176,8,small,3,1,3,"{'vessel_id': 3, 'start': 28.079258, 'end': 109.479258, 'berth_start_m': 1180.4, 'cranes': 5, 'duration': 81.4}",1
+176:9,176,9,small,2,0,,,1
+176:10,176,10,small,2,1,4,"{'vessel_id': 4, 'start': 32.064585, 'end': 107.864585, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+176:11,176,11,small,1,1,11,"{'vessel_id': 11, 'start': 107.864585, 'end': 138.064585, 'berth_start_m': 1443.6, 'cranes': 5, 'duration': 30.2}",125
+177:8,177,8,shock,2,0,,,1
+177:9,177,9,shock,2,0,,,1
+177:10,177,10,shock,2,1,2,"{'vessel_id': 2, 'start': 457.26, 'end': 546.26, 'berth_start_m': 901.2, 'cranes': 5, 'duration': 89.0}",1
+177:11,177,11,shock,1,1,10,"{'vessel_id': 10, 'start': 80.84, 'end': 111.44, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 30.6}",131
+178:2,178,2,shock,2,1,2,"{'vessel_id': 2, 'start': 10.189678, 'end': 83.389678, 'berth_start_m': 466.5, 'cranes': 5, 'duration': 73.2}",1
+178:3,178,3,shock,1,0,,,1
+178:4,178,4,shock,1,1,2,"{'vessel_id': 2, 'start': 8.342684, 'end': 81.542684, 'berth_start_m': 466.5, 'cranes': 5, 'duration': 73.2}",131
+179:2,179,2,repeated,10,1,2,"{'vessel_id': 2, 'start': 16.956773, 'end': 107.756773, 'berth_start_m': 303.6, 'cranes': 5, 'duration': 90.8}",3
+179:5,179,5,repeated,9,1,2,"{'vessel_id': 2, 'start': 14.26604, 'end': 105.06604, 'berth_start_m': 303.6, 'cranes': 5, 'duration': 90.8}",2
+179:7,179,7,repeated,8,1,4,"{'vessel_id': 4, 'start': 51.339294, 'end': 119.939294, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+179:8,179,8,repeated,7,1,5,"{'vessel_id': 5, 'start': 50.689977, 'end': 87.489977, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",1
+179:9,179,9,repeated,6,1,6,"{'vessel_id': 6, 'start': 61.566952, 'end': 95.566952, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",4
+179:13,179,13,repeated,5,0,,,1
+179:14,179,14,repeated,5,1,4,"{'vessel_id': 4, 'start': 50.371744, 'end': 118.971744, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+179:15,179,15,repeated,4,0,,,1
+179:16,179,16,repeated,4,1,8,"{'vessel_id': 8, 'start': 105.043938, 'end': 190.843938, 'berth_start_m': 742.7, 'cranes': 5, 'duration': 85.8}",1
+179:17,179,17,repeated,3,1,21,"{'vessel_id': 21, 'start': 190.843938, 'end': 207.643938, 'berth_start_m': 1333.0, 'cranes': 5, 'duration': 16.8}",2
+179:19,179,19,repeated,2,0,,,1
+179:20,179,20,repeated,2,0,,,1
+179:21,179,21,repeated,2,0,,,1
+179:22,179,22,repeated,2,3,12,"{'vessel_id': 12, 'start': 126.856772, 'end': 192.856772, 'berth_start_m': 2165.0, 'cranes': 5, 'duration': 66.0}",1
+179:23,179,23,repeated,1,0,,,1
+179:24,179,24,repeated,1,0,,,1
+179:25,179,25,repeated,1,3,22,"{'vessel_id': 22, 'start': 194.25, 'end': 226.25, 'berth_start_m': 1762.0, 'cranes': 5, 'duration': 32.0}",116
+180:1,180,1,small,2,0,,,1
+180:2,180,2,small,2,1,1,"{'vessel_id': 1, 'start': 4.157709, 'end': 34.557709, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 30.4}",3
+180:5,180,5,small,1,0,,,1
+180:6,180,6,small,1,1,3,"{'vessel_id': 3, 'start': 21.237646, 'end': 63.637646, 'berth_start_m': 950.2, 'cranes': 5, 'duration': 42.4}",134
+181:6,181,6,repeated,2,0,,,1
+181:7,181,7,repeated,2,1,4,"{'vessel_id': 4, 'start': 29.235867, 'end': 105.035867, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+181:8,181,8,repeated,1,0,,,1
+181:9,181,9,repeated,1,0,,,1
+181:10,181,10,repeated,1,1,11,"{'vessel_id': 11, 'start': 105.035867, 'end': 135.235867, 'berth_start_m': 1443.6, 'cranes': 5, 'duration': 30.2}",126
+182:1,182,1,repeated,5,1,1,"{'vessel_id': 1, 'start': 17.278969, 'end': 62.478969, 'berth_start_m': 203.5, 'cranes': 5, 'duration': 45.2}",1
+182:2,182,2,repeated,4,0,,,1
+182:3,182,3,repeated,4,1,2,"{'vessel_id': 2, 'start': 27.023236, 'end': 54.423236, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",7
+182:10,182,10,repeated,3,1,7,"{'vessel_id': 7, 'start': 61.578662, 'end': 92.778662, 'berth_start_m': 1544.3, 'cranes': 5, 'duration': 31.2}",4
+182:14,182,14,repeated,2,1,8,"{'vessel_id': 8, 'start': 76.830508, 'end': 161.430508, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 84.6}",1
+182:15,182,15,repeated,1,1,9,"{'vessel_id': 9, 'start': 89.593545, 'end': 148.393545, 'berth_start_m': 1874.7, 'cranes': 5, 'duration': 58.8}",130
+183:6,183,6,shock,2,1,4,"{'vessel_id': 4, 'start': 23.124876, 'end': 86.524876, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",1
+183:7,183,7,shock,1,1,9,"{'vessel_id': 9, 'start': 86.524876, 'end': 157.124876, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 70.6}",139
+184:3,184,3,shock,10,1,2,"{'vessel_id': 2, 'start': 24.630465, 'end': 97.830465, 'berth_start_m': 744.8, 'cranes': 5, 'duration': 73.2}",1
+184:4,184,4,shock,9,1,10,"{'vessel_id': 10, 'start': 97.830465, 'end': 165.830465, 'berth_start_m': 572.3, 'cranes': 5, 'duration': 68.0}",1
+184:5,184,5,shock,8,0,,,1
+184:6,184,6,shock,8,0,,,1
+184:7,184,7,shock,8,4,18,"{'vessel_id': 18, 'start': 165.830465, 'end': 179.430465, 'berth_start_m': 2295.1, 'cranes': 5, 'duration': 13.6}",1
+184:8,184,8,shock,7,0,,,1
+184:9,184,9,shock,7,2,21,"{'vessel_id': 21, 'start': 179.430465, 'end': 188.030465, 'berth_start_m': 1006.0, 'cranes': 5, 'duration': 8.6}",1
+184:10,184,10,shock,6,1,4,"{'vessel_id': 4, 'start': 29.166039, 'end': 104.966039, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+184:11,184,11,shock,5,1,11,"{'vessel_id': 11, 'start': 104.966039, 'end': 135.166039, 'berth_start_m': 1443.6, 'cranes': 5, 'duration': 30.2}",1
+184:12,184,12,shock,4,1,14,"{'vessel_id': 14, 'start': 135.166039, 'end': 165.366039, 'berth_start_m': 1298.5, 'cranes': 5, 'duration': 30.2}",1
+184:13,184,13,shock,3,1,18,"{'vessel_id': 18, 'start': 165.366039, 'end': 178.966039, 'berth_start_m': 2295.1, 'cranes': 5, 'duration': 13.6}",1
+184:14,184,14,shock,2,0,,,1
+184:15,184,15,shock,2,2,19,"{'vessel_id': 19, 'start': 165.830465, 'end': 236.630465, 'berth_start_m': 2694.4, 'cranes': 5, 'duration': 70.8}",1
+184:16,184,16,shock,1,0,,,1
+184:17,184,17,shock,1,1,20,"{'vessel_id': 20, 'start': 176.09, 'end': 211.89, 'berth_start_m': 305.3, 'cranes': 5, 'duration': 35.8}",116
+185:2,185,2,shock,10,1,2,"{'vessel_id': 2, 'start': 17.34393, 'end': 108.14393, 'berth_start_m': 303.6, 'cranes': 5, 'duration': 90.8}",5
+185:7,185,7,shock,9,1,4,"{'vessel_id': 4, 'start': 44.221362, 'end': 112.821362, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+185:8,185,8,shock,8,1,6,"{'vessel_id': 6, 'start': 79.169025, 'end': 113.169025, 'berth_start_m': 1759.5, 'cranes': 5, 'duration': 34.0}",4
+185:12,185,12,shock,7,0,,,1
+185:13,185,13,shock,7,0,,,1
+185:14,185,14,shock,7,1,8,"{'vessel_id': 8, 'start': 101.26197, 'end': 187.06197, 'berth_start_m': 742.7, 'cranes': 5, 'duration': 85.8}",1
+185:15,185,15,shock,6,0,,,1
+185:16,185,16,shock,6,0,,,1
+185:17,185,17,shock,6,0,,,1
+185:18,185,18,shock,6,2,21,"{'vessel_id': 21, 'start': 190.11, 'end': 206.91, 'berth_start_m': 1333.0, 'cranes': 5, 'duration': 16.8}",1
+185:19,185,19,shock,5,1,10,"{'vessel_id': 10, 'start': 112.821362, 'end': 125.221362, 'berth_start_m': 188.5, 'cranes': 5, 'duration': 12.4}",1
+185:20,185,20,shock,4,0,,,1
+185:21,185,21,shock,4,0,,,1
+185:22,185,22,shock,4,3,14,"{'vessel_id': 14, 'start': 157.612388, 'end': 169.412388, 'berth_start_m': 203.6, 'cranes': 5, 'duration': 11.8}",1
+185:23,185,23,shock,3,0,,,1
+185:24,185,24,shock,3,1,6,"{'vessel_id': 6, 'start': 96.785712, 'end': 130.785712, 'berth_start_m': 2603.9, 'cranes': 5, 'duration': 34.0}",2
+185:26,185,26,shock,2,1,18,"{'vessel_id': 18, 'start': 168.294412, 'end': 210.294412, 'berth_start_m': 991.0, 'cranes': 5, 'duration': 42.0}",1
+185:27,185,27,shock,1,0,,,1
+185:28,185,28,shock,1,0,,,1
+185:29,185,29,shock,1,2,26,"{'vessel_id': 26, 'start': 210.294412, 'end': 247.094412, 'berth_start_m': 2135.6, 'cranes': 5, 'duration': 36.8}",109
+186:5,186,5,shock,10,1,3,"{'vessel_id': 3, 'start': 23.255024, 'end': 109.255024, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",1
+186:6,186,6,shock,9,1,4,"{'vessel_id': 4, 'start': 21.89821, 'end': 85.29821, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 63.4}",1
+186:7,186,7,shock,8,0,,,1
+186:8,186,8,shock,8,0,,,1
+186:9,186,9,shock,8,0,,,1
+186:10,186,10,shock,8,1,1,"{'vessel_id': 1, 'start': 46.829465, 'end': 69.229465, 'berth_start_m': 1894.9, 'cranes': 5, 'duration': 22.4}",1
+186:11,186,11,shock,7,0,,,1
+186:12,186,12,shock,7,0,,,1
+186:13,186,13,shock,7,2,9,"{'vessel_id': 9, 'start': 85.29821, 'end': 155.89821, 'berth_start_m': 1407.9, 'cranes': 5, 'duration': 70.6}",1
+186:14,186,14,shock,6,3,16,"{'vessel_id': 16, 'start': 155.89821, 'end': 193.89821, 'berth_start_m': 1259.9, 'cranes': 5, 'duration': 38.0}",1
+186:15,186,15,shock,5,1,5,"{'vessel_id': 5, 'start': 60.357727, 'end': 99.357727, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",1
+186:16,186,16,shock,4,0,,,1
+186:17,186,17,shock,4,1,8,"{'vessel_id': 8, 'start': 79.79631, 'end': 156.99631, 'berth_start_m': 1912.0, 'cranes': 5, 'duration': 77.2}",1
+186:18,186,18,shock,3,1,10,"{'vessel_id': 10, 'start': 99.357727, 'end': 115.157727, 'berth_start_m': 297.0, 'cranes': 5, 'duration': 15.8}",1
+186:19,186,19,shock,2,1,20,"{'vessel_id': 20, 'start': 193.89821, 'end': 238.69821, 'berth_start_m': 1175.2, 'cranes': 5, 'duration': 44.8}",1
+186:20,186,20,shock,1,0,,,1
+186:21,186,21,shock,1,1,25,"{'vessel_id': 25, 'start': 238.69821, 'end': 258.69821, 'berth_start_m': 2035.7, 'cranes': 5, 'duration': 20.0}",126
+187:3,187,3,repeated,2,1,1,"{'vessel_id': 1, 'start': 21.654569, 'end': 44.054569, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",9
+187:12,187,12,repeated,1,1,5,"{'vessel_id': 5, 'start': 61.007905, 'end': 100.007905, 'berth_start_m': 408.7, 'cranes': 5, 'duration': 39.0}",135
+188:4,188,4,shock,5,0,,,1
+188:5,188,5,shock,5,1,3,"{'vessel_id': 3, 'start': 16.574076, 'end': 43.174076, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",1
+188:6,188,6,shock,4,2,2,"{'vessel_id': 2, 'start': 9.703333, 'end': 82.903333, 'berth_start_m': 466.5, 'cranes': 5, 'duration': 73.2}",1
+188:7,188,7,shock,3,0,,,1
+188:8,188,8,shock,3,0,,,1
+188:9,188,9,shock,3,1,4,"{'vessel_id': 4, 'start': 24.280797, 'end': 107.880797, 'berth_start_m': 958.3, 'cranes': 5, 'duration': 83.6}",3
+188:12,188,12,shock,2,1,7,"{'vessel_id': 7, 'start': 72.95289, 'end': 83.35289, 'berth_start_m': 682.2, 'cranes': 5, 'duration': 10.4}",2
+188:14,188,14,shock,1,0,,,1
+188:15,188,15,shock,1,0,,,1
+188:16,188,16,shock,1,1,9,"{'vessel_id': 9, 'start': 82.903333, 'end': 123.903333, 'berth_start_m': 2291.1, 'cranes': 5, 'duration': 41.0}",121
+189:1,189,1,shock,2,0,,,1
+189:2,189,2,shock,2,1,1,"{'vessel_id': 1, 'start': 35.496904, 'end': 52.896904, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 17.4}",1
+189:3,189,3,shock,1,1,1,"{'vessel_id': 1, 'start': 47.200345, 'end': 64.600345, 'berth_start_m': 1528.1, 'cranes': 5, 'duration': 17.4}",138
+190:2,190,2,small,2,1,0,"{'vessel_id': 0, 'start': 2.691792, 'end': 62.491792, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 59.8}",5
+190:7,190,7,small,1,0,,,1
+190:8,190,8,small,1,1,3,"{'vessel_id': 3, 'start': 22.797862, 'end': 49.397862, 'berth_start_m': 684.4, 'cranes': 5, 'duration': 26.6}",132
+191:1,191,1,repeated,2,0,,,1
+191:2,191,2,repeated,2,0,,,1
+191:3,191,3,repeated,2,2,0,"{'vessel_id': 0, 'start': 11.873772, 'end': 105.073772, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+191:4,191,4,repeated,1,1,3,"{'vessel_id': 3, 'start': 22.597304, 'end': 30.397304, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",141
+192:1,192,1,repeated,2,1,2,"{'vessel_id': 2, 'start': 11.941797, 'end': 102.741797, 'berth_start_m': 303.6, 'cranes': 5, 'duration': 90.8}",2
+192:3,192,3,repeated,1,0,,,1
+192:4,192,4,repeated,1,0,,,1
+192:5,192,5,repeated,1,2,3,"{'vessel_id': 3, 'start': 36.63446, 'end': 113.83446, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 77.2}",132
+193:5,193,5,shock,5,0,,,1
+193:6,193,6,shock,5,0,,,1
+193:7,193,7,shock,5,1,6,"{'vessel_id': 6, 'start': 60.052588, 'end': 94.052588, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",1
+193:8,193,8,shock,4,1,4,"{'vessel_id': 4, 'start': 51.975907, 'end': 120.575907, 'berth_start_m': 537.9, 'cranes': 5, 'duration': 68.6}",1
+193:9,193,9,shock,3,0,,,1
+193:10,193,10,shock,3,1,5,"{'vessel_id': 5, 'start': 52.339363, 'end': 89.139363, 'berth_start_m': 760.3, 'cranes': 5, 'duration': 36.8}",1
+193:11,193,11,shock,2,0,,,1
+193:12,193,12,shock,2,0,,,1
+193:13,193,13,shock,2,0,,,1
+193:14,193,14,shock,2,0,,,1
+193:15,193,15,shock,2,0,,,1
+193:16,193,16,shock,2,1,10,"{'vessel_id': 10, 'start': 120.241573, 'end': 132.641573, 'berth_start_m': 2603.9, 'cranes': 5, 'duration': 12.4}",1
+193:17,193,17,shock,1,0,,,1
+193:18,193,18,shock,1,0,,,1
+193:19,193,19,shock,1,3,6,"{'vessel_id': 6, 'start': 59.083036, 'end': 93.083036, 'berth_start_m': 1193.7, 'cranes': 5, 'duration': 34.0}",120
+194:1,194,1,shock,5,0,,,1
+194:2,194,2,shock,5,1,0,"{'vessel_id': 0, 'start': 7.516667, 'end': 79.516667, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 72.0}",1
+194:3,194,3,shock,4,1,8,"{'vessel_id': 8, 'start': 79.516667, 'end': 167.316667, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 87.8}",1
+194:4,194,4,shock,3,1,16,"{'vessel_id': 16, 'start': 167.316667, 'end': 193.316667, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 26.0}",1
+194:5,194,5,shock,2,1,4,"{'vessel_id': 4, 'start': 21.357412, 'end': 97.157412, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+194:6,194,6,shock,1,0,,,1
+194:7,194,7,shock,1,0,,,1
+194:8,194,8,shock,1,0,,,1
+194:9,194,9,shock,1,2,10,"{'vessel_id': 10, 'start': 97.157412, 'end': 165.157412, 'berth_start_m': 2083.9, 'cranes': 5, 'duration': 68.0}",124
+195:1,195,1,repeated,2,0,,,1
+195:2,195,2,repeated,2,0,,,1
+195:3,195,3,repeated,2,1,1,"{'vessel_id': 1, 'start': 22.026925, 'end': 44.426925, 'berth_start_m': 407.0, 'cranes': 5, 'duration': 22.4}",2
+195:5,195,5,repeated,1,1,3,"{'vessel_id': 3, 'start': 21.620919, 'end': 107.620919, 'berth_start_m': 1052.6, 'cranes': 5, 'duration': 86.0}",140
+196:3,196,3,repeated,5,1,2,"{'vessel_id': 2, 'start': 17.769505, 'end': 106.769505, 'berth_start_m': 533.5, 'cranes': 5, 'duration': 89.0}",1
+196:4,196,4,repeated,4,0,,,1
+196:5,196,5,repeated,4,0,,,1
+196:6,196,6,repeated,4,0,,,1
+196:7,196,7,repeated,4,0,,,1
+196:8,196,8,repeated,4,1,3,"{'vessel_id': 3, 'start': 23.542156, 'end': 31.342156, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+196:9,196,9,repeated,3,0,,,1
+196:10,196,10,repeated,3,3,11,"{'vessel_id': 11, 'start': 106.769505, 'end': 140.569505, 'berth_start_m': 2329.2, 'cranes': 5, 'duration': 33.8}",1
+196:11,196,11,repeated,2,0,,,1
+196:12,196,12,repeated,2,0,,,1
+196:13,196,13,repeated,2,0,,,1
+196:14,196,14,repeated,2,0,,,1
+196:15,196,15,repeated,2,3,7,"{'vessel_id': 7, 'start': 54.18629, 'end': 135.78629, 'berth_start_m': 1117.4, 'cranes': 5, 'duration': 81.6}",1
+196:16,196,16,repeated,1,0,,,1
+196:17,196,17,repeated,1,1,5,"{'vessel_id': 5, 'start': 37.338023, 'end': 43.738023, 'berth_start_m': 1415.0, 'cranes': 5, 'duration': 6.4}",125
+197:1,197,1,repeated,10,0,,,1
+197:2,197,2,repeated,10,1,0,"{'vessel_id': 0, 'start': 12.379361, 'end': 105.579361, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 93.2}",1
+197:3,197,3,repeated,9,1,10,"{'vessel_id': 10, 'start': 105.579361, 'end': 136.179361, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 30.6}",1
+197:4,197,4,repeated,8,1,3,"{'vessel_id': 3, 'start': 19.908428, 'end': 27.708428, 'berth_start_m': 733.9, 'cranes': 5, 'duration': 7.8}",1
+197:5,197,5,repeated,7,0,,,1
+197:6,197,6,repeated,7,1,4,"{'vessel_id': 4, 'start': 15.79542, 'end': 31.79542, 'berth_start_m': 986.8, 'cranes': 5, 'duration': 16.0}",4
+197:10,197,10,repeated,6,0,,,1
+197:11,197,11,repeated,6,2,5,"{'vessel_id': 5, 'start': 39.386256, 'end': 45.786256, 'berth_start_m': 751.7, 'cranes': 5, 'duration': 6.4}",1
+197:12,197,12,repeated,5,0,,,1
+197:13,197,13,repeated,5,0,,,1
+197:14,197,14,repeated,5,0,,,1
+197:15,197,15,repeated,5,3,7,"{'vessel_id': 7, 'start': 53.736731, 'end': 135.336731, 'berth_start_m': 1117.4, 'cranes': 5, 'duration': 81.6}",1
+197:16,197,16,repeated,4,1,8,"{'vessel_id': 8, 'start': 62.417834, 'end': 130.217834, 'berth_start_m': 1542.0, 'cranes': 5, 'duration': 67.8}",3
+197:19,197,19,repeated,3,0,,,1
+197:20,197,20,repeated,3,1,5,"{'vessel_id': 5, 'start': 51.089912, 'end': 57.489912, 'berth_start_m': 1542.6, 'cranes': 5, 'duration': 6.4}",2
+197:22,197,22,repeated,2,0,,,1
+197:23,197,23,repeated,2,0,,,1
+197:24,197,24,repeated,2,0,,,1
+197:25,197,25,repeated,2,2,7,"{'vessel_id': 7, 'start': 49.683803, 'end': 131.283803, 'berth_start_m': 1117.4, 'cranes': 5, 'duration': 81.6}",1
+197:26,197,26,repeated,1,2,6,"{'vessel_id': 6, 'start': 45.186888, 'end': 102.786888, 'berth_start_m': 745.8, 'cranes': 5, 'duration': 57.6}",119
+198:6,198,6,small,10,0,,,1
+198:7,198,7,small,10,1,4,"{'vessel_id': 4, 'start': 31.269603, 'end': 107.069603, 'berth_start_m': 1451.8, 'cranes': 5, 'duration': 75.8}",1
+198:8,198,8,small,9,1,11,"{'vessel_id': 11, 'start': 107.069603, 'end': 137.269603, 'berth_start_m': 1443.6, 'cranes': 5, 'duration': 30.2}",1
+198:9,198,9,small,8,1,14,"{'vessel_id': 14, 'start': 137.269603, 'end': 167.469603, 'berth_start_m': 1298.5, 'cranes': 5, 'duration': 30.2}",1
+198:10,198,10,small,7,2,17,"{'vessel_id': 17, 'start': 167.469603, 'end': 240.869603, 'berth_start_m': 1859.5, 'cranes': 5, 'duration': 73.4}",1
+198:11,198,11,small,6,0,,,1
+198:12,198,12,small,6,0,,,1
+198:13,198,13,small,6,0,,,1
+198:14,198,14,small,6,1,18,"{'vessel_id': 18, 'start': 167.95, 'end': 181.55, 'berth_start_m': 2295.1, 'cranes': 5, 'duration': 13.6}",1
+198:15,198,15,small,5,1,21,"{'vessel_id': 21, 'start': 181.55, 'end': 190.15, 'berth_start_m': 1006.0, 'cranes': 5, 'duration': 8.6}",1
+198:16,198,16,small,4,0,,,1
+198:17,198,17,small,4,0,,,1
+198:18,198,18,small,4,1,22,"{'vessel_id': 22, 'start': 190.15, 'end': 255.35, 'berth_start_m': 1006.0, 'cranes': 5, 'duration': 65.2}",1
+198:19,198,19,small,3,0,,,1
+198:20,198,20,small,3,2,31,"{'vessel_id': 31, 'start': 255.35, 'end': 263.55, 'berth_start_m': 895.5, 'cranes': 5, 'duration': 8.2}",1
+198:21,198,21,small,2,0,,,1
+198:22,198,22,small,2,2,34,"{'vessel_id': 34, 'start': 263.55, 'end': 340.95, 'berth_start_m': 229.2, 'cranes': 5, 'duration': 77.4}",1
+198:23,198,23,small,1,0,,,1
+198:24,198,24,small,1,0,,,1
+198:25,198,25,small,1,2,44,"{'vessel_id': 44, 'start': 340.95, 'end': 377.15, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 36.2}",111
+199:2,199,2,small,2,0,,,1
+199:3,199,3,small,2,0,,,1
+199:4,199,4,small,2,1,2,"{'vessel_id': 2, 'start': 27.063259, 'end': 54.463259, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",1
+199:5,199,5,small,1,1,3,"{'vessel_id': 3, 'start': 33.348667, 'end': 52.748667, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 19.4}",142
+200:2,200,2,repeated,2,1,0,"{'vessel_id': 0, 'start': 2.893333, 'end': 24.293333, 'berth_start_m': 0.0, 'cranes': 5, 'duration': 21.4}",2
+200:4,200,4,repeated,1,1,2,"{'vessel_id': 2, 'start': 22.988676, 'end': 50.388676, 'berth_start_m': 616.0, 'cranes': 5, 'duration': 27.4}",142

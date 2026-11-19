@@ -1,0 +1,43 @@
+{
+  "checked_anchor_rows": 2166,
+  "checked_ledger_rows": 1200,
+  "derived_data_sha256": {
+    "budget_tail": "a058a2a0efa224b5049dec23cbdd3599febdc38cb08497bc6ae22b4c1a227f1e",
+    "decision_epoch": "9cc3f87372ab3e583f6548c996da1620a9789c9b09e7c74bddea078a5a3da10a",
+    "primitive": "eb92a112ea4dc596d2723d02ef0bcd2e6196f8fa05dbfc2714522539ee3f2c74"
+  },
+  "episodes": 200,
+  "exact_dp": [
+    {
+      "compressed_gap": -4.0,
+      "gamma": 1.0,
+      "q_edit": -10.0,
+      "q_gap": -4.0,
+      "q_keep": -6.0
+    },
+    {
+      "compressed_gap": -3.91,
+      "gamma": 0.9,
+      "q_edit": -9.14,
+      "q_gap": -3.91,
+      "q_keep": -5.23
+    }
+  ],
+  "input_sha256": "e12c91e450cc63d10f4cf90d49b2423aeffd3d3e429a349bab90bd4ebf16b9db",
+  "max_ledger_error": 7.105427357601002e-15,
+  "per_mode": {
+    "budget_tail": {
+      "episode_count": 200,
+      "mean_transition_count": 20.655
+    },
+    "decision_epoch": {
+      "episode_count": 200,
+      "mean_transition_count": 10.83
+    },
+    "primitive": {
+      "episode_count": 200,
+      "mean_transition_count": 141.28
+    }
+  },
+  "status": "passed"
+}

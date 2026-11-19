@@ -1,0 +1,13 @@
+{
+  "interpretations": {
+    "H1": "Compare same-state budget-one Keep/Edit Q gaps to frozen-policy reference; use target_groups only to locate components, not to infer causality",
+    "H2": "Unresolved until fixed-data replay-reuse ablation P4",
+    "H3": "Deferred; do not introduce additional state features in P0-P3"
+  },
+  "n_h1_joined_states": 120,
+  "n_paired_target_rows": 960,
+  "n_prediction_rows": 360,
+  "n_target_rows": 12166,
+  "n_uncertain_group_counts": 342,
+  "warning": "Cannot causally attribute error to bootstrap/overuse from these tables alone"
+}
