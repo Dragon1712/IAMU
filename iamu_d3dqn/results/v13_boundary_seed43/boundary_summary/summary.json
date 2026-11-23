@@ -1,0 +1,9 @@
+{
+  "caveat": "Synthetic conditional futures, not a calibrated posterior",
+  "input_sha256": {
+    "results/v13_boundary_seed43/boundary/paired_gap.csv": "2acfcf66efb77d42b1661d824013c492997c8987d542a6342d20fbab115253a3"
+  },
+  "method": "state-level average across tapes; source-episode cluster bootstrap",
+  "n_states": 720,
+  "n_summary_rows": 504
+}

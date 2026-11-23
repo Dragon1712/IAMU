@@ -1,0 +1,33 @@
+{
+  "caveat": "Synthetic conditional future; not calibrated posterior or optimal Q",
+  "continuations": [
+    "self",
+    "greedy"
+  ],
+  "max_identity_residual": 3.552713678800501e-15,
+  "models": [
+    "A0_EP100",
+    "A2_EP100",
+    "A3_EP100",
+    "A0_EP400",
+    "A2_EP400",
+    "A3_EP400",
+    "A0_BEST",
+    "A2_BEST",
+    "A3_BEST"
+  ],
+  "n_components": 11520,
+  "n_pairs": 5760,
+  "n_states": 40,
+  "target_kind": {
+    "A0_BEST": "target_equal_online",
+    "A0_EP100": "target_equal_online",
+    "A0_EP400": "target_equal_online",
+    "A2_BEST": "target_equal_online",
+    "A2_EP100": "target_equal_online",
+    "A2_EP400": "target_equal_online",
+    "A3_BEST": "target_equal_online",
+    "A3_EP100": "target_equal_online",
+    "A3_EP400": "target_equal_online"
+  }
+}

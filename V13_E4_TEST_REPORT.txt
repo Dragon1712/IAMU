@@ -1,0 +1,8 @@
+IAMU V13-E4 regeneration acceptance
+- Test command: PYTHONPATH=<interface mock path>:. python -m unittest discover -s tests_v13_boundary -p 'test_*.py' -v
+- 15/15 isolated tests PASS (budget-one branch identity, terminal macro, gamma<1, A2/A3 anchors, fixed-data provenance, rollout label cost and namespace).
+- Python syntax compilation: PASS.
+- Shell syntax: PASS.
+- Real V1.1 env / V12 networks / V13 actual binary probe snapshots: NOT available in current container; NOT run.
+- The isolated tests use compatible v13_diagnostics interface stubs; this is NOT an IAMU physical-environment integration pass.
+- No E4 experiments or 400-episode online training started.
