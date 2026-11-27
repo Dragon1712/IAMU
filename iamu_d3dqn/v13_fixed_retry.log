@@ -1,0 +1,2 @@
+[V13-E4] env CUDA_VISIBLE_DEVICES=0 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -u -m v13_boundary.fixed_replay --primitive results/v13_p0_p3_seed43/compression/primitive.pt --budget-tail results/v13_p0_p3_seed43/compression/budget_tail.pt --probes results/v13_p0_p3_seed43/probe/probe_bank.pt --reference-csv results/v13_p0_p3_seed43/counterfactual_greedy/counterfactual_pairs.csv --gradient-updates 4000 --diagnostic-every 250 --seed 43 --device cuda:0 --out results/v13_boundary_seed43_fixed_retry/fixed
+[fixed] N0= 28256 N2= 4131 Gshort= 585 G= 4000

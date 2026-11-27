@@ -20,14 +20,34 @@ from .common import (atomic_json,digest,load_model,load_trusted,provenance,
 from .future_tapes import apply_tape,draw_tape,tape_hash
 
 
-def predict_pair(model,obs,edit_index):
+def predict_pair(model, obs, edit_index):
+    device = next(model.online.parameters()).device
+
     with torch.no_grad():
-        g=torch.as_tensor(obs.global_features,dtype=torch.float32).unsqueeze(0)
-        ac=torch.as_tensor(obs.action_features,dtype=torch.float32).unsqueeze(0)
-        mask=torch.as_tensor(obs.mask,dtype=torch.bool).unsqueeze(0)
-        q=model.online(g,ac,mask).flatten()
-        if not bool(mask[0,edit_index]):raise ValueError('Probe Edit is illegal')
-        return float(q[0]),float(q[edit_index])
+        g = torch.as_tensor(
+            obs.global_features,
+            dtype=torch.float32,
+            device=device,
+        ).unsqueeze(0)
+
+        ac = torch.as_tensor(
+            obs.action_features,
+            dtype=torch.float32,
+            device=device,
+        ).unsqueeze(0)
+
+        mask = torch.as_tensor(
+            obs.mask,
+            dtype=torch.bool,
+            device=device,
+        ).unsqueeze(0)
+
+        if not bool(mask[0, edit_index]):
+            raise ValueError("Probe Edit is illegal")
+
+        q = model.online(g, ac, mask).flatten()
+
+        return float(q[0]), float(q[edit_index])
 
 
 def rollout_branch(env,first_action,continuation='greedy',frozen=None,gamma=1.):
